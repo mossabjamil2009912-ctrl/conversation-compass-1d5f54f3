@@ -106,9 +106,12 @@ export function PdfView({ url }: { url: string }) {
           c.style.cssText = "width:100%;height:auto;display:block;margin-bottom:8px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2)";
           await page.render({ canvasContext: c.getContext("2d")!, viewport: vp }).promise;
           out.push(c);
+          // First draw: show each page as soon as it is ready instead of waiting for all.
+          if (!dead && !el.querySelector("canvas")) el.replaceChildren(c);
+          else if (!dead && el.contains(out[0]!)) el.appendChild(c);
         }
         // Swap in the sharp pages all at once so nothing flickers.
-        if (!dead) el.replaceChildren(...out);
+        if (!dead && !el.contains(out[0]!)) el.replaceChildren(...out);
       } catch (e) { if (!dead) setErr((e as Error).message); }
     })();
     return () => { dead = true; };

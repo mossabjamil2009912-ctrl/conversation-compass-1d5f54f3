@@ -39,6 +39,11 @@ export default defineConfig({
               options: { cacheName: "pages", networkTimeoutSeconds: 4 },
             },
             {
+              urlPattern: ({ url }) => url.pathname === "/api/public/catalog-cover",
+              handler: "CacheFirst",
+              options: { cacheName: "catalog-covers", expiration: { maxEntries: 500 } },
+            },
+            {
               urlPattern: ({ url }) => url.origin === "https://fonts.googleapis.com" || url.origin === "https://fonts.gstatic.com",
               handler: "StaleWhileRevalidate",
               options: { cacheName: "fonts" },

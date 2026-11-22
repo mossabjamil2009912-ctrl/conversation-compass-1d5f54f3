@@ -7,6 +7,7 @@ import { toast } from "sonner";
 import logo from "@/assets/actes-logo.png";
 import { listCatalogs, getCatalog } from "@/lib/catalogs.functions";
 import { offlineQuery } from "@/lib/offline-cache";
+import { loadCatalogPdf } from "@/lib/catalog-pdf-cache";
 import { PdfView } from "@/components/PdfView";
 import { CatalogAssistant } from "@/components/catalogs/CatalogAssistant";
 import { CatalogAdmin } from "@/components/catalogs/CatalogAdmin";
@@ -137,7 +138,19 @@ function Catalogs() {
 
 function Viewer({ id, onClose }: { id: string; onClose: () => void }) {
   const fetchOne = useServerFn(getCatalog);
-  const { data: c, isLoading } = useQuery({ queryKey: ["catalog-file", id], queryFn: () => fetchOne({ data: { id } }), staleTime: 60 * 60_000 });
+  const { data: c, isLoading } = useQuery(offlineQuery({ queryKey: ["catalog-file", id], queryFn: () => fetchOne({ data: { id } }), staleTime: 60 * 60_000 }));
+  // The PDF itself is kept on the device after the first open, so it reopens instantly and offline.
+  const [localUrl, setLocalUrl] = useState<string | null>(null);
+  const [fileErr, setFileErr] = useState(false);
+  useEffect(() => {
+    let url: string | null = null, dead = false;
+    (async () => {
+      const blob = await loadCatalogPdf(id, c?.file_url ?? null);
+      if (dead) return;
+      if (blob) { url = URL.createObjectURL(blob); setLocalUrl(url); } else if (!isLoading) setFileErr(true);
+    })();
+    return () => { dead = true; if (url) URL.revokeObjectURL(url); };
+  }, [id, c?.file_url, isLoading]);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
@@ -164,8 +177,8 @@ function Viewer({ id, onClose }: { id: string; onClose: () => void }) {
           <button onClick={onClose} aria-label="إغلاق" className="rounded-xl p-2 hover:bg-muted"><X className="h-5 w-5" /></button>
         </div>
         <div className="min-h-0 flex-1 bg-muted">
-          {isLoading ? <div className="flex h-full items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
-            : c?.file_url ? <PdfView url={c.file_url} />
+          {localUrl ? <PdfView url={localUrl} />
+            : !fileErr ? <div className="flex h-full items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
             : <p className="p-6 text-center text-muted-foreground">تعذر فتح الكتالوج.</p>}
         </div>
       </div>
