@@ -48,17 +48,11 @@ export function ConnectionSettings({ pw }: { pw: string }) {
         style={{ touchAction: "none", WebkitTouchCallout: "none", userSelect: "none" }} aria-label="إعدادات الاتصال" title="إعدادات الاتصال" className="rounded-md p-1.5 hover:bg-ink-foreground/10">
         <Settings className="h-4 w-4" />
       </button>
-      {unlocked && (
-        <button onClick={() => setShowF(true)} className="rounded-md bg-primary px-2 py-1 text-[10px] font-bold text-primary-foreground">المعادلات</button>
-      )}
-      {unlocked && (
-        <button onClick={() => setShowM(true)} className="rounded-md bg-primary px-2 py-1 text-[10px] font-bold text-primary-foreground">النظام الحسابي</button>
-      )}
       {showM && <SystemModeDialog pw={pw} code={code} onClose={() => setShowM(false)} />}
       {askCode && (
         <div dir="rtl" className="fixed inset-0 z-[60] flex items-center justify-center bg-foreground/40 p-4" onClick={() => setAskCode(false)}>
           <form className="w-full max-w-xs space-y-2 rounded-xl border border-border bg-card p-4 text-card-foreground shadow-lg" onClick={(e) => e.stopPropagation()}
-            onSubmit={async (e) => { e.preventDefault(); const r = await verifyPin({ data: { pw, code } }).catch(() => ({ ok: false })); if (r.ok) { setUnlocked(true); setAskCode(false); } else setCode(""); }}>
+            onSubmit={async (e) => { e.preventDefault(); const r = await verifyPin({ data: { pw, code } }).catch(() => ({ ok: false })); if (r.ok) { setUnlocked(true); setAskCode(false); setOpen(true); } else setCode(""); }}>
             <h2 className="text-sm font-bold">أدخل الرمز</h2>
             <input autoFocus type="password" inputMode="numeric" value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))} className="w-full rounded-lg border border-border bg-background px-3 py-2 text-center tracking-widest" />
             <button type="submit" className="w-full rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground">دخول</button>
@@ -82,6 +76,12 @@ export function ConnectionSettings({ pw }: { pw: string }) {
               <button disabled={busy} onClick={() => run(() => save({ data: { pw, url } }))} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground disabled:opacity-50">حفظ التغييرات</button>
               <button disabled={busy} onClick={() => run(() => save({ data: { pw, url: def, reset: true } }))} className="w-full rounded-lg border border-border px-3 py-2 text-sm disabled:opacity-50">استعادة الرابط الافتراضي</button>
             </div>
+            {unlocked && (
+              <div className="flex gap-2">
+                <button onClick={() => { setOpen(false); setShowF(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">المعادلات</button>
+                <button onClick={() => { setOpen(false); setShowM(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">النظام الحسابي</button>
+              </div>
+            )}
             <AppUpdatePanel />
           </div>
         </div>
