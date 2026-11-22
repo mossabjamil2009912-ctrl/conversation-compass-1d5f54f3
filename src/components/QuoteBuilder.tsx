@@ -708,7 +708,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
           <div className="space-y-2 rounded-xl border bg-muted/30 p-2">
             <div className="text-xs text-muted-foreground">الاحتياج اليومي: {eq.need.toFixed(1)} كيلووات ساعة</div>
             <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const p = inverterForLoad(items as EqItem[], eq.need, kw, eq.three); if (!p) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); pickInv(p); }} className="flex flex-wrap items-center gap-1">
-              <span className="text-xs font-bold">1) الحمل في الساعة:</span>
+              <span className="text-xs font-bold">1) أقصى حمل تشغيلي (kW):</span>
               <input value={loadKw} onChange={(e) => setLoadKw(e.target.value.replace(/[^\d.]/g, ""))} inputMode="decimal" placeholder="كيلووات (مثال 10)" className="w-32 rounded-lg border bg-card px-2 py-1.5 text-xs" />
               <button type="submit" className="rounded-lg bg-primary px-2 py-1.5 text-xs font-bold text-primary-foreground">اختر الأنسب</button>
             </form>
