@@ -9,7 +9,7 @@ import { offlineQuery } from "@/lib/offline-cache";
 import { BOT_PRESETS } from "@/lib/bot-presets";
 import { F, applyFormulas, comKey } from "@/lib/formulas";
 import { EquationDetails } from "@/components/EquationDetails";
-import { inverterOptions, inverterForLoad, buildSystem, type InvPick } from "@/lib/sizing";
+import { inverterOptions, inverterForLoad, buildSystem, groupBySize, brandOf, BRAND_LABEL, type InvPick } from "@/lib/sizing";
 import { lvChoices, lvCatalogItem, lvBatOf, LV_BAT_LABELS, type LvBatOpt } from "@/lib/lv-battery";
 import { applyStorage, hvCapacity, storageAvailable, STORAGE_LABELS, STORAGE_GROUPS, type StorageChoice, type StorageGroup } from "@/lib/storage";
 import logoClean from "@/assets/actes-logo-clean.png";
@@ -440,6 +440,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const [invKw, setInvKw] = useState<InvChoice | null>(null);
   const [eq, setEq] = useState<{ need: number; three: boolean; template: [string, number][]; type: "res" | "com" } | null>(null);
   const [loadKw, setLoadKw] = useState("");
+  const [brandPick, setBrandPick] = useState<InvPick[] | null>(null);
   const [hvBase, setHvBase] = useState<Line[] | null>(null); // HV system before the storage choice
   const [storage, setStorage] = useState<StorageChoice>("h112s");
   const [stGroup, setStGroup] = useState<StorageGroup>("bat");
@@ -711,12 +712,21 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
             </form>
             <div className="text-xs font-bold">2) أو اختر الإنفرتر:</div>
             <div className="flex flex-wrap gap-1">
-              {inverterOptions(items as EqItem[], eq.need, eq.three).map((p) => (
-                <button key={p.key} type="button" onClick={() => pickInv(p)} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
+              {!brandPick ? groupBySize(inverterOptions(items as EqItem[], eq.need, eq.three)).map((g) => { const p = g.brands[0]!; return (
+                <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
                   <div className="font-bold">{p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
-                  <div className="text-muted-foreground">{usd(p.cost)}</div>
+                  <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : usd(p.cost)}</div>
                 </button>
-              ))}
+              ); }) : (<>
+                <div className="w-full text-xs font-bold">إنفرتر {brandPick[0]!.kw} كيلو — اختر الماركة:</div>
+                {brandPick.map((p) => (
+                  <button key={p.key} type="button" onClick={() => { setBrandPick(null); pickInv(p); }} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
+                    <div className="font-bold">{BRAND_LABEL[brandOf(p.key)] ?? brandOf(p.key)}{p.units > 1 ? ` (${p.units} ×)` : ""}</div>
+                    <div className="text-muted-foreground">{usd(p.cost)}</div>
+                  </button>
+                ))}
+                <button type="button" onClick={() => setBrandPick(null)} className="rounded-lg bg-muted px-3 py-1.5 text-xs">رجوع</button>
+              </>)}
             </div>
           </div>
         )}

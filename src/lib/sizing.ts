@@ -6,17 +6,19 @@ export type InvSpec = { key: string; name: string; kw: number; hv: boolean; thre
 export type InvPick = InvSpec & { units: number; cost: number };
 const LV_KW = [8, 12, 16, 20], HV_KW = [30, 50, 80, 125];
 
-// Inverters in the catalog (cheapest per size + phase), parsed from the key: INV_*_<kw>K_<1P|3P>[_HV].
-export function inverterSpecs(items: EqItem[]): InvSpec[] {
+// Inverters in the catalog, parsed from the key: INV_*_<kw>K_<1P|3P>[_HV]. Cheapest per size + phase,
+// or every brand per size + phase when allBrands (the customer then picks the brand).
+export const brandOf = (key: string) => (key.match(/^INV_([A-Z]+)_/i)?.[1] ?? "").toUpperCase();
+export function inverterSpecs(items: EqItem[], allBrands = false): InvSpec[] {
   const m = new Map<string, InvSpec>();
   for (const r of items) {
     if (r.category !== "inverters" || r.active === false || (r.kind ?? "item") !== "item" || r.price == null) continue;
     const kw = Number((r.key.match(/_(\d+)K_/) ?? [])[1] ?? 0), hv = /_HV$/i.test(r.key), three = hv || /_3P/i.test(r.key);
     if (!(hv ? HV_KW : LV_KW).includes(kw)) continue;
-    const s = { key: r.key, name: r.name, kw, hv, three, price: Number(r.price) }, id = `${kw}-${three}-${hv}`;
+    const s = { key: r.key, name: r.name, kw, hv, three, price: Number(r.price) }, id = `${kw}-${three}-${hv}` + (allBrands ? `-${brandOf(r.key)}` : "");
     if (!m.has(id) || m.get(id)!.price > s.price) m.set(id, s);
   }
-  return [...m.values()].sort((a, b) => Number(a.hv) - Number(b.hv) || a.kw - b.kw || Number(a.three) - Number(b.three));
+  return [...m.values()].sort((a, b) => Number(a.hv) - Number(b.hv) || a.kw - b.kw || Number(a.three) - Number(b.three) || a.price - b.price);
 }
 // kWp = daily ÷ sun hours. Inverters needed = ⌈max(hourly load, kWp ÷ DC/AC ratio) ÷ kW⌉.
 export const kwpOf = (need: number, f: Formulas = F) => need / f.sun;
@@ -26,10 +28,11 @@ export const unitsFor = (s: InvSpec, need: number, loadKw = 0, f: Formulas = F) 
 // Low Voltage while the AC power needed stays within lvMaxKw; otherwise High Voltage. Never mixed.
 export const isHvNeed = (need: number, loadKw = 0, f: Formulas = F) => Math.max(loadKw, kwpOf(need, f) / f.dcRatio) > f.lvMaxKw + 1e-9;
 
-// Option 2: the customer picks an inverter — every size of the matching family, repeated up to maxInverters.
+// Option 2: the customer picks an inverter size, then the brand when that size exists in more than one brand.
+// Returns every brand per size (cheapest first); group by kw to build the two steps.
 export function inverterOptions(items: EqItem[], need: number, three: boolean, f: Formulas = F): InvPick[] {
   const hv = isHvNeed(need, 0, f);
-  const fam = inverterSpecs(items).filter((s) => s.hv === hv);
+  const fam = inverterSpecs(items, true).filter((s) => s.hv === hv);
   const ph = fam.some((s) => s.three === three) ? fam.filter((s) => s.hv || s.three === three) : fam;
   return ph.map((s) => { const units = unitsFor(s, need, 0, f); return { ...s, units, cost: units * s.price }; }).filter((p) => p.units <= f.maxInverters);
 }
@@ -65,3 +68,10 @@ export function buildSystem(template: [string, number][], items: EqItem[], need:
   const rest = template.filter(([k]) => !["inverters", "panels", "batteries", "battery_controls"].includes(cat(k) ?? ""));
   return [[PANEL, panels], [inv.key, inv.units], [inv.hv ? HV_BAT : LV_BAT, bat], ...rest];
 }
+// Groups options by size (kw + phase): one entry per size, with all its brands (cheapest first).
+export function groupBySize(opts: InvPick[]): { kw: number; three: boolean; hv: boolean; brands: InvPick[] }[] {
+  const g: { kw: number; three: boolean; hv: boolean; brands: InvPick[] }[] = [];
+  for (const o of opts) { const e = g.find((x) => x.kw === o.kw && x.three === o.three && x.hv === o.hv); if (e) e.brands.push(o); else g.push({ kw: o.kw, three: o.three, hv: o.hv, brands: [o] }); }
+  return g;
+}
+export const BRAND_LABEL: Record<string, string> = { DEYE: "دايا", SOLIS: "سوليس" };

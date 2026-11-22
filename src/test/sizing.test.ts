@@ -26,3 +26,14 @@ describe("Deye 30 HV", () => {
     expect(inverterOptions(it2, 300, true, D).some((p) => p.kw === 30 && p.hv)).toBe(true);
   });
 });
+
+import { inverterOptions as _io, groupBySize as _g } from "@/lib/sizing";
+describe("brand choice per size", () => {
+  const its = [{ key: "INV_DEYE_50K_3P_HV", name: "", category: "inverters", price: 4100 }, { key: "INV_SOLIS_50K_3P_HV", name: "", category: "inverters", price: 4200 },
+    { key: "INV_SOLIS_80K_3P_HV", name: "", category: "inverters", price: 6200 }] as never;
+  it("50 kW offers Deye and Solis; 80 kW only Solis", () => {
+    const g = _g(_io(its, 400, true));
+    expect(g.find((x) => x.kw === 50)?.brands.map((b) => b.key)).toEqual(["INV_DEYE_50K_3P_HV", "INV_SOLIS_50K_3P_HV"]);
+    expect(g.find((x) => x.kw === 80)?.brands.length).toBe(1);
+  });
+});
