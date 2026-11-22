@@ -74,7 +74,9 @@ export const Route = createFileRoute("/api/public/bot-catalog")({
         let hv = "2";
         try { hv = String(JSON.parse(hi?.text_value ?? "{}").v ?? "2"); } catch { hv = "2"; }
         const HEADER_IMAGE_URL = `${origin}/api/public/header-image?v=${hv}`;
-        const body = JSON.stringify({ HEADER_IMAGE_URL, settings: { kwh_price }, KWH_PRICE: kwh_price, updated_at: new Date().toISOString(), ITEM_PRICES: prices, ITEMS: items, CATALOG_FILES: files, AUTO_RULES: autoRules, BOT_TEXTS, BOT_STEPS, FORMULAS });
+        // ORIGIN tells the bot which address serves this app's own files (datasheets, item images),
+        // so its links follow the app when it moves instead of pointing at an old host.
+        const body = JSON.stringify({ ORIGIN: origin, HEADER_IMAGE_URL, settings: { kwh_price }, KWH_PRICE: kwh_price, updated_at: new Date().toISOString(), ITEM_PRICES: prices, ITEMS: items, CATALOG_FILES: files, AUTO_RULES: autoRules, BOT_TEXTS, BOT_STEPS, FORMULAS });
         CACHE = { at: Date.now(), origin, body };
         return new Response(body, { headers: { "content-type": "application/json" } });
       },
