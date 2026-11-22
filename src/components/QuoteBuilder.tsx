@@ -8,6 +8,7 @@ import { listCatalog, listCustomers, saveQuote, listQuotes, sendAttachment, ensu
 import { offlineQuery } from "@/lib/offline-cache";
 import { BOT_PRESETS } from "@/lib/bot-presets";
 import { F, applyFormulas, comKey } from "@/lib/formulas";
+import { EquationDetails } from "@/components/EquationDetails";
 import { inverterOptions, inverterForLoad, buildSystem, type InvPick } from "@/lib/sizing";
 import { lvChoices, lvCatalogItem, lvBatOf, LV_BAT_LABELS, type LvBatOpt } from "@/lib/lv-battery";
 import { applyStorage, hvCapacity, storageAvailable, STORAGE_LABELS, STORAGE_GROUPS, type StorageChoice, type StorageGroup } from "@/lib/storage";
@@ -493,6 +494,8 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const [swapKey, setSwapKey] = useState<string | null>(null);
   const [editNote, setEditNote] = useState(false);
   const chosenRef = useRef<HTMLHeadingElement>(null);
+  const [showEqD, setShowEqD] = useState(false);
+  const [eqNeed, setEqNeed] = useState<number | null>(null);
   const setPriceLocal = (k: string, price: number) => setLines((p) => (p[k] ? { ...p, [k]: { ...p[k], price: Math.max(0, price || 0) } } : p));
   const catOfKey = (k: string) => items.find((r) => r.key === k)?.category;
   const swapLine = (oldKey: string, r: Row) => setLines((p) => {
@@ -616,7 +619,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const pickInv = (p: InvPick) => {
     if (!eq) return;
     const sys = buildSystem(eq.template, items as EqItem[], eq.need, F.night[dn], p);
-    setNightNeed((eq.need * F.night[dn]) / 100);
+    setNightNeed((eq.need * F.night[dn]) / 100); setEqNeed(eq.need);
     setEq(null);
     loadPreset({ type: eq.type, group: `${p.kw} كيلو`, title: `${p.units > 1 ? `${p.units}× ` : ""}${p.kw} كيلو`, items: sys });
   };
@@ -859,6 +862,8 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
         <div className="flex items-center justify-between rounded-lg bg-ink px-3 py-1.5 text-ink-foreground">
           <span className="text-xs">الإجمالي</span><span className="text-base font-extrabold text-primary">{usd(total)}</span>
         </div>
+        {F.mode === "eq" && chosen.length > 0 && <button type="button" onClick={() => setShowEqD(true)} className="rounded-md border border-primary/50 py-1 text-xs font-bold text-primary hover:bg-primary/10">التفاصيل — كيف حُسب كل صنف</button>}
+        {showEqD && <EquationDetails lines={chosen} items={items as EqItem[]} need={eqNeed ?? (Number(daily) > 0 ? dailyNeed(path ?? "res", comM ?? "bill", Number(daily), kwhPrice) : null)} nightPct={F.night[dn]} onClose={() => setShowEqD(false)} />}
         {msg && <p className="text-center text-xs font-semibold text-primary">{msg}</p>}
         <div className="grid grid-cols-2 gap-1.5">
           <button onClick={() => generate()} disabled={busy} className="flex items-center justify-center gap-1 rounded-md bg-primary py-1.5 text-xs font-bold text-primary-foreground shadow transition hover:opacity-90 disabled:opacity-50"><Printer className="h-3.5 w-3.5" />{busy && !share ? "جارٍ الإنشاء..." : "إنشاء عرض السعر"}</button>
