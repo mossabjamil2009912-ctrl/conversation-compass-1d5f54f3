@@ -1,0 +1,39 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.lovable.actes_crm.twa",
+      "sha256_cert_fingerprints": [
+        "82:1E:76:F9:8E:BB:29:F0:2F:16:52:54:9A:6E:8E:8A:BD:49:69:0B:FD:73:47:BC:4E:B5:C7:DF:9B:A6:23:6D",
+        "7E:AF:17:57:98:01:9C:E0:8E:1E:32:88:82:CB:38:84:22:28:25:09:5B:76:89:DC:93:21:42:64:89:C6:48:53"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.lovable.workflow_whisperer_36.twa",
+      "sha256_cert_fingerprints": [
+        "6C:30:3F:8F:22:AE:EB:7B:94:29:B2:1A:24:9C:F5:B0:A3:7F:F8:1A:31:D8:19:9D:C8:4D:E9:20:E7:44:F2:8A"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.lovable.conversation_compass_customer_trails.twa",
+      "sha256_cert_fingerprints": [
+        "69:31:0C:81:E5:70:F9:2C:02:79:42:E8:7E:0B:0C:2A:F7:C7:3E:BF:65:DA:CB:D7:74:F2:4E:97:7D:6C:65:C7"
+      ]
+    }
+  }
+]

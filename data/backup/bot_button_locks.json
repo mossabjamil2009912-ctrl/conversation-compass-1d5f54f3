@@ -1,0 +1,4214 @@
+[
+ {
+  "context_id": "test:123",
+  "choice": "test",
+  "phone": "123",
+  "created_at": "2026-10-19T18:17:08.818632+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNFMzdCRDUwNDkyNDdBODJCOUJBNEJFNEYxMzcyMjEA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:32:47.146209+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVCMURBQkYzOEYwNjA5RERDMDY0MjRFNjhGRURERTEA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:58:18.438577+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNGMEU3RTJDNjUyMDhCRDYxMTNBMkU3Mzc1MTBGREYA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:34:06.092818+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQyFQIAERgSNDJCMzIyRDU4MzNFMEZFRDJCAA==",
+  "choice": "quote_start",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:35:06.630765+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwNjMwMDA0FQIAEhggQTUxQjhFNkJDMUQ5ODYyMzU5MUQ5NTEyOUVDQ0NGMzgA",
+  "choice": "inbound",
+  "phone": "967770630004",
+  "created_at": "2026-10-22T22:58:38.323588+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4ODM4RkU0NjExOTI0RUEyQkIxRkU5ODI3QzBFRDAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:01.219956+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzMkM0MkIzRjlCMTZEODFCQzIxNDI4QUMzMDI3RkIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:14.035954+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5RDJEQ0Y0NUYyOTg1RjQ5MEFDN0QyNUI2QzhGNzkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:32:10.949297+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVBQTlGMzcxNUVFQTUwRkNFQkQ4NDE0QUMzQkRFRTAA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:58:56.19962+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5NkNBRTQ5QzY5RjdENEIyQUYyMDRCNkY2MTRCMDAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:33:31.184551+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSMTE3MUE3MURDMzk5NEY4OERFAA==",
+  "choice": "quote_start",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:58:56.284985+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFNzQzOEQ5QjM5Nzg1ODVGN0NDMDM1QzZGQzMzNDEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:23.240903+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDRFRDlEMzlFRjE3NUFBODM5AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:40:05.416355+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0OThFMTdBRTY3QjlGQkMyNzc5NThERkMxNzVEQjQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:12:52.117337+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3ODU1RDYwRDc5QTg4MEY3RUM2OUVEQjBGRDZDN0YA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:05.438592+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMkM1MzUzRjQxMjg5QzU4QzU2AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:05.582583+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzMTY0OTNBRjM0RTQzOUZGNjZGREM3MjBFOERGRjUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:19.747679+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEOEUxRUIwNUQzQUEzRDJDRUFENEM4MDVCMzc3QzUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:14:24.398761+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE1MDlEQkMzNjFBNUIyNjU2NUMA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:32.387379+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTUxRUUwREYxMzYwREQzNDgyAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:23.473663+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNTc2MDEyREU0RDU3NjM0Qzk0QUVEMjI4MzU1OTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:31.474627+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSODk3NEE4MUYzMUI5M0Y3QkI4AA==",
+  "choice": "browse",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:31.582411+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkFBQzE1MEM2NkQwOTVFODhENTkA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:45.813008+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5QUJFMTZBQjY4MUEzQUE1REVFNzEzRTYwMTZERjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:24:56.498871+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNENzZCNzQwQkIzREQzNDcyODg4NEMzRTYzRUJCMkQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:04.278182+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjdGMDE4MzRDMDFDMUZFOThGAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:10.484174+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3MTI2OEE3RjEyNDMzMEUwOTA2NEM4OUY2Q0YzNDcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:16.954191+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwNjU1RkNFNjg5QTlDREZGMTNEREUwRjNGQzczNkYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:50:32.991335+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM2ODdGRDk2NEY2MzFFMkY0NUIzQ0JFMDZEN0NDNTkA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-26T20:59:53.26889+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1RDExNjNBOUE5MjQ5MDkzNERCNEFDNjYwOTI5RDQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:51:08.273629+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNUM5MEQ0N0RERjY0MDk2NDI4AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:51:09.384613+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBNzA3QzAwNzlBNzJDOTIxRkRBQjEyQ0VGRTk2NDQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:52:13.343026+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNUNFNTM4MkY3NjNDQTlDMTNEAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:52:57.867451+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUMxQjE0ODMxMUE2MENDMUY3MzU3RjVCODdGQkQwMTEA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:35:27.672347+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSRTFCNzI3MzQwNjRBRUUyNDQ2AA==",
+  "choice": "sys_r2",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:35:27.785788+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNFMTVDRDM5RjlGRTJDNzU1RjMzOUJFNDU4RTAwNUQA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:35:50.582316+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzQkMzODU3MjBBRkFDM0UxRDdCRkREMkY3ODI4NDQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-21T13:43:30.62992+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRkYzMDExMjJDNkYyMUJFRTAxAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-21T13:43:31.090897+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUNBMkExMUNGQzg1Q0RBQjIwODJBNzk1QjRFRURFMTAA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:52:33.74742+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSNDQ4NzZCNEQ0QzMzQkVBOEREAA==",
+  "choice": "2",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:52:33.834797+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSMDZGMTg0MjY5RDEyOTcxNzNEAA==",
+  "choice": "1",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:35:50.664898+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMwRDI5OUIwRDdFNkE4NTAzMEQ3MTU3ODhBMTZGNTcA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:53:36.603868+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcxOTEyMzMzFQIAEhggQUNEN0M1MDE5MjE1MDhEMzVERTBFQ0ZERDQzNzA0MzcA",
+  "choice": "inbound",
+  "phone": "967771912333",
+  "created_at": "2026-10-30T17:56:05.474113+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM5QzJGRjJGNEFBMjJFNkZBMTkxNzdDM0IxNUFBNDYA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:54:41.626443+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBQzIwQTVGMEY0QUFDNzI1RjQ2QzRGNTBBQUU4REUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-31T12:03:16.836913+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM2NTdGOTA5OTAxRkI1MTQ5RTVDMUMxQkI1QTc1MzEA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:27.401378+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMwNkY1MkJFNEYwNDMxNEMxNENBRjY1MDAxQzJFRTIA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:44.846802+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMTBEMjRDNEY2Qzc2QUY0RkQ5AA==",
+  "choice": "back_step",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:44.939173+00:00"
+ },
+ {
+  "context_id": "test_dup_1792433836865",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T18:17:17.494445+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNEODdFRDE5NTM3Q0ZFQzkxM0NCOEM2RjZBQzdEMEYA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:33:44.942148+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNBQThGNkJBNkQ3MTk1NjdFMUY4QjU4MzgwQTM4OUEA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:35:06.465817+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUM0NzA2NjZGMjkzRkZFNzJBNDA0RTI0QTQ5MDg1MTcA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:36:14.022186+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSODNFNjczNUZEODZDQ0NDODFBAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:21:53.265113+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwNjMwMDA0FQIAERgSOEU5Q0FGQzE3NTM5MjgwMkFGAA==",
+  "choice": "renewable_solutions",
+  "phone": "967770630004",
+  "created_at": "2026-10-22T22:58:38.404729+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBREM0RUQxNENFMUU5NzhDQTIzQjk3QTM2RDVERUEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:20.779545+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTU4OEVGM0JBMjIwODI3QUIyQjI2NEY3QjBDODk5REMA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:12:58.972813+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNERENGRTYzOENFMjE0MUQ3OEY5OTdEQzJFRkFFOTkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:32:44.212944+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNTZCQUZGOEQ4NjJDQTdCMzIzAA==",
+  "choice": "invkw_8",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:33:31.406228+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5MkE3RjNGNTY3NjBENkI0Njk4MTRBQUM3RkY5OUUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:08.870226+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyNDk1MDExOTI2QTc2M0MwM0MxRjE5RDFBMjAzNjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:15.815194+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSODkxRDA4QTk0NjAwQzlEODcyAA==",
+  "choice": "resinv_6.2",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:12:59.141391+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE1NzFBRUFBMzg1QkMzNzVENTkA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:17.081626+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxQkZCMEQ1N0JCMDMzQThGQ0FFREZBQzdBMjc4MDUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:32.364854+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSNENEMTc2RkJGQkM5QTU5NUQ1AA==",
+  "choice": "browse",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:28.724902+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNERDI2MUUwNUM4QTI0MzkxODE5NDQ5RTRBMUMwQjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:39.744764+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDMTBGQzMwNEJBQUYyRDU1QUFEMzNCRjY3NkZCNzAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:39:58.753069+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2ODE0QjA1NEU2REFDQkUzNDVBNEFBMzY2OUI1NjAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:40:05.273636+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyMUJDNUYyNjdFQUE1OENFNEYxRjcyQzE3Mzc0NkIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:40:16.1132+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMDk5OEJENEFDRDNFREE1REU4AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:40:16.227175+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwQzQwOUFDOEJFOTE2NEE1QkJEOUVGN0FFN0MxNzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T15:45:48.940842+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNEMzFGMERERUEzODk2OTJBODRERTk2Q0U5RDZDQjEA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:22.327988+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNDcyQzU1NEIzNEU1OTZDNEQwMTg2QzE4OTEwNzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:12.283471+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzBFQkU4MUVGM0ExN0VCQzY3AA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:12.385443+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRENDRDcxNzk5RDQzMEYxRTU0AA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:19.841728+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDRDM0MzY0NkREOTlCQ0JDNzI0QjkwN0VDNERDRDUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:34.170385+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzQzFENkRFNEUyOEU2MzBDMjU1RDQ4NjRFMzMwNEYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:54.810029+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSODlEOEI1Qzg0RDRENkQxOTg1AA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:13:54.914237+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDMUNCRDREQTNGRTlFNkMxRDA1NDI3MUExOUE3MDQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:59.979609+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSN0MxOUEyQzEyQzc2QjZBRjQ3AA==",
+  "choice": "resinv_8",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:36:00.071967+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSRUM5RkQ1RDYyODgxQzEzMTY5AA==",
+  "choice": "aq_mod",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:22.537735+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2NTM2RDIyMERFMDE3M0NBOEE1Nzk2Nzg2QUFDQzUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:36:26.017607+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNCMkZBNUVGODZFNzEwNjlEOTRGOUEzMjM1NzY3NDUA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:35.551904+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGQjgwN0ZCNTdFQUEzNzk4MTI0QUY5MkIzNTgzOUEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:24:47.191332+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDU3MERDRjNDOTA3QjZERUM3AA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:04.372311+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSNzU2NkY4OEM0RDJDQ0FEQTU5AA==",
+  "choice": "qm_s_pv_25",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:35.636877+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCQzk0OTIwQjU2RjgyQzAyQTJCQzA0NUIxMDIwNzgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:23.658608+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNBRUMxNjdCRDdCODU4NEVBNkE5MjkxNEQ3MEZEMDAA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:46.253972+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSQzhGRTdDRkYyMkZGNzQwODY5AA==",
+  "choice": "qm_n_pv_1",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:30:46.341653+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0RUJGMDZCQ0IxMTYxRTgwOUIxNDhBMEJGMzJBNzYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:52:57.738754+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBMTYxRDlDMDc1MUM5Mzc2NkE0QkQ2MjMxNkY0NzYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:56:27.683329+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4ODNBOTdEMUFCMzkzRDk5REE4Qzg0QkI0OTAzMjgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:59:04.517431+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjVERUUzNjMwQjBEMzhBRjVBAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:59:04.653791+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFNTI4MkUzMjY4Qjk0QzBFRjVBQzE0NzBBQTBCQTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T23:58:39.072747+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM0MTQ5QTk2MTMyMUQ1NzVGNEFEMEIwRkY2QkFCNjcA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:51:30.447364+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM3RTA2ODM5MDlERENFN0E2OTYwMDI3QTgzRTk4QkYA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:51:53.74553+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSN0RDN0U5QjlCNThGQkQ4QjlBAA==",
+  "choice": "quote_start",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:51:53.841368+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM0RTQzNkNDOEZBOUUyQkNENTVFRkJGQjU0NjFGOUIA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:31:11.281458+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMwMzM1N0YxOTdCODRDODY0OUFCRThEMTVGOEIzMUIA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:52:17.911522+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSREZEODhGQTZCRDU3RENFN0Y1AA==",
+  "choice": "2",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:52:18.000394+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSRDJCOTRFN0FDNzJFNjI2QzE4AA==",
+  "choice": "qm_issue",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T23:31:11.418603+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVFNDIxOUJFNkJCNkYwRERGN0U0RkUyRjc2MUE3OEEA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:59:36.380677+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSREU3QUJDODk1M0ZGNEFBQTI5AA==",
+  "choice": "1",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:59:36.525575+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQyFQIAERgSNzVFMUQ3MjIyMzBCMTQ2NTYzAA==",
+  "choice": "1",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:36:00.172948+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVCN0QyMDcxOTFGRTYzNUUxQ0VFODM5MDI0REE3OTMA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:59:49.815609+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCMjI1RjBEQkU1NkMwMDVGNzA0Mzc3MkM5RDREODIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:08.044226+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOUYyMTQ1OTk3QTM4QTBGRjhGAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:14.150282+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSNkY0NzI0RDk4NUU2Njk3MDEwAA==",
+  "choice": "browse",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T22:59:49.889886+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2NkY0NDg0QTBBQzkyQkYzRjk1MjlEOUIyMEI0REEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:32:32.942809+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5MEJFMEZBRDg0QkQwMzAzRTVFMERBMkRFNjQyMEYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:32:38.939539+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSM0Y3QjdGOTA0NkZDOThGOTk1AA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:15.934735+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNTU4RTIyOUExOTg3MjREMkQ4AA==",
+  "choice": "invkw_8",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:35:39.833524+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyMzY0MkZBMzlGQjkwNzMyMDExMjA1NkM1MjVCQjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-23T07:05:28.297608+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMTFEMkJEOEQ5RkFDMTM3MDk1ODYxOUYyMDBCOUIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:40:22.247708+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2QkI3M0JFMkYzRDc2QzFDRUEyRDVDMDYyNDgxMDIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:33:43.375159+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQUI5QzY2MzdFNjg2MDFFRTdGAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:33:43.500083+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNTlCRjNFMkFEMEIwMTc3NkM2AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-23T07:05:28.505816+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3QkU2RTI5Qzk3REU2NzFFRTg1QkY3MUU4MzQxQjIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:33:50.156929+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSNTdCMjRDMzBCQzVEODE1RjE5AA==",
+  "choice": "1",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:17.224856+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzNjZFQUJDMEZGMDIxNkE1ODQ2MTE1MzkwMzIxRDMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:33:57.570206+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE3Qjg0MTJCRTRBQTY0REE0NTMA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:04:28.548848+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDYxNjJGREM3NDIyMzlGNjlFAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:33:57.660786+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyRjU0OEU4MUNCMkVERjREQkQ2MUM4NDRDMDhEREUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:04.945731+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNDg4OTE2ODMyNjhDQUJDQUQyAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:05.040496+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0QzEzREZGQTEzMzg0RjFBMUNBNEI0NEM0RkE5NTYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:12.857239+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMTgxRDU1NjFENkNCNTBGRjNGAA==",
+  "choice": "browse",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:12.949044+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCQUE3Q0Q5OTg2ODkwNTBDMTlDNjlENEVGNzgyRDIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:23.908443+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSN0Y5NDQwRDgzRDlGN0UwQkM3AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T15:45:49.087906+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNTY2NzUzQ0MxNEI1Q0I3OUQ2AA==",
+  "choice": "resinv_6.2",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:23.998261+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNERjAzOEVCRjQ2MUI0NEY2M0Q5NzIwNjEzMTM4NjUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:35.654306+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMTQ0MDY2RkQwRUI4RkY3NUM1AA==",
+  "choice": "sys_r6",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:35.762616+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBRjhBODdENzg3NTM2N0Y2NkIwQTUyREQ1NzU0NUMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:47.08269+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMDI0MThBNzYyN0Y1NEJDOUZBAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:34:47.296666+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwRUVBQzg3QzhFQ0E3MzJFMzY4NkNCQkEzRUIxMUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:15.240513+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUMzMTU2NDA0MTI5ODBDRUJFMzgzQjcwOTZENjU5OTIA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:01:45.484919+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBNTAyMjMyNTM5MTU1NjY4M0Q0MTIwRDRCMTc4MEYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:35:23.335987+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUM5RDJDMkQ1OTYzOUM2RTJGODFEMkI1MUFCNTBDNzMA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:02:46.897917+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGMzY5MUYzRjZBMUZDRkIyNkYwOENDMDQ4QTA5NEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:36:12.768402+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQjBEMEE0QTFGMjRBNDU0NTRBAA==",
+  "choice": "sys_r10",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:36:12.971896+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMTFDNkQ1MTIyNkVFQkQxMjYwAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T14:36:26.113388+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSNDEyNUYwQjYwODNEQUM2ODdDAA==",
+  "choice": "quote_start",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:02:46.996188+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUM4MEM2QTcxMUI1RkI1NDVDRjBEOEJGREIyQjUxODAA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:02:56.88847+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NzYzNTcyQ0YxRUFFRTJDRDZCRTAzMkUxRjA4QjkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:10.389597+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNDFGMDNBNTFGOEUxQjlGMTY0AA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T16:25:17.052059+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0ODM0RDUxQjFEQzYzRTREQzgyNzAzN0EyMDYxQzAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-20T17:51:08.953646+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjE5OTVGOEQyMUI4OUEzMzQ4AA==",
+  "choice": "967773590979",
+  "phone": "quote_start",
+  "created_at": "2026-10-15T20:52:01.992584+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjI2NUZDMkFERjlCM0ZCNTkxAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-15T20:52:10.198432+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDg5N0M0RjJFQUY0ODYzOURDAA==",
+  "choice": "967773590979",
+  "phone": "back_step",
+  "created_at": "2026-10-15T20:52:34.327472+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQjFDRjdGRDJGODUwMDEzRkM5AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-15T20:52:41.291177+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRkM1QTUyRTVBRjI2MEIwODIwAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-15T20:52:49.796988+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyODgwNTg2FQIAERgSQTUxNTZBQjlENzY4MTE1OEQzAA==",
+  "choice": "967772880586",
+  "phone": "quote_start",
+  "created_at": "2026-10-16T01:11:22.276455+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyODgwNTg2FQIAERgSREUzMUVEQjA2NThGREIxQzI1AA==",
+  "choice": "967772880586",
+  "phone": "1",
+  "created_at": "2026-10-16T01:11:31.415717+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyODgwNTg2FQIAERgSQUQ3N0UxODYxRjAwMTEyMDg4AA==",
+  "choice": "967772880586",
+  "phone": "restie_r4",
+  "created_at": "2026-10-16T01:13:14.899842+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyODgwNTg2FQIAERgSMUUyODY3MEZENkI2MDI5OTUzAA==",
+  "choice": "967772880586",
+  "phone": "1",
+  "created_at": "2026-10-16T01:13:23.436124+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSMjZFMDVCNzdDQjA2QTExQTRCAA==",
+  "choice": "967777360648",
+  "phone": "quote_start",
+  "created_at": "2026-10-16T01:18:31.201074+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSRTVDOEU4QzBBMjdDRUNCODRGAA==",
+  "choice": "1",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:02:57.01216+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSM0NEMTg3RjVCNjVDMDFDOURGAA==",
+  "choice": "967777360648",
+  "phone": "1",
+  "created_at": "2026-10-16T01:18:39.282054+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSMkYzQjM2QkVDRjE1NDE5REUyAA==",
+  "choice": "967777360648",
+  "phone": "browse",
+  "created_at": "2026-10-16T01:19:46.981166+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSQzU4MzdDNUFCQUY3QjgwMkIzAA==",
+  "choice": "967777360648",
+  "phone": "resinv_1.6",
+  "created_at": "2026-10-16T01:20:04.626889+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSNTg5MDNBQzZBMkQ1REZFOTk5AA==",
+  "choice": "967777360648",
+  "phone": "sys_r2",
+  "created_at": "2026-10-16T01:20:30.212332+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3MzYwNjQ4FQIAERgSMTRDOEUzRDk5QzExREVCRDRCAA==",
+  "choice": "967777360648",
+  "phone": "1",
+  "created_at": "2026-10-16T01:21:45.991062+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSM0JCNjdGODUwNEIzN0ZBREQ1AA==",
+  "choice": "967776000126",
+  "phone": "quote_start",
+  "created_at": "2026-10-16T18:25:00.401622+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSOUMyNjk5NTlEMDlGNTk3NjgxAA==",
+  "choice": "967776000126",
+  "phone": "0",
+  "created_at": "2026-10-16T18:25:19.309274+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSREQ3NUIzRjk3MzUwODExRUEyAA==",
+  "choice": "967776000126",
+  "phone": "quote_start",
+  "created_at": "2026-10-16T18:25:30.621153+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQUJBREIyNUVGMjQwQTg5OEUyAA==",
+  "choice": "967776000126",
+  "phone": "1",
+  "created_at": "2026-10-16T18:25:42.592979+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQkNBMUFDNDgwMDY2QzA0QzAzAA==",
+  "choice": "967776000126",
+  "phone": "browse",
+  "created_at": "2026-10-16T18:25:52.972152+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSRDBFODUyRDAxMDMzMUM3QjE0AA==",
+  "choice": "967776000126",
+  "phone": "resinv_1.6",
+  "created_at": "2026-10-16T18:26:08.873286+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSOEY2MDVGNTZFNzY3MTI4MzJFAA==",
+  "choice": "967776000126",
+  "phone": "sys_r1",
+  "created_at": "2026-10-16T18:26:30.803769+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSNkRCNDQ3MkQ3RkI1MUNBRUIzAA==",
+  "choice": "967776000126",
+  "phone": "1",
+  "created_at": "2026-10-16T18:26:43.250536+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQTdFNTQ1OUVEOTRBMjAzNTExAA==",
+  "choice": "967776000126",
+  "phone": "aq_mod",
+  "created_at": "2026-10-16T18:29:25.626865+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQUMwMzY3QTBGMDYzNzRGNUVGAA==",
+  "choice": "967776000126",
+  "phone": "qm_s_bat_2",
+  "created_at": "2026-10-16T18:29:46.555931+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSRkU4NkQ0NDg0MjcxNUQ0MjQ1AA==",
+  "choice": "967776000126",
+  "phone": "qm_n_bat_1",
+  "created_at": "2026-10-16T18:29:57.296756+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSREUxOEI4ODUxQTgwRUNCN0JFAA==",
+  "choice": "967776000126",
+  "phone": "qm_issue",
+  "created_at": "2026-10-16T18:30:09.579504+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSODczNzA5MjBBOEZGOTI3MzYwAA==",
+  "choice": "967780480143",
+  "phone": "aq_mod",
+  "created_at": "2026-10-17T11:17:59.02929+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSMDgyQTU1RTg3NzdBMjQ1QzI1AA==",
+  "choice": "967780480143",
+  "phone": "back_step",
+  "created_at": "2026-10-17T11:18:13.305158+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSMDFDOUYzMjAyMjU1Q0E5MDA1AA==",
+  "choice": "967780480143",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T11:18:47.093054+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSNEM3RkNCNkNFQUZBMDlBQ0QyAA==",
+  "choice": "967780480143",
+  "phone": "2",
+  "created_at": "2026-10-17T11:19:03.371152+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSRDRDNDYyMTQ0Mjk3OEU1M0Q2AA==",
+  "choice": "967780480143",
+  "phone": "1",
+  "created_at": "2026-10-17T11:19:12.211706+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSQjJEMTA5NjhDOTA2M0NFRDU4AA==",
+  "choice": "967780480143",
+  "phone": "invkw_50",
+  "created_at": "2026-10-17T11:19:51.965701+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSMTM5NjBDMUU0NTM3NzQyNTYzAA==",
+  "choice": "967780480143",
+  "phone": "stor_cur",
+  "created_at": "2026-10-17T11:20:02.483111+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQzFQIAERgSMjk5NEZDRUVBOTU4NTVFQTkzAA==",
+  "choice": "967780480143",
+  "phone": "1",
+  "created_at": "2026-10-17T11:20:13.11027+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSQzY3OUExNzczNEZGMDI2QURBAA==",
+  "choice": "967782222914",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T12:38:07.06649+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNUUzQzM2MDJBODRGN0I5MzA2AA==",
+  "choice": "967782222914",
+  "phone": "1",
+  "created_at": "2026-10-17T12:38:28.423601+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSRDhBNUE5RjY3NENGMzQ3RkE1AA==",
+  "choice": "967782222914",
+  "phone": "1",
+  "created_at": "2026-10-17T12:39:01.437614+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNDRFMUM5MjczOTYwMTEyNUM2AA==",
+  "choice": "967782222914",
+  "phone": "aq_mod",
+  "created_at": "2026-10-17T12:42:41.459205+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSMzhDMDY2MjM0Q0YwN0MxRjA1AA==",
+  "choice": "967782222914",
+  "phone": "qm_s_bat_4",
+  "created_at": "2026-10-17T12:43:09.796611+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSOTk2NjhCOEREQTk5MDJCRjlBAA==",
+  "choice": "967782222914",
+  "phone": "qm_n_bat_1",
+  "created_at": "2026-10-17T12:43:21.760906+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNkY5OTBEQTI2NjIwQ0Y3MzlBAA==",
+  "choice": "967782222914",
+  "phone": "qm_issue",
+  "created_at": "2026-10-17T12:43:33.693771+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNTQxRkEyNjlBQUFGMzlCMTlFAA==",
+  "choice": "967782222914",
+  "phone": "aq_mod",
+  "created_at": "2026-10-17T12:45:18.348067+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSMEI5RDk4ODYzMzFERjY5OEY2AA==",
+  "choice": "967782222914",
+  "phone": "qm_s_bat_5",
+  "created_at": "2026-10-17T12:45:32.078907+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSRDc5QTQwMDUxQTExQ0NCMTQ3AA==",
+  "choice": "967782222914",
+  "phone": "qm_n_bat_1",
+  "created_at": "2026-10-17T12:45:40.211021+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSN0U1QTU1NTIwOEU5OUE2RjEzAA==",
+  "choice": "967782222914",
+  "phone": "qm_issue",
+  "created_at": "2026-10-17T12:45:47.599231+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNDAzREVFQTA4NzgyMEMxMkQ5AA==",
+  "choice": "967782222914",
+  "phone": "aq_plan",
+  "created_at": "2026-10-17T12:47:11.279055+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSNUZDMDQwMUZEOUNFNEUzOEQ3AA==",
+  "choice": "967782222914",
+  "phone": "back_step",
+  "created_at": "2026-10-17T12:47:27.460587+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSRjIxQkUwNEE3OTA3REVDOTMwAA==",
+  "choice": "967782222914",
+  "phone": "back_step",
+  "created_at": "2026-10-17T12:47:34.266884+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSRTNFODdDRjQ4RjI1QjA4MDA2AA==",
+  "choice": "967782222914",
+  "phone": "back_step",
+  "created_at": "2026-10-17T12:47:43.064804+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSRUM1QUY3NkM2NkJFQURCOUYxAA==",
+  "choice": "967782222914",
+  "phone": "invkw_16",
+  "created_at": "2026-10-17T12:48:15.64225+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSODMzQzI5RTM3M0E2N0ZDMTRGAA==",
+  "choice": "967782222914",
+  "phone": "back_step",
+  "created_at": "2026-10-17T12:48:26.204717+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSODgyQTIxRjUxNjcxRjM3QjQxAA==",
+  "choice": "967782222914",
+  "phone": "invkw_20",
+  "created_at": "2026-10-17T12:48:31.967154+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgyMjIyOTE0FQIAERgSMTBDQ0I5M0REOTcxNzUxMUM2AA==",
+  "choice": "967782222914",
+  "phone": "1",
+  "created_at": "2026-10-17T12:48:38.347842+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjRCMjM0RjYwQUQwMzMxNDBEAA==",
+  "choice": "967773590979",
+  "phone": "invkw_50",
+  "created_at": "2026-10-17T13:07:24.699235+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTNDMkQzMEQ5OTE3N0QyM0ExAA==",
+  "choice": "967773590979",
+  "phone": "stor_cur",
+  "created_at": "2026-10-17T13:07:35.400031+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNDJDODUxQjMxNTI1M0JGMkU1AA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T13:07:42.724406+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcxOTEyMzMzFQIAERgSQzdCRTQ2RTlBRTUyMTJEQTk3AA==",
+  "choice": "967771912333",
+  "phone": "0",
+  "created_at": "2026-10-17T13:19:05.20288+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcxOTEyMzMzFQIAERgSRkJENTU0NUQ2RDEzNTE3QkQ1AA==",
+  "choice": "967771912333",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T13:19:29.037911+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcxOTEyMzMzFQIAERgSNTg5QkQ2RTk1NkNENzhCMDNEAA==",
+  "choice": "967771912333",
+  "phone": "2",
+  "created_at": "2026-10-17T13:19:54.310403+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjk4RTFDNTA5RjFGQTU2QjM3AA==",
+  "choice": "967773590979",
+  "phone": "aq_buy",
+  "created_at": "2026-10-17T14:08:32.940655+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSMDJBM0I0MUVEM0MzREVCQjJGAA==",
+  "choice": "967777687107",
+  "phone": "pay_wallet",
+  "created_at": "2026-10-17T15:52:31.969863+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgzMDU2OTAzFQIAERgSQUJBQzM0M0RCMzcxQjEwODZFAA==",
+  "choice": "967783056903",
+  "phone": "0",
+  "created_at": "2026-10-17T18:29:27.302258+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOEU3RTExNTU3NUY5NkU3MDk5AA==",
+  "choice": "967773590979",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T20:36:11.810319+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTZFMEYwMTE0NzQ0Q0MzQUM1AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T20:39:02.619671+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQjMwN0EzMDM2QkM1NjJFMzZFAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T20:39:08.696376+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjRBNTAxRThBNjU3QzgzQUU2AA==",
+  "choice": "967773590979",
+  "phone": "invkw_50",
+  "created_at": "2026-10-17T20:39:25.363908+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQjQ2RTFFODc1REQ2MDY0NDMyAA==",
+  "choice": "967773590979",
+  "phone": "invkw_16",
+  "created_at": "2026-10-17T20:44:14.203336+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSM0JBNUFDRUQwRjQxNDdCRkY0AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T20:44:24.035572+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTI2MEQ2NUZGMUVCMTg5NUUxAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T20:44:31.143779+00:00"
+ },
+ {
+  "context_id": "test_unit_lock_999",
+  "choice": "123",
+  "phone": "test",
+  "created_at": "2026-10-17T20:51:13.71984+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgzMDU2OTAzFQIAEhggQTVCMUU1QUVCMzM0MDA1RkY5ODRBOEFCREE5MzQ0NTgA",
+  "choice": "967783056903",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:55:13.169496+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCMTNBMzUyOUE1RjVDNzM0REIwRjJGNzEwNzk5MDQA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:06.438327+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzBCODRDMkI5OUY2MkU3OEJFAA==",
+  "choice": "967773590979",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T20:56:06.53685+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxM0UxNTcxMkU1QjY3MDgyNjA2Njc5NkQwNkU0M0IA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:14.360488+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTJEMjlEOTlBQTE0RDdCNEY1AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T20:56:14.53697+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0NEU2NTc4MDM5RDVFMUY4NDM3NjFGN0RFMkRCRkQA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:21.161917+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTg4QjQzOEJCQzY5MDY1NzQ2AA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T20:56:21.247623+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0MjRFQzkxNTA5OTBDQkI5NTU1NkExNTA0QUNFRTgA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:26.582826+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxRjYyRjUwQzJGQ0Y3QTUwQzA4MjE5MzJGOUU2RjMA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:33.724855+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSM0YwMzcyNDg4ODY2MEM3MkY4AA==",
+  "choice": "967773590979",
+  "phone": "invkw_16",
+  "created_at": "2026-10-17T20:56:33.85697+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNzZEOEU0NkU2MDIzMzE2NUY0QjExNzQzNDMyNEIA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:41.954108+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTY4NzEzMjAxQzhDMzFEN0ZEAA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T20:56:42.031661+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBMkFERkFDQUQ2QjM0ODE3REI1N0U5ODRDMjI0ODMA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T20:56:47.870624+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTY0NkFGQ0RFN0QwM0ZERTUzAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T20:56:47.969308+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGQUFCOEM5NDBDMjI2MzZCM0I3QzBGMEE4QTQ3QjgA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:04:13.437514+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4QjA4RkFCMjU0RkMyMjRDRjExOTk4QkRBRTA0RjYA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:04:43.190127+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSREYxN0JFNjlFOThDODNFRDkxAA==",
+  "choice": "967773590979",
+  "phone": "aq_buy",
+  "created_at": "2026-10-17T21:04:43.305485+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCQUFFNDQ0OURBRDJDNEYzQ0EyMTg1NUIyMDE3NDMA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:04:51.915364+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NERDNjMzNUEyRURGMkYzQzYyQTZGMkY0RkQ2RjEA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:06:58.830547+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDI2RUNGOEY3RDNCMkY2NTk3AA==",
+  "choice": "967773590979",
+  "phone": "quote_start",
+  "created_at": "2026-10-17T21:06:58.928096+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBMzM3MzRBNUUwMUEyRkE3OERGQzdGQzAwRTMzQjkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:04.643895+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQkFGOEMzMkQwRUM2M0M3NDE1AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T21:07:04.740415+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyNDNGQUI3NzgzMUVGNzA1RkEzRjk1NDE0OEIwMUYA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:10.907438+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzk2RUZCNDNCMDA0REM3MjNFAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T21:07:10.99321+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxRjNDOTMxNkQ2QzY1NTEyNTgzNkRGRDRBMTY4MjkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:27.514265+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4MjJFRDkzREI2NERFRUVBOEU5QzVGMzg5MjExNUMA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:37.448167+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMzg3NUMwNEVDNTE2OUQ3QkQyAA==",
+  "choice": "967773590979",
+  "phone": "invkw_16",
+  "created_at": "2026-10-17T21:07:37.52335+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMkNENjA4OUM2MzRCNjYxNkY2RTZGNjlENzI2QjQA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:43.621599+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMDEwNzA3MEQ5NDFBOUU1OTdEAA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-17T21:07:43.756673+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0QzAwMUE3RTkxNDI0RDZBREZCQzJBMDBEM0Y5RkYA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T21:07:49.410762+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOEUzNTNEOEQ4RUJCMTNGMTUzAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-17T21:07:49.473647+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0Nzg1QjZCMEIxNzJFMEM2NkU1NUYzNUYyRjU1QTYA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T22:45:19.919099+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3RDRCQzcyQUFDQ0NGMzhDOTJBQjY3OTQxM0ZGNEEA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T22:45:41.786588+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCRjFFOTQ4QjU2MzI5RUIwOENDODJGMEU1NTMyMzIA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T22:46:04.29366+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyRUMwRTM3OTM2RDNDRTRFRkNGMTcxMzI3QjQ5MDMA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T22:46:29.650273+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2NTBGMEQxQUNFMTNGM0FCQjZBNDA2NkI2REI5ODAA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-17T22:46:30.287252+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDAyNEVCQ0JDODk1ODFFQTVBAA==",
+  "choice": "967773590979",
+  "phone": "aq_buy",
+  "created_at": "2026-10-17T22:46:04.398346+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjA0MDQ0OTVGOUU0MUUwODI2AA==",
+  "choice": "967773590979",
+  "phone": "0",
+  "created_at": "2026-10-17T22:46:29.724329+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNDNjMwQkYxOUIzMTEwMDBBNTc5MzU4NDQ3OTZCNzAA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-18T23:58:30.034725+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNENEQ4MEM3MEJCRDlEMzZEQTA2RDUyMzdERUVDMEIA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-18T23:58:50.72874+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSNTI2NzY0MDFDQkRGOUYxQzQzAA==",
+  "choice": "967772296235",
+  "phone": "quote_start",
+  "created_at": "2026-10-18T23:58:50.806962+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMwRUVDRTU0QjlDQzRFODJENkE4MzhCM0NCQzFCN0IA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-18T23:59:11.981662+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3OTQzQjE5NDNFRjQ2NEE4Qjk0QzRGOTM4MTlBNTAA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-18T23:59:15.011784+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSOTBEOEIwMzcyNEQ2N0Y4RjMzAA==",
+  "choice": "967772296235",
+  "phone": "2",
+  "created_at": "2026-10-18T23:59:15.142698+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3MUJFOEMwQUM5RDdBMjExRTFBM0Y1OTNGNjM2NEMA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T01:35:50.133426+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRkY5MEEwQ0NGODRGRjdERTg4AA==",
+  "choice": "967772296235",
+  "phone": "2",
+  "created_at": "2026-10-19T01:35:50.457195+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM5NUEzN0JERjdCQTEyNjM1RkU4OTlBNTQ1QkIxMDkA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T01:36:20.37996+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSODhDNjQyNkM0REIwOTM5Mjc4AA==",
+  "choice": "967772296235",
+  "phone": "0",
+  "created_at": "2026-10-19T01:36:20.440979+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMyNDYzMjIzN0VBMDREOEJCNEFGMEFBQUEyOTY3MDEA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T01:36:29.082778+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRDgwREE2RTUyRkQ5RDBDQkRBAA==",
+  "choice": "967772296235",
+  "phone": "quote_start",
+  "created_at": "2026-10-19T01:36:29.19106+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM5NUIxREQ5QjJCREZEMTczNzZDNkNCQ0RGMkE0MEQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T01:36:34.97157+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSMDVDMTM0QzZBMDI3NzNENEU4AA==",
+  "choice": "967772296235",
+  "phone": "1",
+  "created_at": "2026-10-19T01:36:35.030276+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMzNzQ2NTdBMEY2OEJDQ0M5MjcwNEU1QjhCRkZBQjYA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T01:37:05.172808+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3REZDRUIxMEIxMkU4QjEyNzA2N0YxQUY0MjZGMkQA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:31:38.79155+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNDhDRUZBOEI1NjNGOUQzQ0RCAA==",
+  "choice": "967773590979",
+  "phone": "quote_start",
+  "created_at": "2026-10-19T11:31:38.975001+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyRkJGNzQxREM5NUQ2MjJCRjk1MUVBNEFBMjg5NDAA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:31:51.264845+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4OTQyNjMxNEEyNzE3MkIxMjM5MjE0MEVCRDVBQkQA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:34:43.501036+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMDlFNTg0OTgwQzRFQzk5RjYyAA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-19T11:34:43.693965+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5RDBCNjFGN0NCNkYzOTUzMzZBQzY4NDg4OEE1MEIA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:38:12.023131+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNkJGM0M0MzRFQzhDRTZDODY3AA==",
+  "choice": "967773590979",
+  "phone": "2",
+  "created_at": "2026-10-19T11:38:12.198549+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwN0Q4QjhFMzVGQ0RBMkEyQjQ0QkZDMDUxNDk0NDgA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:38:22.827644+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMUI4NUNERjNBMzA1NzE0MDVDAA==",
+  "choice": "967773590979",
+  "phone": "use_last_consumption",
+  "created_at": "2026-10-19T11:38:22.959691+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBQjBFQTIzMjc2QzUyQUM3NTM3NUQ5NjRFOTY2MjkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:38:30.339113+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOEU1NDA1NTM5NEQ5MjIzNjRGAA==",
+  "choice": "967773590979",
+  "phone": "invkw_50",
+  "created_at": "2026-10-19T11:38:30.424838+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3NDU1NDUyODM1OTA2NUI5RTk2OTBCMDdEQTE2MkYA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:38:37.386793+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNDcyMjk3Q0Y5OUVEMTUyRDg2AA==",
+  "choice": "967773590979",
+  "phone": "stor_cur",
+  "created_at": "2026-10-19T11:38:37.491798+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCMTUyMzVDQzlCNTdGMzRBNTRDRDY0NkIwRUVBRTkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T11:38:44.970581+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzgxNkY5QkU0QTUxRkE2RUNEAA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-19T11:38:45.051992+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFRTZDQkZGMEIxNjQ5MkI2NzYwQTc3OUZGMTQwOTkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T12:22:52.547848+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyRTVBNjg4MUZFMTUxMjZGMDhEM0E4QkM1NDZFQTkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T12:23:01.711888+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSREE4N0Q2MEJFNTI3RDBEQ0Y5AA==",
+  "choice": "967773590979",
+  "phone": "use_last_consumption",
+  "created_at": "2026-10-19T12:23:02.031425+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4MzYwQTAyQTk5OTdDMzJFMDc2N0IzMjBGNjkzOTkA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T12:23:09.260038+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNEVGMTFCQjY2MTAwREJDM0MyAA==",
+  "choice": "967773590979",
+  "phone": "invkw_50",
+  "created_at": "2026-10-19T12:23:09.398517+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFQ0U4RjRBNDc5QjNCQjE5Qzc1QUNGMjlGMzczRUIA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T12:23:15.883135+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjI2QTE5NzRBMjBFOEY5MzQ1AA==",
+  "choice": "967773590979",
+  "phone": "stor_cur",
+  "created_at": "2026-10-19T12:23:16.02133+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzQ0RDMkY3QzJBMTBEMEVEQzQ3ODNGQzI0MjZGNDAA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T12:23:22.718755+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRUVEOUIzOTY2NzNGMzQzRDI4AA==",
+  "choice": "967773590979",
+  "phone": "1",
+  "created_at": "2026-10-19T12:23:22.854287+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM1QUJCQ0I5MEQ4OTIzODM0QzJGQzQyQjEwRDk0OTQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:04:46.858835+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRTlCRkM0OUYwNkNCOEY4OTU2AA==",
+  "choice": "967772296235",
+  "phone": "back_step",
+  "created_at": "2026-10-19T13:04:46.958639+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNDQTI0RUY2QUNENTM1OTU1QjBBRkMwRTJFMjNDMDcA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:05:24.386531+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM4RkY1RUIzQkIyRjk5QjYxNDNDNzBFMzI2MDY3RjEA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:05:49.600456+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSMUI0MUVCRDlGOUE4MkY1QjZGAA==",
+  "choice": "967772296235",
+  "phone": "browse",
+  "created_at": "2026-10-19T13:05:49.687123+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3QkQ4NjM0QTQwQ0E4N0NDQzE4QURERjMzRjdCMTEA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:06:11.13313+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSQTlGMjU1N0Q5NjdDQjU3RDdCAA==",
+  "choice": "967772296235",
+  "phone": "resinv_8",
+  "created_at": "2026-10-19T13:06:11.218197+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNDNjgxNTQ3NTI3RTFEQTUxQ0UyMDYyOEJBRUIyQ0IA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:06:53.646782+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNEQkY0MDUzODdBQTkyMzJDRjgwOUE2RERDQkZGNUQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:07:52.957482+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSNUFDMjE4QUJFMEM1MjI2RTJDAA==",
+  "choice": "967772296235",
+  "phone": "sys_r10",
+  "created_at": "2026-10-19T13:07:53.056762+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNCRDBDMTM4M0FGNEIwNUNEQTFGMjVFRjc5RTBBOEQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:08:03.570451+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRDY3MjU3NUZGNzNBRTA3NTQxAA==",
+  "choice": "967772296235",
+  "phone": "1",
+  "created_at": "2026-10-19T13:08:03.640479+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMxRDc3ODgzRTc4RERDQ0I1OTE2RERDMUE3OUVCOUQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:09:54.476161+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNCREUwNjhCNjVGOEIyQTA4NTJBNTAxRjhBQURERjQA",
+  "choice": "967772296235",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:10:47.828191+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUMzNDc3OUZCMDU5NTBGMTg5MzVDQjhERTg1QUQyMUMA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:12:51.182542+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUMyN0YzNkVCNTZBN0U0QkEzM0E4NUQ1QThFMzE1QTcA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:12:59.575611+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSMkY3RTFCQzgwN0U4MTg1MDBFAA==",
+  "choice": "967733579946",
+  "phone": "quote_start",
+  "created_at": "2026-10-19T13:12:59.695077+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUM1QTk1MTA2Njg4MTRENjBCQUIzNDU0NTg2M0UxRUQA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:13:11.749371+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSMzRFNTE1MDUxNUU2Qzc1NDlFAA==",
+  "choice": "967733579946",
+  "phone": "2",
+  "created_at": "2026-10-19T13:13:11.917723+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUM4QTE0QzMwQTA5QjBEMkM0RjY1QkExQTcxQTFDNjIA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:13:18.695451+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSMDY1OTU4NDIwMjQzRjAxMDJGAA==",
+  "choice": "967733579946",
+  "phone": "2",
+  "created_at": "2026-10-19T13:13:18.781531+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNEREREODg2RDFDOTRDOTM0QzY3QTcwNDM1OUMwNzEA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:14:14.848326+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNCNkRBRUE3MTc0QUUyRjBGOEZFQUNBM0YzOUNEMkIA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:14:37.397174+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSMkUzOUY0MjdDRjI4NkEzRDIwAA==",
+  "choice": "967733579946",
+  "phone": "invkw_8",
+  "created_at": "2026-10-19T13:14:37.532023+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNGOUU3QkRGMUZDMDQ2MzFGN0U0RjQzMjhBMzY3NDIA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:15:36.747621+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNFRUEyQjZCNzg2QUY2NkIzMjdDQTZCQzEwRUE5NUMA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:16:19.372172+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSOTIyQjJFNjEyQjQ1N0M5MTJDAA==",
+  "choice": "967733579946",
+  "phone": "back_step",
+  "created_at": "2026-10-19T13:16:19.465216+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNGOTA0REFBM0FGRjBBQzgyRjMzREQ3NjdGMzBDNDUA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:16:32.67917+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSMjNFMUU2RTgwQUM5MTIxOTIzAA==",
+  "choice": "967733579946",
+  "phone": "1",
+  "created_at": "2026-10-19T13:16:32.766947+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUMyMTlEQ0NDQjFBQ0U1OUFDQTdCOUIxN0VFMDk5ODEA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:16:45.623071+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzMzNTc5OTQ2FQIAEhggQUNGMDJDNjIxN0E2NTU5RjZCQ0U2NTE0MzBDQUFCMUQA",
+  "choice": "967733579946",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:17:12.702273+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzMzNTc5OTQ2FQIAERgSOTk2NkU3QTMwODFERDk3RTFDAA==",
+  "choice": "967733579946",
+  "phone": "1",
+  "created_at": "2026-10-19T13:17:12.793511+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2RDNDNEQ3NUIwQzZDRjVFNEIwNjYyMjU0NTdDMEIA",
+  "choice": "967773590979",
+  "phone": "inbound",
+  "created_at": "2026-10-19T13:30:18.7771+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNCQzg5QUJFRkY3RjFBRDcyQTQyQTEyRUNDMUYyQjgA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:32:29.960982+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVEOEEwMEZCQUYyMTI3MkYxMzQ4NEI1QTBDRTdFOUMA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:00:28.146003+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSNEI4OTVCNkVDMjFCNzU3QkFDAA==",
+  "choice": "resinv_1.6",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:00:28.245577+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzgwNDgwMTQyFQIAERgSMjk4RTJGRDM4MjZERTM1OTc2AA==",
+  "choice": "aftersales_support",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:32:47.245542+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNFNDYxRTU2NDBFMkM2NjA3RkJCMTUyQUJERTJFOTcA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:34:33.383356+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNDNkM1QjEwMzc4ODRCQ0QyMDBEMTNENEM4REUzMTEA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:34:48.335931+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkFEQTRGNjBFODJEMkExQjkwNjAA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:49:38.260697+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUMyQ0Q0MzdGQjFBMUE4MUJEMEEzMkQwNzEwMDdBRDkA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:35:51.092201+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUM2RURCQTA2M0JFQzNBNDQ5M0JBMzRBQ0VCQTk1REUA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:36:00.040035+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUM3OTk1Rjk3NDUyQkMzMDQ5MTg3RjVBQTA2OEYwMEQA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:36:32.669099+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSODQ0MkQyRjAwNDFGMDY2NDE0AA==",
+  "choice": "resinv_8",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T18:49:38.686189+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgwNDgwMTQyFQIAEhggQUNBN0JENDExRjUzMjM3N0RFQjFCOTMxMTgwOERGNEUA",
+  "choice": "inbound",
+  "phone": "967780480142",
+  "created_at": "2026-10-19T19:36:36.695448+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCNjkzQjc1NkExNUUxNUJENThCNEJFM0Y3RUY2NEQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:21:53.13876+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5NjQzM0NERUI5MEFDRUU1RjdENDA3QzMxRTc0MDcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:05.238395+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTgxRjUyNDI1MTBBOEIyNEM2AA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-19T21:22:08.144571+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjVGOEJCRUUxNDJCRjIzRjI0AA==",
+  "choice": "restie_r6",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:33.432305+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUNFOTdGRDRBOTRENTUxQzJFMTdCNDg4QURCNTU3MjkA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:51.41373+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSQjg4NUMxRkMxM0VENTBERENFAA==",
+  "choice": "2",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:51.616186+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMxMDAzRUI3QkUwNUEwNjY0RjVCODY2MDQ1RERGREIA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:56:10.712195+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM3RUYxNkJDQzdCMjcyRjQ0OUZCOEE2OERFODY0RUMA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:56:37.738919+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMUJCNzQ4OUQ5NzkwODIwMjYwAA==",
+  "choice": "invkw_80",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:56:37.848983+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE4NDBBNUNCQTk2NEMxRjRFQzkA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T17:37:36.812214+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQ0I2NURBRjVDRUIzNzRDODQzAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:44.349522+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBNzdBOTlFODNBNEQ0QzQ5RjQwODlGMkFCRUQ3RTYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:50.276013+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjg1MDRCRkM3M0ZDRDkyQTNBAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:06.003388+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNkJFODFGNTg4RkM4QUMwQTcyAA==",
+  "choice": "restie_r15",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:44.817091+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNDQUE1MjcyMEVFOEQ5MEIzRDY5OTdCN0E5NDgwRjUA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-26T21:01:16.641494+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUNDMkFGRkMwODdDOTM5REQzNUFFMkQyOERBNjlFNDkA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:03:16.433236+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVDMEJDRDkyNEE4RDFEMDBDMkQxQTFDOTA2RjRGRDIA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:01:36.274934+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUNEMjM0OTIyOUE2MTgwQTg1ODkwNzgwRjNEOUNFMTEA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:59.86753+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMkVENzBBOTA3ODQwNzFDQjdEAA==",
+  "choice": "2",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:55:59.962833+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSMjk0MDQ3OEJCMjg2MTQwMzkwAA==",
+  "choice": "sys_r1",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:01:36.363073+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE2QjRFMkJBNzE4Mjk3RTVEOEQA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T17:39:11.602041+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM1MEI2OEQ1RjM5MjY4NDVCRTZCMTc2MjcyNUE2NUIA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:56:59.791831+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSNjFBMDY5MzcwNUU1NURGN0VDAA==",
+  "choice": "stor_cur",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:56:59.882191+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMzOUFDN0E1N0EzMEFFNTRDQjgwOTY5QjUxM0EyQUYA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:59:11.202395+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSREY0QjNFODJCQ0UwM0EyQjgxAA==",
+  "choice": "1",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T22:59:11.337514+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUMyRTNENERGOUQ1MTE2MzkzREE1OEUwMUVFMTNENDcA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:01:42.902215+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNERURDRUQyOThCNjczRjI3RTFBNkVFNkY2NzRFQjEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-25T11:19:31.634874+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM5NjY5Q0U4RkZFRUREQTREODlDRTQ3QjBDOEUyREMA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:04.425021+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjU5MkU2MEQ3MDYyODNFNzhCAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:05.348776+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSRUJCMDcyQ0Q4MDM0NTVDNjFBAA==",
+  "choice": "back_step",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:04.539433+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM3N0I3RkU3MTgzQkQ0OERCQjcyNjI2OTVCQ0UxMEMA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:12.569374+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NTNFQzk4NzAwRjg4RUMyQzFFMUYwNzFFREEyQ0EA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:17.299079+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMzVCNEIyMDcyNEZENkQxOTU0AA==",
+  "choice": "2",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:12.667933+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUNFNUFGN0Y5Mjg1MEYxNDgxQzRDMzU1MDA4RUJFOUEA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:23.734546+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM0MTI3NUUyQTUxRENCNDRFMkE1NTEzRTVBMTg4ODMA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:35.817672+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMzYwNkNBODBEMDk5MDIzNzNBAA==",
+  "choice": "invkw_50",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:35.903701+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM0MUZDQzc3MEQzNTFBQTA0MDg5NUI3MDJEMDgwODEA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:42.885869+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSNkE2QjgyREREMTk0REFCNUE2AA==",
+  "choice": "stor_cab",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:43.006003+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMDMwRUJEQjRDRDczREMxMUJFAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:58.427527+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM4RTdFMjJGNUZDNTg2NUM4ODJDMzJBOTEzNTNDMkIA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:52.930148+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMzNDNzJGMUI4QzEyQTZFMEE1AA==",
+  "choice": "cab_261",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:02:53.024577+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyNjg0Mzc1FQIAEhggQUM1ODBDMUJGOTM0MzZDNzU5OTM2RDMzNkQzQUYyMjcA",
+  "choice": "inbound",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:03:18.341895+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRDVBRjYwRTM2OTQ5OUM4ODFCAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:12.436494+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyNjg0Mzc1FQIAERgSMzMxQjcyOENGRDZFMDcyODREAA==",
+  "choice": "1",
+  "phone": "967772684375",
+  "created_at": "2026-10-21T23:03:18.460554+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5NjhGNTlCQjc1NkZEQkYzMDY1NURENEUyQjY3NTMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T07:05:29.85383+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNkU3RDM3ODgwMkYzRTYzNzJDAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T07:05:30.21933+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUNERDIyQ0Y2NjIyQjEwREI5RDRCQTg2NDE3OTYwOEIA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:19.167483+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc0OTk1NTE2FQIAERgSRDZDQUE3NkJDMDQ4RUUyRjU5AA==",
+  "choice": "0",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:19.414458+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUNEMjE1MjY3QTAyMjIyNTQ3NDc1REE3OTE2MEE0RTAA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:33.123831+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNCODBGMThGODE3M0FFMzVDOTNFQkQzRjhDMTE5NzMA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:27.13573+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc0OTk1NTE2FQIAERgSNzY2MkVEQjJBNTA1MEI4QjdBAA==",
+  "choice": "quote_start",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:33.218805+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUM2NDc0RTExRTJBMEU1Q0Y3MTZEMTM4MUIzQzRBNUYA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:40.257234+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSMjE2RjI3Q0RGMkI2OTUzMTdBAA==",
+  "choice": "renewable_solutions",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:27.649115+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUM1QjM0ODA3QkMyNEEyNzhBQ0E5MjYzODMyQzc5NkQA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:43.939784+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc0OTk1NTE2FQIAERgSRDE2RDRBQjNDNTlGRDk5N0RDAA==",
+  "choice": "1",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:24:44.065215+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM5RDM3QTAxQ0U4RDA4NEEyOTRFMjU4NEUzNTRCRDYA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:38.847495+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUMzRDlGOTA0OTkxNDBCMDg3NkU0NEU4MjYyM0Y4OEMA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:25:33.826342+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSREY5RkFCMTVDNzJCODczNURFAA==",
+  "choice": "team",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:38.986738+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc0OTk1NTE2FQIAERgSOTk5MjYwOTIzQUY3MjgyMzhBAA==",
+  "choice": "browse",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:25:33.925369+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUM0NUVGQkZCQkZGNkI0NzgyRDI1NkZDMEM5RjBENUQA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:26:05.34777+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM2Mzg4OEU1QUYxQTlGN0MzNEE2RkU5NUIwODNDMjEA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:57.365223+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0OTk1NTE2FQIAEhggQUMyQkMwNjBCRUU3QkJFQUZDQ0YzN0ZFOEM2QkFBMTQA",
+  "choice": "inbound",
+  "phone": "967774995516",
+  "created_at": "2026-10-22T16:26:35.549544+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNFNDJBNjMwRTU1QkRCM0M0RDQ4MjU2RDhBQkFCNDEA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:01:55.110742+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSNUVCQ0E4QjZBMTZBODkwRTREAA==",
+  "choice": "aq_mod",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:01:55.523007+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM0MEY1Qjg2NUI2OUQwOEE4NkUzRTc2REExREUyOEYA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:02:17.77269+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSMDkyNzU2OEFBQTUzMDY3OURDAA==",
+  "choice": "back_step",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:33:56.54861+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSRDEzNDY1RkM3ODJFNzMwN0M2AA==",
+  "choice": "qm_s_bat_1",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:02:18.176871+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM3RkM3OTNBRTM4NzRGRjRENEM2MDZFMkQ3REU0QjUA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:02:27.650226+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSRjhBMzQwQUY4OEY4QTA3OTk5AA==",
+  "choice": "quote_start",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T17:39:11.712945+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyOEI3OEE4Qjk1Qzc5MTM1NzQ3N0NFNUFCODUzMUIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T15:45:37.805359+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NTIwRENFQzE2NjE5NUFBNTk0QUI2MUI0QkQ5MkIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:33.303584+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEOUJBMkUxNzM4MzA3NzU2NTBGNDI2NDlEQ0UyNUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:43.745565+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1RkY5Q0VFRTEzNjJGRjhENTRGNjEzRDA0RkM1MUYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:12.290193+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyQTQ1QjEzRUE1OEMyQkIxREVFNUVBMTkzN0ZFOEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:20.064375+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNBQzU5Qjc4RUExRTBBNEU2NTlGOTczRjI0OUIwMDUA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:32:11.39599+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM4MjdFOTI1RDU0MUM0OUUwRDg5MTQ5RjZERDZCNTEA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:33:27.586184+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNDQkYzNTIxNDkyNjFFOUJGQzgwNzZBQzA1ODE0OEEA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:33:41.335778+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSMjRGOUQ0MzZFQjVDRDBEOThFAA==",
+  "choice": "back_step",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:33:41.440885+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNFOEYxRkE5RTY2MUYwRTFGNjQ3NzYwM0VFN0FDNDAA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:33:56.421487+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUMxRDFCQkExRkY1RUE0QTk2MkYwQUIyMDc3RTc0ODQA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:07.455192+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSNERBNzJFMTY3N0Y1NDEwMUZFAA==",
+  "choice": "quote_start",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:07.548207+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM0Mjc4MjczQzJBQkUxOEY3OEVBMjVENUE3NTYwNUQA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:16.008263+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSNTUwRDc4RTY5RjI1MDIzQzQzAA==",
+  "choice": "1",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:16.113325+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUM4NUUyMDVFQzMxM0ExNDUwN0E2REEzRUM1RkNBMjQA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:35.494431+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSOTFDOEQ2RjNCMDYzRDY1RTdDAA==",
+  "choice": "browse",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:35.617183+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTg1NjkzFQIAEhggQUNDRDkxMTJFRjdEQjFBMjAxOTFGQjA4RkMyNkJEQ0YA",
+  "choice": "inbound",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:51.555188+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTg1NjkzFQIAERgSQTAxMUU2QTA3NzhDODU1QTZBAA==",
+  "choice": "resinv_1.6",
+  "phone": "967776585693",
+  "created_at": "2026-10-26T22:34:51.754308+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUMwNjJERkU2NDc1OTk1REY4RUFCMzJFOUVDMUFBMEEA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:03:44.765188+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSNTY2REI2NTA5NEFDMkJBQ0JBAA==",
+  "choice": "restie_r4",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:03:44.891298+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUM4NThDRDVEQjU2ODRERkIzNTUxQTE2QkU2NjMzMUYA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:03:53.935423+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSN0UwQjUwNEU5NEREM0U3NzBFAA==",
+  "choice": "1",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:03:54.050744+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUNDQTlBRDY1NUZBREVFQUY4QkU4MEZCRTgxQTVGOTIA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:04:44.087688+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSNTU1N0QyMjZERUUxMTBCRkIyAA==",
+  "choice": "buy_invoice",
+  "phone": "967777687107",
+  "created_at": "2026-10-28T16:04:44.249605+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcxOTEyMzMzFQIAEhggQUMzMjlBQzI3MDNDNzM5RUI2QUJGQTQwMEU0NTM1OUQA",
+  "choice": "inbound",
+  "phone": "967771912333",
+  "created_at": "2026-10-30T17:57:21.869397+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSRENBMTQ0N0QwMjcwODA4MzFGAA==",
+  "choice": "qm_n_bat_1",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:02:28.093725+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNCMkRFM0QxMzc0MzQ1RkUyREUzM0U3MUNGNzg1MDkA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:03:02.448662+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTU2M0VDNzE1OEI1NkE0QjA0OUE4QTQxQUNBRjEyRTYA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:02:20.201594+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSNzhCMTNCMkYwMEMwQTExQTkxAA==",
+  "choice": "qm_issue",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:03:02.580838+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSQTAxNkVFNzExNUREMDlDQjIzAA==",
+  "choice": "back_step",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:02:20.300415+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNGM0ZERTY3RERFNDRGNzBENkU1NEI2ODIwMjM2MTAA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:03:51.378576+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM5RDJEOTQwNTJGQjBEQUYwMDAyOUE5MTAwRkZCQkUA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:10.948561+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcwMDAzMDc1FQIAEhggQTVCMEEzQ0NCQkFCRjE3OTdBNDhBNDNDQzNCQ0E2ODcA",
+  "choice": "inbound",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:02:31.92172+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNBNERFQjlBN0VGN0MwREM4QzJGRjlGRkU4NDdGMkYA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:19.635477+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcwMDAzMDc1FQIAERgSMEZGMUM1RTBENDQ0NDI1NzBCAA==",
+  "choice": "browse",
+  "phone": "967770003075",
+  "created_at": "2026-10-22T23:02:32.041477+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSRTg3QTY1OEU0QUNBMzY3NkEyAA==",
+  "choice": "back_step",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:19.786449+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM3MjQ5M0IyMkQ2NTJENDg3RkY4RUM5RDkzQjVDMTEA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:30.244308+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQzUzQ0U2NDUzM0ZCODI0MTk1AA==",
+  "choice": "back_step",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:30.419985+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUM0RDY3M0E2QzY0REIxM0ZCOUZFNTRCOUJCRThGN0EA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:50.361904+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE4RDI4N0U5MzE1RkQ5MUYzMkYA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-10-23T17:39:14.575528+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSOTMzMDVBMkQyMzJGOUZDMzhGAA==",
+  "choice": "1",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:50.472758+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNDQTdEQzRDMThGODcwMDY5RTAwNUZBMUFENjcxODIA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:59.683346+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzk3N0VBRDI5MkIzQTg4M0UyAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T15:45:37.978669+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2MDAwMTI2FQIAERgSQjI5NEM3RDdEQUYwQzhFODhGAA==",
+  "choice": "browse",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:05:59.839033+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2MDAwMTI2FQIAEhggQUNDREU1MkU0MEZCMkNEMjQzQTI3NTkyQTk1RDcwQTQA",
+  "choice": "inbound",
+  "phone": "967776000126",
+  "created_at": "2026-10-22T19:06:49.236983+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDMjA2NDIwMEFCMEFDRDJEQkQ4NjRCMDlERkM5QjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T15:45:56.699014+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1Nzg2M0FFMjE4OTMyMTg4OTg5QUQ5MkZEMzQwN0EA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:23.249792+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTlCNkREODEzMDI4OTlFREE0AA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:23.659917+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4N0ExODE5RDc0MkU5N0E4NEQxNDg3OTU5Q0YwRTgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:33.239556+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDOEQzN0MwQjE1NDkyRTk4QjMzOTBFQjg0ODcyQjkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:09:58.286828+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjM0Q0VEQkE3NUVFMENFRTFDAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:33.349195+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBRjNCNjFBNEMwMkZENDJFNzkzQjdBM0MwREUwNDIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:41.328252+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTQ4ODU1QkY0NjIyMzZFNDlBAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:41.469698+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDMTgxMTc2NzQ2OUZBQkJEOTZGNkQxMjA0NjE1OEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:05.889748+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDRTU1NjlDRThBOUE4RUZFQjAxOEIxMTFGODhFMEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-22T20:01:48.09352+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUM5MDdBQzJFNENCNzc1RDNDRDA0MDgzNjJEN0RFRTYA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:30:49.782233+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSMkRENjdDRUIxNDk1ODk0NUIwAA==",
+  "choice": "aq_mod",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:30:49.964959+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUNEMzRDQjQwQ0QyQUU4NEVDNUIwNTg5RjU5NEU5RDAA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:05.114937+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzNjM1MzlFNDJERDQxNzE5ODRDNzMyQTdCRTkxMDcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-10-26T17:10:44.648191+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSMjE2OThBOUUzNkM2MTEwNjFCAA==",
+  "choice": "qm_s_pv_24",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:05.226666+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUMyMzk1OTVENjhEQTAzQkM2OTMyQUJDOERFMERFMDEA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:10.033197+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSNDdDRTFFMjc4NjZFN0FFNjNFAA==",
+  "choice": "qm_s_inv_15",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:10.15371+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUMzM0RDQUQ4OUJEQzM0MUUyNzI3MzJFMUI3RkMwN0MA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:16.74637+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSODM0RjJGNDY5MzEyNzU5NzY2AA==",
+  "choice": "qm_n_pv_7",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:16.922209+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc3Njg3MTA3FQIAEhggQUNDM0NDMTQzQjRBNUM0ODFFQThDMzNDNjE1NUFGMEEA",
+  "choice": "inbound",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:23.61599+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc3Njg3MTA3FQIAERgSRUIyNTdCMEQyQTZCMzkyNDk1AA==",
+  "choice": "qm_n_inv_2",
+  "phone": "967777687107",
+  "created_at": "2026-10-22T22:31:23.779415+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzgzMDU2OTAzFQIAEhggQTU1MDU1QjBCRkY5NzdGNjZFQUM4RjE1NkM2OTc0NTgA",
+  "choice": "inbound",
+  "phone": "967783056903",
+  "created_at": "2026-10-28T20:40:05.046363+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNFNzkwNDIzNjgwMTI4QjI5OUE1NTBFREEwNkMzQjQA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:34:22.098629+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNCMzc4QjA0QjRCRUE5MkQ0MEYzODkwRTBDMDJERkEA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:34:53.825398+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMzQ0RDRTRGNjFGMjIwMUEwNTE4MDY0NEM3RTEzNjgA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:35:04.208926+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSNTBFRUVDREU0MEZCMTg2NjBFAA==",
+  "choice": "quote_start",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:35:04.558311+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3N0RFOTYyNjBDQTc1NjI3MTFBNkFFRUUzOTM4NEEA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:35:12.943356+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSQUQxREFCMDUyRjA2RUI5RDU5AA==",
+  "choice": "1",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:35:13.283844+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3NkI5MkVENDFBRjU3OUQ3RDZGREJGREUxQzhDRTUA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:36:35.021493+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3M0MwMDg0MTdFOThERTZDMjAwNEYwMDZBMjJFNjUA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:37:05.911235+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSQzg4MzhFQzk4MTMwQjQ1RDIxAA==",
+  "choice": "dn_70",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:37:06.248307+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM0NDE1RDZDMzU4QTE0QkQ1Q0QzMzIwNzZCRDNFM0QA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:37:48.863129+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSODRGMEI3QkM5NzM3OTZBNDhCAA==",
+  "choice": "1",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:37:49.240033+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM4MzU3QUU2NzM2NzY0RjE1MTZBOTk5OTc4N0M4NDYA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:38:18.686413+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMzMkU5Njk1NzNBRjc4Q0U3MUI0MUJCOTNCOTBFNzMA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:38:40.949655+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRDZGRTBGMjlENkEwN0I1RkM2AA==",
+  "choice": "aq_mod",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:38:41.297937+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM3QUI1MzBDQzExQzc5QUE0QjUyOTM3OTM3ODQ5OEYA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:38:54.253199+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSMUI2NTVEM0NFQjkwN0RENjVGAA==",
+  "choice": "qm_cat_pv",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:38:54.642546+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNCNDgzRTM4NkI3QTA1MTdDRTk3MzMwOUQwNDkwRjQA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:39:05.057949+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSNzk3OEUzRjVBQTlBM0E1RjUyAA==",
+  "choice": "qm_s_pv_23",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:39:05.443204+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUMzNkFBQzQ4NEIyNUIyM0M4N0RCNDFENjU1RUU0MDIA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:39:55.672299+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNFQUE3Q0IwMDExNTZBRjA3RjkyNzY1M0YyRjY5OTEA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:39:58.482783+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSMzQ1NThGNDkyQjBBRTkyODgyAA==",
+  "choice": "qm_n_pv_4",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:39:58.848985+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUM1MDE2NzJEODc1NjBFNjVGNUNGQkU1Q0ZFQjMzM0MA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:40:29.194434+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzcyMjk2MjM1FQIAERgSRTkxNjM5NEI1QUEzOEI5Q0NDAA==",
+  "choice": "qm_cat_bat",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:40:29.537647+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzcyMjk2MjM1FQIAEhggQUNENEZFNjlFN0Q0MTQ0MTQ2REYxNzJEM0ZCNUE1MDYA",
+  "choice": "inbound",
+  "phone": "967772296235",
+  "created_at": "2026-11-17T20:57:11.752607+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyQTMwNTU4OTQ2QjFCOEJBNDEzOTY3QjdFMkIwNUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:07.242748+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFM0Q2Mjc4NzcxQ0ExQjEyRUFERDJCRTgwRjFGMTEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:21.799453+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjkzNTEyMDUzM0EyMDQzN0YzAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:23.082338+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDOTJDQzgwMEVBMTE3QjEyRkExQzY5NzNDNzVCMUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:33.833845+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzA1MjMzNDA0MTA3QTc3M0RCAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:34.173056+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2RkQ0REM3ODg5RUU5ODM1MEY3NzlBODY5QTk5QjQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:47.606966+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMzgzOEU0QUU2OTYyRjczMkVDAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:47.951323+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyQjM0MjkwMUMzQjZGMjcwRjczQkY3ODQ5NEZDQkIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:18:58.751142+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNENDc1OTYxQUMxNDg5RTYxNjNCNDk0RUY2NDJCRDkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:07.553355+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSM0YxOUNENzIwREVFQkQ1Njg2AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:07.877758+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCNEQwREUwQTE1MThBN0RDNkVFOUUyRUJEQzQ1QzgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:18.521537+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjc5MUJGRjFGNzA3NDlGQ0U2AA==",
+  "choice": "sz_pick",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:18.848963+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCQUI1QTQ3NTIyREY4Mjg5QTk5OTY0RDY4MkRFQjkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:39.37805+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMEIyQzI1MzNGNTY1NjBDOUIyAA==",
+  "choice": "szinv_INV_DEYE_50K_3P_HV",
+  "phone": "967773590979",
+  "created_at": "2026-11-18T00:19:39.705522+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzg1MTYwNDMyFQIAEhggQTVBMDJFRTQxRDM3MjcxM0I0QTkxNzYwRjQ3OUUwMTUA",
+  "choice": "inbound",
+  "phone": "967785160432",
+  "created_at": "2026-11-18T16:18:14.927079+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzg1MTYwNDMyFQIAEhggQTU5N0U1MkJDOTcxOTkyNUQ1RjA0N0NCQkU5QTJDMTMA",
+  "choice": "inbound",
+  "phone": "967785160432",
+  "created_at": "2026-11-18T16:21:58.377923+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzg1MTYwNDMyFQIAEhggQTU5QjAzQUU3NjNCQjE1OTdGMTRGMjE1M0NEMzA0OTUA",
+  "choice": "inbound",
+  "phone": "967785160432",
+  "created_at": "2026-11-18T16:25:21.528257+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzg1MTYwNDMyFQIAEhggQTVEOEY0MUI3NzlBQzU1NzRDQkU0OUQ0MUExOTQ4RjMA",
+  "choice": "inbound",
+  "phone": "967785160432",
+  "created_at": "2026-11-18T16:25:51.677126+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDM0IwQjc3NzE5OTUxRTkyOTRCRTRFRjNDODI2N0MA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T13:42:02.016967+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBQTdCMjY4MTE4QUEwQUZBMDU1MzlCNDMyNDU1QkYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T13:48:54.465647+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFQkE1RkRENDU1QjcxQkI1MzA0RDExMkE3NDBFOUIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T13:49:23.661396+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMEVEQzBDMjY2MzUwQzJDMkExNzNGNTk0RjIxNkUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T13:57:19.039691+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNUJEN0IyN0FBQ0Y5NDBENzMwAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T13:57:19.402864+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNkJBMjgxQkJBMjZCMEIwQkIwNzgzMDc4NEQ2RTkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:07:21.971965+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzRTI0OEE3QTg1RTZGMTlGNDYwRTZFM0UyMkQxQjgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:07:35.661747+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSREMzN0I4NTU3QzAyRUY0NEM5AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:07:37.122041+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NUM1NTJBNEJFOTA1RUEwN0Q4RkE1MDdFNEEzQzEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:07:49.412061+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzc4NzY5MTk0MkJDN0MyMEVEAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:07:49.748671+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDREQyRUM4NUI4RTEwNkIzOTJEQzYwM0NFNTc3NjAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:08:16.934142+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEMjI2RjFBQjA0RDEyMEM3RjM0RUNDRDFCODMwMjIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:08:51.570475+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMEZDOUJBREU1OTg1OTMxMzVBAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:08:51.904995+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNERDdEQkY0QjExNUY3ODBDRjgzQjVBQzlGODA5RkMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:20:41.496321+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxMTVFQ0U3RDM4MjY1QTQ1ODRDNTM3NjY3MTU1NjQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:20:51.618857+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTdCM0Q0RDM0NDI4MkQzNjE3AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:20:51.940402+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFNEVDMTRFRDkwOUY5REYwODhENTgyQTY3MTY3QTgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:01.912026+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOUQ3MUI1QzIyMjI3MDNEMjlBAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:02.237573+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEQTZEQ0ZBQ0I4MkE0QTU0QkJCQ0VDNkIzQURGMzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:14.717458+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwQjIwQ0VFNDU2QzkxOEVENTZEMjk4NDdEOEVEMzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:23.020598+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTcxRDAxMjc5NTlDREE3QTA5AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:23.336784+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNzU3NEI2ODRDMTVFMzIyMzg4NkM1MDY0QjI3QkEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:32.412494+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRThFQ0YyMzBERkFGNUIwMzlDAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:21:32.744537+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4REI5QkNEMDM5RDFDRTNBMDQzQkQxODlFREYxMzYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:26:27.172274+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4RkU3NjEyODVCODlBN0EyRkM4NEEzNTk1M0M1N0EA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:26:39.63391+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjVGM0ZGMDQzQkU5RTE5RUNBAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:26:39.965046+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3RkU0REM2NUJEQTBFMEQ2Q0Y2QkE4NENFOTU5MTkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:26:55.620327+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSM0I5NUE0QTNGMzkyOTI2MTVDAA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:26:55.939865+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDQTUxODM5NDRGOUUyQUQ5MDJDRTRDMTAwNDIzMjgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:04.489984+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzBFMEI5MjUxNUM2NkVERUU1AA==",
+  "choice": "2",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:04.818459+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NUUyQ0M5MENBQjNCRjlBNzY4RUU2M0NENkIzMUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:11.15197+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMUEzM0UzODM2ODA3OTQzQjUxNEFGRTZGMUU0MjMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:21.506067+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjQyQjcyQjVEMUExQzJDMjFFAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:21.862052+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyQTNBOEFDOTJGOEI0QkUwREM0NTA5NjM5NDg5OTAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:35.097343+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMzNFOUNEMkNBNzA2QzI5MTc0AA==",
+  "choice": "sz_pick",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:35.457081+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3QzRDNzVFNTVCMTc3NEZCOTQzQTBDNjJGNzZENkUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:50.042203+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTcyRTZEMjAxRTMxMTA4ODg2AA==",
+  "choice": "szinv_INV_SOLIS_125K_3P_HV",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:27:50.381438+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxQkY5MUEyRDdDNkU4MDIwMUUwQjVFREM0Q0JFRTkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:28:07.63874+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNEE4REUzRDM1NTc3OEIzQTYxAA==",
+  "choice": "stor_m1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:28:08.01042+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDNTRENEJERUYxRDk4MzY3QzJCNDI1NkI3QkQ0OTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:28:20.740185+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRjJFRjAyMDI2RjQ0QTExMzY4AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:28:21.076685+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwM0QzRjM0OUM3NTJBRDgwNUM4NEM5NzgwMDA4MDkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:41:32.643323+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxQTY0M0I4NzBDOTExMzRENUI3ODQyMzEzRTEyODIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:41:46.371382+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEMDQ2Qjk4OEM0NTRBODY1MzJFM0Y0MERCRTMyMEMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:41:55.200413+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1M0FBMjRGRDMwMzAwNkQwNjgxNjQ0NDNCODQ2RkQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:42:14.738976+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjAyRjQ5RUM0NTlBMDM4RkNCAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:41:46.692658+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTZFNzExRTFDMDBCMzQ2NzE0AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T15:41:55.543503+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCOEYyRkM4RTM4QTY5QkE1MjlDMzI1REQ0MkNCQ0UA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-19T17:00:33.260479+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0FGQUI4MTIxODY2QzU2MDYwRDUA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:29:46.213419+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSMzlDOTAwMjhBQjNFMUY0MTEwAA==",
+  "choice": "back_step",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:29:47.47672+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0E5Rjc1NjNBMkQ5MDVBM0NBREMA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:30:03.271037+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSQUY0MDcxN0M4QjFFRkYxQzEzAA==",
+  "choice": "back_step",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:30:03.626445+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0FBQTYyMjdBRURDQkEyNEI0M0IA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:30:16.017741+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSNjk0RkRDQjJBMTA5QjRBNjY5AA==",
+  "choice": "1",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:30:16.368376+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0E4N0JCQUFFNzhEM0NERDUzRjAA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:30:54.478352+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0E3OUM0OTA5Q0Q0NUFEN0M1NDMA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:31:22.222866+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0EzRjM3OTkzNzM3NENFNDg2OEQA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:32:01.472329+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSMUEwMjM3RUJDNzQ5QTIzRDk5AA==",
+  "choice": "dn_50",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:32:01.827524+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0E5QjM3ODEzNkJBRTRDM0NENTUA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:32:24.299764+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSMTZEMTA2RkVENzgwQjIyNkU1AA==",
+  "choice": "resbat_uf",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:32:24.622397+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0FFNUY2REUzMTI5RUREREEyRTQA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:33:04.888737+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSREM5REU5NjNCRTZDMDg4RDBDAA==",
+  "choice": "1",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:33:05.243364+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0EwNzE4QzAyNTcyQTZCNEQ2RDkA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:34:26.530152+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSOUNFQUY0RkUwNjE0QUFCMjE0AA==",
+  "choice": "aq_mod",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:34:26.910085+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc2NTAxNTAxFQIAEhgUM0EwRjFERkYxRUZDNTg4NDRBMkYA",
+  "choice": "inbound",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:34:44.737108+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc2NTAxNTAxFQIAERgSRDAxNTZBRDIxNjVBNkY2RDRBAA==",
+  "choice": "qm_cat_pv",
+  "phone": "967776501501",
+  "created_at": "2026-11-19T18:34:45.073591+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0NDE0MjE2FQIAEhgUMkFEMzY0Rjc1MjNCOEE4Q0FFNzAA",
+  "choice": "inbound",
+  "phone": "967774414216",
+  "created_at": "2026-11-20T13:58:02.767743+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE4RkREM0QzQUZGQjU3NkIyMzEA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T13:58:14.468376+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0NDE0MjE2FQIAEhgUMkEyRDgzNjEwRkI4MDMyNTAyOTIA",
+  "choice": "inbound",
+  "phone": "967774414216",
+  "created_at": "2026-11-20T13:59:55.319897+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc0NDE0MjE2FQIAERgSNUI3MERERUYyQzAzMTAxRTAwAA==",
+  "choice": "aftersales_support",
+  "phone": "967774414216",
+  "created_at": "2026-11-20T13:59:55.690985+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc0NDE0MjE2FQIAEhgUMkEyQzk0OTMyRUI2MDAzNjkxNUEA",
+  "choice": "inbound",
+  "phone": "967774414216",
+  "created_at": "2026-11-20T13:59:57.656284+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkE0N0JBNDM0NjBFQzRDNzcxMzMA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T21:45:58.208723+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSMEE2N0I4NkJFNjMxRTg1ODVDAA==",
+  "choice": "aftersales_support",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T21:45:58.539468+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkFBMjMxNzQ4QzYyODJDODA4MTgA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T22:12:37.031942+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSN0VEMUE2NTA5OENCNTc0NTFGAA==",
+  "choice": "quote_start",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T22:12:37.409051+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc4MjIyMjkwFQIAEhgUMkFBQkMxMDVCMEREMDNGMjg5MjUA",
+  "choice": "inbound",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T22:12:57.376736+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc4MjIyMjkwFQIAERgSODA2REU4QUUyODQxQkQ2NTNCAA==",
+  "choice": "1",
+  "phone": "967778222290",
+  "created_at": "2026-11-20T22:12:57.709435+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkEyRDg3RTM0RjQxNUVGRjgxNUEA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:18:34.571366+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkExMDZGN0E2RTc1OEU4ODFGMDUA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:18:56.098016+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSRUQ3MzI3NEVBNzQ5RDlDQ0JDAA==",
+  "choice": "quote_start",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:18:56.432669+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkFCMDEyNUYzMjBFNTE2RTIyMTgA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:19:18.280291+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSNjM5ODY4RDFCMkU2Mjg2MUM3AA==",
+  "choice": "2",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:19:18.628948+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkFCMzdDMkUzMkM1NDc1NDkzRDYA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:19:52.282929+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSODBCMkIyMTI3ODI3MDMyQUI2AA==",
+  "choice": "1",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:19:52.614181+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkExNzU1RUJERjU5QjA5OUIzOEMA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:20:13.861123+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkEyREEyQjE3RUU3NkI1QTJBNzgA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:20:38.999877+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSNjkyMDg5QkFGRkE2MTNCNDM4AA==",
+  "choice": "dn_70",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:20:39.334273+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE4OUI4MTM0QTNDOEFGMjgwRDMA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:22:11.999442+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE4NDYzODZEOEM0MDYzMTAwNUEA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:22:33.273896+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkEzOEE1MUNENERBNDkyMjg2RjMA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:22:56.663068+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSNzRENkUwNkRCRjNFOUE1QUY3AA==",
+  "choice": "1",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:22:57.016939+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE2MzQ3RTlFOUIxM0EwMEJGRUUA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:26:08.651349+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSQ0QxRjdGOTUzM0M2QUYyMjMyAA==",
+  "choice": "aq_mod",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:26:08.997993+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkFFRjM2ODFCQjkwQ0NDOTdFRTMA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:26:10.505411+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE5OUVDNkVENkQ2OUVCRDRBNzcA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:26:58.069251+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3Nzc1OTMzMzMzFQIAERgSRTVCODI0RkY2MkExNzlFRDVCAA==",
+  "choice": "back_step",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:26:58.432493+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE1NTNCODVEMTkyNENGOUQwNTgA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:27:18.102665+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE3N0Q2NDBBQzA2QzY5NThERDcA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:27:28.473182+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3Nzc1OTMzMzMzFQIAEhgUMkE0MTczN0E1MkE3NUE1RUU1NjYA",
+  "choice": "inbound",
+  "phone": "967775933333",
+  "created_at": "2026-11-21T13:58:22.108143+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5NDVBMjQzOUZDNTI4MEIwQkRDOTMxN0JENjkwMDUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-21T23:47:22.897516+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTI1QzhDREMxMkIwNUIzQ0JBAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-21T23:47:24.182453+00:00"
+ },
+ {
+  "context_id": "test:1",
+  "choice": "test",
+  "phone": "967770000000",
+  "created_at": "2026-11-22T01:05:36.079015+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0RDg1Q0JEM0VERUI4QUU0MjM2MzA3NkE5RDc0NTkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:55:38.82438+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOTgwQTU3RTE2RTRBNEUxOTg4AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:55:40.030326+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBRUQzMEU3NzIyNkY3QkJBNjNBQUE2RDg0MUM3NjAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:56:00.759994+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5MEUzNTJCOEY5QjI4QjQ3NkZFMTZCRjU5QUYwM0QA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:56:15.372146+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSN0VENDQxNEZBOUY0RkU5NUFCAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:56:15.690059+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGQUVDMEFFQzE3NkNEMTYyNzFCRUE2NzNBREM3OUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:56:25.191425+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMkY3RTdCNUIwOTA0NDk0MzhEAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T02:56:25.517956+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4OTU0RTg5MkZFQzhCNEMyMDU0QjYyRUQ3RUI2QjMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:04.155576+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4M0UxQkZBNDVERDU4QkU4Q0NDRkJGQTcyRkVFRDAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:19.241101+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMUU5MjcxQjUwQkFEQ0VDQUM3AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:19.555247+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMyQTJENjU2Qzc1MDE1QUIyNTg4NTMzMzg5NjI4QzYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:32.160825+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTE1Rjg3Q0UyQTFCNTJCODBCAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:32.486534+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGNjQ1QkUwRjIwQzlDNDNDQzVDMTA3MTQyQUNEMjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:35:45.006424+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMkUxRjI0MjFFRTA3RjkxMzZFQ0YzN0NDQzEwQjQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:36:04.609815+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSREUwMjg2MjgyODA0MUExM0I3AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:36:04.94781+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEQjc0Q0QzMjg1QjRFQTAzNzdEMENFNUI3MDIwN0EA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:38:11.943755+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRUZENUY0MEQ0NzZFOEY4MkU3AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:38:12.772443+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBRkU5MjMxNDgwOTI0RjUwQzA1REI3N0Y1RDdDQTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:39:47.516759+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMzNzkxQkRBMTc0RUQ3OERDNzY1RkIwMUY2ODdEQzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:39:58.397336+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNTY0NDE1OTg1NDlGQTNGMjYxAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:39:58.712193+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBRjg3MkRERDVBNkUxRUYzQTYzRDhDM0VCOTYzRDQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:40:36.358189+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMzI5QUU4RjI5NDk2MkYwQzg2AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:40:36.764207+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2QTBCMEZBNkU3MTU4RkNEQUZCRUYyMjlGRkM3NDUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:40:55.446395+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxMkQ1OTQyMTMwREM4MTYzRTc0NkY5OEFGNzI4OEMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:03.33054+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjFGQzIxMkUwOUU2NkUzMkQ4AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:03.66174+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwMEQ3OTAzMTM1NDZEQThFMDA3MTJGN0ZBQ0JCNzUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:13.769822+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTAxQUI4MDlGNEM2NEE4MEEzAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:14.166946+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0QUE5Mjg3MzBFMDgwN0RFNDIzQTQ5RUNCNTVCNzAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:37.625459+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2QTIzMDYzNzk0OTE0ODFGRTY4NzM0QjY1MTJCODUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:49.549675+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNjU0MzlBREI0QzA2MUQ4NDFDAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:49.880181+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM4NTE2NzA2NUMxODZGNzI1MEY4Nzc4OUMwMDNBQTUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:56.818879+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzdFMjIyMDY0RThBNjlBNDc2AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:41:57.14231+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGNUJDODBCQ0EzRDRBOTNDRUM1OEVBNzRFMzY0MzAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:05.935051+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0ODc0MjU2N0M1QjFERTlCMTQ4NzZEOTdBQjFDRUQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:19.742456+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMzhGNEFDOTRFNDUyQjgyNzIwAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:20.107211+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5ODdDM0M2MDA2NTcwOTM4Q0Y2M0JFM0M1MEQ4RkUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:28.277908+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSODY0NEQ1ODZBNDM3QjJGRDlDAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:28.624221+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCQzUyRkYwRTgwQzYyOTBGNkUyNkNBQUNCQ0M2MjkA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:33.803254+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM0MUJFMDI1MjYxNEFGRjc4NDdFNjgwMEUzRjdCRTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:43.780939+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSREMzOTlGRjc1NEU0NTU2MkM0AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:44.12127+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2NTRBMjZCOEFCOTk5RkU3MUQ3MzIxOTM0QTkwMkQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:50.277551+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTIxRjI5Q0UwQUZDRURFOEFCAA==",
+  "choice": "back_step",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:50.614902+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEOTE3QzZFMEU5MjVDQkZEMDk1QTNFQjM5QzcxMUIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:42:57.951017+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNFOURGRTk1NUVGRjg5RUM3NjkwRTFCQjZGNERDQTMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:05.101112+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzZGNjJFQTlEQzcwQUI3RTIxAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:05.420393+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5OUMwMDgyODQ2RERCMTM0QkZFNjQ5NUUzQkNGRjAA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:19.190069+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOEZGRUVDMjY1RDIxNkFCQkI0AA==",
+  "choice": "resbat_fp",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:19.524493+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNGMUYzRUNCNDVCOEYyQkRCODk1MTc2QTIzNjYzREEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:27.437078+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNzUzOUNCMUIxNjlBNEREQ0JBAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T03:43:27.763167+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwODY4N0I5NTg1OUQzMzJERUQ0MTA4Njg0MEUzNEYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:13.694952+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3QkEyNUE5NjJEODlCMjUzQjU2NjE0NUZCMEYxRjYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:24.473529+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRTEwQjE2MjdBNjBENDRBREE2AA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:24.484296+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTgxNUZCMjc2QjA0MTA2MEE3AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:34.55329+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNENjE5MTc0NjUwMDJEQTNCRDQ2QkQyOTI4RDE5MTQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:34.552218+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2Q0I4NTU1MTYzRkFBRTc2RDNCQTMwOTg4QTlFNzUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:42.290155+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM3RTlGMTQwOTdGMTE1RUNBMzYxNkIxOEE4MEU1QzgA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:52.91967+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRUJERUU1RkZGNzE4RjA3N0YyAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:06:52.919505+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQzRDQzE2MEMwRjkwRDgwMENCAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:02.560776+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDQkQ3NjJDNDQxRTcxODE4NEU2OTVGMzI3ODQyOUEA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:02.570091+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5NjBDREMwNjM5MzNCOUU4QUYzMEJGM0RCRTc1NEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:22.460326+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQUZDQjI1Qjg3MjA0RDhBNjBGAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:33.22753+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2ODE0RTU0NTc3NkJDNDcwQTc3RkFENEMzQzhFMjcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:33.248591+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMUZDNjhBODA4MENCQjdBQkRDAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:42.990867+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2MEUzQjc0MEU1MjY1OUQ3NUI0QTJCQzdGNkEzREYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:43.029386+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxMTdDNUUyMTYzRTQ1N0I4OEEzMDNCODJCQzAzMzYA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:07:54.427679+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSRUEyNTEwM0Y4NDQ4MEM1MkU0AA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:08.868413+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNBOTJGRTcxNDMwN0M2QjQwMzNCRjVFRDg1NzlFQTMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:08.874507+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQkI0NDYzM0E5NDAyQzI2Qzg0AA==",
+  "choice": "resbat_fp",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:20.162709+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMwOEM4RDE1QTM2QzAyNzcyMTk0QUNGRTNFNUU3NEUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:20.169512+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSNUFBQzNBN0E2MThEMzUwQ0YxAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:29.256485+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCMkIyNDhDMUREN0QzRTk4OTA0RUUyMDI0MjUzM0MA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:08:29.262936+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNEOEE4ODNDREY3Nzk3MkI4QTYzNjAxMzEyMTNGOTUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:20.279066+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSOUY2M0Y2RDE3QkY0MzFEM0MxAA==",
+  "choice": "quote_start",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:29.552723+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1MEFDODNEOUI4QkJCRTdGQTU3QzhCOTRGMkFGNzQA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:30.330821+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMjc0NThGOEU1RUM1MkQ3RjM5AA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:35.978361+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNENDA2MDZENDA0NUJBN0Q1MkQxRENEREUzN0E5NTUA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:36.923174+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM5MUU4RDE4NjlGNTA4MzhBRjFGREI0N0RCOEY1Q0IA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:26:47.380344+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSMEU4RDYwNjc4OTYxQTYyNEIwAA==",
+  "choice": "dn_50",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:08.698484+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM1NDhEREUzQjJEQ0QyOTVERTUwMkU2RUFFRTZEQ0YA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:08.733723+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTVCQzExNzA5Mzk2NDg4RDU5AA==",
+  "choice": "resbat_fp",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:16.203653+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUMxNTMxOUY2RTg5QkUyMzREMkI4NUQ0RkIxODRCQTMA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:16.229873+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNDQTgwNENGNTMyQjRGNEE5MzlCQTFCQ0FBNURGOUIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:23.88368+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzczNTkwOTc5FQIAERgSQTg4RjY2RTU2QjE2QkFGRDYyAA==",
+  "choice": "1",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T05:27:23.894449+00:00"
+ }
+]

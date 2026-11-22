@@ -1,0 +1,1269 @@
+{
+  "notifications": {
+    "required": [
+      "id",
+      "payload",
+      "created_at",
+      "updated_at"
+    ],
+    "properties": {
+      "id": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "payload": {
+        "format": "jsonb"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "bot_button_locks": {
+    "required": [
+      "context_id",
+      "created_at"
+    ],
+    "properties": {
+      "context_id": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "choice": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "catalog_categories": {
+    "required": [
+      "id",
+      "name",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "preset_reports": {
+    "required": [
+      "preset_title",
+      "kind",
+      "path",
+      "file_name",
+      "updated_at"
+    ],
+    "properties": {
+      "preset_title": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "path": {
+        "format": "text",
+        "type": "string"
+      },
+      "file_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "orders": {
+    "required": [
+      "id",
+      "phone",
+      "status",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "amount": {
+        "format": "text",
+        "type": "string"
+      },
+      "details": {
+        "format": "text",
+        "type": "string"
+      },
+      "invoice_no": {
+        "format": "text",
+        "type": "string"
+      },
+      "method": {
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "pending",
+        "format": "text",
+        "type": "string"
+      },
+      "decided_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "customers": {
+    "required": [
+      "id",
+      "phone",
+      "stage",
+      "unread",
+      "last_at",
+      "created_at",
+      "bot_paused",
+      "blocked"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "notes": {
+        "format": "text",
+        "type": "string"
+      },
+      "system": {
+        "format": "text",
+        "type": "string"
+      },
+      "last_message": {
+        "format": "text",
+        "type": "string"
+      },
+      "stage": {
+        "default": "new",
+        "format": "text",
+        "type": "string"
+      },
+      "unread": {
+        "default": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "last_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "bot_paused": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "deleted_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "blocked": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "hidden_before": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "catalog_profiles": {
+    "required": [
+      "catalog_id",
+      "summary_ar",
+      "summary_en",
+      "specs",
+      "updated_at"
+    ],
+    "properties": {
+      "catalog_id": {
+        "description": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `catalogs.id`.<fk table='catalogs' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "summary_ar": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "summary_en": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "specs": {
+        "format": "jsonb"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "quotes": {
+    "required": [
+      "id",
+      "quote_no",
+      "items",
+      "total",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "quote_no": {
+        "default": "('ACTES-Q-'::text || to_char(now(), 'YYMMDD-HH24MISS'::text))",
+        "format": "text",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "customer_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "items": {
+        "format": "jsonb"
+      },
+      "total": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "notes": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "support_tickets": {
+    "required": [
+      "id",
+      "ticket_no",
+      "phone",
+      "status",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "ticket_no": {
+        "default": "('ACTES-SUP-'::text || (nextval('public.support_ticket_seq'::regclass))::text)",
+        "format": "text",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "device": {
+        "format": "text",
+        "type": "string"
+      },
+      "issue_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "description": {
+        "format": "text",
+        "type": "string"
+      },
+      "media_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "media_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "open",
+        "format": "text",
+        "type": "string"
+      },
+      "assigned_to": {
+        "format": "text",
+        "type": "string"
+      },
+      "resolved_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "acts_engineers": {
+    "required": [
+      "id",
+      "kind",
+      "status",
+      "name",
+      "phone",
+      "specialty",
+      "skills",
+      "tools",
+      "services",
+      "years_exp",
+      "projects",
+      "created_at",
+      "updated_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "kind": {
+        "default": "engineer",
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "pending",
+        "format": "text",
+        "type": "string"
+      },
+      "reject_reason": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "email": {
+        "format": "text",
+        "type": "string"
+      },
+      "photo_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "specialty": {
+        "format": "text",
+        "type": "string"
+      },
+      "university": {
+        "format": "text",
+        "type": "string"
+      },
+      "grad_year": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "qualifications": {
+        "format": "text",
+        "type": "string"
+      },
+      "skills": {
+        "format": "text[]",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "tools": {
+        "format": "text[]",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "services": {
+        "format": "text[]",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "years_exp": {
+        "default": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "projects": {
+        "format": "jsonb"
+      },
+      "governorate": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "bio": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "bot_steps": {
+    "required": [
+      "id",
+      "body",
+      "kind",
+      "options",
+      "active",
+      "created_at",
+      "updated_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "substr(md5((random())::text), 1, 8)",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "trigger_key": {
+        "format": "text",
+        "type": "string"
+      },
+      "trigger_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "trigger_title": {
+        "format": "text",
+        "type": "string"
+      },
+      "section": {
+        "format": "text",
+        "type": "string"
+      },
+      "body": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "default": "buttons",
+        "format": "text",
+        "type": "string"
+      },
+      "list_button": {
+        "format": "text",
+        "type": "string"
+      },
+      "options": {
+        "format": "jsonb"
+      },
+      "active": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "acts_review_reports": {
+    "required": [
+      "id",
+      "review_id",
+      "reason",
+      "resolved",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "review_id": {
+        "description": "Note:\nThis is a Foreign Key to `acts_reviews.id`.<fk table='acts_reviews' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "reason": {
+        "format": "text",
+        "type": "string"
+      },
+      "resolved": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "orders_legacy": {
+    "required": [
+      "id",
+      "payload",
+      "created_at",
+      "updated_at"
+    ],
+    "properties": {
+      "id": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "payload": {
+        "format": "jsonb"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "messages": {
+    "required": [
+      "id",
+      "customer_id",
+      "direction",
+      "kind",
+      "text",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "direction": {
+        "default": "customer",
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "default": "text",
+        "format": "text",
+        "type": "string"
+      },
+      "text": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "file_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "media_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "media_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "mime": {
+        "format": "text",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "report_requests": {
+    "required": [
+      "id",
+      "phone",
+      "kind",
+      "status",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "system_label": {
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "default": "pvsyst",
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "pending",
+        "format": "text",
+        "type": "string"
+      },
+      "sent_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "file_path": {
+        "format": "text",
+        "type": "string"
+      },
+      "file_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "lon": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "tilt": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "azimuth": {
+        "format": "text",
+        "type": "string"
+      },
+      "loads": {
+        "format": "jsonb"
+      }
+    },
+    "type": "object"
+  },
+  "acts_reviews": {
+    "required": [
+      "id",
+      "request_id",
+      "engineer_id",
+      "rating",
+      "quality",
+      "punctuality",
+      "professionalism",
+      "responsiveness",
+      "hidden",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "request_id": {
+        "description": "Note:\nThis is a Foreign Key to `acts_service_requests.id`.<fk table='acts_service_requests' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "engineer_id": {
+        "description": "Note:\nThis is a Foreign Key to `acts_engineers.id`.<fk table='acts_engineers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "rating": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "quality": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "punctuality": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "professionalism": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "responsiveness": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "comment": {
+        "format": "text",
+        "type": "string"
+      },
+      "reviewer_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "hidden": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "catalog_items": {
+    "required": [
+      "key",
+      "kind",
+      "category",
+      "name",
+      "specs",
+      "active",
+      "sort",
+      "updated_at",
+      "auto_rules"
+    ],
+    "properties": {
+      "key": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "default": "item",
+        "format": "text",
+        "type": "string"
+      },
+      "category": {
+        "default": "other",
+        "format": "text",
+        "type": "string"
+      },
+      "category_title": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "unit": {
+        "format": "text",
+        "type": "string"
+      },
+      "price": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "label": {
+        "format": "text",
+        "type": "string"
+      },
+      "pdf_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "specs": {
+        "format": "jsonb"
+      },
+      "active": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "sort": {
+        "default": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "auto_rules": {
+        "format": "jsonb"
+      }
+    },
+    "type": "object"
+  },
+  "app_settings": {
+    "required": [
+      "key",
+      "value",
+      "updated_at"
+    ],
+    "properties": {
+      "key": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "value": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "text_value": {
+        "format": "text",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "bot_texts": {
+    "required": [
+      "key",
+      "msg_key",
+      "kind",
+      "section",
+      "sort",
+      "original",
+      "updated_at"
+    ],
+    "properties": {
+      "key": {
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "msg_key": {
+        "format": "text",
+        "type": "string"
+      },
+      "kind": {
+        "default": "text",
+        "format": "text",
+        "type": "string"
+      },
+      "section": {
+        "default": "رسائل أخرى",
+        "format": "text",
+        "type": "string"
+      },
+      "place": {
+        "format": "text",
+        "type": "string"
+      },
+      "sort": {
+        "default": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "original": {
+        "format": "text",
+        "type": "string"
+      },
+      "value": {
+        "format": "text",
+        "type": "string"
+      },
+      "btn_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "btn_desc": {
+        "format": "text",
+        "type": "string"
+      },
+      "desc_value": {
+        "format": "text",
+        "type": "string"
+      },
+      "updated_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "catalogs": {
+    "required": [
+      "id",
+      "title",
+      "description",
+      "keywords",
+      "language",
+      "file_path",
+      "page_count",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "title": {
+        "format": "text",
+        "type": "string"
+      },
+      "description": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "keywords": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "category_id": {
+        "description": "Note:\nThis is a Foreign Key to `catalog_categories.id`.<fk table='catalog_categories' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "language": {
+        "default": "ar",
+        "format": "text",
+        "type": "string"
+      },
+      "file_path": {
+        "format": "text",
+        "type": "string"
+      },
+      "cover_path": {
+        "format": "text",
+        "type": "string"
+      },
+      "page_count": {
+        "default": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "acts_service_requests": {
+    "required": [
+      "id",
+      "phone",
+      "service",
+      "description",
+      "attachments",
+      "status",
+      "review_token",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "engineer_id": {
+        "description": "Note:\nThis is a Foreign Key to `acts_engineers.id`.<fk table='acts_engineers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "customer_id": {
+        "description": "Note:\nThis is a Foreign Key to `customers.id`.<fk table='customers' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "service": {
+        "format": "text",
+        "type": "string"
+      },
+      "governorate": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "location": {
+        "format": "text",
+        "type": "string"
+      },
+      "description": {
+        "default": "",
+        "format": "text",
+        "type": "string"
+      },
+      "attachments": {
+        "format": "jsonb"
+      },
+      "status": {
+        "default": "new",
+        "format": "text",
+        "type": "string"
+      },
+      "admin_notes": {
+        "format": "text",
+        "type": "string"
+      },
+      "review_token": {
+        "default": "replace((gen_random_uuid())::text, '-'::text, ''::text)",
+        "format": "text",
+        "type": "string"
+      },
+      "completed_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "catalog_chunks": {
+    "required": [
+      "id",
+      "catalog_id",
+      "page",
+      "content",
+      "created_at"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "catalog_id": {
+        "description": "Note:\nThis is a Foreign Key to `catalogs.id`.<fk table='catalogs' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "page": {
+        "default": 1,
+        "format": "int32",
+        "type": "integer"
+      },
+      "content": {
+        "format": "text",
+        "type": "string"
+      },
+      "fts": {
+        "format": "tsvector",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  }
+}

@@ -1,0 +1,1817 @@
+[
+ {
+  "id": "ord-mug6cbihwx5h",
+  "payload": {
+   "id": "ord-mug6cbihwx5h",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "1224",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "الواح",
+     "price": 130,
+     "total": 159120
+    },
+    {
+     "qty": "6",
+     "name": "انفرتر دايا هايبرد DEYE",
+     "unit": "حبة",
+     "price": 6200,
+     "total": 37200
+    },
+    {
+     "qty": "108",
+     "name": "بطارية ليثيوم هيثيوم HITHIUM هاي فولتج",
+     "unit": "حبة",
+     "price": 2000,
+     "total": 216000
+    },
+    {
+     "qty": "8",
+     "name": "كنترول ربط بطاريات هيثيوم هاي فولتج",
+     "unit": "حبة",
+     "price": 1500,
+     "total": 12000
+    },
+    {
+     "qty": "6",
+     "name": "صندوق حماية بطاريات",
+     "unit": "حبة",
+     "price": 150,
+     "total": 900
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 650,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية AC",
+     "unit": "حبة",
+     "price": 70,
+     "total": 70
+    },
+    {
+     "qty": "4896",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 14688
+    },
+    {
+     "qty": "180",
+     "name": "كابل نحاس فلكس شعيرات",
+     "unit": "متر",
+     "price": 45,
+     "total": 8100
+    },
+    {
+     "qty": "7",
+     "name": "حفرة تأريض مع جميع مكوناتها",
+     "unit": "حبة",
+     "price": 200,
+     "total": 1400
+    },
+    {
+     "qty": "2448",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 2,
+     "total": 4896
+    },
+    {
+     "qty": "180",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 4,
+     "total": 720
+    },
+    {
+     "qty": "72",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    },
+    {
+     "qty": "6",
+     "name": "طفاية حريق ثاني اكسيد الكربون",
+     "unit": "حبة",
+     "price": 60,
+     "total": 360
+    },
+    {
+     "qty": "18",
+     "name": "كرة حريق",
+     "unit": "حبة",
+     "price": 15,
+     "total": 270
+    },
+    {
+     "qty": "1224",
+     "name": "اجور تركيب منظومة شمسية",
+     "unit": "لوح",
+     "price": 10,
+     "total": 12240
+    }
+   ],
+   "total": 468614,
+   "method": "cod",
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1790293191497,
+     "status": "created"
+    },
+    {
+     "at": 1790293191497,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790293191497,
+   "proofName": "",
+   "accessToken": "tok-mug6cbih2evf",
+   "clientPhone": "773590979",
+   "projectType": "انفرتر دايا 80 كيلو 3 فاز جهد عالي × 6 | ألواح: 1224 (881.28 ك.و) | بطاريات: 1728 كيلو",
+   "quoteNumber": "ACTES-C139702",
+   "transferRef": "",
+   "codConfirmed": true,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:32.461052+00:00",
+  "updated_at": "2026-10-11T13:07:19.145+00:00"
+ },
+ {
+  "id": "ord-muiz38nyc9zi",
+  "payload": {
+   "id": "ord-muiz38nyc9zi",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "5",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "2",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 1500
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 2699,
+   "method": "network",
+   "status": "payment_verified",
+   "history": [
+    {
+     "at": 1790462409118,
+     "status": "created"
+    },
+    {
+     "at": 1790462409118,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790472857249,
+     "status": "payment_verified"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790462409118,
+   "proofName": "",
+   "accessToken": "tok-muiz38nyovdd",
+   "clientPhone": "773590979",
+   "projectType": "r8",
+   "quoteNumber": "ACTES-616",
+   "transferRef": "45965695",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:27.504855+00:00",
+  "updated_at": "2026-10-11T13:07:15.116+00:00"
+ },
+ {
+  "id": "ord-munt0a3xmthe",
+  "payload": {
+   "id": "ord-munt0a3xmthe",
+   "city": "صنعاء",
+   "items": [],
+   "total": 0,
+   "method": null,
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790754524205,
+     "status": "created"
+    },
+    {
+     "at": 1791060815464,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "اختبار",
+   "editNote": "",
+   "createdAt": 1790754524205,
+   "proofName": "",
+   "accessToken": "tok-munt0a3xxzmg",
+   "clientPhone": "777123456",
+   "projectType": "انفرتر 8 كيلو | ألواح: 8 (5.76 ك.و) | بطاريات: 16 كيلو",
+   "quoteNumber": "50",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-30T07:48:44.855726+00:00",
+  "updated_at": "2026-10-11T13:07:09.509+00:00"
+ },
+ {
+  "id": "ord-mulxz0iottl3",
+  "payload": {
+   "id": "ord-mulxz0iottl3",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "6",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 780
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك فيدوس 16 كيلو",
+     "unit": "حبة",
+     "price": 1800,
+     "total": 1800
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 3129,
+   "method": null,
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790641930848,
+     "status": "created"
+    },
+    {
+     "at": 1791060817271,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790641930848,
+   "proofName": "",
+   "accessToken": "tok-mulxz0io9ogk",
+   "clientPhone": "773590979",
+   "projectType": "r9",
+   "quoteNumber": "ACTES-627",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-30T04:15:27.965605+00:00",
+  "updated_at": "2026-10-11T13:07:10.412+00:00"
+ },
+ {
+  "id": "ord-munt4p8qvfs6",
+  "payload": {
+   "id": "ord-munt4p8qvfs6",
+   "city": "صنعاء",
+   "items": [],
+   "total": 0,
+   "method": "network",
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790754730442,
+     "status": "created"
+    },
+    {
+     "at": 1790754730443,
+     "status": "admin_review"
+    },
+    {
+     "at": 1791060812733,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "اختبار",
+   "editNote": "",
+   "createdAt": 1790754730442,
+   "proofName": "",
+   "accessToken": "tok-munt4p8qg5hf",
+   "clientPhone": "777123456",
+   "projectType": "انفرتر 8 كيلو | ألواح: 8 (5.76 ك.و) | بطاريات: 16 كيلو",
+   "quoteNumber": "50",
+   "transferRef": "50",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-30T07:52:10.986014+00:00",
+  "updated_at": "2026-10-11T13:07:08.702+00:00"
+ },
+ {
+  "id": "ord-mupo2v8thvv3",
+  "payload": {
+   "id": "ord-mupo2v8thvv3",
+   "city": "—",
+   "items": [
+    {
+     "qty": "6",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 780
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك فيدوس 16 كيلو",
+     "unit": "حبة",
+     "price": 1800,
+     "total": 1800
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 3129,
+   "method": null,
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1790867179181,
+     "status": "created"
+    },
+    {
+     "at": 1790867179181,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790867179181,
+   "proofName": "",
+   "accessToken": "tok-mupo2v8t9u7m",
+   "clientPhone": "773590979",
+   "projectType": "r9",
+   "quoteNumber": "ACTES-627",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-10-03T17:48:09.787975+00:00",
+  "updated_at": "2026-10-11T13:07:40.622+00:00"
+ },
+ {
+  "id": "ord-mv09sd778s2y",
+  "payload": {
+   "id": "ord-mv09sd778s2y",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "300",
+     "name": "ألواح طاقة شمسية ماركة سنتك N-Type قدرة اللوح 720 وات وجهين",
+     "unit": "الواح",
+     "price": 130,
+     "total": 39000
+    },
+    {
+     "qty": "4",
+     "name": "انفرتر سوليس هايبرد SOLIS",
+     "unit": "حبة",
+     "price": 4200,
+     "total": 16800
+    },
+    {
+     "qty": "16",
+     "name": "بطارية ليثيوم هيثيوم HITHIUM هاي فولتج",
+     "unit": "حبة",
+     "price": 2000,
+     "total": 32000
+    },
+    {
+     "qty": "2",
+     "name": "كنترول ربط بطاريات هيثيوم هاي فولتج",
+     "unit": "حبة",
+     "price": 1500,
+     "total": 3000
+    },
+    {
+     "qty": "544",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 80,
+     "total": 43520
+    },
+    {
+     "qty": "4",
+     "name": "صندوق حماية بطاريات",
+     "unit": "حبة",
+     "price": 150,
+     "total": 600
+    },
+    {
+     "qty": "1200",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 3600
+    },
+    {
+     "qty": "120",
+     "name": "كابل نحاس فلكس شعيرات",
+     "unit": "متر",
+     "price": 45,
+     "total": 5400
+    },
+    {
+     "qty": "5",
+     "name": "حفرة تأريض مع جميع مكوناتها",
+     "unit": "حبة",
+     "price": 200,
+     "total": 1000
+    },
+    {
+     "qty": "600",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 2,
+     "total": 1200
+    },
+    {
+     "qty": "120",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 4,
+     "total": 480
+    },
+    {
+     "qty": "2",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    },
+    {
+     "qty": "4",
+     "name": "طفاية حريق ثاني اكسيد الكربون",
+     "unit": "حبة",
+     "price": 60,
+     "total": 240
+    },
+    {
+     "qty": "12",
+     "name": "كرة حريق",
+     "unit": "حبة",
+     "price": 15,
+     "total": 180
+    },
+    {
+     "qty": "300",
+     "name": "اجور تركيب منظومة شمسية",
+     "unit": "لوح",
+     "price": 10,
+     "total": 3000
+    }
+   ],
+   "total": 150020,
+   "method": null,
+   "status": "created",
+   "history": [
+    {
+     "at": 1791508302547,
+     "status": "created"
+    }
+   ],
+   "customer": "Sufyan",
+   "editNote": "",
+   "createdAt": 1791508302547,
+   "proofName": "",
+   "accessToken": "tok-mv09sd776sj8",
+   "clientPhone": "773590979",
+   "projectType": "انفرتر سوليس 50 كيلو 3 فاز جهد عالي × 4 | ألواح: 300 (216 ك.و) | بطاريات: 256 كيلو",
+   "quoteNumber": "ACTES-C116216",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-10-09T01:11:42.978971+00:00",
+  "updated_at": "2026-10-11T13:07:38.175+00:00"
+ },
+ {
+  "id": "ord-muize2iwkus3",
+  "payload": {
+   "id": "ord-muize2iwkus3",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "459",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "الواح",
+     "price": 130,
+     "total": 59670
+    },
+    {
+     "qty": "3",
+     "name": "انفرتر دايا هايبرد DEYE",
+     "unit": "حبة",
+     "price": 6200,
+     "total": 18600
+    },
+    {
+     "qty": "36",
+     "name": "بطارية ليثيوم هيثيوم HITHIUM هاي فولتج",
+     "unit": "حبة",
+     "price": 2000,
+     "total": 72000
+    },
+    {
+     "qty": "3",
+     "name": "كنترول ربط بطاريات هيثيوم هاي فولتج",
+     "unit": "حبة",
+     "price": 1500,
+     "total": 4500
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 650,
+     "total": 650
+    },
+    {
+     "qty": "3",
+     "name": "صندوق حماية بطاريات",
+     "unit": "حبة",
+     "price": 150,
+     "total": 450
+    },
+    {
+     "qty": "1836",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 5508
+    },
+    {
+     "qty": "90",
+     "name": "كابل نحاس فلكس شعيرات",
+     "unit": "متر",
+     "price": 45,
+     "total": 4050
+    },
+    {
+     "qty": "4",
+     "name": "حفرة تأريض مع جميع مكوناتها",
+     "unit": "حبة",
+     "price": 200,
+     "total": 800
+    },
+    {
+     "qty": "918",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 2,
+     "total": 1836
+    },
+    {
+     "qty": "90",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 4,
+     "total": 360
+    },
+    {
+     "qty": "27",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    },
+    {
+     "qty": "3",
+     "name": "طفاية حريق ثاني اكسيد الكربون",
+     "unit": "حبة",
+     "price": 60,
+     "total": 180
+    },
+    {
+     "qty": "9",
+     "name": "كرة حريق",
+     "unit": "حبة",
+     "price": 15,
+     "total": 135
+    },
+    {
+     "qty": "459",
+     "name": "اجور تركيب منظومة شمسية",
+     "unit": "لوح",
+     "price": 10,
+     "total": 4590
+    }
+   ],
+   "total": 173329,
+   "method": null,
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790462914377,
+     "status": "created"
+    },
+    {
+     "at": 1790472862281,
+     "status": "payment_verified"
+    },
+    {
+     "at": 1791060806667,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790462914377,
+   "proofName": "",
+   "accessToken": "tok-muize2iw2kty",
+   "clientPhone": "773590979",
+   "projectType": "انفرتر دايا 80 كيلو 3 فاز جهد عالي × 3 | ألواح: 459 (330.48 ك.و) | بطاريات: 576 كيلو",
+   "quoteNumber": "ACTES-C683540",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-28T17:23:26.590419+00:00",
+  "updated_at": "2026-10-11T13:07:14.359+00:00"
+ },
+ {
+  "id": "ord-mufkp6mfqgzx",
+  "payload": {
+   "id": "ord-mufkp6mfqgzx",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "6",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 780
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 400,
+     "total": 400
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك فيدوس 16 كيلو",
+     "unit": "حبة",
+     "price": 1800,
+     "total": 1800
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 3149,
+   "method": "network",
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790256840135,
+     "status": "created"
+    },
+    {
+     "at": 1790256840135,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790256888315,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790256840135,
+   "proofName": "",
+   "accessToken": "tok-mufkp6mf4wtf",
+   "clientPhone": "773590979",
+   "projectType": "r9",
+   "quoteNumber": "ACTES-627",
+   "transferRef": "48556525",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-28T17:23:33.496068+00:00",
+  "updated_at": "2026-10-11T13:07:19.953+00:00"
+ },
+ {
+  "id": "ord-musphsw4xfok",
+  "payload": {
+   "id": "ord-musphsw4xfok",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "5",
+     "name": "ألواح طاقة شمسية ماركة سنتك N-Type قدرة اللوح 720 وات وجهين",
+     "unit": "حبة",
+     "price": 130,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "انفيرتر هايبرد ليو باور 6.2 كيلو سنجل فاز 48 فولت",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "2",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 1500
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 2699,
+   "method": "network",
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1791050954116,
+     "status": "created"
+    },
+    {
+     "at": 1791050954117,
+     "status": "admin_review"
+    },
+    {
+     "at": 1791060810566,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1791050954116,
+   "proofName": "",
+   "accessToken": "tok-musphsw44qmt",
+   "clientPhone": "773590979",
+   "projectType": "r8",
+   "quoteNumber": "ACTES-616",
+   "transferRef": "4155556945",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-10-03T18:09:39.212399+00:00",
+  "updated_at": "2026-10-11T13:07:39.788+00:00"
+ },
+ {
+  "id": "ord-mukmwsyi5ett",
+  "payload": {
+   "id": "ord-mukmwsyi5ett",
+   "city": "—",
+   "items": [
+    {
+     "qty": "5",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "2",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 1500
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 2699,
+   "method": null,
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1790562885786,
+     "status": "created"
+    },
+    {
+     "at": 1790562885786,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790562885786,
+   "proofName": "",
+   "accessToken": "tok-mukmwsyienci",
+   "clientPhone": "773590979",
+   "projectType": "r8",
+   "quoteNumber": "ACTES-616",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:22.42821+00:00",
+  "updated_at": "2026-10-11T13:07:11.221+00:00"
+ },
+ {
+  "id": "ord-mv171z6lsl9j",
+  "payload": {
+   "id": "ord-mv171z6lsl9j",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "5",
+     "name": "ألواح طاقة شمسية ماركة سنتك N-Type قدرة اللوح 720 وات وجهين",
+     "unit": "حبة",
+     "price": 130,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "انفيرتر هايبرد ليو باور 6.2 كيلو سنجل فاز 48 فولت",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "2",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 1500
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 2699,
+   "method": "network",
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1791564178269,
+     "status": "created"
+    },
+    {
+     "at": 1791564178270,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1791564178269,
+   "proofName": "",
+   "accessToken": "tok-mv171z6l92ct",
+   "clientPhone": "773590979",
+   "projectType": "r8",
+   "quoteNumber": "ACTES-616",
+   "transferRef": "567845785",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-10-09T16:44:17.264666+00:00",
+  "updated_at": "2026-10-11T13:07:37.412+00:00"
+ },
+ {
+  "id": "ord-muisjazqrn0p",
+  "payload": {
+   "id": "ord-muisjazqrn0p",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "9",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 1170
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر دايا هايبرد DEYE 8 كيلو سنجل فاز",
+     "unit": "حبة",
+     "price": 1080,
+     "total": 1080
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 80,
+     "total": 80
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية AC",
+     "unit": "حبة",
+     "price": 45,
+     "total": 45
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك فيدوس 16 كيلو",
+     "unit": "حبة",
+     "price": 1800,
+     "total": 1800
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    },
+    {
+     "qty": "2",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 6 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    }
+   ],
+   "total": 4244,
+   "method": "network",
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790451401318,
+     "status": "created"
+    },
+    {
+     "at": 1790451401319,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790459947877,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790451401318,
+   "proofName": "",
+   "accessToken": "tok-muisjazq5e01",
+   "clientPhone": "773590979",
+   "projectType": "r11",
+   "quoteNumber": "ACTES-674",
+   "transferRef": "14454564",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-28T17:23:29.342029+00:00",
+  "updated_at": "2026-10-11T13:07:16.728+00:00"
+ },
+ {
+  "id": "ord-muew8egrsou0",
+  "payload": {
+   "id": "ord-muew8egrsou0",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "1",
+     "name": "ألواح طاقة شمسية سنتك 595 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 110,
+     "total": 110
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 1.6 كيلو",
+     "unit": "حبة",
+     "price": 180,
+     "total": 180
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك 1.28 كيلو",
+     "unit": "حبة",
+     "price": 220,
+     "total": 220
+    },
+    {
+     "qty": "1",
+     "name": "استند 100 أمبير 12 فولت مع لوحة الحماية الكاملة",
+     "unit": "حبة",
+     "price": 60,
+     "total": 60
+    },
+    {
+     "qty": "20",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2,
+     "total": 40
+    }
+   ],
+   "total": 610,
+   "method": "network",
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1790215746363,
+     "status": "created"
+    },
+    {
+     "at": 1790215746363,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "Sufyan",
+   "editNote": "",
+   "createdAt": 1790215746363,
+   "proofName": "",
+   "accessToken": "tok-muew8egrctt2",
+   "clientPhone": "773590979",
+   "projectType": "r1",
+   "quoteNumber": "ACTES-608",
+   "transferRef": "33333",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-10-04T18:09:14.895104+00:00",
+  "updated_at": "2026-10-11T13:07:20.889+00:00"
+ },
+ {
+  "id": "ord-muhtwcqlotdu",
+  "payload": {
+   "id": "ord-muhtwcqlotdu",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "1",
+     "name": "ألواح طاقة شمسية سنتك 595 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 110,
+     "total": 110
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 1.6 كيلو",
+     "unit": "حبة",
+     "price": 180,
+     "total": 180
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك 2.56 كيلو",
+     "unit": "حبة",
+     "price": 350,
+     "total": 350
+    },
+    {
+     "qty": "1",
+     "name": "استند 200 أمبير 12 فولت مع لوحة الحماية الكاملة",
+     "unit": "حبة",
+     "price": 60,
+     "total": 60
+    },
+    {
+     "qty": "20",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2,
+     "total": 40
+    }
+   ],
+   "total": 740,
+   "method": "network",
+   "status": "payment_verified",
+   "history": [
+    {
+     "at": 1790393223549,
+     "status": "created"
+    },
+    {
+     "at": 1790393223549,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790393272824,
+     "status": "payment_verified"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790393223549,
+   "proofName": "",
+   "accessToken": "tok-muhtwcql2j4z",
+   "clientPhone": "773590979",
+   "projectType": "r2",
+   "quoteNumber": "ACTES-609",
+   "transferRef": "8595959859",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:30.130281+00:00",
+  "updated_at": "2026-10-11T13:07:17.531+00:00"
+ },
+ {
+  "id": "ord-muitscn81vgv",
+  "payload": {
+   "id": "ord-muitscn81vgv",
+   "city": "—",
+   "items": [
+    {
+     "qty": "27",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 3510
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر دايا هايبرد DEYE 12 كيلو سنجل فاز",
+     "unit": "حبة",
+     "price": 1600,
+     "total": 1600
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 250,
+     "total": 250
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية AC",
+     "unit": "حبة",
+     "price": 45,
+     "total": 45
+    },
+    {
+     "qty": "3",
+     "name": "بطارية ليثيوم بايلونتك فيدوس 16 كيلو",
+     "unit": "حبة",
+     "price": 1800,
+     "total": 5400
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 90
+    },
+    {
+     "qty": "4",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    }
+   ],
+   "total": 10895,
+   "method": null,
+   "status": "admin_review",
+   "history": [
+    {
+     "at": 1790453502980,
+     "status": "created"
+    },
+    {
+     "at": 1790453502980,
+     "status": "admin_review"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790453502980,
+   "proofName": "",
+   "accessToken": "tok-muitscn8ahyy",
+   "clientPhone": "773590979",
+   "projectType": "r16",
+   "quoteNumber": "ACTES-678",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:28.369104+00:00",
+  "updated_at": "2026-10-11T13:07:15.92+00:00"
+ },
+ {
+  "id": "ord-muh1ryb21zvh",
+  "payload": {
+   "id": "ord-muh1ryb21zvh",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "5",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 650
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "2",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 1500
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 2699,
+   "method": "network",
+   "status": "payment_verified",
+   "history": [
+    {
+     "at": 1790345988974,
+     "status": "created"
+    },
+    {
+     "at": 1790345988975,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790346023861,
+     "status": "payment_verified"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790345988974,
+   "proofName": "",
+   "accessToken": "tok-muh1ryb2mtya",
+   "clientPhone": "773590979",
+   "projectType": "r8",
+   "quoteNumber": "ACTES-616",
+   "transferRef": "8858584595",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:31.638833+00:00",
+  "updated_at": "2026-10-11T13:07:18.339+00:00"
+ },
+ {
+  "id": "ord-muvf3aq4duqf",
+  "payload": {
+   "id": "ord-muvf3aq4duqf",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "1",
+     "name": "ألواح طاقة شمسية ماركة سنتك العالمية قدرة اللوح 595 وات",
+     "unit": "حبة",
+     "price": 110,
+     "total": 110
+    },
+    {
+     "qty": "1",
+     "name": "انفيرتر هايبرد ليو باور 1.6 كيلو سنجل فاز 12 فولت مع الواي فاي",
+     "unit": "حبة",
+     "price": 180,
+     "total": 180
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك 1.28 كيلو 100 أمبير",
+     "unit": "حبة",
+     "price": 220,
+     "total": 220
+    },
+    {
+     "qty": "1",
+     "name": "استند 100 أمبير 12 فولت مع لوحة الحماية الكاملة",
+     "unit": "حبة",
+     "price": 60,
+     "total": 60
+    },
+    {
+     "qty": "20",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2,
+     "total": 40
+    }
+   ],
+   "total": 610,
+   "method": null,
+   "status": "created",
+   "history": [
+    {
+     "at": 1791214879756,
+     "status": "created"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1791214879756,
+   "proofName": "",
+   "accessToken": "tok-muvf3aq4ogm6",
+   "clientPhone": "773590979",
+   "projectType": "r1",
+   "quoteNumber": "ACTES-608",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-10-05T15:41:16.272486+00:00",
+  "updated_at": "2026-10-11T13:07:38.985+00:00"
+ },
+ {
+  "id": "ord-muj0482jbbt5",
+  "payload": {
+   "id": "ord-muj0482jbbt5",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "306",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "الواح",
+     "price": 130,
+     "total": 39780
+    },
+    {
+     "qty": "2",
+     "name": "انفرتر دايا هايبرد DEYE",
+     "unit": "حبة",
+     "price": 6200,
+     "total": 12400
+    },
+    {
+     "qty": "24",
+     "name": "بطارية ليثيوم هيثيوم HITHIUM هاي فولتج",
+     "unit": "حبة",
+     "price": 2000,
+     "total": 48000
+    },
+    {
+     "qty": "2",
+     "name": "كنترول ربط بطاريات هيثيوم هاي فولتج",
+     "unit": "حبة",
+     "price": 1500,
+     "total": 3000
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 650,
+     "total": 650
+    },
+    {
+     "qty": "2",
+     "name": "صندوق حماية بطاريات",
+     "unit": "حبة",
+     "price": 150,
+     "total": 300
+    },
+    {
+     "qty": "1224",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 3672
+    },
+    {
+     "qty": "60",
+     "name": "كابل نحاس فلكس شعيرات",
+     "unit": "متر",
+     "price": 45,
+     "total": 2700
+    },
+    {
+     "qty": "3",
+     "name": "حفرة تأريض مع جميع مكوناتها",
+     "unit": "حبة",
+     "price": 200,
+     "total": 600
+    },
+    {
+     "qty": "612",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 2,
+     "total": 1224
+    },
+    {
+     "qty": "60",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 4,
+     "total": 240
+    },
+    {
+     "qty": "18",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    },
+    {
+     "qty": "2",
+     "name": "طفاية حريق ثاني اكسيد الكربون",
+     "unit": "حبة",
+     "price": 60,
+     "total": 120
+    },
+    {
+     "qty": "6",
+     "name": "كرة حريق",
+     "unit": "حبة",
+     "price": 15,
+     "total": 90
+    },
+    {
+     "qty": "306",
+     "name": "اجور تركيب منظومة شمسية",
+     "unit": "لوح",
+     "price": 10,
+     "total": 3060
+    }
+   ],
+   "total": 115836,
+   "method": null,
+   "status": "payment_verified",
+   "history": [
+    {
+     "at": 1790464134619,
+     "status": "created"
+    },
+    {
+     "at": 1790472861816,
+     "status": "payment_verified"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790464134619,
+   "proofName": "",
+   "accessToken": "tok-muj0482jlyiz",
+   "clientPhone": "773590979",
+   "projectType": "انفرتر دايا 80 كيلو 3 فاز جهد عالي × 2 | ألواح: 306 (220.32 ك.و) | بطاريات: 384 كيلو",
+   "quoteNumber": "ACTES-C844878",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:25.435342+00:00",
+  "updated_at": "2026-10-11T13:07:13.605+00:00"
+ },
+ {
+  "id": "ord-mukgxe12kwhb",
+  "payload": {
+   "id": "ord-mukgxe12kwhb",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "561",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "الواح",
+     "price": 130,
+     "total": 72930
+    },
+    {
+     "qty": "3",
+     "name": "انفرتر دايا هايبرد DEYE",
+     "unit": "حبة",
+     "price": 6200,
+     "total": 18600
+    },
+    {
+     "qty": "42",
+     "name": "بطارية ليثيوم هيثيوم HITHIUM هاي فولتج",
+     "unit": "حبة",
+     "price": 2000,
+     "total": 84000
+    },
+    {
+     "qty": "3",
+     "name": "كنترول ربط بطاريات هيثيوم هاي فولتج",
+     "unit": "حبة",
+     "price": 1500,
+     "total": 4500
+    },
+    {
+     "qty": "1",
+     "name": "لوحة حماية DC",
+     "unit": "حبة",
+     "price": 650,
+     "total": 650
+    },
+    {
+     "qty": "3",
+     "name": "صندوق حماية بطاريات",
+     "unit": "حبة",
+     "price": 150,
+     "total": 450
+    },
+    {
+     "qty": "2244",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 10 مم",
+     "unit": "متر",
+     "price": 3,
+     "total": 6732
+    },
+    {
+     "qty": "90",
+     "name": "كابل نحاس فلكس شعيرات",
+     "unit": "متر",
+     "price": 45,
+     "total": 4050
+    },
+    {
+     "qty": "4",
+     "name": "حفرة تأريض مع جميع مكوناتها",
+     "unit": "حبة",
+     "price": 200,
+     "total": 800
+    },
+    {
+     "qty": "1122",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 2,
+     "total": 2244
+    },
+    {
+     "qty": "90",
+     "name": "كابل نحاس أرت",
+     "unit": "متر",
+     "price": 4,
+     "total": 360
+    },
+    {
+     "qty": "33",
+     "name": "التركيب ومستلزمات توصيل MC4 - فور 10 ملي",
+     "unit": "طقم",
+     "price": 0,
+     "total": 0
+    },
+    {
+     "qty": "3",
+     "name": "طفاية حريق ثاني اكسيد الكربون",
+     "unit": "حبة",
+     "price": 60,
+     "total": 180
+    },
+    {
+     "qty": "9",
+     "name": "كرة حريق",
+     "unit": "حبة",
+     "price": 15,
+     "total": 135
+    },
+    {
+     "qty": "561",
+     "name": "اجور تركيب منظومة شمسية",
+     "unit": "لوح",
+     "price": 10,
+     "total": 5610
+    }
+   ],
+   "total": 201241,
+   "method": null,
+   "status": "cancelled",
+   "history": [
+    {
+     "at": 1790552835398,
+     "status": "created"
+    },
+    {
+     "at": 1791060805482,
+     "status": "payment_verified"
+    },
+    {
+     "at": 1791060818854,
+     "status": "cancelled"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790552835398,
+   "proofName": "",
+   "accessToken": "tok-mukgxe12ei6a",
+   "clientPhone": "773590979",
+   "projectType": "انفرتر دايا 80 كيلو 3 فاز جهد عالي × 3 | ألواح: 561 (403.92 ك.و) | بطاريات: 672 كيلو",
+   "quoteNumber": "ACTES-C235478",
+   "transferRef": "",
+   "codConfirmed": false,
+   "needsPaymentFix": true
+  },
+  "created_at": "2026-09-28T17:23:23.114265+00:00",
+  "updated_at": "2026-10-11T13:07:12.035+00:00"
+ },
+ {
+  "id": "ord-muj5a13samql",
+  "payload": {
+   "id": "ord-muj5a13samql",
+   "city": "صنعاء",
+   "items": [
+    {
+     "qty": "4",
+     "name": "ألواح طاقة شمسية سنتك N-Type TOPCon 720 وات ثنائية الوجه",
+     "unit": "حبة",
+     "price": 130,
+     "total": 520
+    },
+    {
+     "qty": "1",
+     "name": "انفرتر هايبرد ليو باور 6.2 كيلو",
+     "unit": "حبة",
+     "price": 380,
+     "total": 380
+    },
+    {
+     "qty": "1",
+     "name": "بطارية ليثيوم بايلونتك 5.12 كيلو",
+     "unit": "حبة",
+     "price": 750,
+     "total": 750
+    },
+    {
+     "qty": "1",
+     "name": "استند منظومة ليثيوم 6 كيلو مع لوحة الحماية",
+     "unit": "حبة",
+     "price": 100,
+     "total": 100
+    },
+    {
+     "qty": "30",
+     "name": "كابل نحاس مجلفن 1500 فولت مفرد 6 مم",
+     "unit": "متر",
+     "price": 2.3,
+     "total": 69
+    }
+   ],
+   "total": 1819,
+   "method": "network",
+   "status": "payment_verified",
+   "history": [
+    {
+     "at": 1790472803608,
+     "status": "created"
+    },
+    {
+     "at": 1790472803609,
+     "status": "admin_review"
+    },
+    {
+     "at": 1790472861164,
+     "status": "payment_verified"
+    }
+   ],
+   "customer": "سفيان جميل",
+   "editNote": "",
+   "createdAt": 1790472803608,
+   "proofName": "",
+   "accessToken": "tok-muj5a13s6p65",
+   "clientPhone": "773590979",
+   "projectType": "r7",
+   "quoteNumber": "ACTES-613",
+   "transferRef": "85875754",
+   "codConfirmed": false,
+   "needsPaymentFix": false
+  },
+  "created_at": "2026-09-28T17:23:24.456569+00:00",
+  "updated_at": "2026-10-11T13:07:12.799+00:00"
+ }
+]

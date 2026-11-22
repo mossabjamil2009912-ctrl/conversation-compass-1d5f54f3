@@ -1,0 +1,711 @@
+[
+ {
+  "id": "n-mukgxe12to0d",
+  "payload": {
+   "id": "n-mukgxe12to0d",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 215669569569",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-C235478",
+   "orderId": "ord-mukgxe12kwhb",
+   "audience": "admin",
+   "createdAt": 1790552835398
+  },
+  "created_at": "2026-09-28T17:23:23.354272+00:00",
+  "updated_at": "2026-10-11T13:07:12.216+00:00"
+ },
+ {
+  "id": "n-muj5badlyvlj",
+  "payload": {
+   "id": "n-muj5badlyvlj",
+   "body": "تم تأكيد الفاتورة ACTES-C683540 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "cancelled",
+   "title": "تحديث حالة — ACTES-C683540",
+   "orderId": "ord-muize2iwkus3",
+   "audience": "admin",
+   "createdAt": 1790472862281
+  },
+  "created_at": "2026-09-28T17:23:26.770086+00:00",
+  "updated_at": "2026-10-11T13:07:14.589+00:00"
+ },
+ {
+  "id": "n-muj5badled6v",
+  "payload": {
+   "id": "n-muj5badled6v",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-C683540",
+   "orderId": "ord-muize2iwkus3",
+   "audience": "client",
+   "createdAt": 1790472862281
+  },
+  "created_at": "2026-09-28T17:23:26.770086+00:00",
+  "updated_at": "2026-10-11T13:07:14.589+00:00"
+ },
+ {
+  "id": "n-muew8egshubd",
+  "payload": {
+   "id": "n-muew8egshubd",
+   "body": "Sufyan — الشبكات المحلية — رقم الحوالة: 33333",
+   "kind": "transfer",
+   "state": "sent",
+   "title": "حوالة — ACTES-608",
+   "orderId": "ord-muew8egrsou0",
+   "audience": "admin",
+   "createdAt": 1790215746364
+  },
+  "created_at": "2026-10-04T18:09:15.204452+00:00",
+  "updated_at": "2026-10-11T13:07:21.123+00:00"
+ },
+ {
+  "id": "n-mv09sd78032n",
+  "payload": {
+   "id": "n-mv09sd78032n",
+   "body": "Sufyan — الشبكات المحلية — رقم الحوالة: 6t7t78y5",
+   "kind": "transfer",
+   "state": "sent",
+   "title": "حوالة — ACTES-C116216",
+   "orderId": "ord-mv09sd778s2y",
+   "audience": "admin",
+   "createdAt": 1791508302548
+  },
+  "created_at": "2026-10-09T01:12:15.600681+00:00",
+  "updated_at": "2026-10-11T13:07:38.403+00:00"
+ },
+ {
+  "id": "n-muvf3aq6qa4t",
+  "payload": {
+   "id": "n-muvf3aq6qa4t",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 45454125",
+   "kind": "transfer",
+   "state": "sent",
+   "title": "حوالة — ACTES-608",
+   "orderId": "ord-muvf3aq4duqf",
+   "audience": "admin",
+   "createdAt": 1791214879758
+  },
+  "created_at": "2026-10-05T17:07:42.290561+00:00",
+  "updated_at": "2026-10-11T13:07:39.214+00:00"
+ },
+ {
+  "id": "n-mufkp6mfx4ko",
+  "payload": {
+   "id": "n-mufkp6mfx4ko",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 48556525",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-627",
+   "orderId": "ord-mufkp6mfqgzx",
+   "audience": "admin",
+   "createdAt": 1790256840135
+  },
+  "created_at": "2026-09-28T17:23:33.657798+00:00",
+  "updated_at": "2026-10-11T13:07:20.181+00:00"
+ },
+ {
+  "id": "n-muhtwcql3l2q",
+  "payload": {
+   "id": "n-muhtwcql3l2q",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 8595959859",
+   "kind": "transfer",
+   "state": "confirmed",
+   "title": "حوالة — ACTES-609",
+   "orderId": "ord-muhtwcqlotdu",
+   "audience": "admin",
+   "createdAt": 1790393223549
+  },
+  "created_at": "2026-09-28T17:23:30.302689+00:00",
+  "updated_at": "2026-10-11T13:07:17.759+00:00"
+ },
+ {
+  "id": "n-muh1sp8522lt",
+  "payload": {
+   "id": "n-muh1sp8522lt",
+   "body": "تم تأكيد الفاتورة ACTES-616 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "confirmed",
+   "title": "تحديث حالة — ACTES-616",
+   "orderId": "ord-muh1ryb21zvh",
+   "audience": "admin",
+   "createdAt": 1790346023861
+  },
+  "created_at": "2026-09-28T17:23:31.808599+00:00",
+  "updated_at": "2026-10-11T13:07:18.565+00:00"
+ },
+ {
+  "id": "n-muh1sp85z8r1",
+  "payload": {
+   "id": "n-muh1sp85z8r1",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-616",
+   "orderId": "ord-muh1ryb21zvh",
+   "audience": "client",
+   "createdAt": 1790346023861
+  },
+  "created_at": "2026-09-28T17:23:31.808599+00:00",
+  "updated_at": "2026-10-11T13:07:18.565+00:00"
+ },
+ {
+  "id": "n-mv171z6mgr7v",
+  "payload": {
+   "id": "n-mv171z6mgr7v",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 567845785",
+   "kind": "transfer",
+   "state": "sent",
+   "title": "حوالة — ACTES-616",
+   "orderId": "ord-mv171z6lsl9j",
+   "audience": "admin",
+   "createdAt": 1791564178270
+  },
+  "created_at": "2026-10-09T16:44:17.488591+00:00",
+  "updated_at": "2026-10-11T13:07:37.596+00:00"
+ },
+ {
+  "id": "n-muh1ryb3ooio",
+  "payload": {
+   "id": "n-muh1ryb3ooio",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 8858584595",
+   "kind": "transfer",
+   "state": "confirmed",
+   "title": "حوالة — ACTES-616",
+   "orderId": "ord-muh1ryb21zvh",
+   "audience": "admin",
+   "createdAt": 1790345988975
+  },
+  "created_at": "2026-09-28T17:23:31.808599+00:00",
+  "updated_at": "2026-10-11T13:07:18.565+00:00"
+ },
+ {
+  "id": "n-mug6cbihwq79",
+  "payload": {
+   "id": "n-mug6cbihwq79",
+   "body": "الدفع عند الاستلام — العميل سفيان جميل (773590979). يرجى الاتصال بالعميل لإتمام التفاصيل.",
+   "info": true,
+   "kind": "cod",
+   "state": "sent",
+   "title": "دفع عند الاستلام — ACTES-C139702",
+   "orderId": "ord-mug6cbihwx5h",
+   "audience": "admin",
+   "createdAt": 1790293191497
+  },
+  "created_at": "2026-09-28T17:23:32.700675+00:00",
+  "updated_at": "2026-10-11T13:07:19.373+00:00"
+ },
+ {
+  "id": "n-mug6cbihjwpe",
+  "payload": {
+   "id": "n-mug6cbihjwpe",
+   "body": "تم استلام طلبك بنجاح، وسيتواصل بك فريق المبيعات في شركة أكتس خلال لحظات لإتمام التفاصيل.",
+   "kind": "status_update",
+   "state": "seen",
+   "title": "تحديث حالة — ACTES-C139702",
+   "orderId": "ord-mug6cbihwx5h",
+   "audience": "client",
+   "createdAt": 1790293191497
+  },
+  "created_at": "2026-09-28T17:23:32.700675+00:00",
+  "updated_at": "2026-10-11T13:07:19.373+00:00"
+ },
+ {
+  "id": "n-mukmwsyi12hh",
+  "payload": {
+   "id": "n-mukmwsyi12hh",
+   "body": "تم استلام طلبك بنجاح، وسيتواصل بك فريق المبيعات في شركة أكتس خلال لحظات لإتمام التفاصيل.",
+   "kind": "status_update",
+   "state": "seen",
+   "title": "تحديث حالة — ACTES-616",
+   "orderId": "ord-mukmwsyi5ett",
+   "audience": "client",
+   "createdAt": 1790562885786
+  },
+  "created_at": "2026-09-28T17:23:22.615368+00:00",
+  "updated_at": "2026-10-11T13:07:11.447+00:00"
+ },
+ {
+  "id": "n-muhtxercgknl",
+  "payload": {
+   "id": "n-muhtxercgknl",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-609",
+   "orderId": "ord-muhtwcqlotdu",
+   "audience": "client",
+   "createdAt": 1790393272824
+  },
+  "created_at": "2026-09-28T17:23:30.302689+00:00",
+  "updated_at": "2026-10-11T13:07:17.759+00:00"
+ },
+ {
+  "id": "n-mufkq7sruvbg",
+  "payload": {
+   "id": "n-mufkq7sruvbg",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-627",
+   "orderId": "ord-mufkp6mfqgzx",
+   "audience": "client",
+   "createdAt": 1790256888315
+  },
+  "created_at": "2026-09-28T17:23:33.657798+00:00",
+  "updated_at": "2026-10-11T13:07:20.181+00:00"
+ },
+ {
+  "id": "n-mukmwsyid162",
+  "payload": {
+   "id": "n-mukmwsyid162",
+   "body": "التواصل مع المبيعات — العميل سفيان جميل (773590979). يرجى الاتصال بالعميل لإتمام التفاصيل.",
+   "info": true,
+   "kind": "sales_contact",
+   "state": "sent",
+   "title": "طلب تواصل مع المبيعات — ACTES-616",
+   "orderId": "ord-mukmwsyi5ett",
+   "audience": "admin",
+   "createdAt": 1790562885786
+  },
+  "created_at": "2026-09-28T17:23:22.615368+00:00",
+  "updated_at": "2026-10-11T13:07:11.447+00:00"
+ },
+ {
+  "id": "n-muj5b9ikeg8o",
+  "payload": {
+   "id": "n-muj5b9ikeg8o",
+   "body": "تم تأكيد الفاتورة ACTES-613 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "confirmed",
+   "title": "تحديث حالة — ACTES-613",
+   "orderId": "ord-muj5a13samql",
+   "audience": "admin",
+   "createdAt": 1790472861164
+  },
+  "created_at": "2026-09-28T17:23:24.639775+00:00",
+  "updated_at": "2026-10-11T13:07:13.026+00:00"
+ },
+ {
+  "id": "n-muj5ba0ouq6i",
+  "payload": {
+   "id": "n-muj5ba0ouq6i",
+   "body": "تم تأكيد الفاتورة ACTES-C844878 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "confirmed",
+   "title": "تحديث حالة — ACTES-C844878",
+   "orderId": "ord-muj0482jbbt5",
+   "audience": "admin",
+   "createdAt": 1790472861816
+  },
+  "created_at": "2026-09-28T17:23:25.601796+00:00",
+  "updated_at": "2026-10-11T13:07:13.833+00:00"
+ },
+ {
+  "id": "n-muj5ba0o6n7s",
+  "payload": {
+   "id": "n-muj5ba0o6n7s",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-C844878",
+   "orderId": "ord-muj0482jbbt5",
+   "audience": "client",
+   "createdAt": 1790472861816
+  },
+  "created_at": "2026-09-28T17:23:25.601796+00:00",
+  "updated_at": "2026-10-11T13:07:13.833+00:00"
+ },
+ {
+  "id": "n-musphsw56bvf",
+  "payload": {
+   "id": "n-musphsw56bvf",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 4155556945",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-616",
+   "orderId": "ord-musphsw4xfok",
+   "audience": "admin",
+   "createdAt": 1791050954117
+  },
+  "created_at": "2026-10-03T18:09:39.452012+00:00",
+  "updated_at": "2026-10-11T13:07:40.014+00:00"
+ },
+ {
+  "id": "n-munt4p8rj8zb",
+  "payload": {
+   "id": "n-munt4p8rj8zb",
+   "body": "اختبار — الشبكات المحلية — رقم الحوالة: 50",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — 50",
+   "orderId": "ord-munt4p8qvfs6",
+   "audience": "admin",
+   "createdAt": 1790754730443
+  },
+  "created_at": "2026-09-30T07:52:22.750712+00:00",
+  "updated_at": "2026-10-11T13:07:08.931+00:00"
+ },
+ {
+  "id": "n-mupo2v8tv16y",
+  "payload": {
+   "id": "n-mupo2v8tv16y",
+   "body": "تم استلام طلبك بنجاح، وسيتواصل بك فريق المبيعات في شركة أكتس خلال لحظات لإتمام التفاصيل.",
+   "kind": "status_update",
+   "state": "seen",
+   "title": "تحديث حالة — ACTES-627",
+   "orderId": "ord-mupo2v8thvv3",
+   "audience": "client",
+   "createdAt": 1790867179181
+  },
+  "created_at": "2026-10-03T17:48:09.965108+00:00",
+  "updated_at": "2026-10-11T13:07:40.85+00:00"
+ },
+ {
+  "id": "n-mupo2v8tfax5",
+  "payload": {
+   "id": "n-mupo2v8tfax5",
+   "body": "التواصل مع المبيعات — العميل سفيان جميل (773590979). يرجى الاتصال بالعميل لإتمام التفاصيل.",
+   "info": true,
+   "kind": "sales_contact",
+   "state": "sent",
+   "title": "طلب تواصل مع المبيعات — ACTES-627",
+   "orderId": "ord-mupo2v8thvv3",
+   "audience": "admin",
+   "createdAt": 1790867179181
+  },
+  "created_at": "2026-10-03T17:48:09.965108+00:00",
+  "updated_at": "2026-10-11T13:07:40.85+00:00"
+ },
+ {
+  "id": "n-munt0a3x1ujs",
+  "payload": {
+   "id": "n-munt0a3x1ujs",
+   "body": "اختبار — الشبكات المحلية — رقم الحوالة: 50",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — 50",
+   "orderId": "ord-munt0a3xmthe",
+   "audience": "admin",
+   "createdAt": 1790754524205
+  },
+  "created_at": "2026-09-30T07:49:00.65627+00:00",
+  "updated_at": "2026-10-11T13:07:09.832+00:00"
+ },
+ {
+  "id": "n-mulxz0ipwght",
+  "payload": {
+   "id": "n-mulxz0ipwght",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 1566565656",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-627",
+   "orderId": "ord-mulxz0iottl3",
+   "audience": "admin",
+   "createdAt": 1790641930849
+  },
+  "created_at": "2026-09-30T04:15:28.134792+00:00",
+  "updated_at": "2026-10-11T13:07:10.641+00:00"
+ },
+ {
+  "id": "n-musvcy96sfdu",
+  "payload": {
+   "id": "n-musvcy96sfdu",
+   "body": "تم تأكيد الفاتورة ACTES-C235478 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "cancelled",
+   "title": "تحديث حالة — ACTES-C235478",
+   "orderId": "ord-mukgxe12kwhb",
+   "audience": "admin",
+   "createdAt": 1791060805482
+  },
+  "created_at": "2026-10-03T20:53:23.340445+00:00",
+  "updated_at": "2026-10-11T13:07:12.216+00:00"
+ },
+ {
+  "id": "n-musvcy96100q",
+  "payload": {
+   "id": "n-musvcy96100q",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-C235478",
+   "orderId": "ord-mukgxe12kwhb",
+   "audience": "client",
+   "createdAt": 1791060805482
+  },
+  "created_at": "2026-10-03T20:53:23.340445+00:00",
+  "updated_at": "2026-10-11T13:07:12.216+00:00"
+ },
+ {
+  "id": "n-muj5b9ik5bjm",
+  "payload": {
+   "id": "n-muj5b9ik5bjm",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-613",
+   "orderId": "ord-muj5a13samql",
+   "audience": "client",
+   "createdAt": 1790472861164
+  },
+  "created_at": "2026-09-28T17:23:24.639775+00:00",
+  "updated_at": "2026-10-11T13:07:13.026+00:00"
+ },
+ {
+  "id": "n-muixmhk5drur",
+  "payload": {
+   "id": "n-muixmhk5drur",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-674",
+   "orderId": "ord-muisjazqrn0p",
+   "audience": "client",
+   "createdAt": 1790459947877
+  },
+  "created_at": "2026-09-28T17:23:29.512679+00:00",
+  "updated_at": "2026-10-11T13:07:16.954+00:00"
+ },
+ {
+  "id": "n-muj5a13t59ye",
+  "payload": {
+   "id": "n-muj5a13t59ye",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 85875754",
+   "kind": "transfer",
+   "state": "confirmed",
+   "title": "حوالة — ACTES-613",
+   "orderId": "ord-muj5a13samql",
+   "audience": "admin",
+   "createdAt": 1790472803609
+  },
+  "created_at": "2026-09-28T17:23:24.639775+00:00",
+  "updated_at": "2026-10-11T13:07:13.026+00:00"
+ },
+ {
+  "id": "n-muj0482kt42b",
+  "payload": {
+   "id": "n-muj0482kt42b",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 9984565",
+   "kind": "transfer",
+   "state": "confirmed",
+   "title": "حوالة — ACTES-C844878",
+   "orderId": "ord-muj0482jbbt5",
+   "audience": "admin",
+   "createdAt": 1790464134620
+  },
+  "created_at": "2026-09-28T17:23:25.601796+00:00",
+  "updated_at": "2026-10-11T13:07:13.833+00:00"
+ },
+ {
+  "id": "n-muize2ixtns9",
+  "payload": {
+   "id": "n-muize2ixtns9",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 222121655",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-C683540",
+   "orderId": "ord-muize2iwkus3",
+   "audience": "admin",
+   "createdAt": 1790462914377
+  },
+  "created_at": "2026-09-28T17:23:26.770086+00:00",
+  "updated_at": "2026-10-11T13:07:14.589+00:00"
+ },
+ {
+  "id": "n-muj5b6htr0o4",
+  "payload": {
+   "id": "n-muj5b6htr0o4",
+   "body": "تم تأكيد الفاتورة ACTES-616 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "confirmed",
+   "title": "تحديث حالة — ACTES-616",
+   "orderId": "ord-muiz38nyc9zi",
+   "audience": "admin",
+   "createdAt": 1790472857249
+  },
+  "created_at": "2026-09-28T17:23:27.690345+00:00",
+  "updated_at": "2026-10-11T13:07:15.344+00:00"
+ },
+ {
+  "id": "n-muj5b6ht2bu3",
+  "payload": {
+   "id": "n-muj5b6ht2bu3",
+   "body": "تم تأكيد فاتورتك، وسيتواصل بك مسؤول المبيعات خلال لحظات.",
+   "kind": "purchase_confirmed",
+   "state": "seen",
+   "title": "شراء مؤكد — ACTES-616",
+   "orderId": "ord-muiz38nyc9zi",
+   "audience": "client",
+   "createdAt": 1790472857249
+  },
+  "created_at": "2026-09-28T17:23:27.690345+00:00",
+  "updated_at": "2026-10-11T13:07:15.344+00:00"
+ },
+ {
+  "id": "n-muiz38nyazdm",
+  "payload": {
+   "id": "n-muiz38nyazdm",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 45965695",
+   "kind": "transfer",
+   "state": "confirmed",
+   "title": "حوالة — ACTES-616",
+   "orderId": "ord-muiz38nyc9zi",
+   "audience": "admin",
+   "createdAt": 1790462409118
+  },
+  "created_at": "2026-09-28T17:23:27.690345+00:00",
+  "updated_at": "2026-10-11T13:07:15.344+00:00"
+ },
+ {
+  "id": "n-musvd5ygdbu0",
+  "payload": {
+   "id": "n-musvd5ygdbu0",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — 50",
+   "orderId": "ord-munt0a3xmthe",
+   "audience": "client",
+   "createdAt": 1791060815464
+  },
+  "created_at": "2026-10-03T20:53:33.324849+00:00",
+  "updated_at": "2026-10-11T13:07:09.832+00:00"
+ },
+ {
+  "id": "n-musvd7cniiwz",
+  "payload": {
+   "id": "n-musvd7cniiwz",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-627",
+   "orderId": "ord-mulxz0iottl3",
+   "audience": "client",
+   "createdAt": 1791060817271
+  },
+  "created_at": "2026-10-03T20:53:35.139624+00:00",
+  "updated_at": "2026-10-11T13:07:10.641+00:00"
+ },
+ {
+  "id": "n-musvd8km0jhu",
+  "payload": {
+   "id": "n-musvd8km0jhu",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-C235478",
+   "orderId": "ord-mukgxe12kwhb",
+   "audience": "client",
+   "createdAt": 1791060818854
+  },
+  "created_at": "2026-10-03T20:53:36.716009+00:00",
+  "updated_at": "2026-10-11T13:07:12.216+00:00"
+ },
+ {
+  "id": "n-musvcz63pvf8",
+  "payload": {
+   "id": "n-musvcz63pvf8",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-C683540",
+   "orderId": "ord-muize2iwkus3",
+   "audience": "client",
+   "createdAt": 1791060806667
+  },
+  "created_at": "2026-10-03T20:53:24.540035+00:00",
+  "updated_at": "2026-10-11T13:07:14.589+00:00"
+ },
+ {
+  "id": "n-muitscn81f7d",
+  "payload": {
+   "id": "n-muitscn81f7d",
+   "body": "تم استلام طلبك بنجاح، وسيتواصل بك فريق المبيعات في شركة أكتس خلال لحظات لإتمام التفاصيل.",
+   "kind": "status_update",
+   "state": "seen",
+   "title": "تحديث حالة — ACTES-678",
+   "orderId": "ord-muitscn81vgv",
+   "audience": "client",
+   "createdAt": 1790453502980
+  },
+  "created_at": "2026-09-28T17:23:28.537953+00:00",
+  "updated_at": "2026-10-11T13:07:16.149+00:00"
+ },
+ {
+  "id": "n-muitscn8963z",
+  "payload": {
+   "id": "n-muitscn8963z",
+   "body": "التواصل مع المبيعات — العميل سفيان جميل (773590979). يرجى الاتصال بالعميل لإتمام التفاصيل.",
+   "info": true,
+   "kind": "sales_contact",
+   "state": "sent",
+   "title": "طلب تواصل مع المبيعات — ACTES-678",
+   "orderId": "ord-muitscn81vgv",
+   "audience": "admin",
+   "createdAt": 1790453502980
+  },
+  "created_at": "2026-09-28T17:23:28.537953+00:00",
+  "updated_at": "2026-10-11T13:07:16.149+00:00"
+ },
+ {
+  "id": "n-muisjazr07xn",
+  "payload": {
+   "id": "n-muisjazr07xn",
+   "body": "سفيان جميل — الشبكات المحلية — رقم الحوالة: 14454564",
+   "kind": "transfer",
+   "state": "cancelled",
+   "title": "حوالة — ACTES-674",
+   "orderId": "ord-muisjazqrn0p",
+   "audience": "admin",
+   "createdAt": 1790451401319
+  },
+  "created_at": "2026-09-28T17:23:29.512679+00:00",
+  "updated_at": "2026-10-11T13:07:16.954+00:00"
+ },
+ {
+  "id": "n-musvd3ul6ctv",
+  "payload": {
+   "id": "n-musvd3ul6ctv",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — 50",
+   "orderId": "ord-munt4p8qvfs6",
+   "audience": "client",
+   "createdAt": 1791060812734
+  },
+  "created_at": "2026-10-03T20:53:30.593414+00:00",
+  "updated_at": "2026-10-11T13:07:08.931+00:00"
+ },
+ {
+  "id": "n-musvd26ebaz3",
+  "payload": {
+   "id": "n-musvd26ebaz3",
+   "body": "عذراً، رقم الحوالة أو رقم مرجع العملية غير صحيح. يرجى إعادة إدخال رقم الحوالة أو رقم مرجع العملية.",
+   "kind": "invoice_rejected",
+   "state": "seen",
+   "title": "إلغاء الفاتورة — ACTES-616",
+   "orderId": "ord-musphsw4xfok",
+   "audience": "client",
+   "createdAt": 1791060810566
+  },
+  "created_at": "2026-10-03T20:53:28.434362+00:00",
+  "updated_at": "2026-10-11T13:07:40.014+00:00"
+ },
+ {
+  "id": "n-muhtxercz40r",
+  "payload": {
+   "id": "n-muhtxercz40r",
+   "body": "تم تأكيد الفاتورة ACTES-609 وإشعار العميل.",
+   "kind": "status_update",
+   "state": "confirmed",
+   "title": "تحديث حالة — ACTES-609",
+   "orderId": "ord-muhtwcqlotdu",
+   "audience": "admin",
+   "createdAt": 1790393272824
+  },
+  "created_at": "2026-09-28T17:23:30.302689+00:00",
+  "updated_at": "2026-10-11T13:07:17.759+00:00"
+ }
+]

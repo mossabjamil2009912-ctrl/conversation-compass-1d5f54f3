@@ -10,33 +10,312 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ActsRouteImport } from './routes/acts'
+import { Route as CatalogsRouteImport } from './routes/catalogs'
+import { Route as ActsRateTokenRouteImport } from './routes/acts.rate.$token'
+import { Route as ApiPublicActsBridgeRouteImport } from './routes/api/public/acts-bridge'
+import { Route as ApiPublicAppVersionRouteImport } from './routes/api/public/app-version'
+import { Route as ApiPublicBotButtonLockRouteImport } from './routes/api/public/bot-button-lock'
+import { Route as ApiPublicBotCatalogRouteImport } from './routes/api/public/bot-catalog'
+import { Route as ApiPublicBotDiagnoseRouteImport } from './routes/api/public/bot-diagnose'
+import { Route as ApiPublicBotMediaRouteImport } from './routes/api/public/bot-media'
+import { Route as ApiPublicBotMessageRouteImport } from './routes/api/public/bot-message'
+import { Route as ApiPublicBotOrderRouteImport } from './routes/api/public/bot-order'
+import { Route as ApiPublicBotOrderStatusRouteImport } from './routes/api/public/bot-order-status'
+import { Route as ApiPublicBotPausedRouteImport } from './routes/api/public/bot-paused'
+import { Route as ApiPublicBotReportRequestRouteImport } from './routes/api/public/bot-report-request'
+import { Route as ApiPublicBotTicketRouteImport } from './routes/api/public/bot-ticket'
+import { Route as ApiPublicCatalogAssistantRouteImport } from './routes/api/public/catalog-assistant'
+import { Route as ApiPublicCatalogCoverRouteImport } from './routes/api/public/catalog-cover'
+import { Route as ApiPublicCrmMediaRouteImport } from './routes/api/public/crm-media'
+import { Route as ApiPublicDesktopAppRouteImport } from './routes/api/public/desktop-app'
+import { Route as ApiPublicHeaderImageRouteImport } from './routes/api/public/header-image'
+import { Route as ApiPublicJobsGithubBackupRouteImport } from './routes/api/public/jobs/github-backup'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ActsRoute = ActsRouteImport.update({
+  id: '/acts',
+  path: '/acts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogsRoute = CatalogsRouteImport.update({
+  id: '/catalogs',
+  path: '/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActsRateTokenRoute = ActsRateTokenRouteImport.update({
+  id: '/rate/$token',
+  path: '/rate/$token',
+  getParentRoute: () => ActsRoute,
+} as any)
+const ApiPublicActsBridgeRoute = ApiPublicActsBridgeRouteImport.update({
+  id: '/api/public/acts-bridge',
+  path: '/api/public/acts-bridge',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicAppVersionRoute = ApiPublicAppVersionRouteImport.update({
+  id: '/api/public/app-version',
+  path: '/api/public/app-version',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotButtonLockRoute = ApiPublicBotButtonLockRouteImport.update({
+  id: '/api/public/bot-button-lock',
+  path: '/api/public/bot-button-lock',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotCatalogRoute = ApiPublicBotCatalogRouteImport.update({
+  id: '/api/public/bot-catalog',
+  path: '/api/public/bot-catalog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotDiagnoseRoute = ApiPublicBotDiagnoseRouteImport.update({
+  id: '/api/public/bot-diagnose',
+  path: '/api/public/bot-diagnose',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotMediaRoute = ApiPublicBotMediaRouteImport.update({
+  id: '/api/public/bot-media',
+  path: '/api/public/bot-media',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotMessageRoute = ApiPublicBotMessageRouteImport.update({
+  id: '/api/public/bot-message',
+  path: '/api/public/bot-message',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotOrderRoute = ApiPublicBotOrderRouteImport.update({
+  id: '/api/public/bot-order',
+  path: '/api/public/bot-order',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotOrderStatusRoute = ApiPublicBotOrderStatusRouteImport.update({
+  id: '/api/public/bot-order-status',
+  path: '/api/public/bot-order-status',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotPausedRoute = ApiPublicBotPausedRouteImport.update({
+  id: '/api/public/bot-paused',
+  path: '/api/public/bot-paused',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBotReportRequestRoute =
+  ApiPublicBotReportRequestRouteImport.update({
+    id: '/api/public/bot-report-request',
+    path: '/api/public/bot-report-request',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicBotTicketRoute = ApiPublicBotTicketRouteImport.update({
+  id: '/api/public/bot-ticket',
+  path: '/api/public/bot-ticket',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicCatalogAssistantRoute =
+  ApiPublicCatalogAssistantRouteImport.update({
+    id: '/api/public/catalog-assistant',
+    path: '/api/public/catalog-assistant',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicCatalogCoverRoute = ApiPublicCatalogCoverRouteImport.update({
+  id: '/api/public/catalog-cover',
+  path: '/api/public/catalog-cover',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicCrmMediaRoute = ApiPublicCrmMediaRouteImport.update({
+  id: '/api/public/crm-media',
+  path: '/api/public/crm-media',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicDesktopAppRoute = ApiPublicDesktopAppRouteImport.update({
+  id: '/api/public/desktop-app',
+  path: '/api/public/desktop-app',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicHeaderImageRoute = ApiPublicHeaderImageRouteImport.update({
+  id: '/api/public/header-image',
+  path: '/api/public/header-image',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicJobsGithubBackupRoute =
+  ApiPublicJobsGithubBackupRouteImport.update({
+    id: '/api/public/jobs/github-backup',
+    path: '/api/public/jobs/github-backup',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/acts': typeof ActsRouteWithChildren
+  '/catalogs': typeof CatalogsRoute
+  '/acts/rate/$token': typeof ActsRateTokenRoute
+  '/api/public/acts-bridge': typeof ApiPublicActsBridgeRoute
+  '/api/public/app-version': typeof ApiPublicAppVersionRoute
+  '/api/public/bot-button-lock': typeof ApiPublicBotButtonLockRoute
+  '/api/public/bot-catalog': typeof ApiPublicBotCatalogRoute
+  '/api/public/bot-diagnose': typeof ApiPublicBotDiagnoseRoute
+  '/api/public/bot-media': typeof ApiPublicBotMediaRoute
+  '/api/public/bot-message': typeof ApiPublicBotMessageRoute
+  '/api/public/bot-order': typeof ApiPublicBotOrderRoute
+  '/api/public/bot-order-status': typeof ApiPublicBotOrderStatusRoute
+  '/api/public/bot-paused': typeof ApiPublicBotPausedRoute
+  '/api/public/bot-report-request': typeof ApiPublicBotReportRequestRoute
+  '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
+  '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
+  '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
+  '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
+  '/api/public/header-image': typeof ApiPublicHeaderImageRoute
+  '/api/public/jobs/github-backup': typeof ApiPublicJobsGithubBackupRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/acts': typeof ActsRouteWithChildren
+  '/catalogs': typeof CatalogsRoute
+  '/acts/rate/$token': typeof ActsRateTokenRoute
+  '/api/public/acts-bridge': typeof ApiPublicActsBridgeRoute
+  '/api/public/app-version': typeof ApiPublicAppVersionRoute
+  '/api/public/bot-button-lock': typeof ApiPublicBotButtonLockRoute
+  '/api/public/bot-catalog': typeof ApiPublicBotCatalogRoute
+  '/api/public/bot-diagnose': typeof ApiPublicBotDiagnoseRoute
+  '/api/public/bot-media': typeof ApiPublicBotMediaRoute
+  '/api/public/bot-message': typeof ApiPublicBotMessageRoute
+  '/api/public/bot-order': typeof ApiPublicBotOrderRoute
+  '/api/public/bot-order-status': typeof ApiPublicBotOrderStatusRoute
+  '/api/public/bot-paused': typeof ApiPublicBotPausedRoute
+  '/api/public/bot-report-request': typeof ApiPublicBotReportRequestRoute
+  '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
+  '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
+  '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
+  '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
+  '/api/public/header-image': typeof ApiPublicHeaderImageRoute
+  '/api/public/jobs/github-backup': typeof ApiPublicJobsGithubBackupRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/acts': typeof ActsRouteWithChildren
+  '/catalogs': typeof CatalogsRoute
+  '/acts/rate/$token': typeof ActsRateTokenRoute
+  '/api/public/acts-bridge': typeof ApiPublicActsBridgeRoute
+  '/api/public/app-version': typeof ApiPublicAppVersionRoute
+  '/api/public/bot-button-lock': typeof ApiPublicBotButtonLockRoute
+  '/api/public/bot-catalog': typeof ApiPublicBotCatalogRoute
+  '/api/public/bot-diagnose': typeof ApiPublicBotDiagnoseRoute
+  '/api/public/bot-media': typeof ApiPublicBotMediaRoute
+  '/api/public/bot-message': typeof ApiPublicBotMessageRoute
+  '/api/public/bot-order': typeof ApiPublicBotOrderRoute
+  '/api/public/bot-order-status': typeof ApiPublicBotOrderStatusRoute
+  '/api/public/bot-paused': typeof ApiPublicBotPausedRoute
+  '/api/public/bot-report-request': typeof ApiPublicBotReportRequestRoute
+  '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
+  '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
+  '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
+  '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
+  '/api/public/header-image': typeof ApiPublicHeaderImageRoute
+  '/api/public/jobs/github-backup': typeof ApiPublicJobsGithubBackupRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/acts'
+    | '/catalogs'
+    | '/acts/rate/$token'
+    | '/api/public/acts-bridge'
+    | '/api/public/app-version'
+    | '/api/public/bot-button-lock'
+    | '/api/public/bot-catalog'
+    | '/api/public/bot-diagnose'
+    | '/api/public/bot-media'
+    | '/api/public/bot-message'
+    | '/api/public/bot-order'
+    | '/api/public/bot-order-status'
+    | '/api/public/bot-paused'
+    | '/api/public/bot-report-request'
+    | '/api/public/bot-ticket'
+    | '/api/public/catalog-assistant'
+    | '/api/public/catalog-cover'
+    | '/api/public/crm-media'
+    | '/api/public/desktop-app'
+    | '/api/public/header-image'
+    | '/api/public/jobs/github-backup'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/acts'
+    | '/catalogs'
+    | '/acts/rate/$token'
+    | '/api/public/acts-bridge'
+    | '/api/public/app-version'
+    | '/api/public/bot-button-lock'
+    | '/api/public/bot-catalog'
+    | '/api/public/bot-diagnose'
+    | '/api/public/bot-media'
+    | '/api/public/bot-message'
+    | '/api/public/bot-order'
+    | '/api/public/bot-order-status'
+    | '/api/public/bot-paused'
+    | '/api/public/bot-report-request'
+    | '/api/public/bot-ticket'
+    | '/api/public/catalog-assistant'
+    | '/api/public/catalog-cover'
+    | '/api/public/crm-media'
+    | '/api/public/desktop-app'
+    | '/api/public/header-image'
+    | '/api/public/jobs/github-backup'
+  id:
+    | '__root__'
+    | '/'
+    | '/acts'
+    | '/catalogs'
+    | '/acts/rate/$token'
+    | '/api/public/acts-bridge'
+    | '/api/public/app-version'
+    | '/api/public/bot-button-lock'
+    | '/api/public/bot-catalog'
+    | '/api/public/bot-diagnose'
+    | '/api/public/bot-media'
+    | '/api/public/bot-message'
+    | '/api/public/bot-order'
+    | '/api/public/bot-order-status'
+    | '/api/public/bot-paused'
+    | '/api/public/bot-report-request'
+    | '/api/public/bot-ticket'
+    | '/api/public/catalog-assistant'
+    | '/api/public/catalog-cover'
+    | '/api/public/crm-media'
+    | '/api/public/desktop-app'
+    | '/api/public/header-image'
+    | '/api/public/jobs/github-backup'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ActsRoute: typeof ActsRouteWithChildren
+  CatalogsRoute: typeof CatalogsRoute
+  ApiPublicActsBridgeRoute: typeof ApiPublicActsBridgeRoute
+  ApiPublicAppVersionRoute: typeof ApiPublicAppVersionRoute
+  ApiPublicBotButtonLockRoute: typeof ApiPublicBotButtonLockRoute
+  ApiPublicBotCatalogRoute: typeof ApiPublicBotCatalogRoute
+  ApiPublicBotDiagnoseRoute: typeof ApiPublicBotDiagnoseRoute
+  ApiPublicBotMediaRoute: typeof ApiPublicBotMediaRoute
+  ApiPublicBotMessageRoute: typeof ApiPublicBotMessageRoute
+  ApiPublicBotOrderRoute: typeof ApiPublicBotOrderRoute
+  ApiPublicBotOrderStatusRoute: typeof ApiPublicBotOrderStatusRoute
+  ApiPublicBotPausedRoute: typeof ApiPublicBotPausedRoute
+  ApiPublicBotReportRequestRoute: typeof ApiPublicBotReportRequestRoute
+  ApiPublicBotTicketRoute: typeof ApiPublicBotTicketRoute
+  ApiPublicCatalogAssistantRoute: typeof ApiPublicCatalogAssistantRoute
+  ApiPublicCatalogCoverRoute: typeof ApiPublicCatalogCoverRoute
+  ApiPublicCrmMediaRoute: typeof ApiPublicCrmMediaRoute
+  ApiPublicDesktopAppRoute: typeof ApiPublicDesktopAppRoute
+  ApiPublicHeaderImageRoute: typeof ApiPublicHeaderImageRoute
+  ApiPublicJobsGithubBackupRoute: typeof ApiPublicJobsGithubBackupRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +327,188 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/acts': {
+      id: '/acts'
+      path: '/acts'
+      fullPath: '/acts'
+      preLoaderRoute: typeof ActsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalogs': {
+      id: '/catalogs'
+      path: '/catalogs'
+      fullPath: '/catalogs'
+      preLoaderRoute: typeof CatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/acts/rate/$token': {
+      id: '/acts/rate/$token'
+      path: '/rate/$token'
+      fullPath: '/acts/rate/$token'
+      preLoaderRoute: typeof ActsRateTokenRouteImport
+      parentRoute: typeof ActsRoute
+    }
+    '/api/public/acts-bridge': {
+      id: '/api/public/acts-bridge'
+      path: '/api/public/acts-bridge'
+      fullPath: '/api/public/acts-bridge'
+      preLoaderRoute: typeof ApiPublicActsBridgeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/app-version': {
+      id: '/api/public/app-version'
+      path: '/api/public/app-version'
+      fullPath: '/api/public/app-version'
+      preLoaderRoute: typeof ApiPublicAppVersionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-button-lock': {
+      id: '/api/public/bot-button-lock'
+      path: '/api/public/bot-button-lock'
+      fullPath: '/api/public/bot-button-lock'
+      preLoaderRoute: typeof ApiPublicBotButtonLockRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-catalog': {
+      id: '/api/public/bot-catalog'
+      path: '/api/public/bot-catalog'
+      fullPath: '/api/public/bot-catalog'
+      preLoaderRoute: typeof ApiPublicBotCatalogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-diagnose': {
+      id: '/api/public/bot-diagnose'
+      path: '/api/public/bot-diagnose'
+      fullPath: '/api/public/bot-diagnose'
+      preLoaderRoute: typeof ApiPublicBotDiagnoseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-media': {
+      id: '/api/public/bot-media'
+      path: '/api/public/bot-media'
+      fullPath: '/api/public/bot-media'
+      preLoaderRoute: typeof ApiPublicBotMediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-message': {
+      id: '/api/public/bot-message'
+      path: '/api/public/bot-message'
+      fullPath: '/api/public/bot-message'
+      preLoaderRoute: typeof ApiPublicBotMessageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-order': {
+      id: '/api/public/bot-order'
+      path: '/api/public/bot-order'
+      fullPath: '/api/public/bot-order'
+      preLoaderRoute: typeof ApiPublicBotOrderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-order-status': {
+      id: '/api/public/bot-order-status'
+      path: '/api/public/bot-order-status'
+      fullPath: '/api/public/bot-order-status'
+      preLoaderRoute: typeof ApiPublicBotOrderStatusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-paused': {
+      id: '/api/public/bot-paused'
+      path: '/api/public/bot-paused'
+      fullPath: '/api/public/bot-paused'
+      preLoaderRoute: typeof ApiPublicBotPausedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-report-request': {
+      id: '/api/public/bot-report-request'
+      path: '/api/public/bot-report-request'
+      fullPath: '/api/public/bot-report-request'
+      preLoaderRoute: typeof ApiPublicBotReportRequestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/bot-ticket': {
+      id: '/api/public/bot-ticket'
+      path: '/api/public/bot-ticket'
+      fullPath: '/api/public/bot-ticket'
+      preLoaderRoute: typeof ApiPublicBotTicketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/catalog-assistant': {
+      id: '/api/public/catalog-assistant'
+      path: '/api/public/catalog-assistant'
+      fullPath: '/api/public/catalog-assistant'
+      preLoaderRoute: typeof ApiPublicCatalogAssistantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/catalog-cover': {
+      id: '/api/public/catalog-cover'
+      path: '/api/public/catalog-cover'
+      fullPath: '/api/public/catalog-cover'
+      preLoaderRoute: typeof ApiPublicCatalogCoverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/crm-media': {
+      id: '/api/public/crm-media'
+      path: '/api/public/crm-media'
+      fullPath: '/api/public/crm-media'
+      preLoaderRoute: typeof ApiPublicCrmMediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/desktop-app': {
+      id: '/api/public/desktop-app'
+      path: '/api/public/desktop-app'
+      fullPath: '/api/public/desktop-app'
+      preLoaderRoute: typeof ApiPublicDesktopAppRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/header-image': {
+      id: '/api/public/header-image'
+      path: '/api/public/header-image'
+      fullPath: '/api/public/header-image'
+      preLoaderRoute: typeof ApiPublicHeaderImageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/jobs/github-backup': {
+      id: '/api/public/jobs/github-backup'
+      path: '/api/public/jobs/github-backup'
+      fullPath: '/api/public/jobs/github-backup'
+      preLoaderRoute: typeof ApiPublicJobsGithubBackupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
+interface ActsRouteChildren {
+  ActsRateTokenRoute: typeof ActsRateTokenRoute
+}
+
+const ActsRouteChildren: ActsRouteChildren = {
+  ActsRateTokenRoute: ActsRateTokenRoute,
+}
+
+const ActsRouteWithChildren = ActsRoute._addFileChildren(ActsRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ActsRoute: ActsRouteWithChildren,
+  CatalogsRoute: CatalogsRoute,
+  ApiPublicActsBridgeRoute: ApiPublicActsBridgeRoute,
+  ApiPublicAppVersionRoute: ApiPublicAppVersionRoute,
+  ApiPublicBotButtonLockRoute: ApiPublicBotButtonLockRoute,
+  ApiPublicBotCatalogRoute: ApiPublicBotCatalogRoute,
+  ApiPublicBotDiagnoseRoute: ApiPublicBotDiagnoseRoute,
+  ApiPublicBotMediaRoute: ApiPublicBotMediaRoute,
+  ApiPublicBotMessageRoute: ApiPublicBotMessageRoute,
+  ApiPublicBotOrderRoute: ApiPublicBotOrderRoute,
+  ApiPublicBotOrderStatusRoute: ApiPublicBotOrderStatusRoute,
+  ApiPublicBotPausedRoute: ApiPublicBotPausedRoute,
+  ApiPublicBotReportRequestRoute: ApiPublicBotReportRequestRoute,
+  ApiPublicBotTicketRoute: ApiPublicBotTicketRoute,
+  ApiPublicCatalogAssistantRoute: ApiPublicCatalogAssistantRoute,
+  ApiPublicCatalogCoverRoute: ApiPublicCatalogCoverRoute,
+  ApiPublicCrmMediaRoute: ApiPublicCrmMediaRoute,
+  ApiPublicDesktopAppRoute: ApiPublicDesktopAppRoute,
+  ApiPublicHeaderImageRoute: ApiPublicHeaderImageRoute,
+  ApiPublicJobsGithubBackupRoute: ApiPublicJobsGithubBackupRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

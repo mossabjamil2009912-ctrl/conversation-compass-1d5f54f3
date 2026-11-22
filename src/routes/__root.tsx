@@ -1,4 +1,11 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient } from "@tanstack/react-query";
+import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
+import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
+import { get as idbGet, set as idbSet, del as idbDel } from "idb-keyval";
+import { registerOfflineWorker } from "../lib/pwa";
+import { UpdateGate } from "../components/UpdateGate";
+import { saveShell } from "../lib/offline-shell";
+import { markAppReady } from "../lib/manual-update";
 import {
   Outlet,
   Link,
@@ -38,8 +45,14 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
+  useEffect(() => { void markAppReady(); }, []);
   useEffect(() => {
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    // Stale page chunk after an update: reload once to fetch the current build.
+    if (/dynamically imported module|Importing a module script failed/i.test(String((error as Error | undefined)?.message)) && navigator.onLine) {
+      const last = Number(sessionStorage.getItem("actes-chunk-reload") ?? 0);
+      if (Date.now() - last > 30_000) { sessionStorage.setItem("actes-chunk-reload", String(Date.now())); window.location.reload(); }
+    }
   }, [error]);
 
   return (
@@ -75,27 +88,30 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
-    // Replace these placeholders with the app's name and description when first building the app.
-    // Each content route, / included, must still set its own head(). Never add og:image or
-    // twitter:image here: every page without its own would inherit the root's preview image.
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "theme-color", content: "#1f1f21" },
+      { title: "ACTES CRM" },
+      { name: "description", content: "لوحة محادثات عملاء بوت ACTES" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-title", content: "ACTES CRM" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" },
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "manifest", href: "/manifest.webmanifest" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
@@ -106,11 +122,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ backgroundColor: "#1f1f21" }}>
       <head>
+        <style>{"html,body{background-color:#1f1f21;}"}</style>
         <HeadContent />
       </head>
-      <body>
+      <body style={{ backgroundColor: "#1f1f21" }}>
         {children}
         <Scripts />
       </body>
@@ -118,13 +135,37 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+const persister = createAsyncStoragePersister({
+  storage: { getItem: (k) => idbGet(k), setItem: (k, v) => idbSet(k, v), removeItem: (k) => idbDel(k) },
+  key: "actes-crm-cache",
+  throttleTime: 2000,
+});
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  useEffect(() => {
+    void registerOfflineWorker();
+    void saveShell();
+    const onOnline = () => void saveShell();
+    window.addEventListener("online", onOnline);
+    // A page chunk from an older build/edit can vanish; reload once (per 30s) instead of a blank screen.
+    const onPreload = (e: Event) => {
+      if (!navigator.onLine) return;
+      const last = Number(sessionStorage.getItem("actes-chunk-reload") ?? 0);
+      if (Date.now() - last < 30_000) return;
+      sessionStorage.setItem("actes-chunk-reload", String(Date.now()));
+      e.preventDefault();
+      window.location.reload();
+    };
+    window.addEventListener("vite:preloadError", onPreload);
+    return () => { window.removeEventListener("online", onOnline); window.removeEventListener("vite:preloadError", onPreload); };
+  }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <PersistQueryClientProvider client={queryClient} persistOptions={{ persister, maxAge: 30 * 24 * 60 * 60_000, buster: "v1" }}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
-    </QueryClientProvider>
+      <UpdateGate />
+    </PersistQueryClientProvider>
   );
 }

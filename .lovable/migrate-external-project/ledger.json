@@ -1,0 +1,11 @@
+[
+  {"capability": "code", "source": "github mossabjamil2009912-ctrl/conversation-compass", "outcome": "migrate", "status": "verified", "next_action": null},
+  {"capability": "schema", "source": "connected backend already holds all ACTES tables (22)", "outcome": "keep", "status": "verified", "next_action": null},
+  {"capability": "records", "source": "connected backend", "outcome": "keep", "status": "verified", "next_action": "row counts match data/backup/_summary.json"},
+  {"capability": "uploaded files", "source": "crm-attachments / catalogs buckets", "outcome": "keep", "status": "verified", "next_action": null},
+  {"capability": "auth", "source": "single dashboard password (DASHBOARD_PASSWORD)", "outcome": "keep", "status": "pending", "next_action": "user enters DASHBOARD_PASSWORD secret"},
+  {"capability": "n8n bot endpoints", "source": "/api/public/bot-*", "outcome": "keep", "status": "pending", "next_action": "user enters BOT_INGEST_SECRET; publish; point n8n at the new published URL"},
+  {"capability": "github backup job", "source": "/api/public/jobs/github-backup", "outcome": "keep", "status": "pending", "next_action": "needs GitHub connector (GITHUB_API_KEY) and a daily schedule"},
+  {"capability": "AI", "source": "LOVABLE_API_KEY", "outcome": "keep", "status": "verified", "next_action": null},
+  {"capability": "cutover", "source": "old hosts", "outcome": "keep", "status": "pending", "next_action": "user decides after publish"}
+]

@@ -1,0 +1,805 @@
+[
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000001",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. أحمد عبدالله الحمادي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e1.jpg",
+  "specialty": "هندسة طاقة متجددة",
+  "university": "جامعة صنعاء",
+  "grad_year": 2014,
+  "qualifications": "ماجستير",
+  "skills": [
+   "تصميم المنظومات",
+   "حسابات الأحمال",
+   "دراسات الجدوى"
+  ],
+  "tools": [
+   "PVsyst",
+   "AutoCAD",
+   "Helioscope"
+  ],
+  "services": [
+   "تصميم",
+   "استشارات",
+   "إشراف"
+  ],
+  "years_exp": 11,
+  "projects": [
+   {
+    "desc": "تقرير إنتاجية سنوية وتحليل خسائر وتوجيه الألواح.",
+    "title": "دراسة ومحاكاة PVsyst لمحطة تجارية 120 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/design1.jpg"
+    ],
+    "system": "دراسة إنتاجية • تقرير PVsyst • توصيات فنية",
+    "location": "صنعاء - حدة، أمانة العاصمة"
+   },
+   {
+    "desc": "إعداد المخطط الأحادي وحساب الكابلات والحمايات.",
+    "title": "مخططات SLD ونوتة حسابية لمنظومة ضخ زراعي 45 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/design2.jpg"
+    ],
+    "system": "مخطط SLD • حساب مقاطع الكابلات • اختيار الحمايات",
+    "location": "صنعاء - السبعين، أمانة العاصمة"
+   },
+   {
+    "desc": "متابعة التنفيذ وفحص الجودة واستلام الأعمال.",
+    "title": "إشراف هندسي واستلام محطة 250 كيلوواط لمصنع",
+    "images": [
+     "https://actes-crm.lovable.app/acts/design3.jpg"
+    ],
+    "system": "إشراف • فحص جودة • استلام نهائي",
+    "location": "صنعاء - معين، أمانة العاصمة"
+   }
+  ],
+  "governorate": "أمانة العاصمة",
+  "city": "صنعاء",
+  "bio": "متخصص في تصميم ومحاكاة محطات الطاقة الشمسية التجارية والزراعية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000002",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. سامي علي الشرعبي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e2.jpg",
+  "specialty": "هندسة طاقة متجددة",
+  "university": "جامعة تعز",
+  "grad_year": 2016,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "تمديدات DC/AC",
+   "هياكل التثبيت",
+   "المنظومات الهجينة ومتحكمات MPPT"
+  ],
+  "tools": [
+   "AutoCAD",
+   "Excel"
+  ],
+  "services": [
+   "تنفيذ",
+   "صيانة",
+   "برمجة"
+  ],
+  "years_exp": 9,
+  "projects": [
+   {
+    "desc": "تركيب ألواح وإنفرتر هجين وبطاريات ليثيوم 48 فولت.",
+    "title": "تركيب منظومة جهد منخفض LV لمحل تجاري 15 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv1.jpg"
+    ],
+    "system": "24 لوح × 720W • إنفرتر LV 15kW • بطاريات 30kWh",
+    "location": "تعز - القاهرة، تعز"
+   },
+   {
+    "desc": "تركيب وتمديدات DC/AC وتشغيل المنظومة للمنزل.",
+    "title": "تركيب منظومة سكنية جهد منخفض 8 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv2.jpg"
+    ],
+    "system": "12 لوح × 720W • إنفرتر LV 8kW • بطاريات 15kWh",
+    "location": "تعز - الحوبان، تعز"
+   },
+   {
+    "desc": "تركيب ألواح ومغير سرعة VFD لمضخة بئر.",
+    "title": "تركيب منظومة ضخ زراعي جهد منخفض 30 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv3.jpg"
+    ],
+    "system": "42 لوح × 720W • مغير سرعة VFD • حماية DC",
+    "location": "تعز - القاهرة، تعز"
+   }
+  ],
+  "governorate": "تعز",
+  "city": "تعز",
+  "bio": "تنفيذ منظومات سكنية وتجارية متكاملة.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000003",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. عبدالكريم يحيى الآنسي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e3.jpg",
+  "specialty": "هندسة طاقة متجددة",
+  "university": "جامعة ذمار",
+  "grad_year": 2018,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "مغيرات سرعة المضخات VFD",
+   "تصميم المنظومات"
+  ],
+  "tools": [
+   "PVsyst",
+   "Excel"
+  ],
+  "services": [
+   "تصميم",
+   "تنفيذ",
+   "برمجة"
+  ],
+  "years_exp": 7,
+  "projects": [
+   {
+    "desc": "تركيب ألواح وإنفرتر هجين وبطاريات ليثيوم 48 فولت.",
+    "title": "تركيب منظومة جهد منخفض LV لمحل تجاري 15 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv1.jpg"
+    ],
+    "system": "24 لوح × 720W • إنفرتر LV 15kW • بطاريات 30kWh",
+    "location": "ذمار - المدينة، ذمار"
+   },
+   {
+    "desc": "تركيب وتمديدات DC/AC وتشغيل المنظومة للمنزل.",
+    "title": "تركيب منظومة سكنية جهد منخفض 8 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv2.jpg"
+    ],
+    "system": "12 لوح × 720W • إنفرتر LV 8kW • بطاريات 15kWh",
+    "location": "ذمار - عنس، ذمار"
+   },
+   {
+    "desc": "تركيب ألواح ومغير سرعة VFD لمضخة بئر.",
+    "title": "تركيب منظومة ضخ زراعي جهد منخفض 30 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv3.jpg"
+    ],
+    "system": "42 لوح × 720W • مغير سرعة VFD • حماية DC",
+    "location": "ذمار - المدينة، ذمار"
+   }
+  ],
+  "governorate": "ذمار",
+  "city": "ذمار",
+  "bio": "خبرة في منظومات ضخ الآبار الزراعية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000004",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. وليد حسن باعباد",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e4.jpg",
+  "specialty": "هندسة كهربائية",
+  "university": "جامعة عدن",
+  "grad_year": 2012,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "لوحات التوزيع والقواطع",
+   "التأريض والحماية من الصواعق"
+  ],
+  "tools": [
+   "AutoCAD",
+   "ETAP"
+  ],
+  "services": [
+   "تنفيذ",
+   "تصميم",
+   "إشراف"
+  ],
+  "years_exp": 13,
+  "projects": [
+   {
+    "desc": "تركيب 500 لوح بقدرة 720 واط مع 4 إنفرترات هجينة جهد عالي وتخزين 1 ميجاوات/ساعة.",
+    "title": "تنفيذ محطة هجينة جهد عالي HV بقدرة 360 كيلوواط ذروة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv1.jpg"
+    ],
+    "system": "500 لوح × 720W • 4 إنفرترات HV • تخزين 1MWh",
+    "location": "عدن - المنصورة، عدن"
+   },
+   {
+    "desc": "تركيب كبائن بطاريات BESS جهد عالي وربطها بالمحطة الشمسية ولوحات الحماية.",
+    "title": "تنفيذ محطة تخزين صناعية جهد عالي 3 ميجاوات/ساعة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv2.jpg"
+    ],
+    "system": "تخزين 3MWh • بطاريات HV • لوحات حماية وتوزيع",
+    "location": "عدن - كريتر، عدن"
+   },
+   {
+    "desc": "تركيب الألواح والإنفرترات الصناعية وتشغيل المحطة واستلامها.",
+    "title": "تنفيذ محطة جهد عالي لمصنع بقدرة 250 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv3.jpg"
+    ],
+    "system": "350 لوح × 720W • إنفرترين HV • تخزين 500kWh",
+    "location": "عدن - الشيخ عثمان، عدن"
+   }
+  ],
+  "governorate": "عدن",
+  "city": "المنصورة",
+  "bio": "لوحات توزيع ومنظومات تجارية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000005",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. مروان عبده القاضي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e5.jpg",
+  "specialty": "هندسة كهربائية",
+  "university": "جامعة إب",
+  "grad_year": 2017,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "فحص البطاريات",
+   "قياس العزل وتشخيص الأعطال"
+  ],
+  "tools": [
+   "Excel"
+  ],
+  "services": [
+   "صيانة",
+   "تنفيذ"
+  ],
+  "years_exp": 8,
+  "projects": [
+   {
+    "desc": "تركيب ألواح وإنفرتر هجين وبطاريات ليثيوم 48 فولت.",
+    "title": "تركيب منظومة جهد منخفض LV لمحل تجاري 15 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv1.jpg"
+    ],
+    "system": "24 لوح × 720W • إنفرتر LV 15kW • بطاريات 30kWh",
+    "location": "إب، إب"
+   },
+   {
+    "desc": "تركيب وتمديدات DC/AC وتشغيل المنظومة للمنزل.",
+    "title": "تركيب منظومة سكنية جهد منخفض 8 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv2.jpg"
+    ],
+    "system": "12 لوح × 720W • إنفرتر LV 8kW • بطاريات 15kWh",
+    "location": "إب، إب"
+   },
+   {
+    "desc": "تركيب ألواح ومغير سرعة VFD لمضخة بئر.",
+    "title": "تركيب منظومة ضخ زراعي جهد منخفض 30 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv3.jpg"
+    ],
+    "system": "42 لوح × 720W • مغير سرعة VFD • حماية DC",
+    "location": "إب، إب"
+   }
+  ],
+  "governorate": "إب",
+  "city": "إب",
+  "bio": "صيانة وفحص منظومات البطاريات.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000006",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. فيصل سالم العولقي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e6.jpg",
+  "specialty": "هندسة كهربائية",
+  "university": "جامعة حضرموت",
+  "grad_year": 2015,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "تمديدات DC/AC",
+   "مراقبة الجودة والسلامة"
+  ],
+  "tools": [
+   "AutoCAD",
+   "MS Project"
+  ],
+  "services": [
+   "تنفيذ",
+   "إشراف",
+   "استشارات"
+  ],
+  "years_exp": 10,
+  "projects": [
+   {
+    "desc": "تركيب 500 لوح بقدرة 720 واط مع 4 إنفرترات هجينة جهد عالي وتخزين 1 ميجاوات/ساعة.",
+    "title": "تنفيذ محطة هجينة جهد عالي HV بقدرة 360 كيلوواط ذروة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv1.jpg"
+    ],
+    "system": "500 لوح × 720W • 4 إنفرترات HV • تخزين 1MWh",
+    "location": "عتق، شبوة"
+   },
+   {
+    "desc": "تركيب كبائن بطاريات BESS جهد عالي وربطها بالمحطة الشمسية ولوحات الحماية.",
+    "title": "تنفيذ محطة تخزين صناعية جهد عالي 3 ميجاوات/ساعة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv2.jpg"
+    ],
+    "system": "تخزين 3MWh • بطاريات HV • لوحات حماية وتوزيع",
+    "location": "بيحان، شبوة"
+   },
+   {
+    "desc": "تركيب الألواح والإنفرترات الصناعية وتشغيل المحطة واستلامها.",
+    "title": "تنفيذ محطة جهد عالي لمصنع بقدرة 250 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv3.jpg"
+    ],
+    "system": "350 لوح × 720W • إنفرترين HV • تخزين 500kWh",
+    "location": "عتق، شبوة"
+   }
+  ],
+  "governorate": "شبوة",
+  "city": "عتق",
+  "bio": "تنفيذ منظومات للمرافق الحكومية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000007",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. هشام محمد الصبري",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e7.jpg",
+  "specialty": "هندسة اتصالات وشبكات",
+  "university": "جامعة صنعاء",
+  "grad_year": 2016,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "إعداد المراقبة عن بُعد",
+   "ربط الإنفرترات بالإنترنت ومراكز المراقبة",
+   "ربط أجهزة الطاقة بإنترنت الأشياء IoT"
+  ],
+  "tools": [
+   "FusionSolar",
+   "Solarman",
+   "Modbus Poll"
+  ],
+  "services": [
+   "برمجة",
+   "صيانة",
+   "استشارات"
+  ],
+  "years_exp": 9,
+  "projects": [
+   {
+    "desc": "لوحة مراقبة لحظية وتنبيهات عند الأعطال.",
+    "title": "ربط ومراقبة محطة 80 كيلوواط عن بُعد عبر IoT",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom1.jpg"
+    ],
+    "system": "بوابة IoT • منصة سحابية • تنبيهات أعطال",
+    "location": "صنعاء - حدة، أمانة العاصمة"
+   },
+   {
+    "desc": "ربط الإنفرترات بالإنترنت وتطبيق الجوال.",
+    "title": "إعداد منصات المراقبة Deye Cloud وFusionSolar لـ 15 محطة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom2.jpg"
+    ],
+    "system": "Dataloggers • ربط سحابي • تطبيق الجوال",
+    "location": "صنعاء - السبعين، أمانة العاصمة"
+   },
+   {
+    "desc": "تشخيص الشبكة وإعادة ضبط الاتصال.",
+    "title": "معالجة انقطاع نقل البيانات لمحطة ري عبر 4G",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom3.jpg"
+    ],
+    "system": "شبكة 4G • Modbus/RS485 • تشخيص اتصال",
+    "location": "صنعاء - معين، أمانة العاصمة"
+   }
+  ],
+  "governorate": "أمانة العاصمة",
+  "city": "صنعاء",
+  "bio": "مراقبة المحطات وربطها بالمنصات السحابية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000008",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. عادل ناصر المرادي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e8.jpg",
+  "specialty": "هندسة اتصالات وشبكات",
+  "university": "جامعة سبأ",
+  "grad_year": 2019,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "معالجة انقطاع الاتصال ونقل البيانات",
+   "ضبط شبكات Wi-Fi / 4G / LAN في المحطات"
+  ],
+  "tools": [
+   "Wireshark",
+   "Deye Cloud"
+  ],
+  "services": [
+   "صيانة",
+   "برمجة"
+  ],
+  "years_exp": 6,
+  "projects": [
+   {
+    "desc": "لوحة مراقبة لحظية وتنبيهات عند الأعطال.",
+    "title": "ربط ومراقبة محطة 80 كيلوواط عن بُعد عبر IoT",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom1.jpg"
+    ],
+    "system": "بوابة IoT • منصة سحابية • تنبيهات أعطال",
+    "location": "مأرب، مأرب"
+   },
+   {
+    "desc": "ربط الإنفرترات بالإنترنت وتطبيق الجوال.",
+    "title": "إعداد منصات المراقبة Deye Cloud وFusionSolar لـ 15 محطة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom2.jpg"
+    ],
+    "system": "Dataloggers • ربط سحابي • تطبيق الجوال",
+    "location": "مأرب، مأرب"
+   },
+   {
+    "desc": "تشخيص الشبكة وإعادة ضبط الاتصال.",
+    "title": "معالجة انقطاع نقل البيانات لمحطة ري عبر 4G",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom3.jpg"
+    ],
+    "system": "شبكة 4G • Modbus/RS485 • تشخيص اتصال",
+    "location": "مأرب، مأرب"
+   }
+  ],
+  "governorate": "مأرب",
+  "city": "مأرب",
+  "bio": "شبكات واتصال محطات الطاقة.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000009",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. عمر سعيد بن شملان",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e9.jpg",
+  "specialty": "هندسة تحكم وأتمتة",
+  "university": "جامعة حضرموت",
+  "grad_year": 2013,
+  "qualifications": "ماجستير",
+  "skills": [
+   "أنظمة إدارة الطاقة",
+   "مغيرات سرعة المضخات VFD",
+   "بروتوكولات Modbus/RS485/CAN"
+  ],
+  "tools": [
+   "TIA Portal",
+   "VictronConnect"
+  ],
+  "services": [
+   "برمجة",
+   "تنفيذ",
+   "إشراف"
+  ],
+  "years_exp": 12,
+  "projects": [
+   {
+    "desc": "تركيب 500 لوح بقدرة 720 واط مع 4 إنفرترات هجينة جهد عالي وتخزين 1 ميجاوات/ساعة.",
+    "title": "تنفيذ محطة هجينة جهد عالي HV بقدرة 360 كيلوواط ذروة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv1.jpg"
+    ],
+    "system": "500 لوح × 720W • 4 إنفرترات HV • تخزين 1MWh",
+    "location": "المكلا، حضرموت"
+   },
+   {
+    "desc": "تركيب كبائن بطاريات BESS جهد عالي وربطها بالمحطة الشمسية ولوحات الحماية.",
+    "title": "تنفيذ محطة تخزين صناعية جهد عالي 3 ميجاوات/ساعة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv2.jpg"
+    ],
+    "system": "تخزين 3MWh • بطاريات HV • لوحات حماية وتوزيع",
+    "location": "سيئون، حضرموت"
+   },
+   {
+    "desc": "تركيب الألواح والإنفرترات الصناعية وتشغيل المحطة واستلامها.",
+    "title": "تنفيذ محطة جهد عالي لمصنع بقدرة 250 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv3.jpg"
+    ],
+    "system": "350 لوح × 720W • إنفرترين HV • تخزين 500kWh",
+    "location": "المكلا، حضرموت"
+   }
+  ],
+  "governorate": "حضرموت",
+  "city": "المكلا",
+  "bio": "أنظمة إدارة الطاقة والأتمتة الصناعية.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000010",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. رامي عبدالسلام الأغبري",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e10.jpg",
+  "specialty": "هندسة تحكم وأتمتة",
+  "university": "جامعة صنعاء",
+  "grad_year": 2020,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "برمجة وضبط الإنفرترات",
+   "مغيرات سرعة المضخات VFD"
+  ],
+  "tools": [
+   "TIA Portal",
+   "Solarman"
+  ],
+  "services": [
+   "برمجة",
+   "صيانة"
+  ],
+  "years_exp": 5,
+  "projects": [
+   {
+    "desc": "دمج الشمسي والديزل والشبكة بأولوية ذكية.",
+    "title": "برمجة نظام إدارة الطاقة EMS لمصنع ثلج",
+    "images": [
+     "https://actes-crm.lovable.app/acts/control1.jpg"
+    ],
+    "system": "EMS • تكامل شمسي/ديزل/شبكة • Modbus",
+    "location": "صنعاء، صنعاء"
+   },
+   {
+    "desc": "ضبط منحنيات التشغيل والحمايات.",
+    "title": "برمجة وضبط مغير سرعة VFD لمضخة 75 حصان",
+    "images": [
+     "https://actes-crm.lovable.app/acts/telecom1.jpg"
+    ],
+    "system": "VFD • MPPT • حماية تشغيل جاف",
+    "location": "صنعاء، صنعاء"
+   },
+   {
+    "desc": "برمجة الإنفرترات ومنطق التحويل التلقائي.",
+    "title": "أتمتة منظومة هجينة لمجمع تجاري",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv2.jpg"
+    ],
+    "system": "برمجة إنفرترات • ATS • مراقبة",
+    "location": "صنعاء، صنعاء"
+   }
+  ],
+  "governorate": "صنعاء",
+  "city": "بني الحارث",
+  "bio": "برمجة مضخات وإنفرترات.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000011",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. ياسين أحمد الزبيدي",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e11.jpg",
+  "specialty": "هندسة ميكانيكية",
+  "university": "جامعة الحديدة",
+  "grad_year": 2015,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "هياكل التثبيت",
+   "إدارة المشاريع"
+  ],
+  "tools": [
+   "SolidWorks",
+   "AutoCAD"
+  ],
+  "services": [
+   "تصميم",
+   "إشراف",
+   "استشارات"
+  ],
+  "years_exp": 10,
+  "projects": [
+   {
+    "desc": "هياكل مقاومة للرياح والتآكل.",
+    "title": "تصميم هياكل تثبيت لمحطة ساحلية 100 كيلوواط",
+    "images": [
+     "https://actes-crm.lovable.app/acts/mech1.jpg"
+    ],
+    "system": "حساب أحمال الرياح • مجلفن على الساخن • تصميم قواعد",
+    "location": "الحديدة، الحديدة"
+   },
+   {
+    "desc": "تحديد الميل الأمثل وتوزيع الأوزان.",
+    "title": "تصميم هياكل أرضية لمنظومة ضخ زراعي",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv3.jpg"
+    ],
+    "system": "هياكل أرضية • زاوية ميل • خرسانة",
+    "location": "الحديدة، الحديدة"
+   },
+   {
+    "desc": "فحص التثبيت وتحمل السطح.",
+    "title": "إشراف على تثبيت هياكل أسطح لمبنى تجاري",
+    "images": [
+     "https://actes-crm.lovable.app/acts/lv1.jpg"
+    ],
+    "system": "فحص أحمال السطح • إشراف تثبيت",
+    "location": "الحديدة، الحديدة"
+   }
+  ],
+  "governorate": "الحديدة",
+  "city": "الحديدة",
+  "bio": "تصميم هياكل التثبيت المقاومة للرياح والملوحة.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "5a3e0000-0000-4000-8000-000000000012",
+  "kind": "engineer",
+  "status": "approved",
+  "reject_reason": null,
+  "name": "م. نزار خالد السقاف",
+  "phone": "",
+  "email": null,
+  "photo_url": "https://actes-crm.lovable.app/acts/e12.jpg",
+  "specialty": "هندسة إلكترونيات",
+  "university": "جامعة صنعاء",
+  "grad_year": 2014,
+  "qualifications": "بكالوريوس",
+  "skills": [
+   "صيانة ومعايرة الإنفرترات",
+   "المنظومات الهجينة ومتحكمات MPPT"
+  ],
+  "tools": [
+   "Proteus"
+  ],
+  "services": [
+   "صيانة",
+   "برمجة",
+   "تصميم"
+  ],
+  "years_exp": 11,
+  "projects": [
+   {
+    "desc": "تشخيص وإصلاح على مستوى المكونات.",
+    "title": "إصلاح بوردات تحكم إنفرترات صناعية",
+    "images": [
+     "https://actes-crm.lovable.app/acts/elec1.jpg"
+    ],
+    "system": "إصلاح بوردات • استبدال مكونات • اختبار",
+    "location": "صنعاء - حدة، أمانة العاصمة"
+   },
+   {
+    "desc": "قراءة رموز الأعطال وتحديث البرامج.",
+    "title": "تشخيص أعطال إنفرترات هجينة لـ 12 منظومة",
+    "images": [
+     "https://actes-crm.lovable.app/acts/control1.jpg"
+    ],
+    "system": "تشخيص • تحديث Firmware • اختبار تشغيل",
+    "location": "صنعاء - السبعين، أمانة العاصمة"
+   },
+   {
+    "desc": "حساسات وقراءات لحظية.",
+    "title": "تصميم دائرة مراقبة جهد وتيار للبطاريات",
+    "images": [
+     "https://actes-crm.lovable.app/acts/hv2.jpg"
+    ],
+    "system": "حساسات جهد وتيار • لوحة إلكترونية",
+    "location": "صنعاء - معين، أمانة العاصمة"
+   }
+  ],
+  "governorate": "أمانة العاصمة",
+  "city": "صنعاء",
+  "bio": "إصلاح كروت الإنفرترات ومتحكمات الشحن.",
+  "created_at": "2026-11-15T14:16:04.142207+00:00",
+  "updated_at": "2026-11-15T14:16:04.142207+00:00"
+ },
+ {
+  "id": "70135e45-15af-48e0-8025-0915d6d186e1",
+  "kind": "engineer",
+  "status": "pending",
+  "reject_reason": null,
+  "name": "سفيان جميل",
+  "phone": "773590979",
+  "email": "Sufiyangamilali77@gmail.com",
+  "photo_url": null,
+  "specialty": "هندسة تحكم وأتمتة",
+  "university": null,
+  "grad_year": null,
+  "qualifications": null,
+  "skills": [
+   "قياس العزل وتشخيص الأعطال"
+  ],
+  "tools": [],
+  "services": [
+   "صيانة"
+  ],
+  "years_exp": 0,
+  "projects": [],
+  "governorate": "حضرموت",
+  "city": null,
+  "bio": "التصنيف: مهندس ذو خبرة",
+  "created_at": "2026-11-16T15:35:26.268322+00:00",
+  "updated_at": "2026-11-16T15:35:26.268322+00:00"
+ },
+ {
+  "id": "8ef26ab3-ba9c-4815-b242-6719ba2cb068",
+  "kind": "student",
+  "status": "pending",
+  "reject_reason": null,
+  "name": "سفيان",
+  "phone": "773590979",
+  "email": "sufiyangamilali77@gmail.com",
+  "photo_url": null,
+  "specialty": "هندسة اتصالات وشبكات",
+  "university": null,
+  "grad_year": null,
+  "qualifications": null,
+  "skills": [
+   "معالجة انقطاع الاتصال ونقل البيانات"
+  ],
+  "tools": [],
+  "services": [
+   "استشارات",
+   "صيانة",
+   "برمجة"
+  ],
+  "years_exp": 2,
+  "projects": [],
+  "governorate": "الحديدة",
+  "city": "تم",
+  "bio": "التصنيف: طالب",
+  "created_at": "2026-11-15T21:33:15.178719+00:00",
+  "updated_at": "2026-11-15T21:33:15.178719+00:00"
+ }
+]

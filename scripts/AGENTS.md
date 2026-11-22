@@ -1,0 +1,1 @@
+- `export-data.mjs` writes the full data snapshot to `data/backup/*.json` (+ `_schema.json`); re-run before handoff so a GitHub import restores the latest data.

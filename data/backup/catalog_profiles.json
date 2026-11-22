@@ -1,0 +1,1795 @@
+[
+ {
+  "catalog_id": "7d5c088b-1ce8-4843-a06e-466d3dd0e220",
+  "summary_ar": "HeroEE LEGEND 112C هو نظام متكامل لتخزين الطاقة مرتبط ببطاريات الليثيوم. يصف الكتالوج دليل استخدام شاملًا يغطي السلامة والتركيب والتشغيل والصيانة اليومية، دون تقديم مواصفات فنية أو تطبيقات محددة.",
+  "summary_en": "HeroEE LEGEND 112C is an integrated energy storage system associated with lithium batteries. The catalog describes a comprehensive user manual covering safety, installation, operation, and daily maintenance; no technical specifications or specific applications are provided.",
+  "specs": {
+   "specs": [
+    {
+     "model": "LEGEND 112C",
+     "key_specs": "No numerical technical specifications provided."
+    }
+   ],
+   "models": [
+    "LEGEND 112C"
+   ],
+   "summary_ar": "HeroEE LEGEND 112C هو نظام متكامل لتخزين الطاقة مرتبط ببطاريات الليثيوم. يصف الكتالوج دليل استخدام شاملًا يغطي السلامة والتركيب والتشغيل والصيانة اليومية، دون تقديم مواصفات فنية أو تطبيقات محددة.",
+   "summary_en": "HeroEE LEGEND 112C is an integrated energy storage system associated with lithium batteries. The catalog describes a comprehensive user manual covering safety, installation, operation, and daily maintenance; no technical specifications or specific applications are provided.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:41:52.397008+00:00"
+ },
+ {
+  "catalog_id": "a4051372-fcc1-4a64-8394-5d7c75d04fa8",
+  "summary_ar": "PowerCube-M1-C من بايلونتك هو نظام تخزين طاقة ببطاريات ليثيوم LFP عالي الجهد. يغطي الدليل التركيب والتشغيل والسلامة والصيانة الدورية، ويتضمن مخططات توصيل البطاريات ونظام إدارة البطاريات واتصالات CAN وEthernet.",
+  "summary_en": "Pylontech PowerCube-M1-C is a high-voltage lithium battery energy storage system. The manual covers installation, operation, safety and periodic battery maintenance, with battery/BMS and CAN/Ethernet connection diagrams.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M1-C",
+     "key_specs": "High-voltage LFP ESS; no numerical electrical, capacity, dimensional, weight, IP, cycle-life or warranty specifications provided."
+    },
+    {
+     "model": "H32148-C",
+     "key_specs": "Model code listed in keywords; no model-specific technical specifications provided."
+    }
+   ],
+   "models": [
+    "PowerCube-M1-C",
+    "H32148-C"
+   ],
+   "summary_ar": "PowerCube-M1-C من بايلونتك هو نظام تخزين طاقة ببطاريات ليثيوم LFP عالي الجهد. يغطي الدليل التركيب والتشغيل والسلامة والصيانة الدورية، ويتضمن مخططات توصيل البطاريات ونظام إدارة البطاريات واتصالات CAN وEthernet.",
+   "summary_en": "Pylontech PowerCube-M1-C is a high-voltage lithium battery energy storage system. The manual covers installation, operation, safety and periodic battery maintenance, with battery/BMS and CAN/Ethernet connection diagrams.",
+   "product_type": "High-voltage LFP energy storage system (ESS)"
+  },
+  "updated_at": "2026-11-20T22:41:55.673004+00:00"
+ },
+ {
+  "catalog_id": "af595d36-9a69-4c55-8dbe-d88d7fee856b",
+  "summary_ar": "بايلونتك PowerCube-M5A-180 هو نظام تخزين طاقة عالي الجهد يعتمد على بطاريات ليثيوم فوسفات الحديد (LFP). يتناول دليل التشغيل تعليمات التركيب والصيانة والسلامة للمتخصصين.",
+  "summary_en": "Pylontech PowerCube-M5A-180 is a high-voltage energy storage system based on lithium iron phosphate (LFP) batteries. The operating manual covers installation, maintenance and safety instructions for professionals.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M5A-180",
+     "key_specs": "High-voltage LFP ESS; cable connection diagrams: CAN ≤6 sets, Ethernet ≤32 sets. Electrical ratings, capacity, dimensions, weight, IP rating, cycles and warranty are not stated in the supplied text."
+    },
+    {
+     "model": "Powercube S 1500 M 5 A 180 E",
+     "key_specs": "Circuit breaker variant shown in the BMS/external power supply diagram; no numerical ratings stated."
+    },
+    {
+     "model": "Powercube S 1500 M 5 A 180 L",
+     "key_specs": "Isolating switch variant shown in the BMS/external power supply diagram; no numerical ratings stated."
+    }
+   ],
+   "models": [
+    "PowerCube-M5A-180",
+    "Powercube S 1500 M 5 A 180 E",
+    "Powercube S 1500 M 5 A 180 L"
+   ],
+   "summary_ar": "بايلونتك PowerCube-M5A-180 هو نظام تخزين طاقة عالي الجهد يعتمد على بطاريات ليثيوم فوسفات الحديد (LFP). يتناول دليل التشغيل تعليمات التركيب والصيانة والسلامة للمتخصصين.",
+   "summary_en": "Pylontech PowerCube-M5A-180 is a high-voltage energy storage system based on lithium iron phosphate (LFP) batteries. The operating manual covers installation, maintenance and safety instructions for professionals.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:41:56.166084+00:00"
+ },
+ {
+  "catalog_id": "5af4e9f2-a7ce-48e3-9453-633d21b20525",
+  "summary_ar": "محولات سوليس S6 الهجينة ثلاثية الأطوار لأنظمة الطاقة الشمسية والبطاريات التجارية، بقدرات من 29.9 إلى 50 كيلوواط. تدعم الاستهلاك الذاتي والطاقة الاحتياطية وربط المولدات والتشغيل المتوازي لما يصل إلى ست وحدات.",
+  "summary_en": "Solis S6 three-phase hybrid inverters for commercial solar and battery systems, with rated powers from 29.9 to 50 kW. They support self-consumption, backup power, generator integration and parallel operation of up to six units.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH3P29.9K-H-AU",
+     "key_specs": "Rated power: 29.9 kW; three-phase; 4 MPPTs; PV string current up to 20 A; dual-battery max charge/discharge current: 70+70 A / 140 A; PV charging efficiency: 99%; backup peak output: 1.6× rated power; switching time: <10 ms; up to 6 units in parallel; enclosure rating: NEMA 4X."
+    },
+    {
+     "model": "S6-EH3P30K-H-AU",
+     "key_specs": "Rated power: 30 kW; three-phase; 4 MPPTs; PV string current up to 20 A; dual-battery max charge/discharge current: 70+70 A / 140 A; PV charging efficiency: 99%; backup peak output: 1.6× rated power; switching time: <10 ms; up to 6 units in parallel; enclosure rating: NEMA 4X."
+    },
+    {
+     "model": "S6-EH3P40K-H-AU",
+     "key_specs": "Rated power: 40 kW; three-phase; 4 MPPTs; PV string current up to 20 A; dual-battery max charge/discharge current: 70+70 A / 140 A; PV charging efficiency: 99%; backup peak output: 1.6× rated power; switching time: <10 ms; up to 6 units in parallel; enclosure rating: NEMA 4X."
+    },
+    {
+     "model": "S6-EH3P50K-H-AU",
+     "key_specs": "Rated power: 50 kW; three-phase; 4 MPPTs; PV string current up to 20 A; dual-battery max charge/discharge current: 70+70 A / 140 A; PV charging efficiency: 99%; backup peak output: 1.6× rated power; switching time: <10 ms; up to 6 units in parallel; weight: 73 kg; enclosure rating: NEMA 4X."
+    }
+   ],
+   "models": [
+    "S6-EH3P29.9K-H-AU",
+    "S6-EH3P30K-H-AU",
+    "S6-EH3P40K-H-AU",
+    "S6-EH3P50K-H-AU"
+   ],
+   "summary_ar": "محولات سوليس S6 الهجينة ثلاثية الأطوار لأنظمة الطاقة الشمسية والبطاريات التجارية، بقدرات من 29.9 إلى 50 كيلوواط. تدعم الاستهلاك الذاتي والطاقة الاحتياطية وربط المولدات والتشغيل المتوازي لما يصل إلى ست وحدات.",
+   "summary_en": "Solis S6 three-phase hybrid inverters for commercial solar and battery systems, with rated powers from 29.9 to 50 kW. They support self-consumption, backup power, generator integration and parallel operation of up to six units.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:41:57.874649+00:00"
+ },
+ {
+  "catalog_id": "fbf93b9f-4235-493c-bbe2-8e1a45971ffa",
+  "summary_ar": "ليبور 2012EMH هو محول هجين أحادي الطور بقدرة 1.6 كيلوواط، يعمل مع بطارية بجهد 12 فولت تيار مستمر ويوفر خرجاً بموجة جيبية نقية. يجمع بين الشحن الشمسي بتقنية MPPT والشحن من الشبكة لتطبيقات الطاقة الشمسية والطاقة الاحتياطية، ويدعم دخلاً شمسياً يصل إلى 2 كيلوواط.",
+  "summary_en": "The Lipower 2012EMH is a single-phase hybrid inverter rated at 1.6 kW with a 12 VDC battery system and pure sine wave output. It combines solar MPPT charging and mains charging for solar power and backup applications, supporting up to 2 kW of PV input.",
+  "specs": {
+   "specs": [
+    {
+     "model": "2012EMH",
+     "key_specs": "Rated power: 1.6 kW; peak power: 3200 VA; battery: 12 VDC, constant charge 14.1 VDC, adjustable float 13.5 VDC; AC output: 220/230/240 VAC ±5%, 50/60 Hz ±0.1%, pure sine wave; max PV input: 2000 W, 500 VDC, 14 A; MPPT range: 30–500 VDC, optimal Vmp 300–400 VDC; max PV charging: 100 A; max mains charging: 60 A; max total charging: 100 A; transfer time: UPS 10 ms, APL 20 ms; dimensions (D×W×H): 404×304×114 mm; weight: 5.5 kg."
+    }
+   ],
+   "models": [
+    "2012EMH"
+   ],
+   "summary_ar": "ليبور 2012EMH هو محول هجين أحادي الطور بقدرة 1.6 كيلوواط، يعمل مع بطارية بجهد 12 فولت تيار مستمر ويوفر خرجاً بموجة جيبية نقية. يجمع بين الشحن الشمسي بتقنية MPPT والشحن من الشبكة لتطبيقات الطاقة الشمسية والطاقة الاحتياطية، ويدعم دخلاً شمسياً يصل إلى 2 كيلوواط.",
+   "summary_en": "The Lipower 2012EMH is a single-phase hybrid inverter rated at 1.6 kW with a 12 VDC battery system and pure sine wave output. It combines solar MPPT charging and mains charging for solar power and backup applications, supporting up to 2 kW of PV input.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:41:59.757719+00:00"
+ },
+ {
+  "catalog_id": "a8aeb945-8979-4a25-86e5-4b4ebc8323f6",
+  "summary_ar": "بايلونتك PowerCube-M1-C هو نظام معياري لتخزين الطاقة عالي الجهد باستخدام بطاريات فوسفات الحديد والليثيوم، لتوفير إمداد كهربائي موثوق. صُمم للتطبيقات عالية القدرة ذات المساحة المحدودة وقيود تحمل الأحمال والحاجة إلى عمر دورات طويل. يغطي دليل التشغيل التركيب والسلامة وإدارة النظام والصيانة.",
+  "summary_en": "Pylontech PowerCube-M1-C is a modular high-voltage lithium iron phosphate energy storage system for reliable power support. It is designed for high-power applications with limited installation space, restricted load-bearing capacity and long cycle-life requirements. The operation manual covers installation, safety, system management and maintenance.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M1-C",
+     "key_specs": "1–25 H32148-C modules; system voltage <1000 VDC; nominal voltage 32×n VDC (32–800 V); 148 Ah; nominal energy 4.736×n kWh (4.736–118.4 kWh); usable energy 4.4992×n kWh (calc at 95% DoD); charge upper/discharge lower voltage 36×n/27×n VDC; nominal/max continuous/peak current 74/148/220 A (peak 15 s); round-trip efficiency 95% at 1C; IP20/Class I; rack dimensions W×D×H 815×659×2130 mm (1–23 modules) or 815×659×2300 mm (1–25 modules); weight 114+43×n kg; >5,000 cycles; operating life 15+ years; operating temperature 10–40°C; natural cooling; CANBUS/Modbus RTU/TCP/IP; parallel strings ≤6 via CAN or ≤32 via Ethernet."
+    },
+    {
+     "model": "H32148-C",
+     "key_specs": "LFP battery module; 32 VDC; 148 Ah; nominal energy 4.736 kWh; dimensions W×D×H 330×628×150.5 mm; weight 43 kg; IP20; 5,000 cycles; operating temperature 0–50°C; storage temperature −20–60°C; UN38.3 transportation certificate."
+    },
+    {
+     "model": "SC1000-200L-C",
+     "key_specs": "External-power BMS control module; operating voltage 0–1000 VDC; maximum current 148 A; AC supply 230 VAC/50 Hz/1.3 A; self-consumption 12 W relay off, 19 W relay on; dimensions W×D×H 330×628×150.5 mm; weight 13 kg; IP20; operating life 15+ years; operating temperature −20–65°C; MODBUS RTU/CAN/LAN."
+    },
+    {
+     "model": "SC1000-200J-C",
+     "key_specs": "Internal-power BMS control module; operating voltage 0–1000 VDC; maximum current 148 A; self-consumption 6 W relay off, 15 W relay on; dimensions W×D×H 330×628×150.5 mm; weight 13 kg; IP20; operating life 15+ years; operating temperature −20–65°C; MODBUS RTU/CAN/LAN."
+    }
+   ],
+   "models": [
+    "PowerCube-M1-C",
+    "H32148-C",
+    "SC1000-200L-C",
+    "SC1000-200J-C"
+   ],
+   "summary_ar": "بايلونتك PowerCube-M1-C هو نظام معياري لتخزين الطاقة عالي الجهد باستخدام بطاريات فوسفات الحديد والليثيوم، لتوفير إمداد كهربائي موثوق. صُمم للتطبيقات عالية القدرة ذات المساحة المحدودة وقيود تحمل الأحمال والحاجة إلى عمر دورات طويل. يغطي دليل التشغيل التركيب والسلامة وإدارة النظام والصيانة.",
+   "summary_en": "Pylontech PowerCube-M1-C is a modular high-voltage lithium iron phosphate energy storage system for reliable power support. It is designed for high-power applications with limited installation space, restricted load-bearing capacity and long cycle-life requirements. The operation manual covers installation, safety, system management and maintenance.",
+   "product_type": "High-voltage LiFePO4 energy storage system (ESS)"
+  },
+  "updated_at": "2026-11-20T22:42:01.900926+00:00"
+ },
+ {
+  "catalog_id": "eb69fa0e-d262-4d51-999e-f95225598498",
+  "summary_ar": "سنتك STPXXXS-D66-Nsh+ هو لوح شمسي ثنائي الوجه بتقنية N-Type TOPCon، بنطاق قدرة مذكور 700–720 وات وكفاءة قصوى 23.2%. صُمم لتوليد الطاقة الشمسية في الظروف البيئية القاسية وتقليل تكلفة الطاقة المستوية (LCOE).",
+  "summary_en": "Suntech STPXXXS-D66-Nsh+ is a bifacial solar module using N-Type TOPCon technology, with a stated power range of 700–720 W and maximum efficiency of 23.2%. It is designed for solar power generation in harsh environmental conditions and to reduce the levelized cost of energy (LCOE).",
+  "specs": {
+   "specs": [
+    {
+     "model": "STPXXXS-D66-Nsh+",
+     "key_specs": "Power: 700–720 W (0.700–0.720 kW); maximum efficiency: 23.2%; N-Type TOPCon; bifacial."
+    }
+   ],
+   "models": [
+    "STPXXXS-D66-Nsh+"
+   ],
+   "summary_ar": "سنتك STPXXXS-D66-Nsh+ هو لوح شمسي ثنائي الوجه بتقنية N-Type TOPCon، بنطاق قدرة مذكور 700–720 وات وكفاءة قصوى 23.2%. صُمم لتوليد الطاقة الشمسية في الظروف البيئية القاسية وتقليل تكلفة الطاقة المستوية (LCOE).",
+   "summary_en": "Suntech STPXXXS-D66-Nsh+ is a bifacial solar module using N-Type TOPCon technology, with a stated power range of 700–720 W and maximum efficiency of 23.2%. It is designed for solar power generation in harsh environmental conditions and to reduce the levelized cost of energy (LCOE).",
+   "product_type": "solar module"
+  },
+  "updated_at": "2026-11-20T22:42:03.727849+00:00"
+ },
+ {
+  "catalog_id": "edec51d8-3ea8-4507-ae98-d37a6bc344bb",
+  "summary_ar": "سلسلة محولات دايا الهجينة للطاقة الشمسية، تعمل بنظام ثلاثي الأطوار مع بطارية منخفضة الجهد 48 فولت. مخصصة لتطبيقات الطاقة الشمسية، وتدعم الأحمال غير المتوازنة بنسبة 100% بكفاءة قصوى تصل إلى 97.6%.",
+  "summary_en": "Deye three-phase hybrid solar inverter series with a low-voltage 48 V battery system. Intended for solar power applications, it supports 100% unbalanced loads and offers maximum efficiency up to 97.6%.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-14K-SG05LP3-EU-SM2",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-15K-SG05LP3-EU-SM2",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-16K-SG05LP3-EU-SM2",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-18K-SG05LP3-EU-SM2",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-20K-SG05LP3-EU-SM2",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-20K-SG05LP3",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-18K-SG05LP3",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    },
+    {
+     "model": "SUN-16K-SG05LP3",
+     "key_specs": "Battery voltage: 48 V; maximum efficiency: up to 97.6%; unbalanced load support: 100%; three-phase."
+    }
+   ],
+   "models": [
+    "SUN-14K-SG05LP3-EU-SM2",
+    "SUN-15K-SG05LP3-EU-SM2",
+    "SUN-16K-SG05LP3-EU-SM2",
+    "SUN-18K-SG05LP3-EU-SM2",
+    "SUN-20K-SG05LP3-EU-SM2",
+    "SUN-20K-SG05LP3",
+    "SUN-18K-SG05LP3",
+    "SUN-16K-SG05LP3"
+   ],
+   "summary_ar": "سلسلة محولات دايا الهجينة للطاقة الشمسية، تعمل بنظام ثلاثي الأطوار مع بطارية منخفضة الجهد 48 فولت. مخصصة لتطبيقات الطاقة الشمسية، وتدعم الأحمال غير المتوازنة بنسبة 100% بكفاءة قصوى تصل إلى 97.6%.",
+   "summary_en": "Deye three-phase hybrid solar inverter series with a low-voltage 48 V battery system. Intended for solar power applications, it supports 100% unbalanced loads and offers maximum efficiency up to 97.6%.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:42:06.073345+00:00"
+ },
+ {
+  "catalog_id": "d1528d70-22b1-48a9-a908-c6bf3636be6f",
+  "summary_ar": "هيرو إي إي MaxPower 16 بطارية LiFePO4 بجهد 51.2 فولت وسعة 16.0768 كيلوواط ساعة لتخزين الطاقة المنزلية، وتعتمد على خلايا HiTHIUM. تدعم تخزين الطاقة الشمسية وتغذية الأحمال الاحتياطية عبر عاكس خارجي، مع إمكانية توصيل حتى 16 بطارية على التوازي بسعة إجمالية معلنة تبلغ 256 كيلوواط ساعة.",
+  "summary_en": "HeroEE MaxPower 16 is a 16.0768 kWh, 51.2 V LiFePO4 battery for residential energy storage, using HiTHIUM cells. It supports solar energy storage and backup-load applications with an external inverter, and expansion to up to 16 batteries in parallel (256 kWh stated).",
+  "specs": {
+   "specs": [
+    {
+     "model": "HeroEE MaxPower 16",
+     "key_specs": "LiFePO4; nominal energy 16.0768 kWh (16076.8 Wh); cell capacity 314 Ah; rated voltage 51.2 VDC; charge/discharge voltage 43.2–58.4 VDC; recommended charge/discharge current 100 A, maximum 200 A; DOD 90%; 11000 cycles at 25°C, 100% DOD, 0.5P, 70% SOH; dimensions L520 × W240 × H781.2 mm; net weight 110 kg; IP30; charging 0–40°C, discharging −20–40°C; storage −20–60°C; humidity 10–90%; up to 16 batteries in parallel / 256 kWh stated; LCD touchscreen; CAN/RS485/RS232; CE, CB, UN38.3, IEC 62619. Power rating, usable energy, MPPT count, maximum PV input, efficiency and warranty not stated."
+    }
+   ],
+   "models": [
+    "HeroEE MaxPower 16"
+   ],
+   "summary_ar": "هيرو إي إي MaxPower 16 بطارية LiFePO4 بجهد 51.2 فولت وسعة 16.0768 كيلوواط ساعة لتخزين الطاقة المنزلية، وتعتمد على خلايا HiTHIUM. تدعم تخزين الطاقة الشمسية وتغذية الأحمال الاحتياطية عبر عاكس خارجي، مع إمكانية توصيل حتى 16 بطارية على التوازي بسعة إجمالية معلنة تبلغ 256 كيلوواط ساعة.",
+   "summary_en": "HeroEE MaxPower 16 is a 16.0768 kWh, 51.2 V LiFePO4 battery for residential energy storage, using HiTHIUM cells. It supports solar energy storage and backup-load applications with an external inverter, and expansion to up to 16 batteries in parallel (256 kWh stated).",
+   "product_type": "LiFePO4 battery / Residential ESS"
+  },
+  "updated_at": "2026-11-20T22:42:10.247019+00:00"
+ },
+ {
+  "catalog_id": "5eda0ca7-6c02-4172-9882-6e4e21a8a13b",
+  "summary_ar": "بايلونتك PowerCube-M5A-180 هو نظام معياري لتخزين الطاقة عالي الجهد يعتمد على بطاريات فوسفات الحديد والليثيوم، مع تغذية خارجية لإدارة البطاريات والمراوح. يوفر طاقة موثوقة للمعدات والأنظمة، ويناسب التطبيقات التي تتطلب قدرة عالية ومساحة تركيب محدودة وأحمال وزن مقيدة وعمر دورات طويل.",
+  "summary_en": "Pylontech PowerCube-M5A-180 is a modular high-voltage lithium iron phosphate energy storage system with external power supplies for battery management and fans. It provides reliable power for equipment and systems, particularly applications requiring high power, limited installation space, restricted load-bearing capacity and long cycle life.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M5A-180",
+     "key_specs": "LFP modular ESS; system voltage <1500 VDC; nominal voltage 64×n V and energy 15.68×n kWh (n=1–21); 245 Ah; nominal current 122.5 A, maximum continuous 180 A; round-trip efficiency 96% at 0.5C; DOD 95%; IP20/Class I; >7,000 design cycles under specified conditions; design life 15+ years; operating temperature 10–40°C; fan cooling; CANBUS/Modbus RTU/Modbus TCP/IP; parallel strings: ≤6 via CAN or ≤32 via Ethernet."
+    },
+    {
+     "model": "PowerCube-M5A-64/zzzV-L15",
+     "key_specs": "NA version with S1500M5A180L isolating-switch controller and HM5A180F modules; <1500 VDC; nominal 64×n V, 245 Ah, 15.68×n kWh (n=1–21); charge limit 71×n V, discharge limit 58×n V; 122.5 A nominal/180 A continuous; peak <210 A for 5 min or <500 A for 30 s; 96% round-trip efficiency at 0.5C; DOD 95%; IP20/Class I; >7,000 design cycles; 15+ years design life; rack dimensions W×D×H: 1050×925×2215 mm (HQ), 1050×925×1965 mm (GP); listed weight 210+115×n kg (n=1–22)."
+    },
+    {
+     "model": "PowerCube-M5A-64/zzzV-E15",
+     "key_specs": "EU version with S1500M5A180E circuit-breaker controller and HM5A180F modules; <1500 VDC; nominal 64×n V, 245 Ah, 15.68×n kWh (n=1–21); charge limit 71×n V, discharge limit 58×n V; 122.5 A nominal/180 A continuous; peak <210 A for 5 min or <500 A for 30 s; 96% round-trip efficiency at 0.5C; DOD 95%; IP20/Class I; >7,000 design cycles; 15+ years design life; rack dimensions W×D×H: 1050×925×2215 mm (HQ), 1050×925×1965 mm (GP); listed weight 210+115×n kg (n=1–22)."
+    },
+    {
+     "model": "HM5A180F",
+     "key_specs": "LFP battery module; 64 VDC; 245 Ah; 15.68 kWh; dimensions W×D×H 460×900×160.5 mm; 115 kg; IP20; >7,000 cycles under specified conditions; operating temperature 0–50°C; storage −20–50°C; BMU consumption 3 W; fan consumption 15.6 W; UN38.3 transportation certificate."
+    },
+    {
+     "model": "S1500M5A180L",
+     "key_specs": "External-power BMS/control module with isolating switch; operating voltage 0–1500 VDC; maximum current 180 A; AC supply 100–305 VAC, 50/60 Hz; relay-on consumption 16.5 W; instantaneous relay-engagement consumption 65.4 W; dimensions W×D×H 460×858×160 mm; 28 kg; IP20; operating life 15+ years; operating temperature −20–65°C; RS485/Modbus RTU, CAN and LAN."
+    },
+    {
+     "model": "S1500M5A180E",
+     "key_specs": "External-power BMS/control module with circuit breaker and shunt tripping; operating voltage 0–1500 VDC; maximum current 180 A; AC supply 100–305 VAC, 50/60 Hz; relay-on consumption 16.5 W; instantaneous relay-engagement consumption 65.4 W; dimensions W×D×H 460×858×160 mm; 32 kg; IP20; operating life 15+ years; operating temperature −20–65°C; RS485/Modbus RTU, CAN and LAN."
+    },
+    {
+     "model": "M5A-180",
+     "key_specs": "Related-product designation listed for both S1500M5A180L and S1500M5A180E controllers; no separate specifications provided."
+    },
+    {
+     "model": "Powercube-M51A80",
+     "key_specs": "BESS designation appearing in the control-module certification discussion; no separate numerical specifications provided."
+    }
+   ],
+   "models": [
+    "PowerCube-M5A-180",
+    "PowerCube-M5A-64/zzzV-L15",
+    "PowerCube-M5A-64/zzzV-E15",
+    "HM5A180F",
+    "S1500M5A180L",
+    "S1500M5A180E",
+    "M5A-180",
+    "Powercube-M51A80"
+   ],
+   "summary_ar": "بايلونتك PowerCube-M5A-180 هو نظام معياري لتخزين الطاقة عالي الجهد يعتمد على بطاريات فوسفات الحديد والليثيوم، مع تغذية خارجية لإدارة البطاريات والمراوح. يوفر طاقة موثوقة للمعدات والأنظمة، ويناسب التطبيقات التي تتطلب قدرة عالية ومساحة تركيب محدودة وأحمال وزن مقيدة وعمر دورات طويل.",
+   "summary_en": "Pylontech PowerCube-M5A-180 is a modular high-voltage lithium iron phosphate energy storage system with external power supplies for battery management and fans. It provides reliable power for equipment and systems, particularly applications requiring high power, limited installation space, restricted load-bearing capacity and long cycle life.",
+   "product_type": "High-voltage LiFePO4 battery energy storage system (ESS)"
+  },
+  "updated_at": "2026-11-20T22:42:10.888483+00:00"
+ },
+ {
+  "catalog_id": "d73be89a-08d3-42f4-a413-0c4fa2227c96",
+  "summary_ar": "هيرو إي LEGEND 112S هو نظام بطاريات LFP عالي الجهد بتصميم وحدات قابلة للتكديس لتخزين الطاقة التجاري والصناعي. يوفر سعة نظام من 64.3 إلى 241.1 كيلوواط ساعة باستخدام خلايا HITHIUM بسعة 314 أمبير ساعة، مع توسعة معلنة حتى 720 كيلوواط ساعة وتركيب بالتوصيل المباشر في أقل من 30 دقيقة.",
+  "summary_en": "HeroEE LEGEND 112S is a modular, stackable high-voltage LFP battery system for commercial and industrial energy storage. It offers 64.3–241.1 kWh system capacity using HITHIUM 314 Ah cells, with advertised expansion up to 720 kWh and plug-and-play installation in under 30 minutes.",
+  "specs": {
+   "specs": [
+    {
+     "model": "HeroEE LEGEND 112S",
+     "key_specs": "LiFePO4; 4–15 stacked modules; system energy 64.3–241.1 kWh; operating voltage 172.8–876 VDC; module voltage/capacity 51.2 V/314 Ah; standard charge/discharge 157/157 A (0.5C), maximum 200/200 A; 11,000 cycles at 25°C, 100% DOD, 0.5P, 70% SOH; IP20; dimensions (W×D×H): 770×435×1242 mm (4 packs), 770×435×1490 mm (5), 770×435×1738 mm (6), 770×435×1986 mm (7); RS485; UN38.3, IEC62619, CE."
+    },
+    {
+     "model": "112S51314",
+     "key_specs": "LEGEND 112S battery pack; LiFePO4; configuration 1P16S; nominal voltage 51.2 VDC; operating voltage 43.2–58.4 VDC; nominal capacity 314 Ah; nominal energy 16.076 kWh; dimensions (W×D×H) 770×435×248 mm; weight 130 kg; cycle life ≥11,000 at 25±2°C, 0.5P, 70% SOH; charging 0–45°C, discharging −10–45°C, storage −20–60°C; relative humidity 10–90%."
+    },
+    {
+     "model": "112SPDU",
+     "key_specs": "LEGEND 112S high-voltage battery control box; system voltage 172.8–876 VDC; maximum operating current 200 A; dimensions (W×D×H) 770×435×150 mm; charging 0–45°C, discharging −10–45°C, storage −20–60°C."
+    }
+   ],
+   "models": [
+    "HeroEE LEGEND 112S",
+    "112S51314",
+    "112SPDU"
+   ],
+   "summary_ar": "هيرو إي LEGEND 112S هو نظام بطاريات LFP عالي الجهد بتصميم وحدات قابلة للتكديس لتخزين الطاقة التجاري والصناعي. يوفر سعة نظام من 64.3 إلى 241.1 كيلوواط ساعة باستخدام خلايا HITHIUM بسعة 314 أمبير ساعة، مع توسعة معلنة حتى 720 كيلوواط ساعة وتركيب بالتوصيل المباشر في أقل من 30 دقيقة.",
+   "summary_en": "HeroEE LEGEND 112S is a modular, stackable high-voltage LFP battery system for commercial and industrial energy storage. It offers 64.3–241.1 kWh system capacity using HITHIUM 314 Ah cells, with advertised expansion up to 720 kWh and plug-and-play installation in under 30 minutes.",
+   "product_type": "High-voltage LiFePO4 battery energy storage system"
+  },
+  "updated_at": "2026-11-20T22:42:15.55032+00:00"
+ },
+ {
+  "catalog_id": "9fc8b985-eddc-4010-945a-385b1e6c747c",
+  "summary_ar": "ليباور 2012EMH هو إنفيرتر شمسي هجين أحادي الطور بقدرة 1600 واط وجهد نظام 12 فولت تيار مستمر. يتميز بشاشة لمس ملونة وشحن البطاريات بتقنية MPPT من الطاقة الشمسية والشبكة للاستخدام في أنظمة الطاقة الشمسية.",
+  "summary_en": "The Lipower 2012EMH is a single-phase hybrid solar inverter rated at 1600 W with a 12 VDC system voltage. It features a color touchscreen and MPPT battery charging from solar power and the grid for solar energy systems.",
+  "specs": {
+   "specs": [
+    {
+     "model": "2012EMH",
+     "key_specs": "Power: 1.6 kW; system voltage: 12 VDC; single-phase; MPPT charging; color touchscreen."
+    }
+   ],
+   "models": [
+    "2012EMH"
+   ],
+   "summary_ar": "ليباور 2012EMH هو إنفيرتر شمسي هجين أحادي الطور بقدرة 1600 واط وجهد نظام 12 فولت تيار مستمر. يتميز بشاشة لمس ملونة وشحن البطاريات بتقنية MPPT من الطاقة الشمسية والشبكة للاستخدام في أنظمة الطاقة الشمسية.",
+   "summary_en": "The Lipower 2012EMH is a single-phase hybrid solar inverter rated at 1600 W with a 12 VDC system voltage. It features a color touchscreen and MPPT battery charging from solar power and the grid for solar energy systems.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:14.090216+00:00"
+ },
+ {
+  "catalog_id": "d08b733e-22a8-4fa6-8315-b60ec81b7cf0",
+  "summary_ar": "ألواح سنتك الشمسية بتقنية N-Type TOPCon لتوليد الطاقة الشمسية. تتراوح قدرتها بين 580 و600 واط، بكفاءة تصل إلى 23.2% وأداء متميز في مختلف الظروف المناخية.",
+  "summary_en": "Suntech N-Type TOPCon solar panels for solar power generation. The stated power range is 580–600 W, with efficiency up to 23.2% and strong performance across different climatic conditions.",
+  "specs": {
+   "specs": [
+    {
+     "model": "STPXXXS-C72/Nsh+",
+     "key_specs": "Power: 580–600 W (0.58–0.60 kW); efficiency: up to 23.2%; technology: N-Type TOPCon."
+    }
+   ],
+   "models": [
+    "STPXXXS-C72/Nsh+"
+   ],
+   "summary_ar": "ألواح سنتك الشمسية بتقنية N-Type TOPCon لتوليد الطاقة الشمسية. تتراوح قدرتها بين 580 و600 واط، بكفاءة تصل إلى 23.2% وأداء متميز في مختلف الظروف المناخية.",
+   "summary_en": "Suntech N-Type TOPCon solar panels for solar power generation. The stated power range is 580–600 W, with efficiency up to 23.2% and strong performance across different climatic conditions.",
+   "product_type": "solar module"
+  },
+  "updated_at": "2026-11-20T22:42:05.134976+00:00"
+ },
+ {
+  "catalog_id": "bd3d2eb9-3e13-4993-a961-b520d3d8e63d",
+  "summary_ar": "بايلونتك Powercube M1C هو نظام تخزين طاقة ببطاريات ليثيوم حديد فوسفات عالية الجهد لتطبيقات الطاقة الشمسية. يتميز بسعة مرنة وعمر تشغيلي يصل إلى 7000 دورة، مع دعم بروتوكولات اتصال متعددة.",
+  "summary_en": "Pylontech Powercube M1C is a high-voltage lithium iron phosphate battery energy storage system for solar energy applications. It features flexible capacity, a service life of up to 7,000 cycles, and support for multiple communication protocols.",
+  "specs": {
+   "specs": [
+    {
+     "model": "Powercube M1C",
+     "key_specs": "High-voltage LiFePO4 ESS; flexible capacity; up to 7,000 cycles; multiple communication protocols supported."
+    },
+    {
+     "model": "H32148-C",
+     "key_specs": "No model-specific specifications provided."
+    },
+    {
+     "model": "SC1000-200J-C",
+     "key_specs": "No model-specific specifications provided."
+    }
+   ],
+   "models": [
+    "Powercube M1C",
+    "H32148-C",
+    "SC1000-200J-C"
+   ],
+   "summary_ar": "بايلونتك Powercube M1C هو نظام تخزين طاقة ببطاريات ليثيوم حديد فوسفات عالية الجهد لتطبيقات الطاقة الشمسية. يتميز بسعة مرنة وعمر تشغيلي يصل إلى 7000 دورة، مع دعم بروتوكولات اتصال متعددة.",
+   "summary_en": "Pylontech Powercube M1C is a high-voltage lithium iron phosphate battery energy storage system for solar energy applications. It features flexible capacity, a service life of up to 7,000 cycles, and support for multiple communication protocols.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:42:11.646773+00:00"
+ },
+ {
+  "catalog_id": "ff89e19c-7da4-417b-acd6-6871bde7e909",
+  "summary_ar": "محولات سوليس من سلسلة Solarator هي محولات شمسية هجينة ثلاثية الأطوار بجهد بطارية عالٍ، لتخزين الطاقة المتصل بالشبكة وتوفير الطاقة الاحتياطية. تدعم الربط بالتيار المستمر والمتردد وتكامل المولدات والتشغيل المتوازي حتى 500 كيلوواط، مع زمن انتقال إلى الطاقة الاحتياطية أقل من 10 مللي ثانية.",
+  "summary_en": "Solis Solarator series high-voltage, three-phase hybrid solar inverters for grid-connected energy storage and backup power. They support DC and AC coupling, generator integration, parallel operation up to 500 kW, and grid-to-backup switching in less than 10 ms.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH3P29.9K-H",
+     "key_specs": "Rated AC/backup power: 29.9 kW; AC: 3/N/PE, 220/380 V or 230/400 V, 50/60 Hz; PV: max 1000 V, rated 600 V, MPPT 150–850 V; recommended/max usable PV: 59.8/59.8 kW; table lists MPPT/string configurations 3/6 and 4/8 without explicit model mapping in the supplied text; Li-ion battery: 150–800 V, compatible modules 100–280 Ah, 2 ports, charge/discharge 32.1 kW, 70 A × 2 (140 A parallel); max efficiency: 97.8%, EU: 97.4%; 530 × 880 × 290 mm; 73 kg; IP66."
+    },
+    {
+     "model": "S6-EH3P30K-H",
+     "key_specs": "Rated AC/backup power: 30 kW; AC: 3/N/PE, 220/380 V or 230/400 V, 50/60 Hz; PV: max 1000 V, rated 600 V, MPPT 150–850 V; recommended/max usable PV: 60/60 kW; table lists MPPT/string configurations 3/6 and 4/8 without explicit model mapping in the supplied text; Li-ion battery: 150–800 V, compatible modules 100–280 Ah, 2 ports, charge/discharge 33 kW, 70 A × 2 (140 A parallel); max efficiency: 97.8%, EU: 97.4%; 530 × 880 × 290 mm; 73 kg; IP66."
+    },
+    {
+     "model": "S6-EH3P40K-H",
+     "key_specs": "Rated AC/backup power: 40 kW; AC: 3/N/PE, 220/380 V or 230/400 V, 50/60 Hz; PV: max 1000 V, rated 600 V, MPPT 150–850 V; recommended/max usable PV: 80/80 kW; table lists MPPT/string configurations 3/6 and 4/8 without explicit model mapping in the supplied text; Li-ion battery: 150–800 V, compatible modules 100–280 Ah, 2 ports, charge/discharge 44 kW (35 kW per port), 70 A × 2 (140 A parallel); max efficiency: 97.8%, EU: 97.4%; 530 × 880 × 290 mm; 73 kg; IP66."
+    },
+    {
+     "model": "S6-EH3P50K-H",
+     "key_specs": "Rated AC/backup power: 50 kW; AC: 3/N/PE, 220/380 V or 230/400 V, 50/60 Hz; PV: max 1000 V, rated 600 V, MPPT 150–850 V; recommended/max usable PV: 100/96 kW; table lists MPPT/string configurations 3/6 and 4/8 without explicit model mapping in the supplied text; Li-ion battery: 150–800 V, compatible modules 100–280 Ah, 2 ports, charge/discharge 55 kW (35 kW per port), 70 A × 2 (140 A parallel); max efficiency: 97.8%, EU: 97.4%; 530 × 880 × 290 mm; 73 kg; IP66."
+    }
+   ],
+   "models": [
+    "S6-EH3P29.9K-H",
+    "S6-EH3P30K-H",
+    "S6-EH3P40K-H",
+    "S6-EH3P50K-H"
+   ],
+   "summary_ar": "محولات سوليس من سلسلة Solarator هي محولات شمسية هجينة ثلاثية الأطوار بجهد بطارية عالٍ، لتخزين الطاقة المتصل بالشبكة وتوفير الطاقة الاحتياطية. تدعم الربط بالتيار المستمر والمتردد وتكامل المولدات والتشغيل المتوازي حتى 500 كيلوواط، مع زمن انتقال إلى الطاقة الاحتياطية أقل من 10 مللي ثانية.",
+   "summary_en": "Solis Solarator series high-voltage, three-phase hybrid solar inverters for grid-connected energy storage and backup power. They support DC and AC coupling, generator integration, parallel operation up to 500 kW, and grid-to-backup switching in less than 10 ms.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:42:14.473528+00:00"
+ },
+ {
+  "catalog_id": "b1770424-8b66-4cbf-8197-5f094b487908",
+  "summary_ar": "هيرو إي LEGEND 112C هو نظام تخزين طاقة متكامل للمنشآت التجارية والصناعية بسعة 112.5 كيلوواط ساعة. يتميز بتصميم معياري مرن وبطاريات ليثيوم LiFePO4 ونظام إطفاء حريق ذكي لتعزيز الأمان.",
+  "summary_en": "HeroEE LEGEND 112C is an integrated energy storage system for commercial and industrial facilities with a capacity of 112.5 kWh. It features a flexible modular design, LiFePO4 lithium batteries, and an intelligent fire suppression system for safety.",
+  "specs": {
+   "specs": [
+    {
+     "model": "LEGEND 112C",
+     "key_specs": "Capacity: 112.5 kWh; battery chemistry: LiFePO4; flexible modular design; intelligent fire suppression system."
+    }
+   ],
+   "models": [
+    "LEGEND 112C"
+   ],
+   "summary_ar": "هيرو إي LEGEND 112C هو نظام تخزين طاقة متكامل للمنشآت التجارية والصناعية بسعة 112.5 كيلوواط ساعة. يتميز بتصميم معياري مرن وبطاريات ليثيوم LiFePO4 ونظام إطفاء حريق ذكي لتعزيز الأمان.",
+   "summary_en": "HeroEE LEGEND 112C is an integrated energy storage system for commercial and industrial facilities with a capacity of 112.5 kWh. It features a flexible modular design, LiFePO4 lithium batteries, and an intelligent fire suppression system for safety.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:42:14.904214+00:00"
+ },
+ {
+  "catalog_id": "adf98cf5-f4e2-4647-922a-f1c1b0d3770a",
+  "summary_ar": "بايلونتك RV12200 بطارية ذكية من نوع ليثيوم حديد فوسفات ضمن سلسلة 12V، بجهد 12.8 فولت وسعة 200 أمبير ساعة. تُستخدم لتخزين الطاقة.",
+  "summary_en": "The Pylontech RV12200 is a smart lithium iron phosphate battery in the 12V series, specified at 12.8V and 200Ah. It is intended for energy storage.",
+  "specs": {
+   "specs": [
+    {
+     "model": "RV12200",
+     "key_specs": "Voltage: 12.8V (12V series); capacity: 200Ah; nominal energy: 2.56kWh (calc: 12.8V × 200Ah)."
+    }
+   ],
+   "models": [
+    "RV12200"
+   ],
+   "summary_ar": "بايلونتك RV12200 بطارية ذكية من نوع ليثيوم حديد فوسفات ضمن سلسلة 12V، بجهد 12.8 فولت وسعة 200 أمبير ساعة. تُستخدم لتخزين الطاقة.",
+   "summary_en": "The Pylontech RV12200 is a smart lithium iron phosphate battery in the 12V series, specified at 12.8V and 200Ah. It is intended for energy storage.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:42:15.46566+00:00"
+ },
+ {
+  "catalog_id": "bab31501-4a68-4e39-8b35-cfbf9d5a8fb0",
+  "summary_ar": "بايلونتك OPTIM US A300-HY هو نظام هجين متكامل لتخزين الطاقة يجمع بطاريات فوسفات حديد الليثيوم مع محولات هجينة. يدعم خفض ذروة الأحمال وتحويل أوقات استهلاك الطاقة وتعزيز الاستهلاك الذاتي للطاقة الشمسية والتغذية الاحتياطية، بقدرات قابلة للت配置 من 50 إلى 500 كيلوواط وسعات من 156.8 إلى 1565 كيلوواط ساعة.",
+  "summary_en": "Pylontech OPTIM US A300-HY is an integrated hybrid energy storage system combining LFP batteries with hybrid inverters. It supports peak shaving, energy shifting, solar self-consumption and backup, with configurable system power of 50–500 kW and storage capacity of 156.8–1565 kWh.",
+  "specs": {
+   "specs": [
+    {
+     "model": "A300-HY",
+     "key_specs": "Hybrid ESS; rated AC power 50/100 kW; configurable system power 50–500 kW with 1–10 × 50 kW inverters; configurable storage 156.8–1565 kWh; 400 Vac, 50/60 Hz; CEC efficiency 97.4%, maximum efficiency 97.8%; on-grid/off-grid transition <10 ms; maximum 5 parallel cabinets; MPPT count, maximum PV input and warranty not stated."
+    },
+    {
+     "model": "M5-300kWh-1000V",
+     "key_specs": "LFP battery cabinet; nominal capacity 313 kWh; DC voltage 560–720 V per string; continuous operation 0.5C; nominal current 122.5 × 2 A, maximum current 180 × 2 A; depth of discharge 98% per string; round-trip efficiency 96% at 0.5C; cycle life >7000; dimensions 1500 × 1300 × 2200 mm excluding inverter; weight 3.5 tonnes; IP55; operating temperature −20 to 55°C, derating below 10°C or above 40°C; air cooling and aerosol fire extinguishing; Ah, usable kWh and warranty not explicitly stated."
+    }
+   ],
+   "models": [
+    "A300-HY",
+    "M5-300kWh-1000V"
+   ],
+   "summary_ar": "بايلونتك OPTIM US A300-HY هو نظام هجين متكامل لتخزين الطاقة يجمع بطاريات فوسفات حديد الليثيوم مع محولات هجينة. يدعم خفض ذروة الأحمال وتحويل أوقات استهلاك الطاقة وتعزيز الاستهلاك الذاتي للطاقة الشمسية والتغذية الاحتياطية، بقدرات قابلة للت配置 من 50 إلى 500 كيلوواط وسعات من 156.8 إلى 1565 كيلوواط ساعة.",
+   "summary_en": "Pylontech OPTIM US A300-HY is an integrated hybrid energy storage system combining LFP batteries with hybrid inverters. It supports peak shaving, energy shifting, solar self-consumption and backup, with configurable system power of 50–500 kW and storage capacity of 156.8–1565 kWh.",
+   "product_type": "Hybrid ESS"
+  },
+  "updated_at": "2026-11-20T22:42:18.707138+00:00"
+ },
+ {
+  "catalog_id": "9a1d0519-51d7-4f6f-9f07-14ed916007f8",
+  "summary_ar": "إنفرتر شمسي هجين أحادي الطور من ليوباور بقدرة 6.2 كيلوواط لأنظمة البطاريات بجهد 48 فولت DC، مع دعم نظام إدارة بطاريات الليثيوم BMS. يدير الطاقة بين الألواح الشمسية والشبكة والبطاريات، ويدعم التشغيل دون بطارية والتوصيل المتوازي حتى 9 وحدات.",
+  "summary_en": "Lipower single-phase hybrid solar inverter rated at 6.2 kW for 48 VDC battery systems, with lithium-battery BMS support. It manages solar, mains and battery power, supports operation without a battery, and allows parallel connection of up to 9 units.",
+  "specs": {
+   "specs": [
+    {
+     "model": "BZ6248-48V",
+     "key_specs": "Power: 6.2 kW; battery voltage: 48 VDC; single phase; parallel operation: up to 9 units; battery-free operation; lithium battery BMS support; adjustable mains/PV charging voltage; battery reverse-connection protection with fuse switch; optional external Wi-Fi; high conversion efficiency stated without a numeric value."
+    },
+    {
+     "model": "BZ6248",
+     "key_specs": "Model code appears in keywords; no separately specified technical ratings."
+    },
+    {
+     "model": "BZ6248SMH",
+     "key_specs": "Model code appears in keywords; no separately specified technical ratings."
+    }
+   ],
+   "models": [
+    "BZ6248-48V",
+    "BZ6248",
+    "BZ6248SMH"
+   ],
+   "summary_ar": "إنفرتر شمسي هجين أحادي الطور من ليوباور بقدرة 6.2 كيلوواط لأنظمة البطاريات بجهد 48 فولت DC، مع دعم نظام إدارة بطاريات الليثيوم BMS. يدير الطاقة بين الألواح الشمسية والشبكة والبطاريات، ويدعم التشغيل دون بطارية والتوصيل المتوازي حتى 9 وحدات.",
+   "summary_en": "Lipower single-phase hybrid solar inverter rated at 6.2 kW for 48 VDC battery systems, with lithium-battery BMS support. It manages solar, mains and battery power, supports operation without a battery, and allows parallel connection of up to 9 units.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:42:22.050533+00:00"
+ },
+ {
+  "catalog_id": "c13431e2-5e75-4cb3-9d9b-79ccd818f12c",
+  "summary_ar": "بايلونتك RV12314 هي بطارية LiFePO4 بجهد 12.8 فولت وسعة 314 أمبير ساعة لتخزين الطاقة الشمسية والمتجددة. تتميز بعمر يتجاوز 6000 دورة، وتسخين ذاتي مدمج لدعم الشحن في البيئات الباردة، وحماية عبر نظام إدارة البطارية مع مرحّل أمان إضافي.",
+  "summary_en": "The Pylontech RV12314 is a 12.8V, 314Ah LiFePO4 battery for solar and renewable-energy storage. It features a cycle life of 6000+ cycles, built-in self-heating for charging in cold environments, and battery-management protection with an additional safety relay.",
+  "specs": {
+   "specs": [
+    {
+     "model": "RV12314",
+     "key_specs": "Nominal voltage: 12.8V; capacity: 314Ah; nominal energy: 4.0192 kWh (calc: 12.8V × 314Ah); series/parallel capability: 4S or 8P; sustained discharge/charge: 160A/160A; peak discharge: 320A for 10s; recommended charge: ≤50A, 14–14.4V; cycles: 6000+; dimensions (L×W×H): 340×280×235 (unit not stated); weight: ≈31.5kg; IP55; working temperature: −20 to 50°C; built-in heating film; certifications: CE, UN38.3."
+    }
+   ],
+   "models": [
+    "RV12314"
+   ],
+   "summary_ar": "بايلونتك RV12314 هي بطارية LiFePO4 بجهد 12.8 فولت وسعة 314 أمبير ساعة لتخزين الطاقة الشمسية والمتجددة. تتميز بعمر يتجاوز 6000 دورة، وتسخين ذاتي مدمج لدعم الشحن في البيئات الباردة، وحماية عبر نظام إدارة البطارية مع مرحّل أمان إضافي.",
+   "summary_en": "The Pylontech RV12314 is a 12.8V, 314Ah LiFePO4 battery for solar and renewable-energy storage. It features a cycle life of 6000+ cycles, built-in self-heating for charging in cold environments, and battery-management protection with an additional safety relay.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:43:14.170128+00:00"
+ },
+ {
+  "catalog_id": "75bb3b19-3a2e-4b6d-928e-8ff724d0c841",
+  "summary_ar": "هيرو إي إي LEGEND 112S هو نظام تخزين طاقة عالي الجهد يعتمد على خلايا بطاريات LFP (LiFePO4) للاستخدامات التجارية والصناعية. تتراوح سعته القابلة للتوسعة من 64.3 إلى 720 كيلووات ساعة، مع عمر دورة معلن للخلايا يبلغ 11,000 دورة.",
+  "summary_en": "HeroEE LEGEND 112S is a high-voltage energy storage system using LFP (LiFePO4) battery cells for commercial and industrial applications. Its capacity is expandable from 64.3 to 720 kWh, with a stated cell cycle life of 11,000 cycles.",
+  "specs": {
+   "specs": [
+    {
+     "model": "HeroEE LEGEND 112S",
+     "key_specs": "Expandable capacity: 64.3–720 kWh; high-voltage system (voltage not specified); LFP (LiFePO4) cells; cell cycle life: 11,000 cycles."
+    }
+   ],
+   "models": [
+    "HeroEE LEGEND 112S"
+   ],
+   "summary_ar": "هيرو إي إي LEGEND 112S هو نظام تخزين طاقة عالي الجهد يعتمد على خلايا بطاريات LFP (LiFePO4) للاستخدامات التجارية والصناعية. تتراوح سعته القابلة للتوسعة من 64.3 إلى 720 كيلووات ساعة، مع عمر دورة معلن للخلايا يبلغ 11,000 دورة.",
+   "summary_en": "HeroEE LEGEND 112S is a high-voltage energy storage system using LFP (LiFePO4) battery cells for commercial and industrial applications. Its capacity is expandable from 64.3 to 720 kWh, with a stated cell cycle life of 11,000 cycles.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:43:21.693337+00:00"
+ },
+ {
+  "catalog_id": "b413c219-e0af-4de1-aa8d-6c29bccb17c4",
+  "summary_ar": "بطارية بايلونتك RV12100CH هي بطارية ليثيوم حديد فوسفات لتخزين الطاقة بجهد 12.8 فولت وسعة 100 أمبير ساعة، مزودة بنظام إدارة بطارية ذكي ومؤشرات لمراقبة الحالة. يتيح التسخين المدمج الشحن في الظروف الباردة بعد ارتفاع حرارة الخلايا فوق 0°م، ويمكن توصيل حتى ثماني بطاريات بالتوازي لزيادة سعة التخزين.",
+  "summary_en": "The Pylontech RV12100CH is a 12.8 V, 100 Ah LiFePO4 battery for energy storage, with an intelligent BMS and real-time status indicators. Built-in heating enables charging in cold conditions after the cells warm above 0°C, and up to eight batteries can be connected in parallel for expanded storage.",
+  "specs": {
+   "specs": [
+    {
+     "model": "RV12100CH",
+     "key_specs": "Nominal voltage: 12.8 VDC; capacity: 100 Ah; nominal energy: 1.28 kWh; usable energy: 100%; continuous discharge: 100 A; peak discharge: 200 A for 10 s; continuous charge: max 100 A, recommended ≤50 A; charging voltage: 14–14.4 V; parallel: max 8 batteries, 800 Ah / 10.24 kWh; dimensions: 300 × 160 × 210 mm; weight: approx. 12 kg; IP20; cycle life: >4500 cycles (80% DOD, 0.5 C, 25°C); design life: ≥10 years; operating temperature: -20 to 50°C; warranty: not stated."
+    }
+   ],
+   "models": [
+    "RV12100CH"
+   ],
+   "summary_ar": "بطارية بايلونتك RV12100CH هي بطارية ليثيوم حديد فوسفات لتخزين الطاقة بجهد 12.8 فولت وسعة 100 أمبير ساعة، مزودة بنظام إدارة بطارية ذكي ومؤشرات لمراقبة الحالة. يتيح التسخين المدمج الشحن في الظروف الباردة بعد ارتفاع حرارة الخلايا فوق 0°م، ويمكن توصيل حتى ثماني بطاريات بالتوازي لزيادة سعة التخزين.",
+   "summary_en": "The Pylontech RV12100CH is a 12.8 V, 100 Ah LiFePO4 battery for energy storage, with an intelligent BMS and real-time status indicators. Built-in heating enables charging in cold conditions after the cells warm above 0°C, and up to eight batteries can be connected in parallel for expanded storage.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:43:22.314571+00:00"
+ },
+ {
+  "catalog_id": "78857193-e96a-4f60-998d-bc54fded3746",
+  "summary_ar": "محولات دايا الهجينة للطاقة الشمسية أحادية الطور بقدرات من 3 إلى 6 كيلوواط، للاستخدام المتصل بالشبكة وخارجها مع بطاريات الرصاص الحمضية أو الليثيوم أيون. تتميز بشاشة لمس ملونة وحماية IP65، وتدعم الربط بالتيار المتردد للأنظمة الشمسية القائمة وتخزين الطاقة من مولدات الديزل وتشغيل حتى 16 وحدة بالتوازي.",
+  "summary_en": "Deye single-phase hybrid solar inverters rated from 3 to 6 kW, for grid-connected and off-grid systems with lead-acid or lithium-ion battery storage. They feature a color touchscreen, IP65 protection, AC coupling for existing solar systems, diesel-generator energy storage support, and parallel operation of up to 16 units.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-3K-SG04LP1-24-EU-SM1",
+     "key_specs": "Rated AC power: 3 kW; battery: 20–30 V; AC: 220/230 V, 50/60 Hz; MPPT: 1 (1 string); max PV input power: 4.8 kW; max PV access power: 6 kW; max PV voltage: 500 V; max efficiency: 97.6% (Euro: 96.5%, MPPT: >99%); dimensions: 376×470×241.5 mm excluding connectors/brackets; listed family weights: 17.6/19 kg (model allocation unclear); IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-3K-SG04LP1-EU-SM1",
+     "key_specs": "Rated AC power: 3 kW; battery: 40–60 V; AC: 220/230 V, 50/60 Hz; MPPT: 1 (1 string); max PV input power: 4.8 kW; max PV access power: 6 kW; max PV voltage: 500 V; max efficiency: 97.6% (Euro: 96.5%, MPPT: >99%); dimensions: 376×470×241.5 mm excluding connectors/brackets; listed family weights: 17.6/19 kg (model allocation unclear); IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-3.6K-SG04LP1-EU-SM2",
+     "key_specs": "Rated AC power: 3.6 kW; battery: 40–60 V; AC: 220/230 V, 50/60 Hz; MPPT: 2 (1+1 strings); max PV input power: 5.76 kW; max PV access power: 7.2 kW; max PV voltage: 500 V; max efficiency: 97.6% (Euro: 96.5%, MPPT: >99%); dimensions: 376×470×241.5 mm excluding connectors/brackets; listed family weights: 17.6/19 kg (model allocation unclear); IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-5K-SG04LP1-EU-SM2",
+     "key_specs": "Rated AC power: 5 kW; battery: 40–60 V; AC: 220/230 V, 50/60 Hz; MPPT: 2 (1+1 strings); max PV input power: 8 kW; max PV access power: 10 kW; max PV voltage: 500 V; max efficiency: 97.6% (Euro: 96.5%, MPPT: >99%); dimensions: 376×470×241.5 mm excluding connectors/brackets; listed family weights: 17.6/19 kg (model allocation unclear); IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-6K-SG04LP1-EU-SM2",
+     "key_specs": "Rated AC power: 6 kW; battery: 40–60 V; AC: 220/230 V, 50/60 Hz; MPPT: 2 (1+1 strings); max PV input power: 9.6 kW; max PV access power: 12 kW; max PV voltage: 500 V; max efficiency: 97.6% (Euro: 96.5%, MPPT: >99%); dimensions: 376×470×241.5 mm excluding connectors/brackets; listed family weights: 17.6/19 kg (model allocation unclear); IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    }
+   ],
+   "models": [
+    "SUN-3K-SG04LP1-24-EU-SM1",
+    "SUN-3K-SG04LP1-EU-SM1",
+    "SUN-3.6K-SG04LP1-EU-SM2",
+    "SUN-5K-SG04LP1-EU-SM2",
+    "SUN-6K-SG04LP1-EU-SM2"
+   ],
+   "summary_ar": "محولات دايا الهجينة للطاقة الشمسية أحادية الطور بقدرات من 3 إلى 6 كيلوواط، للاستخدام المتصل بالشبكة وخارجها مع بطاريات الرصاص الحمضية أو الليثيوم أيون. تتميز بشاشة لمس ملونة وحماية IP65، وتدعم الربط بالتيار المتردد للأنظمة الشمسية القائمة وتخزين الطاقة من مولدات الديزل وتشغيل حتى 16 وحدة بالتوازي.",
+   "summary_en": "Deye single-phase hybrid solar inverters rated from 3 to 6 kW, for grid-connected and off-grid systems with lead-acid or lithium-ion battery storage. They feature a color touchscreen, IP65 protection, AC coupling for existing solar systems, diesel-generator energy storage support, and parallel operation of up to 16 units.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:35.06257+00:00"
+ },
+ {
+  "catalog_id": "ac6af250-c20a-4f85-9227-1d3aa452a4d7",
+  "summary_ar": "ألواح سنتك الشمسية ثنائية الوجه بزجاج مزدوج وتقنية خلايا نصفية N-Type TOPCon، بقدرات من 700 إلى 720 واط وكفاءة تصل إلى 23.2%. مصممة لمحطات الطاقة الشمسية الكبيرة ومتوافقة مع أنظمة التتبع الشائعة، مع مقاومة للظروف البيئية القاسية.",
+  "summary_en": "Suntech bifacial glass-glass solar modules using half-cell N-type TOPCon technology, rated from 700 to 720 W with efficiency up to 23.2%. Designed for large solar power plants and compatible with mainstream trackers, with resistance to harsh environmental conditions.",
+  "specs": {
+   "specs": [
+    {
+     "model": "STP700S-D66-Nsh+",
+     "key_specs": "STC: 0.700 kW; Vmp 39.65 V; Imp 17.66 A; Voc 47.65 V; Isc 18.67 A; efficiency 22.5%; max system voltage 1500 V DC (IEC); 132 cells; bifaciality (80 ± 5)%; dimensions 2384 × 1303 × 33 mm; weight 37.3 kg; IP68 junction box; product warranty 15 years; linear warranty 30 years."
+    },
+    {
+     "model": "STP705S-D66-Nsh+",
+     "key_specs": "STC: 0.705 kW; Vmp 39.85 V; Imp 17.69 A; Voc 47.85 V; Isc 18.71 A; efficiency 22.7%; max system voltage 1500 V DC (IEC); 132 cells; bifaciality (80 ± 5)%; dimensions 2384 × 1303 × 33 mm; weight 37.3 kg; IP68 junction box; product warranty 15 years; linear warranty 30 years."
+    },
+    {
+     "model": "STP710S-D66-Nsh+",
+     "key_specs": "STC: 0.710 kW; Vmp 40.05 V; Imp 17.72 A; Voc 48.05 V; Isc 18.75 A; efficiency 22.9%; max system voltage 1500 V DC (IEC); 132 cells; bifaciality (80 ± 5)%; dimensions 2384 × 1303 × 33 mm; weight 37.3 kg; IP68 junction box; product warranty 15 years; linear warranty 30 years."
+    },
+    {
+     "model": "STP715S-D66-Nsh+",
+     "key_specs": "STC: 0.715 kW; Vmp 40.25 V; Imp 17.78 A; Voc 48.25 V; Isc 18.79 A; efficiency 23.0%; max system voltage 1500 V DC (IEC); 132 cells; bifaciality (80 ± 5)%; dimensions 2384 × 1303 × 33 mm; weight 37.3 kg; IP68 junction box; product warranty 15 years; linear warranty 30 years."
+    },
+    {
+     "model": "STP720S-D66-Nsh+",
+     "key_specs": "STC: 0.720 kW; Vmp 40.45 V; Imp 17.81 A; Voc 48.45 V; Isc 18.83 A; efficiency 23.2%; max system voltage 1500 V DC (IEC); 132 cells; bifaciality (80 ± 5)%; dimensions 2384 × 1303 × 33 mm; weight 37.3 kg; IP68 junction box; product warranty 15 years; linear warranty 30 years."
+    }
+   ],
+   "models": [
+    "STP700S-D66-Nsh+",
+    "STP705S-D66-Nsh+",
+    "STP710S-D66-Nsh+",
+    "STP715S-D66-Nsh+",
+    "STP720S-D66-Nsh+"
+   ],
+   "summary_ar": "ألواح سنتك الشمسية ثنائية الوجه بزجاج مزدوج وتقنية خلايا نصفية N-Type TOPCon، بقدرات من 700 إلى 720 واط وكفاءة تصل إلى 23.2%. مصممة لمحطات الطاقة الشمسية الكبيرة ومتوافقة مع أنظمة التتبع الشائعة، مع مقاومة للظروف البيئية القاسية.",
+   "summary_en": "Suntech bifacial glass-glass solar modules using half-cell N-type TOPCon technology, rated from 700 to 720 W with efficiency up to 23.2%. Designed for large solar power plants and compatible with mainstream trackers, with resistance to harsh environmental conditions.",
+   "product_type": "solar module"
+  },
+  "updated_at": "2026-11-20T22:42:25.555882+00:00"
+ },
+ {
+  "catalog_id": "9b16140d-355c-46be-b648-761d89affa5c",
+  "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأطوار بقدرات من 14 إلى 20 كيلوواط، مصممة لبطاريات الرصاص أو الليثيوم منخفضة الجهد بجهد اسمي 48 فولت. مناسبة لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة أو المستقل عنها، وتدعم توصيل حتى 10 وحدات بالتوازي والربط على جانب التيار المتردد للأنظمة الشمسية القائمة وتخزين الطاقة من مولدات الديزل.",
+  "summary_en": "Deye three-phase hybrid solar inverter series rated from 14 to 20 kW, designed for 48 V low-voltage lead-acid or lithium-ion batteries. Suitable for on-grid and off-grid solar energy storage, with support for up to 10 parallel units, AC coupling of existing solar systems, and energy storage from diesel generators.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-14K-SG05LP3-EU-SM2",
+     "key_specs": "Rated AC power: 14 kW; battery: 48 V nominal, 40–60 V range; max charge/discharge: 260/260 A; AC: 220/380 or 230/400 V, three-phase; 2 MPPTs, strings 2+1; max PV input: 21 kW, 800 V; MPPT range: 160–650 V; efficiency: max 97.6%, Euro 97.0%, MPPT >99%; dimensions: 456×750×268.5 mm (excluding connectors/brackets); weight: 50.6 kg; IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-15K-SG05LP3-EU-SM2",
+     "key_specs": "Rated AC power: 15 kW; battery: 48 V nominal, 40–60 V range; max charge/discharge: 280/280 A; AC: 220/380 or 230/400 V, three-phase; 2 MPPTs, strings 2+1; max PV input: 22.5 kW, 800 V; MPPT range: 160–650 V; efficiency: max 97.6%, Euro 97.0%, MPPT >99%; dimensions: 456×750×268.5 mm (excluding connectors/brackets); weight: 50.6 kg; IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-16K-SG05LP3-EU-SM2",
+     "key_specs": "Rated AC power: 16 kW; battery: 48 V nominal, 40–60 V range; max charge/discharge: 300/300 A; AC: 220/380 or 230/400 V, three-phase; 2 MPPTs, strings 2+1; max PV input: 24 kW, 800 V; MPPT range: 160–650 V; efficiency: max 97.6%, Euro 97.0%, MPPT >99%; dimensions: 456×750×268.5 mm (excluding connectors/brackets); weight: 50.6 kg; IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-18K-SG05LP3-EU-SM2",
+     "key_specs": "Rated AC power: 18 kW; battery: 48 V nominal, 40–60 V range; max charge/discharge: 330/330 A; AC: 220/380 or 230/400 V, three-phase; 2 MPPTs, strings 2+1; max PV input: 27 kW, 800 V; MPPT range: 160–650 V; efficiency: max 97.6%, Euro 97.0%, MPPT >99%; dimensions: 456×750×268.5 mm (excluding connectors/brackets); weight: 50.6 kg; IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-20K-SG05LP3-EU-SM2",
+     "key_specs": "Rated AC power: 20 kW; battery: 48 V nominal, 40–60 V range; max charge/discharge: 350/350 A; AC: 220/380 or 230/400 V, three-phase; 2 MPPTs, strings 2+1; max PV input: 30 kW, 800 V; MPPT range: 160–650 V; efficiency: max 97.6%, Euro 97.0%, MPPT >99%; dimensions: 456×750×268.5 mm (excluding connectors/brackets); weight: 50.6 kg; IP65; warranty: 5/10 years depending on installation site and warranty policy."
+    }
+   ],
+   "models": [
+    "SUN-14K-SG05LP3-EU-SM2",
+    "SUN-15K-SG05LP3-EU-SM2",
+    "SUN-16K-SG05LP3-EU-SM2",
+    "SUN-18K-SG05LP3-EU-SM2",
+    "SUN-20K-SG05LP3-EU-SM2"
+   ],
+   "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأطوار بقدرات من 14 إلى 20 كيلوواط، مصممة لبطاريات الرصاص أو الليثيوم منخفضة الجهد بجهد اسمي 48 فولت. مناسبة لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة أو المستقل عنها، وتدعم توصيل حتى 10 وحدات بالتوازي والربط على جانب التيار المتردد للأنظمة الشمسية القائمة وتخزين الطاقة من مولدات الديزل.",
+   "summary_en": "Deye three-phase hybrid solar inverter series rated from 14 to 20 kW, designed for 48 V low-voltage lead-acid or lithium-ion batteries. Suitable for on-grid and off-grid solar energy storage, with support for up to 10 parallel units, AC coupling of existing solar systems, and energy storage from diesel generators.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:42:33.728433+00:00"
+ },
+ {
+  "catalog_id": "cccfc6d5-2f1e-482c-85f2-5461aecb4c5f",
+  "summary_ar": "محول سوليس هجين للطاقة الشمسية ثلاثي الطور بقدرات تتراوح من 29.9 إلى 50 كيلوواط، مع كفاءة عالية وحماية IP66. مخصص لتطبيقات الطاقة الشمسية وتخزين الطاقة، مع دعم بطاريات الليثيوم والجهد العالي.",
+  "summary_en": "Solis three-phase hybrid solar inverter with a power range of 29.9–50 kW, high efficiency, and IP66 protection. Designed for solar power and energy storage applications, with support for lithium batteries and high voltage.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH3P(29.9-50)K-H",
+     "key_specs": "Power range: 29.9–50 kW; three-phase; IP66; high efficiency (no numerical value stated); lithium battery and high-voltage support."
+    },
+    {
+     "model": "29.9K-H",
+     "key_specs": "Power: 29.9 kW; three-phase; IP66; lithium battery and high-voltage support."
+    },
+    {
+     "model": "50K-H",
+     "key_specs": "Power: 50 kW; three-phase; IP66; lithium battery and high-voltage support."
+    }
+   ],
+   "models": [
+    "S6-EH3P(29.9-50)K-H",
+    "29.9K-H",
+    "50K-H"
+   ],
+   "summary_ar": "محول سوليس هجين للطاقة الشمسية ثلاثي الطور بقدرات تتراوح من 29.9 إلى 50 كيلوواط، مع كفاءة عالية وحماية IP66. مخصص لتطبيقات الطاقة الشمسية وتخزين الطاقة، مع دعم بطاريات الليثيوم والجهد العالي.",
+   "summary_en": "Solis three-phase hybrid solar inverter with a power range of 29.9–50 kW, high efficiency, and IP66 protection. Designed for solar power and energy storage applications, with support for lithium batteries and high voltage.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:02.075827+00:00"
+ },
+ {
+  "catalog_id": "e83b044d-435d-4a3e-902a-5384d9dd16c6",
+  "summary_ar": "بطارية ذكية من سلسلة G2 بتقنية ليثيوم فوسفات الحديد (LiFePO4) لتخزين الطاقة. تتميز بمراقبة فورية لدعم كفاءة تخزين الطاقة.",
+  "summary_en": "A G2-series smart lithium iron phosphate (LiFePO4) battery for energy storage. It features real-time monitoring to support efficient energy storage.",
+  "specs": {
+   "specs": [
+    {
+     "model": "NeoPower 4 G2",
+     "key_specs": "LiFePO4 chemistry; real-time monitoring. No numerical technical specifications provided."
+    }
+   ],
+   "models": [
+    "NeoPower 4 G2"
+   ],
+   "summary_ar": "بطارية ذكية من سلسلة G2 بتقنية ليثيوم فوسفات الحديد (LiFePO4) لتخزين الطاقة. تتميز بمراقبة فورية لدعم كفاءة تخزين الطاقة.",
+   "summary_en": "A G2-series smart lithium iron phosphate (LiFePO4) battery for energy storage. It features real-time monitoring to support efficient energy storage.",
+   "product_type": "Smart LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:43:07.048009+00:00"
+ },
+ {
+  "catalog_id": "da2625b3-e1bb-46de-8f5f-38a65245793f",
+  "summary_ar": "بايلونتك PowerCube-M5A-64 هو نظام معياري لتخزين الطاقة ببطاريات ليثيوم فوسفات الحديد عالية الجهد، بسعة 15.68 كيلووات ساعة لكل وحدة وجهد نظام أقل من 1500 فولت. صُمم لتطبيقات تخزين الطاقة التجارية والصناعية، بما فيها الطاقة الشمسية، مع وحدات تحكم مخصصة واتصالات CAN وModbus.",
+  "summary_en": "Pylontech PowerCube-M5A-64 is a modular high-voltage lithium iron phosphate energy storage system with 15.68 kWh battery modules and system voltage below 1500 V. It is designed for commercial and industrial energy storage, including solar applications, with dedicated controllers and CAN/Modbus communications.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M5A-64",
+     "key_specs": "Modular high-voltage LFP ESS; system voltage <1500 V; battery module capacity 15.68 kWh."
+    },
+    {
+     "model": "HM5A180F",
+     "key_specs": "Nominal voltage 64 Vdc, range 58–71 Vdc; 245 Ah; nominal energy 15.68 kWh; DoD 90%; IP20; dimensions (W×D×H) 460×900×160.5 mm; weight 115 kg; operating temperature 0–50°C; RS485 (Modbus RTU)/CAN/LAN; UN38.3."
+    },
+    {
+     "model": "S1500M5A180L",
+     "key_specs": "Controller; system operating voltage 0–1500 Vdc; maximum operating current 180 A; BMS/fan AC supply 100–305 VAC, 50/60 Hz; self-consumption 16.5 W; IP20; dimensions (W×D×H) 480×858×160 mm; weight 28 kg; operating life 15+ (unit not specified in controller table); operating temperature −20–65°C; RS485 (Modbus RTU)/CAN/LAN; external-power-supply NA version."
+    },
+    {
+     "model": "S1500M5A180E",
+     "key_specs": "Controller; system operating voltage 0–1500 Vdc; maximum operating current 180 A; BMS/fan AC supply 100–305 VAC, 50/60 Hz; self-consumption 16.5 W; IP20; dimensions (W×D×H) 460×858×160 mm; weight 32 kg; operating life 15+ (unit not specified in controller table); operating temperature −20–65°C; RS485 (Modbus RTU)/CAN/LAN; external-power-supply EU version."
+    },
+    {
+     "model": "PowerCube-M5A180",
+     "key_specs": "Listed as the related product for S1500M5A180L and S1500M5A180E controllers; no separate specifications provided."
+    },
+    {
+     "model": "PowerCube-M5A-64/zzzV-L15",
+     "key_specs": "HM5A180F modules; nominal voltage 64×n Vdc; charge/discharge limits 71×n / 58×n V; 245 Ah; nominal energy 15.68×n kWh; DoD 95%; nominal/continuous current 122.5/180 A; peak current <210 A for 5 min, <500 A for 30 s; round-trip efficiency 96% at 1C; optional modules 1–21 (weight formula separately states n=1–22); dimensions (W×D×H) 1050×925×1965 mm, 22 slots; weight 210+115×n kg; operating life 15+ years; operating temperature 10–40°C; CANBUS/Modbus RTU/Modbus TCP/IP; S1500M5A180L controller, NA external-supply version with isolating switch; listed certifications include UL1973, UL9540A, UL9540, IEC62619, IEC63056, UKCA, CE and UN38.3."
+    },
+    {
+     "model": "PowerCube-M5A-64/zzzV-E15",
+     "key_specs": "HM5A180F modules; nominal voltage 64×n Vdc; charge/discharge limits 71×n / 58×n V; 245 Ah; nominal energy 15.68×n kWh; DoD 95%; nominal/continuous current 122.5/180 A; peak current <210 A for 5 min, <500 A for 30 s; round-trip efficiency 96% at 1C; optional modules 1–21 (weight formula separately states n=1–22); dimensions (W×D×H) 1050×925×1965 mm, 22 slots; weight 210+115×n kg; operating life 15+ years; operating temperature 10–40°C; CANBUS/Modbus RTU/Modbus TCP/IP; S1500M5A180E controller, EU external-supply version with circuit breaker; listed certifications include IEC62477-1, IEC62040-1, IEC62619, IEC63056, UKCA, CE, UN38.3, VDE-AR-E 2510-50, GB/T 36276-2018 and GB/T 34131-2017."
+    }
+   ],
+   "models": [
+    "PowerCube-M5A-64",
+    "HM5A180F",
+    "S1500M5A180L",
+    "S1500M5A180E",
+    "PowerCube-M5A180",
+    "PowerCube-M5A-64/zzzV-L15",
+    "PowerCube-M5A-64/zzzV-E15"
+   ],
+   "summary_ar": "بايلونتك PowerCube-M5A-64 هو نظام معياري لتخزين الطاقة ببطاريات ليثيوم فوسفات الحديد عالية الجهد، بسعة 15.68 كيلووات ساعة لكل وحدة وجهد نظام أقل من 1500 فولت. صُمم لتطبيقات تخزين الطاقة التجارية والصناعية، بما فيها الطاقة الشمسية، مع وحدات تحكم مخصصة واتصالات CAN وModbus.",
+   "summary_en": "Pylontech PowerCube-M5A-64 is a modular high-voltage lithium iron phosphate energy storage system with 15.68 kWh battery modules and system voltage below 1500 V. It is designed for commercial and industrial energy storage, including solar applications, with dedicated controllers and CAN/Modbus communications.",
+   "product_type": "High-voltage LiFePO4 battery energy storage system (ESS)"
+  },
+  "updated_at": "2026-11-20T22:43:08.019518+00:00"
+ },
+ {
+  "catalog_id": "bf123a89-c4a0-4b51-a488-ed89b9c90d64",
+  "summary_ar": "PowerCube-M5A-64 هو نظام لتخزين الطاقة. يذكر نص الكتالوج أن جهد النظام أقل من 1500 فولت.",
+  "summary_en": "The PowerCube-M5A-64 is an energy storage system. The catalog states that its system voltage is below 1500 V.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M5A-64",
+     "key_specs": "System voltage: <1500 V."
+    }
+   ],
+   "models": [
+    "PowerCube-M5A-64"
+   ],
+   "summary_ar": "PowerCube-M5A-64 هو نظام لتخزين الطاقة. يذكر نص الكتالوج أن جهد النظام أقل من 1500 فولت.",
+   "summary_en": "The PowerCube-M5A-64 is an energy storage system. The catalog states that its system voltage is below 1500 V.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:43:08.981533+00:00"
+ },
+ {
+  "catalog_id": "9f8b204a-989c-46f0-913e-06a9e7c9dde3",
+  "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأطوار بقدرات من 29.9 إلى 50 كيلوواط، تدعم بطاريات الليثيوم عالية الجهد لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة وخارجها. تدعم تخزين الطاقة من مولد ديزل والربط AC/DC ومخرجات غير متوازنة بنسبة 100% وربط حتى 10 وحدات بالتوازي؛ ويشير الكتالوج إلى إتاحة التشغيل المتوازي في الربع الأول من 2023.",
+  "summary_en": "Deye three-phase hybrid inverter series rated from 29.9 to 50 kW, supporting high-voltage lithium-ion batteries for solar energy storage and on-grid/off-grid operation. Supports diesel-generator energy storage, AC/DC coupling, 100% unbalanced output and up to 10 units in parallel; the catalog notes parallel operation availability in Q1 2023.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-29.9K-SG01HP3-EU-BM3",
+     "key_specs": "Rated/max AC power: 29.9/29.9 kW; battery: 160–800 V, 2 inputs, charge/discharge 50+50 A; max PV input: 38.87 kW, 1000 V; MPPT: 3, 150–850 V, 2 strings/MPPT; full-load DC: 360–850 V; AC: three-phase 220/380 or 230/400 V, 50/60 Hz; max/Euro efficiency: 97.6%/97.0%; dimensions: 527×894×294 mm (excluding connectors/brackets); weight: 80 kg; IP65; warranty: 5 years (10 optional)."
+    },
+    {
+     "model": "SUN-30K-SG01HP3-EU-BM3",
+     "key_specs": "Rated/max AC power: 30/33 kW; battery: 160–800 V, 2 inputs, charge/discharge 50+50 A; max PV input: 39 kW, 1000 V; MPPT: 3, 150–850 V, 2 strings/MPPT; full-load DC: 360–850 V; AC: three-phase 220/380 or 230/400 V, 50/60 Hz; max/Euro efficiency: 97.6%/97.0%; dimensions: 527×894×294 mm (excluding connectors/brackets); weight: 80 kg; IP65; warranty: 5 years (10 optional)."
+    },
+    {
+     "model": "SUN-35K-SG01HP3-EU-BM3",
+     "key_specs": "Rated/max AC power: 35/38.5 kW; battery: 160–800 V, 2 inputs, charge/discharge 50+50 A; max PV input: 45.5 kW, 1000 V; MPPT: 3, 150–850 V, 2 strings/MPPT; full-load DC: 360–850 V; AC: three-phase 220/380 or 230/400 V, 50/60 Hz; max/Euro efficiency: 97.6%/97.0%; dimensions: 527×894×294 mm (excluding connectors/brackets); weight: 80 kg; IP65; warranty: 5 years (10 optional)."
+    },
+    {
+     "model": "SUN-40K-SG01HP3-EU-BM4",
+     "key_specs": "Rated/max AC power: 40/44 kW; battery: 160–800 V, 2 inputs, charge/discharge 50+50 A; max PV input: 52 kW, 1000 V; MPPT: 4, 150–850 V, 2 strings/MPPT; full-load DC: 360–850 V; AC: three-phase 220/380 or 230/400 V, 50/60 Hz; max/Euro efficiency: 97.6%/97.0%; dimensions: 527×894×294 mm (excluding connectors/brackets); weight: 80 kg; IP65; warranty: 5 years (10 optional)."
+    },
+    {
+     "model": "SUN-50K-SG01HP3-EU-BM4",
+     "key_specs": "Rated/max AC power: 50/55 kW; battery: 160–800 V, 2 inputs, charge/discharge 50+50 A; max PV input: 65 kW, 1000 V; MPPT: 4, 150–850 V, 2 strings/MPPT; full-load DC: 450–850 V; AC: three-phase 220/380 or 230/400 V, 50/60 Hz; max/Euro efficiency: 97.6%/97.0%; dimensions: 527×894×294 mm (excluding connectors/brackets); weight: 80 kg; IP65; warranty: 5 years (10 optional)."
+    }
+   ],
+   "models": [
+    "SUN-29.9K-SG01HP3-EU-BM3",
+    "SUN-30K-SG01HP3-EU-BM3",
+    "SUN-35K-SG01HP3-EU-BM3",
+    "SUN-40K-SG01HP3-EU-BM4",
+    "SUN-50K-SG01HP3-EU-BM4"
+   ],
+   "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأطوار بقدرات من 29.9 إلى 50 كيلوواط، تدعم بطاريات الليثيوم عالية الجهد لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة وخارجها. تدعم تخزين الطاقة من مولد ديزل والربط AC/DC ومخرجات غير متوازنة بنسبة 100% وربط حتى 10 وحدات بالتوازي؛ ويشير الكتالوج إلى إتاحة التشغيل المتوازي في الربع الأول من 2023.",
+   "summary_en": "Deye three-phase hybrid inverter series rated from 29.9 to 50 kW, supporting high-voltage lithium-ion batteries for solar energy storage and on-grid/off-grid operation. Supports diesel-generator energy storage, AC/DC coupling, 100% unbalanced output and up to 10 units in parallel; the catalog notes parallel operation availability in Q1 2023.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:38.164355+00:00"
+ },
+ {
+  "catalog_id": "bd598645-5c2f-4467-b40c-26480a774bf7",
+  "summary_ar": "سلسلة سوليس Solarator S6-EH3P(75-125)K10-NV-YD-H هي محولات هجينة ثلاثية الطور عالية الجهد بقدرات من 75 إلى 125 كيلوواط لتطبيقات تخزين الطاقة الكبيرة. تدعم الربط بالتيار المستمر والمتردد وتكامل الطاقة الشمسية والمولدات، مع التحويل إلى التغذية الاحتياطية خلال أقل من 10 مللي ثانية والتشغيل المتوازي حتى 1.25 ميغاواط.",
+  "summary_en": "Solis Solarator S6-EH3P(75-125)K10-NV-YD-H is a three-phase, high-voltage hybrid inverter series rated from 75 to 125 kW for large energy-storage applications. It supports DC and AC coupling, PV and generator integration, backup switching in less than 10 ms, and parallel operation up to 1.25 MW.",
+  "specs": {
+   "specs": [
+    {
+     "model": "75K",
+     "key_specs": "Rated grid/backup power: 75 kW; max PV array/usable input: 150 kW; PV voltage: 1000 V max, 600 V rated, MPPT 150–950 V; 10 MPPTs / 20 strings; Li-ion battery: 300–950 V, 2 ports, charge/discharge 100 A × 2; AC: 220/380 V or 230/400 V, three-phase, 50/60 Hz; max efficiency: 97.5%, EU: 96.9%, battery-to-AC: 97.0%; backup switching: <10 ms; dimensions: 1174 × 814 × 400 mm; weight: 170 kg; IP66."
+    },
+    {
+     "model": "80K",
+     "key_specs": "Rated grid/backup power: 80 kW; max PV array/usable input: 160 kW; PV voltage: 1000 V max, 600 V rated, MPPT 150–950 V; 10 MPPTs / 20 strings; Li-ion battery: 300–950 V, 2 ports, charge/discharge 100 A × 2; AC: 220/380 V or 230/400 V, three-phase, 50/60 Hz; max efficiency: 97.5%, EU: 96.9%, battery-to-AC: 97.0%; backup switching: <10 ms; dimensions: 1174 × 814 × 400 mm; weight: 170 kg; IP66."
+    },
+    {
+     "model": "99.9K",
+     "key_specs": "Rated grid/backup power: 99.9 kW; max PV array/usable input: 200 kW; PV voltage: 1000 V max, 600 V rated, MPPT 150–950 V; 10 MPPTs / 20 strings; Li-ion battery: 300–950 V, 2 ports, charge/discharge 100 A × 2; AC: 220/380 V or 230/400 V, three-phase, 50/60 Hz; max efficiency: 97.5%, EU: 97.1%, battery-to-AC: 97.0%; backup switching: <10 ms; dimensions: 1174 × 814 × 400 mm; weight: 170 kg; IP66."
+    },
+    {
+     "model": "100K",
+     "key_specs": "Rated grid/backup power: 100 kW; max PV array/usable input: 200 kW; PV voltage: 1000 V max, 600 V rated, MPPT 150–950 V; 10 MPPTs / 20 strings; Li-ion battery: 300–950 V, 2 ports, charge/discharge 100 A × 2; AC: 220/380 V or 230/400 V, three-phase, 50/60 Hz; max efficiency: 97.5%, EU: 97.1%, battery-to-AC: 97.0%; backup switching: <10 ms; dimensions: 1174 × 814 × 400 mm; weight: 170 kg; IP66."
+    },
+    {
+     "model": "125K",
+     "key_specs": "Rated grid/backup power: 125 kW; max PV array/usable input: 250 kW; PV voltage: 1000 V max, 600 V rated, MPPT 150–950 V; 10 MPPTs / 20 strings; Li-ion battery: 300–950 V, 2 ports, charge/discharge 100 A × 2; AC: 220/380 V or 230/400 V, three-phase, 50/60 Hz; max efficiency: 97.5%, EU: 97.2%, battery-to-AC: 97.0%; backup switching: <10 ms; dimensions: 1174 × 814 × 400 mm; weight: 170 kg; IP66."
+    }
+   ],
+   "models": [
+    "75K",
+    "80K",
+    "99.9K",
+    "100K",
+    "125K"
+   ],
+   "summary_ar": "سلسلة سوليس Solarator S6-EH3P(75-125)K10-NV-YD-H هي محولات هجينة ثلاثية الطور عالية الجهد بقدرات من 75 إلى 125 كيلوواط لتطبيقات تخزين الطاقة الكبيرة. تدعم الربط بالتيار المستمر والمتردد وتكامل الطاقة الشمسية والمولدات، مع التحويل إلى التغذية الاحتياطية خلال أقل من 10 مللي ثانية والتشغيل المتوازي حتى 1.25 ميغاواط.",
+   "summary_en": "Solis Solarator S6-EH3P(75-125)K10-NV-YD-H is a three-phase, high-voltage hybrid inverter series rated from 75 to 125 kW for large energy-storage applications. It supports DC and AC coupling, PV and generator integration, backup switching in less than 10 ms, and parallel operation up to 1.25 MW.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:26.32091+00:00"
+ },
+ {
+  "catalog_id": "7ad01c3a-c7a2-4128-8520-68bc1e89940f",
+  "summary_ar": "محول دايا هجين أحادي الطور لأنظمة الطاقة الشمسية المتصلة بالشبكة والمستقلة عنها، يدعم تخزين الطاقة ببطاريات الرصاص الحمضية أو الليثيوم أيون. يدعم تشغيل حتى 16 وحدة بالتوازي، والاقتران بالتيار المتردد لتحديث الأنظمة الشمسية القائمة، وتخزين الطاقة من مولدات الديزل، مع شاشة لمس LCD ملونة وحماية IP65.",
+  "summary_en": "Deye single-phase hybrid solar inverter for on-grid and off-grid systems with lead-acid or lithium-ion battery storage. It supports up to 16 units in parallel, AC coupling to existing solar systems, and storing energy from diesel generators, with a color touch LCD and IP65 protection.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-7.6K-SG02LP1-EU-AM2-P",
+     "key_specs": "Rated AC power: 7.6 kW; AC voltage: 220/230 V; battery: 40–60 V, lead-acid or lithium-ion; max charge/discharge: 190/190 A; MPPT: 2 (2+2 strings); max PV input power: 12.16 kW; max PV access power: 15.2 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%; dimensions: 420×670×233 mm (excluding connectors and brackets); weight: 35.6 kg; IP65; warranty: 5 or 10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-8K-SG02LP1-EU-AM2-P",
+     "key_specs": "Rated AC power: 8 kW; AC voltage: 220/230 V; battery: 40–60 V, lead-acid or lithium-ion; max charge/discharge: 190/190 A; MPPT: 2 (2+2 strings); max PV input power: 12.8 kW; max PV access power: 16 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%; dimensions: 420×670×233 mm (excluding connectors and brackets); weight: 35.6 kg; IP65; warranty: 5 or 10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-10K-SG02LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 10 kW; AC voltage: 220/230 V; battery: 40–60 V, lead-acid or lithium-ion; max charge/discharge: 220/220 A; MPPT: 3 (2+2+2 strings); max PV input power: 16 kW; max PV access power: 20 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%; dimensions: 420×670×233 mm (excluding connectors and brackets); weight: 35.6 kg; IP65; warranty: 5 or 10 years depending on installation site and warranty policy."
+    },
+    {
+     "model": "SUN-12K-SG02LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 12 kW; AC voltage: 220/230 V; battery: 40–60 V, lead-acid or lithium-ion; max charge/discharge: 250/250 A; MPPT: 3 (2+2+2 strings); max PV input power: 19.2 kW; max PV access power: 24 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%; dimensions: 420×670×233 mm (excluding connectors and brackets); weight: 35.6 kg; IP65; warranty: 5 or 10 years depending on installation site and warranty policy."
+    }
+   ],
+   "models": [
+    "SUN-7.6K-SG02LP1-EU-AM2-P",
+    "SUN-8K-SG02LP1-EU-AM2-P",
+    "SUN-10K-SG02LP1-EU-AM3-P",
+    "SUN-12K-SG02LP1-EU-AM3-P"
+   ],
+   "summary_ar": "محول دايا هجين أحادي الطور لأنظمة الطاقة الشمسية المتصلة بالشبكة والمستقلة عنها، يدعم تخزين الطاقة ببطاريات الرصاص الحمضية أو الليثيوم أيون. يدعم تشغيل حتى 16 وحدة بالتوازي، والاقتران بالتيار المتردد لتحديث الأنظمة الشمسية القائمة، وتخزين الطاقة من مولدات الديزل، مع شاشة لمس LCD ملونة وحماية IP65.",
+   "summary_en": "Deye single-phase hybrid solar inverter for on-grid and off-grid systems with lead-acid or lithium-ion battery storage. It supports up to 16 units in parallel, AC coupling to existing solar systems, and storing energy from diesel generators, with a color touch LCD and IP65 protection.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:28.50002+00:00"
+ },
+ {
+  "catalog_id": "9d7561de-6eb3-48b2-9840-a1f2784f9289",
+  "summary_ar": "هيرو إي NeoPower 4 G2 بطارية ذكية من فوسفات حديد الليثيوم لتخزين الطاقة، بجهد 12.8 فولت وسعة طاقة 4.0192 كيلوواط ساعي. تتميز بعمر تشغيلي يصل إلى 11000 دورة ودرجة حماية IP65.",
+  "summary_en": "The HeroEE NeoPower 4 G2 is a smart LiFePO4 battery for energy storage, rated at 12.8 V and 4.0192 kWh. It offers a service life of up to 11,000 cycles and an IP65 protection rating.",
+  "specs": {
+   "specs": [
+    {
+     "model": "NeoPower 4 G2",
+     "key_specs": "Voltage: 12.8 V; capacity: 314 Ah; energy: 4.0192 kWh; protection: IP65; cycle life: up to 11,000 cycles."
+    }
+   ],
+   "models": [
+    "NeoPower 4 G2"
+   ],
+   "summary_ar": "هيرو إي NeoPower 4 G2 بطارية ذكية من فوسفات حديد الليثيوم لتخزين الطاقة، بجهد 12.8 فولت وسعة طاقة 4.0192 كيلوواط ساعي. تتميز بعمر تشغيلي يصل إلى 11000 دورة ودرجة حماية IP65.",
+   "summary_en": "The HeroEE NeoPower 4 G2 is a smart LiFePO4 battery for energy storage, rated at 12.8 V and 4.0192 kWh. It offers a service life of up to 11,000 cycles and an IP65 protection rating.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:43:30.915128+00:00"
+ },
+ {
+  "catalog_id": "7c638d62-4b67-4356-9eb9-4d6f4523b7c6",
+  "summary_ar": "محولات دايا الهجينة SUN-60/75/80K-SG02HP3 ثلاثية الأطوار تجمع بين توليد الطاقة الشمسية وتخزينها في بطاريات ليثيوم أيون عالية الجهد، للعمل مع الشبكة أو خارجها. تدعم توصيل حتى 10 وحدات بالتوازي، والربط بالتيار المتردد مع أنظمة شمسية قائمة، وتخزين الطاقة من مولدات الديزل.",
+  "summary_en": "Deye SUN-60/75/80K-SG02HP3 series hybrid inverters combine solar generation with high-voltage lithium-ion battery storage for three-phase on-grid and off-grid systems. They support up to 10 units in parallel, AC coupling to existing solar systems, and storing energy from diesel generators.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-60K-SG02HP3-EU-EM6",
+     "key_specs": "Rated AC power: 60 kW; max apparent power: 66 kVA; AC voltage: 220/380 or 230/400 V; battery: lithium-ion, 160–1000 V, 2 inputs, max charge/discharge 80+80 A; 6 MPPTs, 2 strings each; max PV input power: 96 kW; max PV access power: 120 kW; max PV voltage: 1000 V; MPPT range: 150–850 V; max efficiency: 97.60%, Euro: 97.0%, MPPT: >99%; dimensions: 606×927×314 mm (excluding connectors and brackets); weight: 97.5 kg; IP65; warranty: 5/10 years depending on final installation site and warranty policy."
+    },
+    {
+     "model": "SUN-75K-SG02HP3-EU-EM6",
+     "key_specs": "Rated AC power: 75 kW; max apparent power: 82.5 kVA; AC voltage: 220/380 or 230/400 V; battery: lithium-ion, 160–1000 V, 2 inputs, max charge/discharge 80+80 A; 6 MPPTs, 2 strings each; max PV input power: 120 kW; max PV access power: 150 kW; max PV voltage: 1000 V; MPPT range: 150–850 V; max efficiency: 97.60%, Euro: 97.0%, MPPT: >99%; dimensions: 606×927×314 mm (excluding connectors and brackets); weight: 97.5 kg; IP65; warranty: 5/10 years depending on final installation site and warranty policy."
+    },
+    {
+     "model": "SUN-80K-SG02HP3-EU-EM6",
+     "key_specs": "Rated AC power: 80 kW; max apparent power: 88 kVA; AC voltage: 220/380 or 230/400 V; battery: lithium-ion, 160–1000 V, 2 inputs, max charge/discharge 80+80 A; 6 MPPTs, 2 strings each; max PV input power: 128 kW; max PV access power: 160 kW; max PV voltage: 1000 V; MPPT range: 150–850 V; max efficiency: 97.60%, Euro: 97.0%, MPPT: >99%; dimensions: 606×927×314 mm (excluding connectors and brackets); weight: 97.5 kg; IP65; warranty: 5/10 years depending on final installation site and warranty policy."
+    }
+   ],
+   "models": [
+    "SUN-60K-SG02HP3-EU-EM6",
+    "SUN-75K-SG02HP3-EU-EM6",
+    "SUN-80K-SG02HP3-EU-EM6"
+   ],
+   "summary_ar": "محولات دايا الهجينة SUN-60/75/80K-SG02HP3 ثلاثية الأطوار تجمع بين توليد الطاقة الشمسية وتخزينها في بطاريات ليثيوم أيون عالية الجهد، للعمل مع الشبكة أو خارجها. تدعم توصيل حتى 10 وحدات بالتوازي، والربط بالتيار المتردد مع أنظمة شمسية قائمة، وتخزين الطاقة من مولدات الديزل.",
+   "summary_en": "Deye SUN-60/75/80K-SG02HP3 series hybrid inverters combine solar generation with high-voltage lithium-ion battery storage for three-phase on-grid and off-grid systems. They support up to 10 units in parallel, AC coupling to existing solar systems, and storing energy from diesel generators.",
+   "product_type": "Three-phase high-voltage hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:33.650318+00:00"
+ },
+ {
+  "catalog_id": "a6f2a2f1-0870-4c01-b52a-3db11d22251b",
+  "summary_ar": "ألواح سنتك الشمسية ثنائية الأوجه بتقنية نصف الخلية N-Type TOPCon، بقدرة 580–600 واط وكفاءة تصل إلى 23.2%، لتوليد الطاقة الشمسية. يمكن أن تحقق الإضاءة الخلفية زيادة في القدرة تصل إلى 25%، مع ضمان للمنتج لمدة 15 عاماً وضمان خطي للقدرة لمدة 30 عاماً.",
+  "summary_en": "Suntech bifacial half-cell N-Type TOPCon solar modules rated 580–600 W, with efficiency up to 23.2%, for solar power generation. Rear-side illumination can provide up to 25% additional power gain; the modules carry a 15-year product warranty and a 30-year linear power warranty.",
+  "specs": {
+   "specs": [
+    {
+     "model": "STPXXXS-C72/Nsh+",
+     "key_specs": "Series: 0.580–0.600 kW; max efficiency 23.2%; max system voltage 1500 V DC; 144 cells; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; bifaciality 80 ± 5%; wind/snow loads 2400/5400 Pa; product/linear power warranty 15/30 years; degradation 1% first year, 0.40% annually thereafter."
+    },
+    {
+     "model": "STP580S-C72/Nsh+",
+     "key_specs": "STC: power 0.580 kW; Vmp 42.68 V; Imp 13.59 A; Voc 51.42 V; Isc 14.32 A; efficiency 22.5%; max system voltage 1500 V DC; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; product/linear power warranty 15/30 years."
+    },
+    {
+     "model": "STP585S-C72/Nsh+",
+     "key_specs": "STC: power 0.585 kW; Vmp 42.79 V; Imp 13.67 A; Voc 51.55 V; Isc 14.40 A; efficiency 22.6%; max system voltage 1500 V DC; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; product/linear power warranty 15/30 years."
+    },
+    {
+     "model": "STP590S-C72/Nsh+",
+     "key_specs": "STC: power 0.590 kW; Vmp 42.91 V; Imp 13.75 A; Voc 51.68 V; Isc 14.48 A; efficiency 22.8%; max system voltage 1500 V DC; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; product/linear power warranty 15/30 years."
+    },
+    {
+     "model": "STP595S-C72/Nsh+",
+     "key_specs": "STC: power 0.595 kW; Vmp 43.02 V; Imp 13.83 A; Voc 51.81 V; Isc 14.56 A; efficiency 23.0%; max system voltage 1500 V DC; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; product/linear power warranty 15/30 years."
+    },
+    {
+     "model": "STP600S-C72/Nsh+",
+     "key_specs": "STC: power 0.600 kW; Vmp 43.13 V; Imp 13.91 A; Voc 51.94 V; Isc 14.64 A; efficiency 23.2%; max system voltage 1500 V DC; dimensions 2278 × 1134 × 30 mm; weight 32.0 kg; junction box IP68; product/linear power warranty 15/30 years."
+    }
+   ],
+   "models": [
+    "STPXXXS-C72/Nsh+",
+    "STP580S-C72/Nsh+",
+    "STP585S-C72/Nsh+",
+    "STP590S-C72/Nsh+",
+    "STP595S-C72/Nsh+",
+    "STP600S-C72/Nsh+"
+   ],
+   "summary_ar": "ألواح سنتك الشمسية ثنائية الأوجه بتقنية نصف الخلية N-Type TOPCon، بقدرة 580–600 واط وكفاءة تصل إلى 23.2%، لتوليد الطاقة الشمسية. يمكن أن تحقق الإضاءة الخلفية زيادة في القدرة تصل إلى 25%، مع ضمان للمنتج لمدة 15 عاماً وضمان خطي للقدرة لمدة 30 عاماً.",
+   "summary_en": "Suntech bifacial half-cell N-Type TOPCon solar modules rated 580–600 W, with efficiency up to 23.2%, for solar power generation. Rear-side illumination can provide up to 25% additional power gain; the modules carry a 15-year product warranty and a 30-year linear power warranty.",
+   "product_type": "solar module"
+  },
+  "updated_at": "2026-11-20T22:43:34.849966+00:00"
+ },
+ {
+  "catalog_id": "8ef5523f-20c6-4476-80f6-c87ed5392e23",
+  "summary_ar": "بايلونتك RV12200 بطارية ليثيوم حديد فوسفات ذكية من سلسلة 12V، مخصصة لتخزين الطاقة. تتميز ببلوتوث للمراقبة اللحظية وغشاء تسخين داخلي للعمل في الأجواء الباردة.",
+  "summary_en": "Pylontech RV12200 is a smart LiFePO4 lithium battery in the 12V series, intended for energy storage. It features Bluetooth for real-time monitoring and an internal heating film for operation in cold conditions.",
+  "specs": {
+   "specs": [
+    {
+     "model": "RV12200",
+     "key_specs": "Voltage: 12.8 V (12V series); capacity: 200 Ah (described as «سعة 200 أمبير»); nominal energy: 2.56 kWh (calc: 12.8 V × 200 Ah); Bluetooth monitoring; internal heating film."
+    }
+   ],
+   "models": [
+    "RV12200"
+   ],
+   "summary_ar": "بايلونتك RV12200 بطارية ليثيوم حديد فوسفات ذكية من سلسلة 12V، مخصصة لتخزين الطاقة. تتميز ببلوتوث للمراقبة اللحظية وغشاء تسخين داخلي للعمل في الأجواء الباردة.",
+   "summary_en": "Pylontech RV12200 is a smart LiFePO4 lithium battery in the 12V series, intended for energy storage. It features Bluetooth for real-time monitoring and an internal heating film for operation in cold conditions.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:43:35.934444+00:00"
+ },
+ {
+  "catalog_id": "723d3bc6-c72c-496e-8d4f-a34edac9d718",
+  "summary_ar": "محول طاقة شمسية هجين أحادي الطور من دايا، سلسلة SUN-3K-6K-SG04LP1، بقدرات تتراوح من 3 إلى 6 كيلوواط للاستخدام في أنظمة الطاقة الشمسية. يتميز بشاشة LCD ملونة تعمل باللمس وحماية IP65، ويدعم توصيل حتى 16 وحدة على التوازي.",
+  "summary_en": "Deye SUN-3K-6K-SG04LP1 series single-phase hybrid solar inverter with a power range of 3–6 kW for solar energy systems. It features a color LCD touchscreen, IP65 protection, and support for up to 16 units in parallel.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-3K-SG04LP1",
+     "key_specs": "Series power range: 3–6 kW; single-phase; IP65; up to 16 units in parallel; color LCD touchscreen."
+    },
+    {
+     "model": "SUN-5K-SG04LP1",
+     "key_specs": "Series power range: 3–6 kW; single-phase; IP65; up to 16 units in parallel; color LCD touchscreen."
+    },
+    {
+     "model": "SUN-6K-SG04LP1",
+     "key_specs": "Series power range: 3–6 kW; single-phase; IP65; up to 16 units in parallel; color LCD touchscreen."
+    }
+   ],
+   "models": [
+    "SUN-3K-SG04LP1",
+    "SUN-5K-SG04LP1",
+    "SUN-6K-SG04LP1"
+   ],
+   "summary_ar": "محول طاقة شمسية هجين أحادي الطور من دايا، سلسلة SUN-3K-6K-SG04LP1، بقدرات تتراوح من 3 إلى 6 كيلوواط للاستخدام في أنظمة الطاقة الشمسية. يتميز بشاشة LCD ملونة تعمل باللمس وحماية IP65، ويدعم توصيل حتى 16 وحدة على التوازي.",
+   "summary_en": "Deye SUN-3K-6K-SG04LP1 series single-phase hybrid solar inverter with a power range of 3–6 kW for solar energy systems. It features a color LCD touchscreen, IP65 protection, and support for up to 16 units in parallel.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:40.640822+00:00"
+ },
+ {
+  "catalog_id": "5cb95848-9bb4-4b31-a5da-483e72bdcc39",
+  "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأوجه بقدرات من 8 إلى 15 كيلوواط، تدعم بطاريات الليثيوم عالية الجهد لتوليد الطاقة الشمسية وتخزينها. تدعم الربط بالتيار المتردد لتحديث الأنظمة الشمسية القائمة، وتخزين الطاقة من مولدات الديزل، وتشغيل حتى 10 وحدات بالتوازي مع الشبكة أو خارجها.",
+  "summary_en": "Deye three-phase hybrid inverter series rated from 8 to 15 kW, supporting high-voltage lithium-ion batteries for solar generation and energy storage. Supports AC coupling for existing solar systems, diesel-generator energy storage, and parallel operation of up to 10 units on-grid or off-grid.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-8K-SG01HP3-US-AM2",
+     "key_specs": "Rated AC power: 8 kW; AC: 120/208 V, three-phase; lithium-ion battery: 160–500 V, max charge/discharge 50 A; 2 MPPTs, 2+2 strings; max PV input power: 12 kW, max PV access power: 16 kW; max PV voltage: 550 V, MPPT: 150–500 V; max efficiency: 97.6%, Euro: 96.5%; dimensions: 408×678×247 mm (excluding connectors and brackets); weight: 30 kg; ingress protection: TYPE3R; warranty: 5 years / up to 10 years, depending on installation country."
+    },
+    {
+     "model": "SUN-10K-SG01HP3-US-AM2",
+     "key_specs": "Rated AC power: 10 kW; AC: 120/208 V, three-phase; lithium-ion battery: 160–500 V, max charge/discharge 50 A; 2 MPPTs, 2+2 strings; max PV input power: 15 kW, max PV access power: 20 kW; max PV voltage: 550 V, MPPT: 150–500 V; max efficiency: 97.6%, Euro: 96.5%; dimensions: 408×678×247 mm (excluding connectors and brackets); weight: 30 kg; ingress protection: TYPE3R; warranty: 5 years / up to 10 years, depending on installation country."
+    },
+    {
+     "model": "SUN-12K-SG01HP3-US-AM2",
+     "key_specs": "Rated AC power: 12 kW; AC: 120/208 V, three-phase; lithium-ion battery: 160–500 V, max charge/discharge 50 A; 2 MPPTs, 2+2 strings; max PV input power: 18 kW, max PV access power: 24 kW; max PV voltage: 550 V, MPPT: 150–500 V; max efficiency: 97.6%, Euro: 96.5%; dimensions: 408×678×247 mm (excluding connectors and brackets); weight: 30 kg; ingress protection: TYPE3R; warranty: 5 years / up to 10 years, depending on installation country."
+    },
+    {
+     "model": "SUN-15K-SG01HP3-US-AM2",
+     "key_specs": "Rated AC power: 15 kW; AC: 120/208 V, three-phase; lithium-ion battery: 160–500 V, max charge/discharge 50 A; 2 MPPTs, 2+2 strings; max PV input power: 22.5 kW, max PV access power: 30 kW; max PV voltage: 550 V, MPPT: 150–500 V; max efficiency: 97.6%, Euro: 96.5%; dimensions: 408×678×247 mm (excluding connectors and brackets); weight: 30 kg; ingress protection: TYPE3R; warranty: 5 years / up to 10 years, depending on installation country."
+    }
+   ],
+   "models": [
+    "SUN-8K-SG01HP3-US-AM2",
+    "SUN-10K-SG01HP3-US-AM2",
+    "SUN-12K-SG01HP3-US-AM2",
+    "SUN-15K-SG01HP3-US-AM2"
+   ],
+   "summary_ar": "سلسلة محولات دايا الهجينة ثلاثية الأوجه بقدرات من 8 إلى 15 كيلوواط، تدعم بطاريات الليثيوم عالية الجهد لتوليد الطاقة الشمسية وتخزينها. تدعم الربط بالتيار المتردد لتحديث الأنظمة الشمسية القائمة، وتخزين الطاقة من مولدات الديزل، وتشغيل حتى 10 وحدات بالتوازي مع الشبكة أو خارجها.",
+   "summary_en": "Deye three-phase hybrid inverter series rated from 8 to 15 kW, supporting high-voltage lithium-ion batteries for solar generation and energy storage. Supports AC coupling for existing solar systems, diesel-generator energy storage, and parallel operation of up to 10 units on-grid or off-grid.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:49.556732+00:00"
+ },
+ {
+  "catalog_id": "62e07397-1ccf-4326-8177-a94653339cff",
+  "summary_ar": "بايلونتك فيدوس بطارية ليثيوم لتخزين الطاقة الشمسية، بسعة اسمية 5.12 كيلوواط ساعة وسعة قابلة للاستخدام 4.86 كيلوواط ساعة لكل وحدة. تدعم التركيب على الجدار أو الأرض أو الرفوف، وتتميز بحماية IP65 للاستخدام الخارجي وإمكانية التوسع حتى 583 كيلوواط ساعة.",
+  "summary_en": "Pylontech Fidus is a lithium battery for solar energy storage, with 5.12 kWh nominal capacity and 4.86 kWh usable capacity per module. It supports wall, ground or rack mounting, IP65 outdoor protection and expansion up to 583 kWh.",
+  "specs": {
+   "specs": [
+    {
+     "model": "FB-L-5.12-EU",
+     "key_specs": "Nominal voltage: 51.2 VDC; nominal/usable energy: 5.12/4.86 kWh; DOD: 95%; discharge voltage: 42.5–56.8 VDC; charge voltage: 56–56.8 VDC; maximum continuous charge/discharge current: 100/100 A; peak charge/discharge current: 103–120 A for 2 min, 121–200 A for 15 s; dimensions: 630 × 170 × 363 mm; weight: 45 kg; IP65; corrosion rating: C5-M; cycle life: 8,000 at 25°C, 0.5C and 5%–95% SOC; design life: 15 years at 25°C; CAN/RS485; natural cooling."
+    },
+    {
+     "model": "FB-L-5.12-EU-Pro",
+     "key_specs": "Nominal voltage: 51.2 VDC; nominal/usable energy: 5.12/4.86 kWh; DOD: 95%; discharge voltage: 42.5–56.8 VDC; charge voltage: 56–56.8 VDC; maximum continuous charge/discharge current: 100/100 A; peak charge/discharge current: 103–120 A for 2 min, 121–200 A for 15 s; dimensions: 630 × 170 × 363 mm; weight: 45 kg; IP65; corrosion rating: C5-M; cycle life: 8,000 at 25°C, 0.5C and 5%–95% SOC; design life: 15 years at 25°C; CAN/RS485; natural cooling."
+    }
+   ],
+   "models": [
+    "FB-L-5.12-EU",
+    "FB-L-5.12-EU-Pro"
+   ],
+   "summary_ar": "بايلونتك فيدوس بطارية ليثيوم لتخزين الطاقة الشمسية، بسعة اسمية 5.12 كيلوواط ساعة وسعة قابلة للاستخدام 4.86 كيلوواط ساعة لكل وحدة. تدعم التركيب على الجدار أو الأرض أو الرفوف، وتتميز بحماية IP65 للاستخدام الخارجي وإمكانية التوسع حتى 583 كيلوواط ساعة.",
+   "summary_en": "Pylontech Fidus is a lithium battery for solar energy storage, with 5.12 kWh nominal capacity and 4.86 kWh usable capacity per module. It supports wall, ground or rack mounting, IP65 outdoor protection and expansion up to 583 kWh.",
+   "product_type": "Lithium battery"
+  },
+  "updated_at": "2026-11-20T22:44:03.258445+00:00"
+ },
+ {
+  "catalog_id": "800f1395-d21e-43f8-a703-50fd625aa2a9",
+  "summary_ar": "بايلونتك PowerCube-M1C هو نظام تخزين طاقة ببطاريات ليثيوم فوسفات الحديد عالية الجهد، مناسب لتخزين الطاقة الشمسية. يدعم التوسع باستخدام 1–23 وحدة بطارية، مع عمر تشغيلي معلن يزيد عن 10 سنوات.",
+  "summary_en": "Pylontech PowerCube-M1C is a scalable high-voltage lithium iron phosphate battery energy storage system for solar energy storage. It supports 1–23 battery modules and specifies an operating life of over 10 years.",
+  "specs": {
+   "specs": [
+    {
+     "model": "PowerCube-M1C",
+     "key_specs": "System: 1–23 H32148-C modules; nominal energy 4.74×n kWh (4.74–109.02 kWh); nominal voltage 32×n Vdc (32–736 Vdc); 148 Ah; charge upper voltage 36×n Vdc; discharge lower voltage 27×n Vdc; max/continuous current 148/74 A; efficiency 95%; DoD 95%; dimensions 815×659×2130 mm; weight 120+47×n kg; cycle life 7000; operating life 10+ years; operating temperature 10–40°C; warranty not stated."
+    },
+    {
+     "model": "H32148-C",
+     "key_specs": "Battery module: nominal energy 4.74 kWh; nominal voltage 32 Vdc; 148 Ah; voltage range 27–36 Vdc; DoD 95%; dimensions 330×628×150.5 mm; weight 47 kg; IP20; RS485/CAN; operating life 10+ years; operating temperature 0–50°C; warranty not stated."
+    },
+    {
+     "model": "SC1000-200J-C",
+     "key_specs": "Module: operating voltage 0–1000 Vdc; maximum operating current 148 A; self-consumption relay off/on 6/15 W; dimensions 330×628×150.5 mm; weight 13 kg; IP20; CAN/LANCAN/Ethernet/Modbus TCP/IP/Modbus RTU; operating life listed as 15+ (unit unspecified); operating temperature -20–65°C; warranty not stated."
+    }
+   ],
+   "models": [
+    "PowerCube-M1C",
+    "H32148-C",
+    "SC1000-200J-C"
+   ],
+   "summary_ar": "بايلونتك PowerCube-M1C هو نظام تخزين طاقة ببطاريات ليثيوم فوسفات الحديد عالية الجهد، مناسب لتخزين الطاقة الشمسية. يدعم التوسع باستخدام 1–23 وحدة بطارية، مع عمر تشغيلي معلن يزيد عن 10 سنوات.",
+   "summary_en": "Pylontech PowerCube-M1C is a scalable high-voltage lithium iron phosphate battery energy storage system for solar energy storage. It supports 1–23 battery modules and specifies an operating life of over 10 years.",
+   "product_type": "High-voltage LiFePO4 ESS"
+  },
+  "updated_at": "2026-11-20T22:43:40.686694+00:00"
+ },
+ {
+  "catalog_id": "7cd9cf66-9073-4ebc-abaf-0df74f6d7a20",
+  "summary_ar": "ليو باور 3024EMH هو محول طاقة شمسية هجين أحادي الطور بقدرة 3 كيلوواط لنظام بطارية 24 فولت DC، مع خرج بموجة جيبية نقية. يجمع بين الشحن بالطاقة الشمسية والشبكة عبر شاحن MPPT مدمج، بتيار شحن إجمالي أقصى 100 أمبير، لتغذية الأحمال وتوفير طاقة احتياطية من البطارية.",
+  "summary_en": "The Lipower 3024EMH is a single-phase hybrid solar inverter rated at 3 kW for a 24 VDC battery system, with pure sine wave output. It combines solar and mains charging through an integrated MPPT charger, with a maximum total charging current of 100 A, for solar-powered loads and battery backup.",
+  "specs": {
+   "specs": [
+    {
+     "model": "3024EMH",
+     "key_specs": "Rated power: 3 kW; peak power: 6000 VA; battery: 24 VDC; AC output: 220/230/240 VAC ±5%, 50/60 Hz; pure sine wave; max PV input power: 3 kW; MPPT voltage range: 30–500 VDC, optimal Vmp: 300–400 VDC; max PV voltage: 500 VDC; max PV input current: 14 A; max PV charging current: 100 A; max mains charging current: 60 A; max total charging current: 100 A; transfer time: 10 ms UPS / 20 ms APL; dimensions (D×W×H): 404×304×114 mm; weight: 6 kg."
+    }
+   ],
+   "models": [
+    "3024EMH"
+   ],
+   "summary_ar": "ليو باور 3024EMH هو محول طاقة شمسية هجين أحادي الطور بقدرة 3 كيلوواط لنظام بطارية 24 فولت DC، مع خرج بموجة جيبية نقية. يجمع بين الشحن بالطاقة الشمسية والشبكة عبر شاحن MPPT مدمج، بتيار شحن إجمالي أقصى 100 أمبير، لتغذية الأحمال وتوفير طاقة احتياطية من البطارية.",
+   "summary_en": "The Lipower 3024EMH is a single-phase hybrid solar inverter rated at 3 kW for a 24 VDC battery system, with pure sine wave output. It combines solar and mains charging through an integrated MPPT charger, with a maximum total charging current of 100 A, for solar-powered loads and battery backup.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:43:41.555132+00:00"
+ },
+ {
+  "catalog_id": "39fd8c02-79c4-4b72-bfb2-6ab54c2423fd",
+  "summary_ar": "هيرو إي إي MaxPower 16 هو نظام تخزين طاقة منزلي بسعة 16.0768 كيلوواط ساعي وجهد 51.2 فولت، مزود بخلايا HiTHIUM من نوع LiFePO4. يُستخدم لتخزين الطاقة المنزلية وأنظمة الطاقة الشمسية، بعمر افتراضي يصل إلى 11000 دورة وإمكانية التوسع حتى 16 بطارية.",
+  "summary_en": "HeroEE MaxPower 16 is a home energy storage system with a capacity of 16.0768 kWh and a voltage of 51.2 V, featuring HiTHIUM LiFePO4 cells. It is intended for residential energy storage and solar energy systems, with a lifespan of up to 11,000 cycles and expansion to up to 16 batteries.",
+  "specs": {
+   "specs": [
+    {
+     "model": "MaxPower 16",
+     "key_specs": "Capacity: 16076.8 Wh (16.0768 kWh); voltage: 51.2 V; chemistry: LiFePO4; cells: HiTHIUM; lifespan: up to 11,000 cycles; expansion: up to 16 batteries."
+    }
+   ],
+   "models": [
+    "MaxPower 16"
+   ],
+   "summary_ar": "هيرو إي إي MaxPower 16 هو نظام تخزين طاقة منزلي بسعة 16.0768 كيلوواط ساعي وجهد 51.2 فولت، مزود بخلايا HiTHIUM من نوع LiFePO4. يُستخدم لتخزين الطاقة المنزلية وأنظمة الطاقة الشمسية، بعمر افتراضي يصل إلى 11000 دورة وإمكانية التوسع حتى 16 بطارية.",
+   "summary_en": "HeroEE MaxPower 16 is a home energy storage system with a capacity of 16.0768 kWh and a voltage of 51.2 V, featuring HiTHIUM LiFePO4 cells. It is intended for residential energy storage and solar energy systems, with a lifespan of up to 11,000 cycles and expansion to up to 16 batteries.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:44:08.48369+00:00"
+ },
+ {
+  "catalog_id": "5a154633-9459-4f68-8ecf-52eee9f3bb2a",
+  "summary_ar": "محول دايا هجين ثلاثي الأطوار عالي القدرة لأنظمة الطاقة الشمسية. يدعم إدارة بطاريات الليثيوم ذات الجهد العالي والربط المتوازي لما يصل إلى 10 وحدات، بكفاءة قصوى تصل إلى 97.6%.",
+  "summary_en": "Deye high-power, three-phase hybrid inverter for solar energy systems. It supports high-voltage lithium battery management and parallel connection of up to 10 units, with maximum efficiency up to 97.6%.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-60K-SG02HP3",
+     "key_specs": "Three-phase; maximum efficiency up to 97.6%; parallel connection up to 10 units; supports high-voltage lithium batteries."
+    },
+    {
+     "model": "SUN-75K-SG02HP3",
+     "key_specs": "Three-phase; maximum efficiency up to 97.6%; parallel connection up to 10 units; supports high-voltage lithium batteries."
+    },
+    {
+     "model": "SUN-80K-SG02HP3",
+     "key_specs": "Three-phase; maximum efficiency up to 97.6%; parallel connection up to 10 units; supports high-voltage lithium batteries."
+    }
+   ],
+   "models": [
+    "SUN-60K-SG02HP3",
+    "SUN-75K-SG02HP3",
+    "SUN-80K-SG02HP3"
+   ],
+   "summary_ar": "محول دايا هجين ثلاثي الأطوار عالي القدرة لأنظمة الطاقة الشمسية. يدعم إدارة بطاريات الليثيوم ذات الجهد العالي والربط المتوازي لما يصل إلى 10 وحدات، بكفاءة قصوى تصل إلى 97.6%.",
+   "summary_en": "Deye high-power, three-phase hybrid inverter for solar energy systems. It supports high-voltage lithium battery management and parallel connection of up to 10 units, with maximum efficiency up to 97.6%.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:09.775713+00:00"
+ },
+ {
+  "catalog_id": "4f3dfa42-d0ee-47c5-b0d7-6f7880133ee9",
+  "summary_ar": "بايلونتك UF5000 بطارية ليثيوم منخفضة الجهد لتخزين الطاقة، بجهد 51.2 فولت وسعة 100 أمبير ساعة وطاقة مذكورة تبلغ 5.12 كيلوواط ساعة. تُركّب في خزائن 19 بوصة وهي قابلة للتوسعة.",
+  "summary_en": "The Pylontech UF5000 is a low-voltage lithium battery for energy storage, rated at 51.2 V and 100 Ah with a stated capacity of 5.12 kWh. It mounts in 19-inch racks and supports expansion.",
+  "specs": {
+   "specs": [
+    {
+     "model": "UF5000",
+     "key_specs": "Voltage: 51.2 V; capacity: 100 Ah; stated energy: 5.12 kWh; rack mounting: 19-inch; expandable."
+    }
+   ],
+   "models": [
+    "UF5000"
+   ],
+   "summary_ar": "بايلونتك UF5000 بطارية ليثيوم منخفضة الجهد لتخزين الطاقة، بجهد 51.2 فولت وسعة 100 أمبير ساعة وطاقة مذكورة تبلغ 5.12 كيلوواط ساعة. تُركّب في خزائن 19 بوصة وهي قابلة للتوسعة.",
+   "summary_en": "The Pylontech UF5000 is a low-voltage lithium battery for energy storage, rated at 51.2 V and 100 Ah with a stated capacity of 5.12 kWh. It mounts in 19-inch racks and supports expansion.",
+   "product_type": "Lithium battery"
+  },
+  "updated_at": "2026-11-20T22:44:13.864058+00:00"
+ },
+ {
+  "catalog_id": "4c03ccf8-8362-438f-9960-7acad6a786fe",
+  "summary_ar": "بايلونتك فيدوس باتري بلس هو نظام بطارية ليثيوم بسعة 16.076 كيلوواط ساعة لتخزين الطاقة المنزلية، بما في ذلك الطاقة الشمسية. يدعم التركيب على الحائط أو الأرضية والمراقبة عبر التطبيق وشاشة LED، ويتميز بحماية IP65 وحماية متعددة الطبقات مع إطفاء حريق بالهباء الجوي اختياري.",
+  "summary_en": "Pylontech Fidus Battery Plus is a 16.076 kWh lithium battery system for home energy storage, including solar energy storage. It supports wall-mounted or floor-standing installation, app and LED monitoring, and an IP65 enclosure with multi-layer protection and optional aerosol fire suppression.",
+  "specs": {
+   "specs": [
+    {
+     "model": "FB-L-16",
+     "key_specs": "Shared battery specifications: nominal voltage 51.2 Vdc; nominal/usable capacity 16.076/16.076 kWh; DoD 100% (default minimum SOC 5%, adjustable); discharge voltage 40–56.8 Vdc; charge voltage 56–56.8 Vdc; maximum continuous charge/discharge current 200/200 A; peak 300 A for 15 s; dimensions 435 × 240 × 900 mm (W×D×H); weight 130 kg; IP65; C5-M anti-corrosion; CAN/RS485; cycle life 8,000 at 25°C; design life 15 years at 25°C (not a stated warranty)."
+    },
+    {
+     "model": "FB-L-16-Pro",
+     "key_specs": "Shared battery specifications: nominal voltage 51.2 Vdc; nominal/usable capacity 16.076/16.076 kWh; DoD 100% (default minimum SOC 5%, adjustable); discharge voltage 40–56.8 Vdc; charge voltage 56–56.8 Vdc; maximum continuous charge/discharge current 200/200 A; peak 300 A for 15 s; dimensions 435 × 240 × 900 mm (W×D×H); weight 130 kg; IP65; C5-M anti-corrosion; CAN/RS485; cycle life 8,000 at 25°C; design life 15 years at 25°C (not a stated warranty)."
+    },
+    {
+     "model": "LV-HUB-V2",
+     "key_specs": "Accessory required for parallel connection in multi-group setups; acts as master. Battery configuration table lists 20 batteries per group and 6 strings, while the multi-group footnote specifies a maximum of 19 batteries per group."
+    }
+   ],
+   "models": [
+    "FB-L-16",
+    "FB-L-16-Pro",
+    "LV-HUB-V2"
+   ],
+   "summary_ar": "بايلونتك فيدوس باتري بلس هو نظام بطارية ليثيوم بسعة 16.076 كيلوواط ساعة لتخزين الطاقة المنزلية، بما في ذلك الطاقة الشمسية. يدعم التركيب على الحائط أو الأرضية والمراقبة عبر التطبيق وشاشة LED، ويتميز بحماية IP65 وحماية متعددة الطبقات مع إطفاء حريق بالهباء الجوي اختياري.",
+   "summary_en": "Pylontech Fidus Battery Plus is a 16.076 kWh lithium battery system for home energy storage, including solar energy storage. It supports wall-mounted or floor-standing installation, app and LED monitoring, and an IP65 enclosure with multi-layer protection and optional aerosol fire suppression.",
+   "product_type": "Lithium battery energy storage system (ESS)"
+  },
+  "updated_at": "2026-11-20T22:44:14.734229+00:00"
+ },
+ {
+  "catalog_id": "84d82139-0ec8-4ef1-beeb-48889b0f5588",
+  "summary_ar": "سلسلة محولات سوليس الهجينة ثلاثية الطور بقدرات تتراوح من 75 إلى 125 كيلوواط. مصممة لأنظمة الطاقة الشمسية مع دعم تخزين البطاريات عالية الجهد والتبديل السريع إلى الطاقة الاحتياطية.",
+  "summary_en": "Solis three-phase hybrid inverter series with power ratings from 75 to 125 kW. Designed for solar power systems with high-voltage battery storage support and fast switching to backup power.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH3P(75-125)K",
+     "key_specs": "Series power range: 75–125 kW; three-phase; high-voltage battery storage support; fast backup power switching."
+    },
+    {
+     "model": "S6-EH3P(75-125)K10-NV-YD-H",
+     "key_specs": "Series power range: 75–125 kW; three-phase; high-voltage battery storage support; fast backup power switching."
+    }
+   ],
+   "models": [
+    "S6-EH3P(75-125)K",
+    "S6-EH3P(75-125)K10-NV-YD-H"
+   ],
+   "summary_ar": "سلسلة محولات سوليس الهجينة ثلاثية الطور بقدرات تتراوح من 75 إلى 125 كيلوواط. مصممة لأنظمة الطاقة الشمسية مع دعم تخزين البطاريات عالية الجهد والتبديل السريع إلى الطاقة الاحتياطية.",
+   "summary_en": "Solis three-phase hybrid inverter series with power ratings from 75 to 125 kW. Designed for solar power systems with high-voltage battery storage support and fast switching to backup power.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:16.492379+00:00"
+ },
+ {
+  "catalog_id": "37255ed8-4432-43d1-9464-6c3a07b25fb3",
+  "summary_ar": "محولات سوليس من سلسلة Solarator هجينة ثلاثية الأطوار وعالية الجهد لتوليد الطاقة الشمسية وتخزينها في البطاريات وتوفير الطاقة الاحتياطية. تتميز بإدارة الشحن والتفريغ بالذكاء الاصطناعي، وتدعم التوسع بالتوصيل المتوازي والربط على جانب التيار المتردد، مع التحويل إلى الطاقة الاحتياطية خلال أقل من 10 مللي ثانية.",
+  "summary_en": "Solis Solarator Series three-phase, high-voltage hybrid solar inverters for solar generation, battery storage and backup power. They feature AI-based charging and discharging management, support parallel expansion and AC coupling, and provide backup switching in under 10 ms.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH3P-12K-H",
+     "key_specs": "Rated AC/backup power: 12 kW; max battery charge/discharge: 12 kW, 50 A; battery voltage: 120–800 V (Li-ion); grid/backup voltage: 3/N/PE, 220/380 V or 230/400 V; PV rated/max voltage: 600/1000 V; MPPT range: 200–850 V; MPPTs/strings: 4/4; max usable PV input: 19.2 kW; recommended max PV array: 24 kW; max efficiency: 97.7%; dimensions (W×H×D): 563×546×250 mm; weight: 35.2 kg; protection: IP66."
+    },
+    {
+     "model": "S6-EH3P-15K-H",
+     "key_specs": "Rated AC/backup power: 15 kW; max battery charge/discharge: 15 kW, 50 A; battery voltage: 120–800 V (Li-ion); grid/backup voltage: 3/N/PE, 220/380 V or 230/400 V; PV rated/max voltage: 600/1000 V; MPPT range: 200–850 V; MPPTs/strings: 4/4; max usable PV input: 24 kW; recommended max PV array: 30 kW; max efficiency: 97.7%; dimensions (W×H×D): 563×546×250 mm; weight: 35.2 kg; protection: IP66."
+    },
+    {
+     "model": "S6-EH3P-20K-H",
+     "key_specs": "Rated AC/backup power: 20 kW; max battery charge/discharge: 20 kW, 50 A; battery voltage: 120–800 V (Li-ion); grid/backup voltage: 3/N/PE, 220/380 V or 230/400 V; PV rated/max voltage: 600/1000 V; MPPT range: 200–850 V; MPPTs/strings: 4/4; max usable PV input: 32 kW; recommended max PV array: 40 kW; max efficiency: 97.7%; dimensions (W×H×D): 563×546×250 mm; weight: 35.2 kg; protection: IP66."
+    }
+   ],
+   "models": [
+    "S6-EH3P-12K-H",
+    "S6-EH3P-15K-H",
+    "S6-EH3P-20K-H"
+   ],
+   "summary_ar": "محولات سوليس من سلسلة Solarator هجينة ثلاثية الأطوار وعالية الجهد لتوليد الطاقة الشمسية وتخزينها في البطاريات وتوفير الطاقة الاحتياطية. تتميز بإدارة الشحن والتفريغ بالذكاء الاصطناعي، وتدعم التوسع بالتوصيل المتوازي والربط على جانب التيار المتردد، مع التحويل إلى الطاقة الاحتياطية خلال أقل من 10 مللي ثانية.",
+   "summary_en": "Solis Solarator Series three-phase, high-voltage hybrid solar inverters for solar generation, battery storage and backup power. They feature AI-based charging and discharging management, support parallel expansion and AC coupling, and provide backup switching in under 10 ms.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:20.946619+00:00"
+ },
+ {
+  "catalog_id": "38142be8-cfe7-424a-8d35-b5860d1ccb47",
+  "summary_ar": "بايلونتك OPTIMUS A300-HY هو نظام تخزين طاقة هجين متكامل بتكوين مرن ونطاق قدرة مذكور من 50 إلى 500 كيلوواط. صُمم لموازنة الأحمال وتوفير الطاقة الاحتياطية، وتشير الكلمات المفتاحية إلى تقنية بطاريات الليثيوم LFP.",
+  "summary_en": "The Pylontech OPTIMUS A300-HY is an integrated hybrid energy storage system with flexible configuration and a stated power range of 50–500 kW. It is designed for load balancing and backup power applications; the supplied keywords identify LFP lithium battery technology.",
+  "specs": {
+   "specs": [
+    {
+     "model": "OPTIMUS A300-HY",
+     "key_specs": "Power range: 50–500 kW; flexible configuration; integrated hybrid ESS."
+    },
+    {
+     "model": "M5-300kWh-1000V",
+     "key_specs": "Model code contains 300 kWh and 1000 V; capacity classification and voltage basis are not specified."
+    }
+   ],
+   "models": [
+    "OPTIMUS A300-HY",
+    "M5-300kWh-1000V"
+   ],
+   "summary_ar": "بايلونتك OPTIMUS A300-HY هو نظام تخزين طاقة هجين متكامل بتكوين مرن ونطاق قدرة مذكور من 50 إلى 500 كيلوواط. صُمم لموازنة الأحمال وتوفير الطاقة الاحتياطية، وتشير الكلمات المفتاحية إلى تقنية بطاريات الليثيوم LFP.",
+   "summary_en": "The Pylontech OPTIMUS A300-HY is an integrated hybrid energy storage system with flexible configuration and a stated power range of 50–500 kW. It is designed for load balancing and backup power applications; the supplied keywords identify LFP lithium battery technology.",
+   "product_type": "Hybrid ESS"
+  },
+  "updated_at": "2026-11-20T22:44:22.318025+00:00"
+ },
+ {
+  "catalog_id": "3b1dbcc4-51fe-44f6-901f-5a211e069a2f",
+  "summary_ar": "بايلونتك فيدوس باتري بلس بطارية ليثيوم لتخزين الطاقة المنزلية، مصممة للظروف القاسية. تدعم التركيب على الحائط أو الأرض والمراقبة عبر التطبيق وشاشة LED، مع حماية متعددة الطبقات ووحدة إخماد حريق مدمجة.",
+  "summary_en": "Pylontech Fidus Battery Plus is a lithium battery for home energy storage, designed for harsh conditions. It supports wall-mounted or floor-standing installation, app and LED monitoring, and multi-layer protection with a built-in fire suppression module.",
+  "specs": {
+   "specs": [
+    {
+     "model": "FB-L-16",
+     "key_specs": "No model-specific numerical specifications provided in the supplied text."
+    },
+    {
+     "model": "FB-L-16-Pro",
+     "key_specs": "No model-specific numerical specifications provided in the supplied text."
+    }
+   ],
+   "models": [
+    "FB-L-16",
+    "FB-L-16-Pro"
+   ],
+   "summary_ar": "بايلونتك فيدوس باتري بلس بطارية ليثيوم لتخزين الطاقة المنزلية، مصممة للظروف القاسية. تدعم التركيب على الحائط أو الأرض والمراقبة عبر التطبيق وشاشة LED، مع حماية متعددة الطبقات ووحدة إخماد حريق مدمجة.",
+   "summary_en": "Pylontech Fidus Battery Plus is a lithium battery for home energy storage, designed for harsh conditions. It supports wall-mounted or floor-standing installation, app and LED monitoring, and multi-layer protection with a built-in fire suppression module.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:44:26.878386+00:00"
+ },
+ {
+  "catalog_id": "5e2da2ef-a2f4-4f70-a210-dad46e521b4b",
+  "summary_ar": "محول ليباور هجين أحادي الطور بقدرة 4 كيلوواط لنظام بطاريات 24 فولت DC، مع خرج بموجة جيبية نقية وكفاءة تحويل DC–AC تصل إلى 98%. يُستخدم لإدارة الطاقة الشمسية والكهرباء العمومية والبطاريات، ويدعم بطاريات الليثيوم مع اتصال BMS والتشغيل دون بطارية.",
+  "summary_en": "Lipower single-phase hybrid inverter rated at 4 kW for a 24 V DC battery system, with pure sine-wave output and up to 98% DC–AC conversion efficiency. Designed for solar, mains and battery power management, it supports lithium batteries with BMS communication and operation without a battery.",
+  "specs": {
+   "specs": [
+    {
+     "model": "BZ4024-24V",
+     "key_specs": "Catalog title model: 4 kW; battery system 24 V DC; pure sine wave; DC–AC efficiency up to 98%. Detailed technical table identifies the model as BZ4024SMHGW."
+    },
+    {
+     "model": "BZ4024SMHGW",
+     "key_specs": "Rated power 4 kW; peak power 8000 VA; battery 24 V DC; AC output 220/230/240 V ±5%, 50/60 Hz ±0.1%; max PV input 6.5 kW; MPPT voltage range 60–500 V DC, optimal Vmp 300–400 V DC; max PV voltage 500 V DC; max PV charging 120 A, mains charging 100 A, total charging 120 A; DC–AC efficiency 98%; dimensions (D×W×H) 483×313×143 mm; reference weight 7.5 kg; operating temperature −10 to 50°C; no parallel interface."
+    }
+   ],
+   "models": [
+    "BZ4024-24V",
+    "BZ4024SMHGW"
+   ],
+   "summary_ar": "محول ليباور هجين أحادي الطور بقدرة 4 كيلوواط لنظام بطاريات 24 فولت DC، مع خرج بموجة جيبية نقية وكفاءة تحويل DC–AC تصل إلى 98%. يُستخدم لإدارة الطاقة الشمسية والكهرباء العمومية والبطاريات، ويدعم بطاريات الليثيوم مع اتصال BMS والتشغيل دون بطارية.",
+   "summary_en": "Lipower single-phase hybrid inverter rated at 4 kW for a 24 V DC battery system, with pure sine-wave output and up to 98% DC–AC conversion efficiency. Designed for solar, mains and battery power management, it supports lithium batteries with BMS communication and operation without a battery.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:28.23156+00:00"
+ },
+ {
+  "catalog_id": "49cb9099-2171-490c-ac22-b5f10619e19a",
+  "summary_ar": "محولات سوليس الهجينة من سلسلة Solarator بجهد بطارية منخفض وخرج ثنائي الطور المنقسم، لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة أو خارجها وتوفير الطاقة الاحتياطية. تدعم بطاريات الليثيوم أيون أو الرصاص الحمضي بجهد 40–60 فولت، والتوازي حتى 6 وحدات، والتحويل إلى الطاقة الاحتياطية خلال أقل من 10 مللي ثانية، مع شاشة لمس 7 بوصات وحماية IP66.",
+  "summary_en": "Solis Solarator Series low-voltage, split-phase hybrid solar inverters for grid-connected and off-grid energy storage and backup power. They support 40–60 V lithium-ion or lead-acid batteries, up to six units in parallel, backup switching in under 10 ms, a 7-inch touchscreen and IP66 protection.",
+  "specs": {
+   "specs": [
+    {
+     "model": "S6-EH2P5K02-SV-YD-L",
+     "key_specs": "Rated AC/backup power: 5 kW; battery: 40–60 V, max charge/discharge 5 kW / 112 A; grid AC: 220 V or 120/240 V, 50/60 Hz; PV: max 500 V, rated 330 V, MPPT 90–435 V; 2 MPPT / 2 strings; max usable PV input: 8 kW; recommended max PV array: 10 kW; max efficiency: 96.0%, EU: 94.5%; backup overload: 200% for 10 s; dimensions (W×H×D): 390×620×237 mm; weight: 28.8 kg; IP66 (TYPE 4X)."
+    },
+    {
+     "model": "S6-EH2P6K02-SV-YD-L",
+     "key_specs": "Rated AC/backup power: 6 kW; battery: 40–60 V, max charge/discharge 6 kW / 135 A; grid AC: 220 V or 120/240 V, 50/60 Hz; PV: max 500 V, rated 330 V, MPPT 90–435 V; 2 MPPT / 3 strings; max usable PV input: 9.6 kW; recommended max PV array: 12 kW; max efficiency: 96.0%, EU: 94.5%; backup overload: 200% for 10 s; dimensions (W×H×D): 390×620×237 mm; weight: 28.8 kg; IP66 (TYPE 4X)."
+    },
+    {
+     "model": "S6-EH2P7.5K02-SV-YD-L",
+     "key_specs": "Rated AC/backup power: 7.5 kW; battery: 40–60 V, max charge/discharge 7.5 kW / 190 A; grid AC: 220 V or 120/240 V, 50/60 Hz; PV: max 500 V, rated 330 V, MPPT 90–435 V; 2 MPPT / 4 strings; max usable PV input: 12.8 kW; recommended max PV array: 16 kW; max efficiency: 96.0%, EU: 94.5%; backup overload: 200% for 10 s; dimensions (W×H×D): 390×620×237 mm; weight: 28.8 kg; IP66 (TYPE 4X)."
+    },
+    {
+     "model": "S6-EH2P8K02-SV-YD-L",
+     "key_specs": "Rated AC/backup power: 8 kW; battery: 40–60 V, max charge/discharge 8 kW / 190 A; grid AC: 220 V or 120/240 V, 50/60 Hz; PV: max 500 V, rated 330 V, MPPT 90–435 V; 2 MPPT / 4 strings; max usable PV input: 12.8 kW; recommended max PV array: 16 kW; max efficiency: 96.0%, EU: 94.5%; backup overload: 200% for 10 s; dimensions (W×H×D): 390×620×237 mm; weight: 28.8 kg; IP66 (TYPE 4X)."
+    }
+   ],
+   "models": [
+    "S6-EH2P5K02-SV-YD-L",
+    "S6-EH2P6K02-SV-YD-L",
+    "S6-EH2P7.5K02-SV-YD-L",
+    "S6-EH2P8K02-SV-YD-L"
+   ],
+   "summary_ar": "محولات سوليس الهجينة من سلسلة Solarator بجهد بطارية منخفض وخرج ثنائي الطور المنقسم، لتخزين الطاقة الشمسية والتشغيل المتصل بالشبكة أو خارجها وتوفير الطاقة الاحتياطية. تدعم بطاريات الليثيوم أيون أو الرصاص الحمضي بجهد 40–60 فولت، والتوازي حتى 6 وحدات، والتحويل إلى الطاقة الاحتياطية خلال أقل من 10 مللي ثانية، مع شاشة لمس 7 بوصات وحماية IP66.",
+   "summary_en": "Solis Solarator Series low-voltage, split-phase hybrid solar inverters for grid-connected and off-grid energy storage and backup power. They support 40–60 V lithium-ion or lead-acid batteries, up to six units in parallel, backup switching in under 10 ms, a 7-inch touchscreen and IP66 protection.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:30.310282+00:00"
+ },
+ {
+  "catalog_id": "176a91f3-cbdf-4c44-8c3f-987c16b19c5b",
+  "summary_ar": "إنفيرتر ليو باور هجين أحادي الطور للطاقة الشمسية، بموجة جيبية نقية وشحن MPPT مزدوج، لتغذية الأحمال من الألواح الشمسية والشبكة وبطاريات 48 فولت. يدعم الربط بالشبكة والتشغيل المتوازي والتواصل مع أنظمة إدارة بطاريات الليثيوم، كما يدعم التشغيل دون بطارية.",
+  "summary_en": "Lipower single-phase hybrid solar inverter with pure sine-wave output and dual MPPT charging, designed to supply loads using solar, mains and 48 V batteries. It supports grid-connected operation, parallel operation, lithium battery BMS communication and operation without a battery.",
+  "specs": {
+   "specs": [
+    {
+     "model": "BZ11048SMH",
+     "key_specs": "Rated power 11 kW; battery 48 VDC; AC input/output 220/230/240 V, 50/60 Hz; peak power 22000 VA; dual MPPT; max PV input 2×7500 W (15 kW total); MPPT range 90–500 VDC, optimal Vmp 360–430 VDC; max PV voltage 500 VDC; PV input current 27 A + 27 A; max charging current 150 A; max DC–AC efficiency 98%; dimensions 570.8×471×148.2 mm; weight 19.3 kg."
+    },
+    {
+     "model": "BZ11048-48V",
+     "key_specs": "Single-phase hybrid inverter; power 11 kW; battery voltage 48 VDC."
+    },
+    {
+     "model": "BZ11048",
+     "key_specs": "Model code listed in keywords; description specifies 11 kW, 48 V, pure sine wave, dual MPPT, parallel support and lithium battery compatibility."
+    }
+   ],
+   "models": [
+    "BZ11048SMH",
+    "BZ11048-48V",
+    "BZ11048"
+   ],
+   "summary_ar": "إنفيرتر ليو باور هجين أحادي الطور للطاقة الشمسية، بموجة جيبية نقية وشحن MPPT مزدوج، لتغذية الأحمال من الألواح الشمسية والشبكة وبطاريات 48 فولت. يدعم الربط بالشبكة والتشغيل المتوازي والتواصل مع أنظمة إدارة بطاريات الليثيوم، كما يدعم التشغيل دون بطارية.",
+   "summary_en": "Lipower single-phase hybrid solar inverter with pure sine-wave output and dual MPPT charging, designed to supply loads using solar, mains and 48 V batteries. It supports grid-connected operation, parallel operation, lithium battery BMS communication and operation without a battery.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:30.654526+00:00"
+ },
+ {
+  "catalog_id": "1ea641a2-6e73-45e7-92fc-5203c71a8623",
+  "summary_ar": "بايلونتك أوبتيموس L260-HY-M7 هو نظام تخزين طاقة هجين متكامل بقدرة 125 كيلوواط وسعة تخزين تصل إلى 260 كيلوواط ساعة. يتميز ببطاريات ليثيوم وتبريد سائل ونظام إطفاء حريق متطور لتطبيقات تخزين الطاقة الشمسية.",
+  "summary_en": "Pylontech OPTIMUS L260-HY-M7 is an integrated hybrid energy storage system with 125 kW power and storage capacity up to 260 kWh. It features lithium batteries, liquid cooling, and an advanced fire suppression system for solar energy storage applications.",
+  "specs": {
+   "specs": [
+    {
+     "model": "L260-HY-M7",
+     "key_specs": "Power: 125 kW; storage capacity: up to 260 kWh (nominal/usable not specified); hybrid inverter; lithium batteries; liquid cooling; advanced fire suppression system."
+    }
+   ],
+   "models": [
+    "L260-HY-M7"
+   ],
+   "summary_ar": "بايلونتك أوبتيموس L260-HY-M7 هو نظام تخزين طاقة هجين متكامل بقدرة 125 كيلوواط وسعة تخزين تصل إلى 260 كيلوواط ساعة. يتميز ببطاريات ليثيوم وتبريد سائل ونظام إطفاء حريق متطور لتطبيقات تخزين الطاقة الشمسية.",
+   "summary_en": "Pylontech OPTIMUS L260-HY-M7 is an integrated hybrid energy storage system with 125 kW power and storage capacity up to 260 kWh. It features lithium batteries, liquid cooling, and an advanced fire suppression system for solar energy storage applications.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:44:31.935351+00:00"
+ },
+ {
+  "catalog_id": "29f3abd7-93b4-4711-8339-a8ae8301e054",
+  "summary_ar": "بايلونتك RV12100CH هي بطارية ليثيوم LiFePO4 بجهد 12.8 فولت وسعة 100 أمبير ساعة، لتخزين الطاقة الشمسية. تتميز بعمر يصل إلى 4500 دورة ونظام تدفئة مدمج للعمل في درجات الحرارة المنخفضة.",
+  "summary_en": "The Pylontech RV12100CH is a 12.8 V, 100 Ah LiFePO4 battery for solar energy storage. It offers up to 4,500 cycles and built-in heating for operation at low temperatures.",
+  "specs": {
+   "specs": [
+    {
+     "model": "RV12100CH",
+     "key_specs": "Voltage: 12.8 V; capacity: 100 Ah; nominal energy: 1.28 kWh (calc: 12.8 V × 100 Ah); cycles: up to 4,500; built-in heating."
+    }
+   ],
+   "models": [
+    "RV12100CH"
+   ],
+   "summary_ar": "بايلونتك RV12100CH هي بطارية ليثيوم LiFePO4 بجهد 12.8 فولت وسعة 100 أمبير ساعة، لتخزين الطاقة الشمسية. تتميز بعمر يصل إلى 4500 دورة ونظام تدفئة مدمج للعمل في درجات الحرارة المنخفضة.",
+   "summary_en": "The Pylontech RV12100CH is a 12.8 V, 100 Ah LiFePO4 battery for solar energy storage. It offers up to 4,500 cycles and built-in heating for operation at low temperatures.",
+   "product_type": "LiFePO4 battery"
+  },
+  "updated_at": "2026-11-20T22:44:35.329087+00:00"
+ },
+ {
+  "catalog_id": "018aaeb8-6416-43eb-8e79-29685b5c487c",
+  "summary_ar": "سلسلة محولات هجينة أحادية الطور من دايا لتطبيقات الطاقة الشمسية، بقدرات من 7.6 إلى 12 كيلوواط. تتميز بحماية IP65 وكفاءة تصل إلى 97.6%، وتدعم توصيل حتى 16 وحدة على التوازي.",
+  "summary_en": "Deye single-phase hybrid inverter series for solar power applications, with power ratings from 7.6 to 12 kW. The series features IP65 protection, efficiency up to 97.6%, and support for connecting up to 16 units in parallel.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-7.6K-SG02",
+     "key_specs": "Power: 7.6 kW; single-phase; series efficiency: up to 97.6%; IP65; parallel connection: up to 16 units."
+    },
+    {
+     "model": "SUN-8K-SG02",
+     "key_specs": "Power: 8 kW; single-phase; series efficiency: up to 97.6%; IP65; parallel connection: up to 16 units."
+    },
+    {
+     "model": "SUN-10K-SG02",
+     "key_specs": "Power: 10 kW; single-phase; series efficiency: up to 97.6%; IP65; parallel connection: up to 16 units."
+    },
+    {
+     "model": "SUN-12K-SG02",
+     "key_specs": "Power: 12 kW; single-phase; series efficiency: up to 97.6%; IP65; parallel connection: up to 16 units."
+    }
+   ],
+   "models": [
+    "SUN-7.6K-SG02",
+    "SUN-8K-SG02",
+    "SUN-10K-SG02",
+    "SUN-12K-SG02"
+   ],
+   "summary_ar": "سلسلة محولات هجينة أحادية الطور من دايا لتطبيقات الطاقة الشمسية، بقدرات من 7.6 إلى 12 كيلوواط. تتميز بحماية IP65 وكفاءة تصل إلى 97.6%، وتدعم توصيل حتى 16 وحدة على التوازي.",
+   "summary_en": "Deye single-phase hybrid inverter series for solar power applications, with power ratings from 7.6 to 12 kW. The series features IP65 protection, efficiency up to 97.6%, and support for connecting up to 16 units in parallel.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:36.229571+00:00"
+ },
+ {
+  "catalog_id": "6cbe8762-b0f9-4588-9a57-8dc9d79188fe",
+  "summary_ar": "سلسلة محولات دايا الهجينة أحادية الطور بقدرات اسمية من 12 إلى 18 كيلوواط، تدعم بطاريات الرصاص الحمضية أو الليثيوم أيون بجهد 40–60 فولت. مناسبة لأنظمة الطاقة الشمسية المتصلة بالشبكة والمستقلة عنها، مع اقتران AC لتحديث الأنظمة القائمة، ودعم تخزين الطاقة من مولد الديزل وتشغيل حتى 16 وحدة بالتوازي.",
+  "summary_en": "Deye single-phase hybrid solar inverter series with rated power from 12 to 18 kW, supporting 40–60 V lead-acid or lithium-ion batteries. Designed for on-grid and off-grid solar systems, with AC coupling for retrofits, diesel-generator energy storage support, and parallel operation of up to 16 units.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-12K-SG01LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 12 kW; max AC apparent power: 13.2 kVA; AC: 220/230 V, single phase; battery: 40–60 V, max charge/discharge 220 A; 3 MPPTs, 2+2+2 strings; max PV input power: 19.2 kW; max PV access power: 24 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%, Euro: 96.5%, MPPT: >99%; IP65; warranty: 5 years / up to 10 years depending on installation country. Catalog lists dimensions 464×763×282 mm (excluding connectors and brackets) and 464×863×282 mm, and weights 54.1/59.8 kg, without clear model assignments."
+    },
+    {
+     "model": "SUN-14K-SG01LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 14 kW; max AC apparent power: 15.4 kVA; AC: 220/230 V, single phase; battery: 40–60 V, max charge/discharge 250 A; 3 MPPTs, 2+2+2 strings; max PV input power: 22.4 kW; max PV access power: 28 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%, Euro: 96.5%, MPPT: >99%; IP65; warranty: 5 years / up to 10 years depending on installation country. Catalog lists dimensions 464×763×282 mm (excluding connectors and brackets) and 464×863×282 mm, and weights 54.1/59.8 kg, without clear model assignments."
+    },
+    {
+     "model": "SUN-16K-SG01LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 16 kW; max AC apparent power: 17.6 kVA; AC: 220/230 V, single phase; battery: 40–60 V, max charge/discharge 290 A; 3 MPPTs, 2+2+2 strings; max PV input power: 25.6 kW; max PV access power: 32 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%, Euro: 96.5%, MPPT: >99%; IP65; warranty: 5 years / up to 10 years depending on installation country. Catalog lists dimensions 464×763×282 mm (excluding connectors and brackets) and 464×863×282 mm, and weights 54.1/59.8 kg, without clear model assignments."
+    },
+    {
+     "model": "SUN-18K-SG01LP1-EU-AM3-P",
+     "key_specs": "Rated AC power: 18 kW; max AC apparent power: 19.8 kVA; AC: 220/230 V, single phase; battery: 40–60 V, max charge/discharge 380 A; 3 MPPTs, 2+2+2 strings; max PV input power: 28.8 kW; max PV access power: 36 kW; max PV voltage: 500 V; MPPT range: 150–425 V; max efficiency: 97.6%, Euro: 96.5%, MPPT: >99%; IP65; warranty: 5 years / up to 10 years depending on installation country. Catalog lists dimensions 464×763×282 mm (excluding connectors and brackets) and 464×863×282 mm, and weights 54.1/59.8 kg, without clear model assignments."
+    }
+   ],
+   "models": [
+    "SUN-12K-SG01LP1-EU-AM3-P",
+    "SUN-14K-SG01LP1-EU-AM3-P",
+    "SUN-16K-SG01LP1-EU-AM3-P",
+    "SUN-18K-SG01LP1-EU-AM3-P"
+   ],
+   "summary_ar": "سلسلة محولات دايا الهجينة أحادية الطور بقدرات اسمية من 12 إلى 18 كيلوواط، تدعم بطاريات الرصاص الحمضية أو الليثيوم أيون بجهد 40–60 فولت. مناسبة لأنظمة الطاقة الشمسية المتصلة بالشبكة والمستقلة عنها، مع اقتران AC لتحديث الأنظمة القائمة، ودعم تخزين الطاقة من مولد الديزل وتشغيل حتى 16 وحدة بالتوازي.",
+   "summary_en": "Deye single-phase hybrid solar inverter series with rated power from 12 to 18 kW, supporting 40–60 V lead-acid or lithium-ion batteries. Designed for on-grid and off-grid solar systems, with AC coupling for retrofits, diesel-generator energy storage support, and parallel operation of up to 16 units.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:39.56956+00:00"
+ },
+ {
+  "catalog_id": "246f2e9e-17ee-47dc-84f3-bd8fbe685b18",
+  "summary_ar": "بايلونتك UF5000 بطارية ليثيوم منخفضة الجهد لتخزين الطاقة الشمسية. صُممت للتركيب في خزائن قياسية مقاس 19 بوصة، وتدعم التوسع حتى 20 وحدة.",
+  "summary_en": "The Pylontech UF5000 is a low-voltage lithium battery for solar energy storage. It is designed for standard 19-inch rack installation and supports expansion up to 20 units.",
+  "specs": {
+   "specs": [
+    {
+     "model": "UF5000",
+     "key_specs": "Voltage: 51.2 V; capacity: 100 Ah; energy: 5.12 kWh; rack size: 19 inches; expansion: up to 20 units."
+    }
+   ],
+   "models": [
+    "UF5000"
+   ],
+   "summary_ar": "بايلونتك UF5000 بطارية ليثيوم منخفضة الجهد لتخزين الطاقة الشمسية. صُممت للتركيب في خزائن قياسية مقاس 19 بوصة، وتدعم التوسع حتى 20 وحدة.",
+   "summary_en": "The Pylontech UF5000 is a low-voltage lithium battery for solar energy storage. It is designed for standard 19-inch rack installation and supports expansion up to 20 units.",
+   "product_type": "Low-voltage lithium battery"
+  },
+  "updated_at": "2026-11-20T22:44:39.82435+00:00"
+ },
+ {
+  "catalog_id": "3506bc24-44cf-491b-8760-5acb27af78fb",
+  "summary_ar": "هيرو إي إي LEGEND 112C هو نظام تخزين طاقة ببطاريات LiFePO4 بسعة 112.5 كيلوواط ساعة للتطبيقات التجارية والصناعية. يتميز بإدارة حرارية ذكية ومراقبة درجة الحرارة والدخان وإخماد الحرائق بالأيروسول، مع تصميم معياري منفصل للتيار المستمر والمتردد يتيح التوسع بالتوازي.",
+  "summary_en": "HeroEE LEGEND 112C is a 112.5 kWh LiFePO4 energy storage system for commercial and industrial applications. It features intelligent thermal management, temperature and smoke monitoring, aerosol fire suppression, and a modular DC/AC split design for flexible parallel expansion.",
+  "specs": {
+   "specs": [
+    {
+     "model": "LEGEND 112C",
+     "key_specs": "Rated energy: 112.5 kWh; rated voltage: 358.4 V (operating: 302.4–408.8 V); capacity: 314 Ah; configuration: 1P112S; rated charge/discharge ratio: 0.5P; standard charge/discharge current: 157/157 A; DC-side efficiency: ≥93%; cooling: air; dimensions (L×W×H): 900×1000×2280 mm; battery weight: 1400 kg; protection: IP55; corrosion resistance: C3; cycles: 11,000 at 25°C, 100% DOD, 0.5P, 70% SOH; charging temperature: 0–55°C; discharging temperature: −20–55°C; storage temperature: −20–60°C; noise: <75 dB; relative humidity: 0–95% non-condensing; altitude: ≤4,000 m (derating above 2,000 m); communication: RS485, CAN, Ethernet; approval standard: UN38.3; fire suppression: aerosol."
+    }
+   ],
+   "models": [
+    "LEGEND 112C"
+   ],
+   "summary_ar": "هيرو إي إي LEGEND 112C هو نظام تخزين طاقة ببطاريات LiFePO4 بسعة 112.5 كيلوواط ساعة للتطبيقات التجارية والصناعية. يتميز بإدارة حرارية ذكية ومراقبة درجة الحرارة والدخان وإخماد الحرائق بالأيروسول، مع تصميم معياري منفصل للتيار المستمر والمتردد يتيح التوسع بالتوازي.",
+   "summary_en": "HeroEE LEGEND 112C is a 112.5 kWh LiFePO4 energy storage system for commercial and industrial applications. It features intelligent thermal management, temperature and smoke monitoring, aerosol fire suppression, and a modular DC/AC split design for flexible parallel expansion.",
+   "product_type": "ESS"
+  },
+  "updated_at": "2026-11-20T22:44:44.567256+00:00"
+ },
+ {
+  "catalog_id": "3717b5c0-3221-43d7-81cb-b43de2169bcf",
+  "summary_ar": "محول طاقة شمسية هجين أحادي الطور من ليباور بقدرة 6.2 كيلوواط لنظام بطاريات 48 فولت، مع خرج بموجة جيبية نقية وشحن بتقنية MPPT. يدعم إدارة الطاقة بين الألواح الشمسية والشبكة والبطاريات، والتواصل مع نظام إدارة بطاريات الليثيوم، والتشغيل دون بطارية.",
+  "summary_en": "Lipower single-phase hybrid solar inverter rated at 6.2 kW for a 48 V battery system, with pure sine-wave output and MPPT charging. It supports solar, mains and battery power management, lithium-battery BMS communication, and operation without a battery.",
+  "specs": {
+   "specs": [
+    {
+     "model": "BZ6248SMH",
+     "key_specs": "Rated power: 6.2 kW; battery: 48 VDC; AC input/output: 220/230/240 VAC, 50/60 Hz; surge: 12400 VA; max PV input: 8500 W, 500 VDC, 27 A; MPPT voltage range: 60–500 VDC; optimal Vmp: 360–430 VDC; max PV/total charging current: 120 A; max mains charging current: 100 A; peak DC–AC efficiency: 98%; dimensions: 483 × 313 × 143 mm; weight: 8.5 kg."
+    },
+    {
+     "model": "BZ6248-48V",
+     "key_specs": "Catalog heading designation for the 6.2 kW, 48 VDC single-phase hybrid inverter; technical-data model listed as BZ6248SMH."
+    },
+    {
+     "model": "BZ6248",
+     "key_specs": "Keyword designation for the 6.2 kW, 48 V hybrid inverter; technical-data model listed as BZ6248SMH."
+    }
+   ],
+   "models": [
+    "BZ6248SMH",
+    "BZ6248-48V",
+    "BZ6248"
+   ],
+   "summary_ar": "محول طاقة شمسية هجين أحادي الطور من ليباور بقدرة 6.2 كيلوواط لنظام بطاريات 48 فولت، مع خرج بموجة جيبية نقية وشحن بتقنية MPPT. يدعم إدارة الطاقة بين الألواح الشمسية والشبكة والبطاريات، والتواصل مع نظام إدارة بطاريات الليثيوم، والتشغيل دون بطارية.",
+   "summary_en": "Lipower single-phase hybrid solar inverter rated at 6.2 kW for a 48 V battery system, with pure sine-wave output and MPPT charging. It supports solar, mains and battery power management, lithium-battery BMS communication, and operation without a battery.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:42.006268+00:00"
+ },
+ {
+  "catalog_id": "01909196-a1e6-464b-82d0-91b45f2d75c9",
+  "summary_ar": "محول دايا هجين للطاقة الشمسية، ثلاثي الطور وعالي الجهد، متوافق مع بطاريات الليثيوم. يدعم التوصيل المتوازي والتعامل مع الأحمال غير المتوازنة، بكفاءة تصل إلى 97.6%.",
+  "summary_en": "Deye high-voltage, three-phase hybrid solar inverter compatible with lithium batteries. Designed for solar energy systems, it supports parallel connection and unbalanced loads, with efficiency up to 97.6%.",
+  "specs": {
+   "specs": [
+    {
+     "model": "SUN-29.9K-SG01HP3",
+     "key_specs": "Three-phase; high voltage; efficiency up to 97.6%; lithium-battery compatible; parallel connection and unbalanced-load support."
+    },
+    {
+     "model": "SUN-50K-SG01HP3",
+     "key_specs": "Three-phase; high voltage; efficiency up to 97.6%; lithium-battery compatible; parallel connection and unbalanced-load support."
+    }
+   ],
+   "models": [
+    "SUN-29.9K-SG01HP3",
+    "SUN-50K-SG01HP3"
+   ],
+   "summary_ar": "محول دايا هجين للطاقة الشمسية، ثلاثي الطور وعالي الجهد، متوافق مع بطاريات الليثيوم. يدعم التوصيل المتوازي والتعامل مع الأحمال غير المتوازنة، بكفاءة تصل إلى 97.6%.",
+   "summary_en": "Deye high-voltage, three-phase hybrid solar inverter compatible with lithium batteries. Designed for solar energy systems, it supports parallel connection and unbalanced loads, with efficiency up to 97.6%.",
+   "product_type": "hybrid inverter"
+  },
+  "updated_at": "2026-11-20T22:44:45.566171+00:00"
+ },
+ {
+  "catalog_id": "697b991a-4f4b-4473-8dd7-25ff476ba366",
+  "summary_ar": "بايلونتك أوبتيموس L260-HY نظام تخزين طاقة هجين متكامل يجمع محولًا هجينًا بقدرة 125 كيلوواط وبطارية بسعة 261 كيلوواط ساعة. يتميز بتبريد سائل للبطاريات وأنظمة حماية من الحريق، ويُستخدم للاستهلاك الذاتي للطاقة الشمسية وخفض ذروة الأحمال وتوفير الطاقة الاحتياطية.",
+  "summary_en": "Pylontech OPTIMUS L260-HY is an integrated hybrid energy storage system combining a 125 kW hybrid inverter with a 261 kWh battery. It features liquid-cooled batteries and fire-protection systems for solar self-consumption, peak shaving and backup power.",
+  "specs": {
+   "specs": [
+    {
+     "model": "L260-HY",
+     "key_specs": "Series overview: energy 260–1560 kWh; power 125–750 kW; 0.5C; AC voltage 230/400 V."
+    },
+    {
+     "model": "L260-HY-M7",
+     "key_specs": "125 kW; nominal battery energy 261 kWh (260 kWh in overview); 98% DOD; DC voltage 728–936 V; standard DC current 157 A; AC 3P/N/PE, 220/380 or 230/400 V, 50/60 Hz; 10 MPPT / 20 input strings; recommended max PV array 250 kW; MPPT range 150–950 V; max PV input current 10 × 42 A; system RTE 88%; dimensions W×H×D 1400×2180×1300 mm; weight <3 t; system IP55, inverter IP66; battery liquid cooling, inverter air cooling; operating temperature −25 to 55°C; backup switch time <10 ms."
+    },
+    {
+     "model": "M7-1000V-125kW/260kWh",
+     "key_specs": "System designation listed with L260-HY-M7: 125 kW / 260 kWh in designation, 261 kWh nominal battery capacity in table; DC voltage 728–936 V; AC 220/380 or 230/400 V; 10 MPPT / 20 strings; recommended max PV array 250 kW; system RTE 88%; dimensions W×H×D 1400×2180×1300 mm; weight <3 t; system IP55, inverter IP66."
+    },
+    {
+     "model": "HM7A200L",
+     "key_specs": "Battery module: nominal energy 52.25 kWh; nominal voltage 166.4 V; capacity 314 Ah; dimensions W×D×H 1145×790×245 mm; weight 345 kg."
+    }
+   ],
+   "models": [
+    "L260-HY",
+    "L260-HY-M7",
+    "M7-1000V-125kW/260kWh",
+    "HM7A200L"
+   ],
+   "summary_ar": "بايلونتك أوبتيموس L260-HY نظام تخزين طاقة هجين متكامل يجمع محولًا هجينًا بقدرة 125 كيلوواط وبطارية بسعة 261 كيلوواط ساعة. يتميز بتبريد سائل للبطاريات وأنظمة حماية من الحريق، ويُستخدم للاستهلاك الذاتي للطاقة الشمسية وخفض ذروة الأحمال وتوفير الطاقة الاحتياطية.",
+   "summary_en": "Pylontech OPTIMUS L260-HY is an integrated hybrid energy storage system combining a 125 kW hybrid inverter with a 261 kWh battery. It features liquid-cooled batteries and fire-protection systems for solar self-consumption, peak shaving and backup power.",
+   "product_type": "Hybrid Energy Storage System (ESS)"
+  },
+  "updated_at": "2026-11-20T22:46:03.046124+00:00"
+ },
+ {
+  "catalog_id": "23e11d6b-8199-485c-8cb6-a1c400ea344c",
+  "summary_ar": "دليل المستخدم لنظام بايلونتك OPTIM US A300-HY: كابينة خارجية متكاملة ببطاريات فوسفات حديد الليثيوم بسعة 300kWh ومحولين هجينين Solis S6-EH3P(30-50)K-H ووحدة UPS؛ يشرح التركيب والتوصيلات الكهربائية والتشغيل الأولي والإعدادات والصيانة واستكشاف الأعطال.",
+  "summary_en": "User manual for the Pylontech OPTIM US A300-HY outdoor LFP energy storage cabinet (300 kWh) with Solis S6-EH3P(30-50)K-H hybrid inverters and UPS: installation, wiring, commissioning, settings, maintenance and troubleshooting.",
+  "specs": {
+   "specs": [
+    {
+     "model": "OPTIM US A300-HY",
+     "key_specs": "User manual, 142 pages; outdoor cabinet, LFP battery strings, MBMS-LC control module, PCS Solis S6-EH3P(30-50)K-H, UPS; installation, commissioning, maintenance, troubleshooting."
+    }
+   ],
+   "models": [
+    "OPTIM US A300-HY",
+    "M5-300kWh",
+    "S6-EH3P(30-50)K-H"
+   ],
+   "summary_ar": "دليل المستخدم لنظام بايلونتك OPTIM US A300-HY: كابينة خارجية متكاملة ببطاريات فوسفات حديد الليثيوم بسعة 300kWh ومحولين هجينين Solis S6-EH3P(30-50)K-H ووحدة UPS؛ يشرح التركيب والتوصيلات الكهربائية والتشغيل الأولي والإعدادات والصيانة واستكشاف الأعطال.",
+   "summary_en": "User manual for the Pylontech OPTIM US A300-HY outdoor LFP energy storage cabinet (300 kWh) with Solis S6-EH3P(30-50)K-H hybrid inverters and UPS: installation, wiring, commissioning, settings, maintenance and troubleshooting.",
+   "product_type": "User Manual"
+  },
+  "updated_at": "2026-11-22T02:13:31.686+00:00"
+ },
+ {
+  "catalog_id": "38dab242-c0e8-4c4c-adec-185edb5102c0",
+  "summary_ar": "بطارية ليثيوم بايلونتك فيدوس برو 5.12 كيلو (FB-L-5.12-EU-Pro)، 51.2 فولت، سعة قابلة للاستخدام 4.86 كيلو، عمق تفريغ 95%، تيار 100 أمبير، 8000 دورة، عمر 15 سنة، IP65، وزن 45 كجم، مقاس 630×170×363 مم.",
+  "summary_en": "Pylontech Fidus Pro FB-L-5.12-EU-Pro: 51.2V, 5.12kWh nominal, 4.86kWh usable, 95% DoD, 100A continuous, 8000 cycles, 15y design life, IP65, 45kg, 630x170x363mm.",
+  "specs": {
+   "ip": "IP65",
+   "dod": "95%",
+   "peak": "200A@15s",
+   "model": "FB-L-5.12-EU-Pro",
+   "cycles": 8000,
+   "usable": "4.86kWh",
+   "weight": "45kg",
+   "current": "100A",
+   "voltage": "51.2V",
+   "capacity": "5.12kWh",
+   "parallel": 20,
+   "dimensions": "630x170x363mm",
+   "design_life": "15y"
+  },
+  "updated_at": "2026-11-22T03:58:56.630985+00:00"
+ }
+]
