@@ -15,7 +15,7 @@ export function inverterSpecs(items: EqItem[], allBrands = false): InvSpec[] {
     if (r.category !== "inverters" || r.active === false || (r.kind ?? "item") !== "item" || r.price == null) continue;
     const kw = Number((r.key.match(/_(\d+)K_/) ?? [])[1] ?? 0), hv = /_HV$/i.test(r.key), three = hv || /_3P/i.test(r.key);
     if (!(hv ? HV_KW : LV_KW).includes(kw)) continue;
-    const s = { key: r.key, name: r.name, kw, hv, three, price: Number(r.price) }, id = `${kw}-${three}-${hv}` + (allBrands ? `-${brandOf(r.key)}` : "");
+    const s = { key: r.key, name: r.name, kw, hv, three, price: Number(r.price) }, id = `${kw}-${three}-${hv}` + `-${brandOf(r.key)}`;
     if (!m.has(id) || m.get(id)!.price > s.price) m.set(id, s);
   }
   return [...m.values()].sort((a, b) => Number(a.hv) - Number(b.hv) || a.kw - b.kw || Number(a.three) - Number(b.three) || a.price - b.price);
