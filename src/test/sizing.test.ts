@@ -49,3 +49,13 @@ describe("load gives choices, not one pick", () => {
     expect(o.find((x) => x.kw === 30)!.units).toBe(2);
   });
 });
+
+describe("HV systems never list LV inverters", () => {
+  it("38 kW load shows only high-voltage inverters", () => {
+    const inv = (key: string, price: number) => ({ key, name: key, category: "inverters", price, active: true, kind: "item" });
+    const items = [inv("INV_DEYE_20K_3P", 1500), inv("INV_DEYE_16K_3P", 1200), inv("INV_DEYE_30K_3P_HV", 2800), inv("INV_DEYE_50K_3P_HV", 4100)] as never;
+    const o = _iol(items, 100, 38, true);
+    expect(o.length).toBeGreaterThan(0);
+    expect(o.every((x) => x.hv)).toBe(true);
+  });
+});

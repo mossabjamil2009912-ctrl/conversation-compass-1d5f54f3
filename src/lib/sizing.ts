@@ -44,7 +44,8 @@ export function inverterOptions(items: EqItem[], need: number, three: boolean, f
 }
 // Option 1: the customer gives the hourly load (kW) — cheapest inverter set that covers load and panels.
 export function inverterForLoad(items: EqItem[], need: number, loadKw: number, three: boolean, f: Formulas = F): InvPick | null {
-  const all = inverterSpecs(items);
+  const hv = isHvNeed(need, loadKw, f);
+  const all = inverterSpecs(items).filter((s) => s.hv === hv);
   const ph = all.filter((s) => s.hv || s.three === three);
   const c = (ph.length ? ph : all).map((s) => { const units = unitsFor(s, need, loadKw, f); return { ...s, units, cost: units * s.price }; })
     .filter((p) => p.units <= f.maxInverters).sort((a, b) => a.cost - b.cost || a.units - b.units);
@@ -53,7 +54,8 @@ export function inverterForLoad(items: EqItem[], need: number, loadKw: number, t
 // Load given: every brand/size that covers the peak load and the panels (count included), cheapest first.
 // The customer picks a size+count, then the brand when that size exists in more than one brand. Bot port: szLoadOptions.
 export function inverterOptionsForLoad(items: EqItem[], need: number, loadKw: number, three: boolean, f: Formulas = F): InvPick[] {
-  const all = inverterSpecs(items, true);
+  const hv = isHvNeed(need, loadKw, f);
+  const all = inverterSpecs(items, true).filter((s) => s.hv === hv);
   const ph = all.filter((s) => s.hv || s.three === three);
   return (ph.length ? ph : all).map((s) => { const units = unitsFor(s, need, loadKw, f); return { ...s, units, cost: units * s.price }; })
     .filter((p) => p.units <= f.maxInverters).sort((a, b) => a.cost - b.cost || a.units - b.units);
