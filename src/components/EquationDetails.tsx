@@ -3,8 +3,8 @@ import { explainEquations, type DetailLine } from "@/lib/equation-details";
 import type { EqItem } from "@/lib/formulas";
 import { MathStep } from "@/components/MathStep";
 
-export function EquationDetails({ lines, items, need, nightPct, onClose }: { lines: DetailLine[]; items: EqItem[]; need: number | null; nightPct: number | null; onClose: () => void }) {
-  const rows = explainEquations(lines, items, { need, nightPct });
+export function EquationDetails({ lines, items, need, nightPct, loadKw, onClose }: { lines: DetailLine[]; items: EqItem[]; need: number | null; nightPct: number | null; loadKw?: number | null; onClose: () => void }) {
+  const rows = explainEquations(lines, items, { need, nightPct, loadKw: loadKw ?? null });
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/60 p-3 animate-in fade-in" onClick={onClose}>
       <div className="flex max-h-[88vh] w-full max-w-lg flex-col overflow-hidden rounded-xl bg-card shadow-2xl animate-in zoom-in-95" onClick={(e) => e.stopPropagation()}>

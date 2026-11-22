@@ -875,7 +875,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
           <span className="text-xs">الإجمالي</span><span className="text-base font-extrabold text-primary">{usd(total)}</span>
         </div>
         {F.mode === "eq" && chosen.length > 0 && <button type="button" onClick={() => setShowEqD(true)} className="rounded-md border border-primary/50 py-1 text-xs font-bold text-primary hover:bg-primary/10">التفاصيل — كيف حُسب كل صنف</button>}
-        {showEqD && <EquationDetails lines={chosen} items={items as EqItem[]} need={eqNeed ?? (Number(daily) > 0 ? dailyNeed(path ?? "res", comM ?? "bill", Number(daily), kwhPrice) : null)} nightPct={F.night[dn]} onClose={() => setShowEqD(false)} />}
+        {showEqD && <EquationDetails lines={chosen} items={items as EqItem[]} need={eqNeed ?? (Number(daily) > 0 ? dailyNeed(path ?? "res", comM ?? "bill", Number(daily), kwhPrice) : null)} nightPct={F.night[dn]} loadKw={Number(loadKw) > 0 ? Number(loadKw) : null} onClose={() => setShowEqD(false)} />}
         {msg && <p className="text-center text-xs font-semibold text-primary">{msg}</p>}
         <div className="grid grid-cols-2 gap-1.5">
           <button onClick={() => generate()} disabled={busy} className="flex items-center justify-center gap-1 rounded-md bg-primary py-1.5 text-xs font-bold text-primary-foreground shadow transition hover:opacity-90 disabled:opacity-50"><Printer className="h-3.5 w-3.5" />{busy && !share ? "جارٍ الإنشاء..." : "إنشاء عرض السعر"}</button>

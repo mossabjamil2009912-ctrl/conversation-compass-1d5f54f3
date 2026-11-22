@@ -14,4 +14,9 @@ describe("equation details", () => {
     expect(rows.find((r) => r.title === "السترنجات")?.result).toBe(`${s} سترنج`);
     expect(rows.find((r) => r.title === "قدرة الألواح المطلوبة")?.result).toBe("16 kWp");
   });
+  it("shows inverter count by peak load as ceil(load ÷ inverter kW)", () => {
+    const rows = explainEquations([{ key: "INV_DEYE_12K_3P", name: "Deye 12K ثري فاز", qty: 3 }, { key: "PNL", name: "Panel 720W", qty: 20 }], items, { need: 80, loadKw: 30 }, DEFAULT_FORMULAS);
+    const steps = rows.find((r) => r.title === "عدد الإنفرترات")?.steps ?? [];
+    expect(steps.some((x) => x.includes("⌈30 ÷ 12⌉ = 3"))).toBe(true);
+  });
 });
