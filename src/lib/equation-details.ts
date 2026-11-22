@@ -7,7 +7,7 @@ export type DetailLine = { key: string; name: string; qty: number };
 export type DetailRow = { title: string; item?: string; steps: string[]; result: string };
 const n = (x: number, d = 2) => String(Math.round(x * 10 ** d) / 10 ** d);
 
-export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { need?: number | null; nightPct?: number | null } = {}, f: Formulas = F): DetailRow[] {
+export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { need?: number | null; nightPct?: number | null; loadKw?: number | null } = {}, f: Formulas = F): DetailRow[] {
   const byKey = (k: string) => items.find((i) => i.key === k);
   const cat = lines.map((l) => byKey(l.key));
   const sum = (c: string) => lines.reduce((s, l, i) => s + (cat[i]?.category === c ? l.qty : 0), 0);
@@ -25,7 +25,14 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     if (invLines[0]) {
       const kw = Number((invLines[0].key.match(/_(\d+)K_/) ?? [])[1] ?? 0);
       const pm = f.pvMax?.[invLines[0].key], use = (pm || kw) * f.pvSafety;
-      if (kw) rows.push({ title: "عدد الإنفرترات", item: invLines[0].name, steps: [pm ? `دخل الألواح المسموح = ${pm} × ${f.pvSafety} = ${n(use)} kWp لكل إنفرتر` : `دخل الألواح المسموح = ${kw} × ${f.pvSafety} = ${n(use)} kWp`, `العدد = ⌈kWp ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉`, hv ? `القدرة > ${f.lvMaxKw} kW → جهد عالي HV` : `القدرة ≤ ${f.lvMaxKw} kW → جهد منخفض LV`], result: `${invQty} إنفرتر` });
+      if (kw) {
+        const byPv = Math.ceil(kwp / use - 1e-9), load = opts.loadKw ?? 0, byLoad = load > 0 ? Math.ceil(load / kw - 1e-9) : 0;
+        rows.push({ title: "عدد الإنفرترات", item: invLines[0].name, steps: [
+          `دخل الألواح المسموح = أقصى دخل PV × معامل الأمان = ${pm || kw} × ${f.pvSafety} = ${n(use)} kWp`,
+          `حسب الألواح = ⌈قدرة الألواح ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉ = ${byPv}`,
+          ...(byLoad ? [`حسب الحمل = ⌈أقصى حمل تشغيلي ÷ قدرة الإنفرتر⌉ = ⌈${n(load)} ÷ ${kw}⌉ = ${byLoad}`, `العدد = max(${byLoad}، ${byPv})`] : []),
+          hv ? `القدرة > ${f.lvMaxKw} kW → جهد عالي HV` : `القدرة ≤ ${f.lvMaxKw} kW → جهد منخفض LV`], result: `${invQty} إنفرتر` });
+      }
     }
     if (panels) {
       const w = (Number((lines.find((_, i) => cat[i]?.category === "panels")?.name.match(/(\d{3})\s*W?/i) ?? [])[1]) || f.panelW);
