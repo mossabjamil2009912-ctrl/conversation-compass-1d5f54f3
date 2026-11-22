@@ -24,8 +24,8 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     rows.push({ title: "قدرة الألواح المطلوبة", steps: [`kWp = الاستهلاك اليومي ÷ ساعات الشمس`, `= ${n(need)} ÷ ${f.sun}`], result: `${n(kwp)} kWp` });
     if (invLines[0]) {
       const kw = Number((invLines[0].key.match(/_(\d+)K_/) ?? [])[1] ?? 0);
-      const pm = f.pvMax?.[invLines[0].key], use = pm ? pm * f.pvSafety : kw * (/SOLIS/i.test(invLines[0].key) ? f.dcRatioSolis : f.dcRatio);
-      if (kw) rows.push({ title: "عدد الإنفرترات", item: invLines[0].name, steps: [pm ? `دخل الألواح المسموح = ${pm} × ${f.pvSafety} = ${n(use)} kWp لكل إنفرتر` : `دخل الألواح المسموح = ${kw} × النسبة = ${n(use)} kWp`, `العدد = ⌈kWp ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉`, hv ? `القدرة > ${f.lvMaxKw} kW → جهد عالي HV` : `القدرة ≤ ${f.lvMaxKw} kW → جهد منخفض LV`], result: `${invQty} إنفرتر` });
+      const pm = f.pvMax?.[invLines[0].key], use = (pm || kw) * f.pvSafety;
+      if (kw) rows.push({ title: "عدد الإنفرترات", item: invLines[0].name, steps: [pm ? `دخل الألواح المسموح = ${pm} × ${f.pvSafety} = ${n(use)} kWp لكل إنفرتر` : `دخل الألواح المسموح = ${kw} × ${f.pvSafety} = ${n(use)} kWp`, `العدد = ⌈kWp ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉`, hv ? `القدرة > ${f.lvMaxKw} kW → جهد عالي HV` : `القدرة ≤ ${f.lvMaxKw} kW → جهد منخفض LV`], result: `${invQty} إنفرتر` });
     }
     if (panels) {
       const w = (Number((lines.find((_, i) => cat[i]?.category === "panels")?.name.match(/(\d{3})\s*W?/i) ?? [])[1]) || f.panelW);

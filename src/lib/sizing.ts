@@ -22,15 +22,17 @@ export function inverterSpecs(items: EqItem[], allBrands = false): InvSpec[] {
 }
 // kWp = daily ÷ sun hours. Inverters needed = ⌈max(hourly load, kWp ÷ DC/AC ratio) ÷ kW⌉.
 export const kwpOf = (need: number, f: Formulas = F) => need / f.sun;
-// Usable panel kWp per inverter = datasheet max PV input (pvMax, editable) × pvSafety; brand ratio only when missing.
+// Usable panel kWp per inverter = datasheet max PV input (pvMax, editable) × pvSafety. No fixed ratios.
 export const pvUsable = (s: Pick<InvSpec, "key" | "kw">, f: Formulas = F) => {
   const m = f.pvMax?.[s.key];
-  return m ? m * f.pvSafety : s.kw * (/SOLIS/i.test(s.key) ? f.dcRatioSolis : f.dcRatio);
+  return (m || s.kw) * f.pvSafety;
 };
 export const ratioOf = (s: Pick<InvSpec, "key" | "kw">, f: Formulas = F) => pvUsable(s, f) / s.kw;
 export const unitsFor = (s: InvSpec, need: number, loadKw = 0, f: Formulas = F) => Math.max(1, Math.ceil(Math.max(loadKw, kwpOf(need, f) / ratioOf(s, f)) / s.kw - 1e-9));
 // Low Voltage while the AC power needed stays within lvMaxKw; otherwise High Voltage. Never mixed.
-export const isHvNeed = (need: number, loadKw = 0, f: Formulas = F) => Math.max(loadKw, kwpOf(need, f) / f.dcRatio) > f.lvMaxKw + 1e-9;
+// AC power for the LV/HV switch uses the largest LV three-phase inverter's real input ratio.
+export const lvRatio = (f: Formulas = F) => { const k = Object.keys(f.pvMax).filter((x) => /_3P$/.test(x)).sort((a, b) => Number(b.match(/_(\d+)K_/)?.[1]) - Number(a.match(/_(\d+)K_/)?.[1]))[0]; const kw = Number(k?.match(/_(\d+)K_/)?.[1]); return k && kw ? (f.pvMax[k]! * f.pvSafety) / kw : f.pvSafety; };
+export const isHvNeed = (need: number, loadKw = 0, f: Formulas = F) => Math.max(loadKw, kwpOf(need, f) / lvRatio(f)) > f.lvMaxKw + 1e-9;
 
 // Option 2: the customer picks an inverter size, then the brand when that size exists in more than one brand.
 // Returns every brand per size (cheapest first); group by kw to build the two steps.

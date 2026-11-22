@@ -13,9 +13,9 @@ describe("equation sizing", () => {
   });
   it("picked 8 kW repeats when the need is larger (max 5)", () => {
     const o = inverterOptions(items, 100, false, D).find((p) => p.kw === 8);
-    expect(o?.units).toBe(2); // kWp 20 ÷ 1.3 = 15.4 kW → 2 × 8 kW
+    expect(o?.units).toBe(2); // kWp 20 ÷ (12.8×0.9 per 8 kW) → 2 × 8 kW
   });
-  it("HV starts above 25 kW", () => { expect(isHvNeed(162, 0, D)).toBe(false); expect(isHvNeed(163, 0, D)).toBe(true); });
+  it("HV starts above 25 kW", () => { expect(isHvNeed(168, 0, D)).toBe(false); expect(isHvNeed(169, 0, D)).toBe(true); });
   it("HV batteries: min 4, then any count", () => { expect(batteriesFor(20, 50, true, D)).toBe(4); expect(batteriesFor(150, 50, true, D)).toBe(6); });
   it("LV batteries are multiples of 16 kWh", () => expect(batteriesFor(60, 50, false, D)).toBe(3));
   it("panels split evenly over strings", () => { const r = panelsFor(100, { ...items[2]!, kw: 16, hv: false, three: true, units: 1, cost: 0 } as never, D); expect(r.panels % r.strings).toBe(0); });

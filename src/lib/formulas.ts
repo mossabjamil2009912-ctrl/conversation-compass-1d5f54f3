@@ -22,9 +22,7 @@ export type Formulas = {
   hvBatPerBcu: number;   // HV batteries per BCU controller
   ebcOver: number;       // a BCU group needs an EBC when it holds more than this many batteries
   panelW: number;        // panel watts used for panel count
-  dcRatio: number;       // panel kWp per inverter kW (DC/AC ratio) — Deye and other brands
-  dcRatioSolis: number;  // DC/AC ratio for Solis inverters
-  pvMax: Record<string, number>; // max panel input (kWp) per inverter key, from each datasheet; missing → kW × ratio
+  pvMax: Record<string, number>; // max panel input (kWp) per inverter key, from each datasheet (every inverter must have one)
   pvSafety: number;      // share of pvMax actually used (safety margin), e.g. 0.9
   lvMaxKw: number;       // above this AC power → High Voltage family
   maxInverters: number;  // most inverters in parallel
@@ -54,7 +52,7 @@ export const DEFAULT_FORMULAS: Formulas = {
   dcMaxLines: 10, dcStep: 2, acSingleV: 220, acThreeDiv: 658, acSafety: 1.25, cableM: 1, mc4PerString: 1,
   panelVoc: 48.5, coldFactor: 1.1, vmaxSingle: 500, vmaxThree: 800,
   vmaxHV: 1000, hvMinBat: 4, hvBatPerBcu: 15, ebcOver: 7,
-  panelW: 720, dcRatio: 1.3, dcRatioSolis: 1.6, pvSafety: 0.9, pvMax: { INV_DEYE_8K_1P: 12.8, INV_DEYE_12K_1P: 19.2, INV_DEYE_12K_3P: 15.6, INV_DEYE_16K_1P: 25.6, INV_DEYE_16K_3P: 24, INV_DEYE_20K_3P: 30, INV_DEYE_30K_3P_HV: 39, INV_DEYE_50K_3P_HV: 65, INV_DEYE_80K_3P_HV: 128, INV_DEYE_125K_3P_HV: 200, INV_SOLIS_30K_3P_HV: 60, INV_SOLIS_50K_3P_HV: 96, INV_SOLIS_80K_3P_HV: 160, INV_SOLIS_125K_3P_HV: 250 }, lvMaxKw: 25, maxInverters: 5, batKwh: 16, batTol: 1, cabKwh: 112, m1Kwh: 4.74, m5Kwh: 15.68, m1MaxKwh: 109.02, m1MinBat: 6, m1RackSmall: 13, m1MaxBat: 23, m5MinBat: 7, m5RackSmall: 11, m5RackMedium: 16, m5MaxBat: 20, cabTol: 5, mode: "eq", comRanges: {}, presetItems: {},
+  panelW: 720, pvSafety: 0.9, pvMax: { INV_DEYE_8K_1P: 12.8, INV_DEYE_12K_1P: 19.2, INV_DEYE_12K_3P: 15.6, INV_DEYE_16K_1P: 25.6, INV_DEYE_16K_3P: 24, INV_DEYE_20K_3P: 30, INV_DEYE_30K_3P_HV: 39, INV_DEYE_50K_3P_HV: 65, INV_DEYE_80K_3P_HV: 128, INV_DEYE_125K_3P_HV: 200, INV_SOLIS_30K_3P_HV: 60, INV_SOLIS_50K_3P_HV: 96, INV_SOLIS_80K_3P_HV: 160, INV_SOLIS_125K_3P_HV: 250 }, lvMaxKw: 25, maxInverters: 5, batKwh: 16, batTol: 1, cabKwh: 112, m1Kwh: 4.74, m5Kwh: 15.68, m1MaxKwh: 109.02, m1MinBat: 6, m1RackSmall: 13, m1MaxBat: 23, m5MinBat: 7, m5RackSmall: 11, m5RackMedium: 16, m5MaxBat: 20, cabTol: 5, mode: "eq", comRanges: {}, presetItems: {},
 };
 export const F: Formulas = structuredClone(DEFAULT_FORMULAS);
 export const mergeFormulas = (v: unknown): Formulas => {
@@ -69,7 +67,7 @@ export const mergeFormulas = (v: unknown): Formulas => {
     acThreeDiv: num(o.acThreeDiv, D.acThreeDiv), acSafety: num(o.acSafety, D.acSafety), cableM: num(o.cableM, D.cableM), mc4PerString: num(o.mc4PerString, D.mc4PerString), 
     panelVoc: num(o.panelVoc, D.panelVoc), coldFactor: num(o.coldFactor, D.coldFactor), vmaxSingle: num(o.vmaxSingle, D.vmaxSingle), vmaxThree: num(o.vmaxThree, D.vmaxThree),
     vmaxHV: num(o.vmaxHV, D.vmaxHV), hvMinBat: num(o.hvMinBat, D.hvMinBat), hvBatPerBcu: num(o.hvBatPerBcu, D.hvBatPerBcu), ebcOver: num(o.ebcOver, D.ebcOver),
-    panelW: num(o.panelW, D.panelW), dcRatio: num(o.dcRatio, D.dcRatio), dcRatioSolis: num(o.dcRatioSolis, D.dcRatioSolis), pvSafety: num(o.pvSafety, D.pvSafety), pvMax: { ...D.pvMax, ...Object.fromEntries(Object.entries(o.pvMax && typeof o.pvMax === "object" ? o.pvMax : {}).filter(([, x]) => typeof x === "number" && isFinite(x) && x > 0)) }, lvMaxKw: num(o.lvMaxKw, D.lvMaxKw), maxInverters: num(o.maxInverters, D.maxInverters), batKwh: num(o.batKwh, D.batKwh), batTol: typeof o.batTol === "number" && o.batTol >= 0 ? o.batTol : D.batTol,
+    panelW: num(o.panelW, D.panelW), pvSafety: num(o.pvSafety, D.pvSafety), pvMax: { ...D.pvMax, ...Object.fromEntries(Object.entries(o.pvMax && typeof o.pvMax === "object" ? o.pvMax : {}).filter(([, x]) => typeof x === "number" && isFinite(x) && x > 0)) }, lvMaxKw: num(o.lvMaxKw, D.lvMaxKw), maxInverters: num(o.maxInverters, D.maxInverters), batKwh: num(o.batKwh, D.batKwh), batTol: typeof o.batTol === "number" && o.batTol >= 0 ? o.batTol : D.batTol,
     cabKwh: num(o.cabKwh, D.cabKwh), m1Kwh: num(o.m1Kwh, D.m1Kwh), m5Kwh: num(o.m5Kwh, D.m5Kwh), m1MaxKwh: num(o.m1MaxBat, D.m1MaxBat) * num(o.m1Kwh, D.m1Kwh), cabTol: num(o.cabTol, D.cabTol),
     m1MinBat: num(o.m1MinBat, D.m1MinBat), m1RackSmall: num(o.m1RackSmall, D.m1RackSmall), m1MaxBat: num(o.m1MaxBat, D.m1MaxBat),
     m5MinBat: num(o.m5MinBat, D.m5MinBat), m5RackSmall: num(o.m5RackSmall, D.m5RackSmall), m5RackMedium: num(o.m5RackMedium, D.m5RackMedium), m5MaxBat: num(o.m5MaxBat, D.m5MaxBat),

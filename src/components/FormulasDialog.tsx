@@ -189,8 +189,6 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
         {Object.entries(fx.pvMax).filter(([k]) => /^INV_(DEYE|SOLIS)_/.test(k) && (hv ? /_HV$/.test(k) : !/_HV$/.test(k)) && (!single || RES_INV.test(k))).map(([k, v]) => (
           <Num key={k} label={`أقصى دخل ألواح kWp — ${/SOLIS/.test(k) ? "سوليس" : "دايا"} ${(k.match(/_(\d+)K_/) ?? [])[1]} كيلو ${/_HV$/.test(k) ? "هاي فولتج" : /_1P/.test(k) ? "سنجل" : "ثري"}`} value={v} onChange={(x) => up({ pvMax: { ...fx.pvMax, [k]: x } })} />
         ))}
-        <Num label="نسبة الألواح إلى الإنفرتر (دايا) — لإنفرتر بلا دخل ألواح مسجل" value={fx.dcRatio} onChange={(v) => up({ dcRatio: v })} />
-        <Num label="نسبة الألواح إلى الإنفرتر (سوليس) — لإنفرتر بلا دخل ألواح مسجل" value={fx.dcRatioSolis} onChange={(v) => up({ dcRatioSolis: v })} />
         <Num label="أقصى قدرة للجهد المنخفض (كيلو)" value={fx.lvMaxKw} onChange={(v) => up({ lvMaxKw: v })} />
         <Num label="أقصى عدد إنفرترات بالتوازي" value={fx.maxInverters} onChange={(v) => up({ maxInverters: Math.round(v) })} />
       </Eq>
