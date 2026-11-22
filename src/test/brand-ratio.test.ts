@@ -7,9 +7,12 @@ const solis50 = { key: "INV_SOLIS_50K_3P_HV", name: "", kw: 50, hv: true, three:
 const deye50 = { key: "INV_DEYE_50K_3P_HV", name: "", kw: 50, hv: true, three: true, price: 1 };
 
 describe("DC/AC ratio by brand", () => {
-  it("Solis uses 1.6, Deye uses 1.3", () => {
-    expect(ratioOf(solis50, f)).toBe(1.6);
-    expect(ratioOf(deye50, f)).toBe(1.3);
+  it("usable panel input = datasheet input × 0.90 (Solis 50: 96, Deye 50: 65)", () => {
+    expect(ratioOf(solis50, f) * 50).toBeCloseTo(86.4);
+    expect(ratioOf(deye50, f) * 50).toBeCloseTo(58.5);
+  });
+  it("changing the safety factor changes usable input", () => {
+    expect(ratioOf(solis50, { ...f, pvSafety: 1 }) * 50).toBeCloseTo(96);
   });
   it("75 kWp (375 kWh/day) needs one Solis 50 but two Deye 50", () => {
     expect(unitsFor(solis50, 375, 0, f)).toBe(1);
