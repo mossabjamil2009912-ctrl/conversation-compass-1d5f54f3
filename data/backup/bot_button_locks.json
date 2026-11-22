@@ -4210,5 +4210,11 @@
   "choice": "1",
   "phone": "967773590979",
   "created_at": "2026-11-22T05:27:23.894449+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUNCNEMzRTNDOTdBQUVBNkI4ODM1QjA1QTU1REY0QzcA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-22T18:39:12.753829+00:00"
  }
 ]
