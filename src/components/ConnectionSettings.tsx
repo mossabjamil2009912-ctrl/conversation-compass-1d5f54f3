@@ -67,6 +67,12 @@ export function ConnectionSettings({ pw }: { pw: string }) {
               <h2 className="font-bold">إعدادات الاتصال</h2>
               <button onClick={() => setOpen(false)} aria-label="إغلاق"><X className="h-4 w-4" /></button>
             </div>
+            {unlocked && (
+              <div className="flex gap-2">
+                <button onClick={() => { setOpen(false); setShowF(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">المعادلات</button>
+                <button onClick={() => { setOpen(false); setShowM(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">النظام الحسابي</button>
+              </div>
+            )}
             <div className="text-sm"><span className="text-muted-foreground">رابط واجهة التطبيق: </span><span dir="ltr" className="font-mono">{current || "..."}</span></div>
             <input dir="ltr" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="https://..."
               className="w-full rounded-lg border border-input bg-background px-3 py-2 font-mono text-sm" />
@@ -76,12 +82,6 @@ export function ConnectionSettings({ pw }: { pw: string }) {
               <button disabled={busy} onClick={() => run(() => save({ data: { pw, url } }))} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground disabled:opacity-50">حفظ التغييرات</button>
               <button disabled={busy} onClick={() => run(() => save({ data: { pw, url: def, reset: true } }))} className="w-full rounded-lg border border-border px-3 py-2 text-sm disabled:opacity-50">استعادة الرابط الافتراضي</button>
             </div>
-            {unlocked && (
-              <div className="flex gap-2">
-                <button onClick={() => { setOpen(false); setShowF(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">المعادلات</button>
-                <button onClick={() => { setOpen(false); setShowM(true); }} className="flex-1 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground">النظام الحسابي</button>
-              </div>
-            )}
             <AppUpdatePanel />
           </div>
         </div>
