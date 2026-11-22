@@ -2,8 +2,8 @@
 const { app, BrowserWindow, shell, Menu } = require("electron");
 const path = require("path");
 
-const APP_URL = "https://actes-crm.lovable.app";
-const INTERNAL = ["actes-crm.lovable.app", "sunwise-engineer-network.lovable.app", "catalog-whisperer-starligight-shelf.lovable.app"];
+const APP_URL = "https://conversation-compass-customer-trails.lovable.app";
+const INTERNAL = ["conversation-compass-customer-trails.lovable.app", "actes-crm.lovable.app", "sunwise-engineer-network.lovable.app", "catalog-whisperer-starligight-shelf.lovable.app"];
 const isInternal = (u) => { try { return INTERNAL.includes(new URL(u).hostname); } catch { return false; } };
 
 if (!app.requestSingleInstanceLock()) app.quit();
