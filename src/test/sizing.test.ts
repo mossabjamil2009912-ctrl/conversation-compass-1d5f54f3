@@ -37,3 +37,15 @@ describe("brand choice per size", () => {
     expect(g.find((x) => x.kw === 80)?.brands.length).toBe(1);
   });
 });
+
+import { inverterOptionsForLoad as _iol } from "@/lib/sizing";
+describe("load gives choices, not one pick", () => {
+  it("38 kW load lists several sizes, and 50 kW comes in both Deye and Solis", () => {
+    const inv = (key: string, price: number) => ({ key, name: key, category: "inverters", price, active: true, kind: "item" });
+    const items = [inv("INV_DEYE_30K_3P_HV", 2800), inv("INV_SOLIS_30K_3P_HV", 2800), inv("INV_DEYE_50K_3P_HV", 4100), inv("INV_SOLIS_50K_3P_HV", 4200), inv("INV_DEYE_80K_3P_HV", 6200)] as never;
+    const o = _iol(items, 100, 38, true);
+    expect(new Set(o.map((x) => x.kw)).size).toBeGreaterThan(1);
+    expect(o.filter((x) => x.kw === 50).length).toBe(2);
+    expect(o.find((x) => x.kw === 30)!.units).toBe(2);
+  });
+});

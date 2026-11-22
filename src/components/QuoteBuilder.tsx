@@ -9,7 +9,7 @@ import { offlineQuery } from "@/lib/offline-cache";
 import { BOT_PRESETS } from "@/lib/bot-presets";
 import { F, applyFormulas, comKey } from "@/lib/formulas";
 import { EquationDetails } from "@/components/EquationDetails";
-import { inverterOptions, inverterForLoad, buildSystem, groupBySize, brandOf, BRAND_LABEL, type InvPick } from "@/lib/sizing";
+import { inverterOptions, inverterOptionsForLoad, buildSystem, groupBySize, brandOf, BRAND_LABEL, type InvPick } from "@/lib/sizing";
 import { lvChoices, lvCatalogItem, lvBatOf, LV_BAT_LABELS, type LvBatOpt } from "@/lib/lv-battery";
 import { applyStorage, hvCapacity, storageAvailable, STORAGE_LABELS, STORAGE_GROUPS, type StorageChoice, type StorageGroup } from "@/lib/storage";
 import logoClean from "@/assets/actes-logo-clean.png";
@@ -443,6 +443,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const [eq, setEq] = useState<{ need: number; three: boolean; template: [string, number][]; type: "res" | "com" } | null>(null);
   const [loadKw, setLoadKw] = useState("");
   const [brandPick, setBrandPick] = useState<InvPick[] | null>(null);
+  const [loadOpts, setLoadOpts] = useState<InvPick[] | null>(null);
   const [hvBase, setHvBase] = useState<Line[] | null>(null); // HV system before the storage choice
   const [storage, setStorage] = useState<StorageChoice>("h112s");
   const [stGroup, setStGroup] = useState<StorageGroup>("bat");
@@ -707,16 +708,16 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
         {eq && (
           <div className="space-y-2 rounded-xl border bg-muted/30 p-2">
             <div className="text-xs text-muted-foreground">الاحتياج اليومي: {eq.need.toFixed(1)} كيلووات ساعة</div>
-            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const p = inverterForLoad(items as EqItem[], eq.need, kw, eq.three); if (!p) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); pickInv(p); }} className="flex flex-wrap items-center gap-1">
+            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const o = inverterOptionsForLoad(items as EqItem[], eq.need, kw, eq.three).filter((x) => eq.type === "com" || RES_INV_KEY.test(x.key)); if (!o.length) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); setBrandPick(null); setLoadOpts(o); }} className="flex flex-wrap items-center gap-1">
               <span className="text-xs font-bold">1) أقصى حمل تشغيلي (kW):</span>
               <input value={loadKw} onChange={(e) => setLoadKw(e.target.value.replace(/[^\d.]/g, ""))} inputMode="decimal" placeholder="كيلووات (مثال 10)" className="w-32 rounded-lg border bg-card px-2 py-1.5 text-xs" />
               <button type="submit" className="rounded-lg bg-primary px-2 py-1.5 text-xs font-bold text-primary-foreground">اختر الأنسب</button>
             </form>
-            <div className="text-xs font-bold">2) أو اختر الإنفرتر:</div>
+            <div className="text-xs font-bold">{loadOpts ? `الإنفرترات التي تغطي حمل ${loadKw} kW — اختر القدرة والعدد:` : "2) أو اختر الإنفرتر:"}{loadOpts && <button type="button" onClick={() => { setLoadOpts(null); setBrandPick(null); }} className="ms-2 rounded bg-muted px-2 py-0.5 font-normal">كل الإنفرترات</button>}</div>
             <div className="flex flex-wrap gap-1">
-              {!brandPick ? groupBySize(inverterOptions(items as EqItem[], eq.need, eq.three).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key))).map((g) => { const p = g.brands[0]!; return (
+              {!brandPick ? groupBySize((loadOpts ?? inverterOptions(items as EqItem[], eq.need, eq.three)).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key))).map((g) => { const p = g.brands[0]!; return (
                 <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
-                  <div className="font-bold">{g.brands.length === 1 && p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
+                  <div className="font-bold">{p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
                   <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : usd(p.cost)}</div>
                 </button>
               ); }) : (<>

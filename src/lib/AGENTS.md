@@ -1,5 +1,5 @@
 - LV battery brand choice: `lv-battery.ts` ↔ bot `ACTES_LVBAT` (16 kWh, sized systems) and `ACTES_RESBAT` (5.12 kWh, ready-made home systems) — change together.
 - Catalog platform (`/catalogs`): `catalog_*` tables + private `catalogs` bucket via `catalogs.functions.ts`; assistant (`catalog-assistant.server.ts`) reads all `catalog_profiles` + page search — uploads must build a profile.
 - Chat deletion is soft (`customers.deleted_at`/`blocked`/`hidden_before`); bot-message uses `chat-visibility.ts` — deleted chats stay restorable.
-- Inverter brand choice: `groupBySize`/`inverterOptions` in `sizing.ts` ↔ bot `ACTES_BRAND` (szGroups, step `sz_brand_ask`) — change together.
+- Inverter brand choice: `groupBySize`/`inverterOptions`/`inverterOptionsForLoad` in `sizing.ts` ↔ bot `ACTES_BRAND` + `ACTES_LOAD_OPTS` (szGroups, szLoad stored in pump_capacity, step `sz_brand_ask`) — peak load lists size+count options, then brand; change together.
 - Inverter panel capacity: `pvUsable` in `sizing.ts` (formulas `pvMax` per key × `pvSafety`) ↔ bot `szUnits`/`szF` — change together — no fixed DC/AC ratios; every inverter needs a `pvMax`.

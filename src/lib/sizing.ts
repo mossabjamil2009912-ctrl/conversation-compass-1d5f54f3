@@ -50,6 +50,14 @@ export function inverterForLoad(items: EqItem[], need: number, loadKw: number, t
     .filter((p) => p.units <= f.maxInverters).sort((a, b) => a.cost - b.cost || a.units - b.units);
   return c[0] ?? null;
 }
+// Load given: every brand/size that covers the peak load and the panels (count included), cheapest first.
+// The customer picks a size+count, then the brand when that size exists in more than one brand. Bot port: szLoadOptions.
+export function inverterOptionsForLoad(items: EqItem[], need: number, loadKw: number, three: boolean, f: Formulas = F): InvPick[] {
+  const all = inverterSpecs(items, true);
+  const ph = all.filter((s) => s.hv || s.three === three);
+  return (ph.length ? ph : all).map((s) => { const units = unitsFor(s, need, loadKw, f); return { ...s, units, cost: units * s.price }; })
+    .filter((p) => p.units <= f.maxInverters).sort((a, b) => a.cost - b.cost || a.units - b.units);
+}
 // Panels = ⌈kWp × 1000 ÷ W⌉, rounded up so every string has the same count.
 export function panelsFor(need: number, inv: InvPick, f: Formulas = F) {
   const raw = Math.max(1, Math.ceil((kwpOf(need, f) * 1000) / f.panelW - 1e-9));
