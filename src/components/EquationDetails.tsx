@@ -1,6 +1,7 @@
 import { X, Calculator } from "lucide-react";
 import { explainEquations, type DetailLine } from "@/lib/equation-details";
 import type { EqItem } from "@/lib/formulas";
+import { MathStep } from "@/components/MathStep";
 
 export function EquationDetails({ lines, items, need, nightPct, onClose }: { lines: DetailLine[]; items: EqItem[]; need: number | null; nightPct: number | null; onClose: () => void }) {
   const rows = explainEquations(lines, items, { need, nightPct });
@@ -20,9 +21,9 @@ export function EquationDetails({ lines, items, need, nightPct, onClose }: { lin
                 <div className="min-w-0"><div className="text-xs font-bold">{r.title}</div>{r.item && <div className="truncate text-[10px] text-muted-foreground">{r.item}</div>}</div>
                 <span className="shrink-0 rounded bg-primary px-2 py-0.5 text-[11px] font-bold text-primary-foreground">{r.result}</span>
               </div>
-              <ul dir="auto" className="mt-1 space-y-0.5 border-r-2 border-primary/40 pr-2 text-[11px] leading-relaxed">
-                {r.steps.map((s, j) => <li key={j}>{s}</li>)}
-              </ul>
+              <div className="mt-1 divide-y divide-border/60 rounded-md border-r-2 border-primary/40 bg-card px-2">
+                {r.steps.map((s, j) => <MathStep key={j} s={s} />)}
+              </div>
             </div>
           ))}
         </div>
