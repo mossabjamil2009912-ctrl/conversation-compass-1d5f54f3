@@ -714,7 +714,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
             <div className="flex flex-wrap gap-1">
               {!brandPick ? groupBySize(inverterOptions(items as EqItem[], eq.need, eq.three)).map((g) => { const p = g.brands[0]!; return (
                 <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
-                  <div className="font-bold">{p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
+                  <div className="font-bold">{g.brands.length === 1 && p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
                   <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : usd(p.cost)}</div>
                 </button>
               ); }) : (<>

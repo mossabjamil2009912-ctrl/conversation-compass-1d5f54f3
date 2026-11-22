@@ -29,6 +29,6 @@
 - [x] Long-press a chat: "delete" (hide on all devices) and "delete permanently" (block number, hide future messages)
 - [x] Hold the "المحادثات" tab 5 s: view deleted/blocked chats and restore them
 
-- [ ] Connect GitHub API in the new workspace
-- [ ] Connect n8n in the new workspace
-- [ ] Bot: brand choice (Deye/Solis) after inverter size (waits on n8n connection)
+- [x] Connect GitHub API in the new workspace
+- [x] Connect n8n in the new workspace
+- [x] Brand choice (Deye/Solis) after inverter size (app + bot)
