@@ -27,6 +27,7 @@ import { Route as ApiPublicBotReportRequestRouteImport } from './routes/api/publ
 import { Route as ApiPublicBotTicketRouteImport } from './routes/api/public/bot-ticket'
 import { Route as ApiPublicCatalogAssistantRouteImport } from './routes/api/public/catalog-assistant'
 import { Route as ApiPublicCatalogCoverRouteImport } from './routes/api/public/catalog-cover'
+import { Route as ApiPublicCatalogFixQuestionRouteImport } from './routes/api/public/catalog-fix-question'
 import { Route as ApiPublicCrmMediaRouteImport } from './routes/api/public/crm-media'
 import { Route as ApiPublicDesktopAppRouteImport } from './routes/api/public/desktop-app'
 import { Route as ApiPublicHeaderImageRouteImport } from './routes/api/public/header-image'
@@ -124,6 +125,12 @@ const ApiPublicCatalogCoverRoute = ApiPublicCatalogCoverRouteImport.update({
   path: '/api/public/catalog-cover',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicCatalogFixQuestionRoute =
+  ApiPublicCatalogFixQuestionRouteImport.update({
+    id: '/api/public/catalog-fix-question',
+    path: '/api/public/catalog-fix-question',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicCrmMediaRoute = ApiPublicCrmMediaRouteImport.update({
   id: '/api/public/crm-media',
   path: '/api/public/crm-media',
@@ -165,6 +172,7 @@ export interface FileRoutesByFullPath {
   '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
   '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
   '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/catalog-fix-question': typeof ApiPublicCatalogFixQuestionRoute
   '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
   '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
   '/api/public/header-image': typeof ApiPublicHeaderImageRoute
@@ -189,6 +197,7 @@ export interface FileRoutesByTo {
   '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
   '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
   '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/catalog-fix-question': typeof ApiPublicCatalogFixQuestionRoute
   '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
   '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
   '/api/public/header-image': typeof ApiPublicHeaderImageRoute
@@ -214,6 +223,7 @@ export interface FileRoutesById {
   '/api/public/bot-ticket': typeof ApiPublicBotTicketRoute
   '/api/public/catalog-assistant': typeof ApiPublicCatalogAssistantRoute
   '/api/public/catalog-cover': typeof ApiPublicCatalogCoverRoute
+  '/api/public/catalog-fix-question': typeof ApiPublicCatalogFixQuestionRoute
   '/api/public/crm-media': typeof ApiPublicCrmMediaRoute
   '/api/public/desktop-app': typeof ApiPublicDesktopAppRoute
   '/api/public/header-image': typeof ApiPublicHeaderImageRoute
@@ -240,6 +250,7 @@ export interface FileRouteTypes {
     | '/api/public/bot-ticket'
     | '/api/public/catalog-assistant'
     | '/api/public/catalog-cover'
+    | '/api/public/catalog-fix-question'
     | '/api/public/crm-media'
     | '/api/public/desktop-app'
     | '/api/public/header-image'
@@ -264,6 +275,7 @@ export interface FileRouteTypes {
     | '/api/public/bot-ticket'
     | '/api/public/catalog-assistant'
     | '/api/public/catalog-cover'
+    | '/api/public/catalog-fix-question'
     | '/api/public/crm-media'
     | '/api/public/desktop-app'
     | '/api/public/header-image'
@@ -288,6 +300,7 @@ export interface FileRouteTypes {
     | '/api/public/bot-ticket'
     | '/api/public/catalog-assistant'
     | '/api/public/catalog-cover'
+    | '/api/public/catalog-fix-question'
     | '/api/public/crm-media'
     | '/api/public/desktop-app'
     | '/api/public/header-image'
@@ -312,6 +325,7 @@ export interface RootRouteChildren {
   ApiPublicBotTicketRoute: typeof ApiPublicBotTicketRoute
   ApiPublicCatalogAssistantRoute: typeof ApiPublicCatalogAssistantRoute
   ApiPublicCatalogCoverRoute: typeof ApiPublicCatalogCoverRoute
+  ApiPublicCatalogFixQuestionRoute: typeof ApiPublicCatalogFixQuestionRoute
   ApiPublicCrmMediaRoute: typeof ApiPublicCrmMediaRoute
   ApiPublicDesktopAppRoute: typeof ApiPublicDesktopAppRoute
   ApiPublicHeaderImageRoute: typeof ApiPublicHeaderImageRoute
@@ -446,6 +460,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicCatalogCoverRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/catalog-fix-question': {
+      id: '/api/public/catalog-fix-question'
+      path: '/api/public/catalog-fix-question'
+      fullPath: '/api/public/catalog-fix-question'
+      preLoaderRoute: typeof ApiPublicCatalogFixQuestionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/crm-media': {
       id: '/api/public/crm-media'
       path: '/api/public/crm-media'
@@ -505,6 +526,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicBotTicketRoute: ApiPublicBotTicketRoute,
   ApiPublicCatalogAssistantRoute: ApiPublicCatalogAssistantRoute,
   ApiPublicCatalogCoverRoute: ApiPublicCatalogCoverRoute,
+  ApiPublicCatalogFixQuestionRoute: ApiPublicCatalogFixQuestionRoute,
   ApiPublicCrmMediaRoute: ApiPublicCrmMediaRoute,
   ApiPublicDesktopAppRoute: ApiPublicDesktopAppRoute,
   ApiPublicHeaderImageRoute: ApiPublicHeaderImageRoute,

@@ -3,6 +3,7 @@ import { ArrowUp, Loader2, Mic, Square, Volume2, X } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import logo from "@/assets/actes-logo.png";
+import { fixVoiceText } from "@/lib/voice-fix";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -61,7 +62,7 @@ export function CatalogAssistant() {
     let got = "";
     r.onresult = (e) => { got = Array.from(e.results).map((x) => x[0]?.transcript ?? "").join(" "); };
     r.onerror = () => {};
-    r.onend = () => { setRec(false); srRef.current = null; if (got.trim()) void send(got, true); };
+    r.onend = () => { setRec(false); srRef.current = null; if (got.trim()) void send(fixVoiceText(got), true); };
     try { r.start(); srRef.current = r; setRec(true); } catch { setRec(false); }
   }
 
@@ -78,6 +79,13 @@ export function CatalogAssistant() {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ messages: next }),
       });
+      if (voice) {
+        const at = next.length - 1;
+        void fetch("/api/public/catalog-fix-question", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ q }) })
+          .then((x) => x.json() as Promise<{ q?: string }>)
+          .then((j) => { const f = j.q?.trim(); if (f) setMsgs((m) => m.map((x, i) => (i === at && x.role === "user" ? { ...x, content: f } : x))); })
+          .catch(() => {});
+      }
       if (!r.ok || !r.body) throw new Error();
       const reader = r.body.getReader();
       const dec = new TextDecoder();
