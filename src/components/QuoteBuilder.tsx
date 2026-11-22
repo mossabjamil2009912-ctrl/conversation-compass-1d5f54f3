@@ -254,6 +254,8 @@ export type InvChoice = { kw: number; single?: Preset; three?: Preset };
 // Item keys of a ready-made system (used only as the accessory template for equation sizing).
 export const templateOf = (p: Preset): [string, number][] => (p.lines ? p.lines.map((l) => [catalogKeyFor(l) ?? l.key, l.qty] as [string, number]) : p.items);
 // 8–125 kW systems are sized fully by the equations (see sizing.ts); smaller home systems stay ready-made.
+// Home (residential) systems use only 8 / 12 kW single-phase inverters.
+export const RES_INV_KEY = /^INV_[A-Z]+_(8|12)K_1P$/;
 export const eqEligible = (p: Preset) => templateOf(p).some(([k]) => /^INV_DEYE_|_HV$/.test(k));
 export const inverterChoices = (opts: Preset[]): InvChoice[] => {
   if (!opts.length || !opts.every((p) => p.type === "com")) return [];
@@ -712,7 +714,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
             </form>
             <div className="text-xs font-bold">2) أو اختر الإنفرتر:</div>
             <div className="flex flex-wrap gap-1">
-              {!brandPick ? groupBySize(inverterOptions(items as EqItem[], eq.need, eq.three)).map((g) => { const p = g.brands[0]!; return (
+              {!brandPick ? groupBySize(inverterOptions(items as EqItem[], eq.need, eq.three).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key))).map((g) => { const p = g.brands[0]!; return (
                 <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
                   <div className="font-bold">{g.brands.length === 1 && p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
                   <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : usd(p.cost)}</div>

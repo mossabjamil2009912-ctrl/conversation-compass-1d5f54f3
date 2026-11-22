@@ -8,6 +8,7 @@ import { DEFAULT_FORMULAS, applyFormulas, type Formulas } from "@/lib/formulas";
 import { BOT_PRESETS } from "@/lib/bot-presets";
 import { PRESETS, comKeyOf, panelsOf, defaultPresetItems } from "@/components/QuoteBuilder";
 
+const RES_INV = /^INV_[A-Z]+_(8|12)K_1P$/;
 const RES = BOT_PRESETS.filter((p) => p.type !== "com");
 const COM = PRESETS.filter((p) => p.type === "com");
 const clampZ = (z: number) => Math.min(2.5, Math.max(0.6, Math.round(z * 100) / 100));
@@ -185,7 +186,7 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
           <Nt>{hv ? "يُستخدم الهاي فولتج عندما تتجاوز القدرة حد الجهد المنخفض" : "جهد منخفض ما دامت القدرة ≤ حد الجهد المنخفض"}</Nt>
         </L>
         <Num label="نسبة الاحتياط من دخل الألواح (مثال 0.90)" value={fx.pvSafety} onChange={(v) => up({ pvSafety: v })} />
-        {Object.entries(fx.pvMax).filter(([k]) => /^INV_(DEYE|SOLIS)_/.test(k) && (hv ? /_HV$/.test(k) : !/_HV$/.test(k))).map(([k, v]) => (
+        {Object.entries(fx.pvMax).filter(([k]) => /^INV_(DEYE|SOLIS)_/.test(k) && (hv ? /_HV$/.test(k) : !/_HV$/.test(k)) && (!single || RES_INV.test(k))).map(([k, v]) => (
           <Num key={k} label={`أقصى دخل ألواح kWp — ${/SOLIS/.test(k) ? "سوليس" : "دايا"} ${(k.match(/_(\d+)K_/) ?? [])[1]} كيلو ${/_HV$/.test(k) ? "هاي فولتج" : /_1P/.test(k) ? "سنجل" : "ثري"}`} value={v} onChange={(x) => up({ pvMax: { ...fx.pvMax, [k]: x } })} />
         ))}
         <Num label="نسبة الألواح إلى الإنفرتر (دايا) — لإنفرتر بلا دخل ألواح مسجل" value={fx.dcRatio} onChange={(v) => up({ dcRatio: v })} />
