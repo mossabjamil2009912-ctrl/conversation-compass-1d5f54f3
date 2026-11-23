@@ -1,1 +1,2 @@
 - `export-data.mjs` writes the full data snapshot to `data/backup/*.json` (+ `_schema.json`); re-run before handoff so a GitHub import restores the latest data.
+- `import-data.mjs` restores `data/backup/*.json` (upsert, parents first) after importing the repo into a new project.

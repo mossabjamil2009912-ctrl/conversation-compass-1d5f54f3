@@ -26,3 +26,8 @@ Rules and decisions: see `AGENTS.md`.
 - Read `docs/CONVERSATION_HISTORY.md` for the full request history and open items.
 - Bot workflow copy: `docs/n8n/actes-bot-workflow.json` (put the real BOT_INGEST_SECRET back before importing into n8n).
 - Project memory copy: `docs/project-memory/` — recreate as project memory after import.
+
+## Latest state (2026-11-23) — everything in ONE repo
+- This repo holds code + full data snapshot (`data/backup/`) + bot workflow (`docs/n8n/`) + history/memory (`docs/`).
+- Restore after import: enable Cloud, recreate schema (`data/backup/_schema.json`), then `bun scripts/import-data.mjs`.
+- Recent: inverter brand asked before size; unit price shown in inverter list; all brands kept (no cheapest-only); PV input = catalog pvMax × safety factor (0.90); HV hides LV options; Solis 30 / Deye 80 / 125 added.
