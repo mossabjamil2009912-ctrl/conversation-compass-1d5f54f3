@@ -443,6 +443,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const [eq, setEq] = useState<{ need: number; three: boolean; template: [string, number][]; type: "res" | "com" } | null>(null);
   const [loadKw, setLoadKw] = useState("");
   const [brandPick, setBrandPick] = useState<InvPick[] | null>(null);
+  const [brandSel, setBrandSel] = useState<string | null>(null);
   const [loadOpts, setLoadOpts] = useState<InvPick[] | null>(null);
   const [hvBase, setHvBase] = useState<Line[] | null>(null); // HV system before the storage choice
   const [storage, setStorage] = useState<StorageChoice>("h112s");
@@ -708,17 +709,32 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
         {eq && (
           <div className="space-y-2 rounded-xl border bg-muted/30 p-2">
             <div className="text-xs text-muted-foreground">الاحتياج اليومي: {eq.need.toFixed(1)} كيلووات ساعة</div>
-            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const o = inverterOptionsForLoad(items as EqItem[], eq.need, kw, eq.three).filter((x) => eq.type === "com" || RES_INV_KEY.test(x.key)); if (!o.length) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); setBrandPick(null); setLoadOpts(o); }} className="flex flex-wrap items-center gap-1">
+            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const o = inverterOptionsForLoad(items as EqItem[], eq.need, kw, eq.three).filter((x) => eq.type === "com" || RES_INV_KEY.test(x.key)); if (!o.length) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); setBrandPick(null); setBrandSel(null); setLoadOpts(o); }} className="flex flex-wrap items-center gap-1">
               <span className="text-xs font-bold">1) أقصى حمل تشغيلي (kW):</span>
               <input value={loadKw} onChange={(e) => setLoadKw(e.target.value.replace(/[^\d.]/g, ""))} inputMode="decimal" placeholder="كيلووات (مثال 10)" className="w-32 rounded-lg border bg-card px-2 py-1.5 text-xs" />
               <button type="submit" className="rounded-lg bg-primary px-2 py-1.5 text-xs font-bold text-primary-foreground">اختر الأنسب</button>
             </form>
-            <div className="text-xs font-bold">{loadOpts ? `الإنفرترات التي تغطي حمل ${loadKw} kW — اختر القدرة والعدد:` : "2) أو اختر الإنفرتر:"}{loadOpts && <button type="button" onClick={() => { setLoadOpts(null); setBrandPick(null); }} className="ms-2 rounded bg-muted px-2 py-0.5 font-normal">كل الإنفرترات</button>}</div>
+            <div className="text-xs font-bold">{loadOpts ? `الإنفرترات التي تغطي حمل ${loadKw} kW — اختر القدرة والعدد:` : "2) أو اختر الإنفرتر:"}{loadOpts && <button type="button" onClick={() => { setLoadOpts(null); setBrandPick(null); setBrandSel(null); }} className="ms-2 rounded bg-muted px-2 py-0.5 font-normal">كل الإنفرترات</button>}</div>
             <div className="flex flex-wrap gap-1">
-              {!brandPick ? groupBySize((loadOpts ?? inverterOptions(items as EqItem[], eq.need, eq.three)).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key))).map((g) => { const p = g.brands[0]!; return (
+              {(() => {
+                // Brand first (with unit price per size), then size + count. Bot port: sz_brand_first.
+                const all = (loadOpts ?? inverterOptions(items as EqItem[], eq.need, eq.three)).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key));
+                const brands = [...new Set(all.map((o) => brandOf(o.key)))];
+                if (brands.length > 1 && !brandSel) return (<>
+                  <div className="w-full text-xs font-bold">اختر ماركة الإنفرتر:</div>
+                  {brands.map((b) => { const u = new Map<number, number>(); all.filter((o) => brandOf(o.key) === b).forEach((o) => u.set(o.kw, o.price)); return (
+                    <button key={b} type="button" onClick={() => setBrandSel(b)} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
+                      <div className="font-bold">{BRAND_LABEL[b] ?? b}</div>
+                      {[...u.entries()].sort((x, y) => x[0] - y[0]).map(([kw, pr]) => <div key={kw} className="text-muted-foreground">{kw} كيلو: {usd(pr)} للوحدة</div>)}
+                    </button>); })}
+                </>);
+                const shown = brandSel ? all.filter((o) => brandOf(o.key) === brandSel) : all;
+                return (<>
+                {brandSel && brands.length > 1 && <button type="button" onClick={() => { setBrandSel(null); setBrandPick(null); }} className="w-full rounded bg-muted px-2 py-0.5 text-right text-xs">الماركة: {BRAND_LABEL[brandSel] ?? brandSel} — تغيير</button>}
+              {!brandPick ? groupBySize(shown).map((g) => { const p = g.brands[0]!; return (
                 <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
                   <div className="font-bold">{p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
-                  <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : usd(p.cost)}</div>
+                  <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : `${usd(p.price)} للوحدة — الإجمالي ${usd(p.cost)}`}</div>
                 </button>
               ); }) : (<>
                 <div className="w-full text-xs font-bold">إنفرتر {brandPick[0]!.kw} كيلو — اختر الماركة:</div>
@@ -730,6 +746,8 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
                 ))}
                 <button type="button" onClick={() => setBrandPick(null)} className="rounded-lg bg-muted px-3 py-1.5 text-xs">رجوع</button>
               </>)}
+                </>);
+              })()}
             </div>
           </div>
         )}
