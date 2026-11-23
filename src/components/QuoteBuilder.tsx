@@ -722,11 +722,10 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
                 const brands = [...new Set(all.map((o) => brandOf(o.key)))];
                 if (brands.length > 1 && !brandSel) return (<>
                   <div className="w-full text-xs font-bold">اختر ماركة الإنفرتر:</div>
-                  {brands.map((b) => { const u = new Map<number, number>(); all.filter((o) => brandOf(o.key) === b).forEach((o) => u.set(o.kw, o.price)); return (
+                  {brands.map((b) => (
                     <button key={b} type="button" onClick={() => setBrandSel(b)} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
                       <div className="font-bold">{BRAND_LABEL[b] ?? b}</div>
-                      {[...u.entries()].sort((x, y) => x[0] - y[0]).map(([kw, pr]) => <div key={kw} className="text-muted-foreground">{kw} كيلو: {usd(pr)} للوحدة</div>)}
-                    </button>); })}
+                    </button>))}
                 </>);
                 const shown = brandSel ? all.filter((o) => brandOf(o.key) === brandSel) : all;
                 return (<>
@@ -734,7 +733,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
               {!brandPick ? groupBySize(shown).map((g) => { const p = g.brands[0]!; return (
                 <button key={`${g.kw}-${g.three}-${g.hv}`} type="button" onClick={() => (g.brands.length > 1 ? setBrandPick(g.brands) : pickInv(p))} className="rounded-lg border bg-card px-3 py-1.5 text-right text-xs hover:bg-muted">
                   <div className="font-bold">{p.units > 1 ? `${p.units} × ` : ""}{p.kw}kw إنفرتر {p.hv ? "هاي فولتج" : p.three ? "ثري فاز" : "سنجل فاز"}</div>
-                  <div className="text-muted-foreground">{g.brands.length > 1 ? "دايا أو سوليس" : `${usd(p.price)} للوحدة — الإجمالي ${usd(p.cost)}`}</div>
+                  <div className="text-muted-foreground">{`${usd(p.price)} للوحدة — الإجمالي ${usd(p.cost)}`}</div>
                 </button>
               ); }) : (<>
                 <div className="w-full text-xs font-bold">إنفرتر {brandPick[0]!.kw} كيلو — اختر الماركة:</div>
