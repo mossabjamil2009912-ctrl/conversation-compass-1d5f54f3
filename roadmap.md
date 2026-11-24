@@ -1,4 +1,7 @@
 # Roadmap
+- [ ] Show branch breaker count/current and main breaker current in equation details; verify tests and display.
+- [ ] Connect GitHub API after latest workspace move (Nov 24).
+- [ ] Connect n8n after latest workspace move (Nov 24).
 - [x] Equal strings by reducing panels per string until division is exact (app + bot), with thermal safety terminology; signed-in quote screen and live WhatsApp conversation remain unverified (no available session).
 - [x] Reconnect n8n in new workspace
 - [x] ACTS: database tables + server actions
