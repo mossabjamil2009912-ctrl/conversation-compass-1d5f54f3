@@ -180,12 +180,12 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
       </Eq>
       <Eq n={++n + 1} title={hv ? "صنف إنفرتر الجهد العالي" : single ? "صنف الإنفرتر (Single Phase 8 / 12)" : "صنف الإنفرتر"}>
         <L>
-          <Ln l="القدرة المطلوبة">الأكبر من<P>حمل الذروة<O c="،" /><Fr n="إجمالي قدرة الألواح" d="(دخل ألواح الإنفرتر × الاحتياط) ÷ قدرته" /></P></Ln>
+          <Ln l="القدرة المطلوبة">الأكبر من<P>حمل الذروة<O c="،" /><Fr n="إجمالي قدرة الألواح" d="(دخل ألواح الإنفرتر × معامل أمان) ÷ قدرته" /></P></Ln>
           <Ln l="عدد الإنفرترات"><Ceil><Fr n="القدرة المطلوبة" d="قدرة الإنفرتر" /></Ceil></Ln>
           <Nt>عدد الإنفرترات لا يتجاوز الحد الأقصى بالتوازي</Nt>
           <Nt>{hv ? "يُستخدم الهاي فولتج عندما تتجاوز القدرة حد الجهد المنخفض" : "جهد منخفض ما دامت القدرة ≤ حد الجهد المنخفض"}</Nt>
         </L>
-        <Num label="نسبة الاحتياط من دخل الألواح (مثال 0.90)" value={fx.pvSafety} onChange={(v) => up({ pvSafety: v })} />
+        <Num label="معامل أمان دخل الألواح (مثال 0.90)" value={fx.pvSafety} onChange={(v) => up({ pvSafety: v })} />
         {Object.entries(fx.pvMax).filter(([k]) => /^INV_(DEYE|SOLIS)_/.test(k) && (hv ? /_HV$/.test(k) : !/_HV$/.test(k)) && (!single || RES_INV.test(k))).map(([k, v]) => (
           <Num key={k} label={`أقصى دخل ألواح kWp — ${/SOLIS/.test(k) ? "سوليس" : "دايا"} ${(k.match(/_(\d+)K_/) ?? [])[1]} كيلو ${/_HV$/.test(k) ? "هاي فولتج" : /_1P/.test(k) ? "سنجل" : "ثري"}`} value={v} onChange={(x) => up({ pvMax: { ...fx.pvMax, [k]: x } })} />
         ))}
