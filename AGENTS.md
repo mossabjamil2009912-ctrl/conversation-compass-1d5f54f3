@@ -28,6 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+- String allocation is centralized in `stringLayout` and ported to n8n: choose the largest exact panel-count divisor below the voltage limit, retaining at least one string per inverter, so sizing, accessories and explanations agree without adding panels.
 
 
 - Bot items, prices and datasheet PDFs live only in `public.catalog_items`, edited from the dashboard and served to n8n via `/api/public/bot-catalog` — one source of truth so quotes and catalogs never diverge.

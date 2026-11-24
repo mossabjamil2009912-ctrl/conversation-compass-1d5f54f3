@@ -5,6 +5,10 @@ const inv = (key: string, price: number) => ({ key, name: key, unit: "حبة", p
 const items = [inv("INV_DEYE_8K_1P", 1080), inv("INV_DEYE_12K_3P", 1600), inv("INV_DEYE_16K_3P", 2050), inv("INV_DEYE_20K_3P", 2550),
   inv("INV_DEYE_50K_3P_HV", 4100), inv("INV_SOLIS_80K_3P_HV", 6200), inv("INV_SOLIS_125K_3P_HV", 9000)];
 describe("equation sizing", () => {
+  it("387 kWh at 5.5 sun hours keeps 98 panels split into 7 strings of 14", () => {
+    const p = { key: "INV_DEYE_30K_3P_HV", name: "Deye 30", kw: 30, hv: true, three: true, price: 2800, units: 2, cost: 5600 };
+    expect(panelsFor(387, p, { ...D, sun: 5.5, vmaxHV: 850 })).toEqual({ panels: 98, strings: 7 });
+  });
   it("16 kW load → one 16 kW, not two 8 kW", () => expect(inverterForLoad(items, 10, 16, true, D)).toMatchObject({ kw: 16, units: 1 }));
   it("70 kW load → one 80 kW HV", () => expect(inverterForLoad(items, 50, 70, true, D)).toMatchObject({ kw: 80, units: 1 }));
   it("LV and HV never mixed in the list", () => {

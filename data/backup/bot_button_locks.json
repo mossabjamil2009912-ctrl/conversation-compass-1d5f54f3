@@ -4924,5 +4924,11 @@
   "choice": "inbound",
   "phone": "967773590979",
   "created_at": "2026-11-22T23:23:48.946144+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzczNTkwOTc5FQIAEhggQUM2Qzc0NEM3RTNDQTRBNjA3MjU4MDYyRUU4NUM1OTIA",
+  "choice": "inbound",
+  "phone": "967773590979",
+  "created_at": "2026-11-23T02:10:03.867291+00:00"
  }
 ]

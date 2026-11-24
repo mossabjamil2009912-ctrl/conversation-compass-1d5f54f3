@@ -1,6 +1,6 @@
 // Full equation sizing for 8–20 kW (Low Voltage) and 30/50/80/125 kW (High Voltage) systems.
 // Panels, inverter count and batteries come only from the equations + CRM catalog (no fixed presets).
-import { F, maxPerString, stringCount, type Formulas, type EqItem } from "@/lib/formulas";
+import { F, stringCount, type Formulas, type EqItem } from "@/lib/formulas";
 
 export type InvSpec = { key: string; name: string; kw: number; hv: boolean; three: boolean; price: number };
 export type InvPick = InvSpec & { units: number; cost: number };
@@ -62,12 +62,11 @@ export function inverterOptionsForLoad(items: EqItem[], need: number, loadKw: nu
   return (ph.length ? ph : all).map((s) => { const units = unitsFor(s, need, loadKw, f); return { ...s, units, cost: units * s.price }; })
     .filter((p) => p.units <= f.maxInverters).sort((a, b) => a.cost - b.cost || a.units - b.units);
 }
-// Panels = ⌈kWp × 1000 ÷ W⌉, rounded up so every string has the same count.
+// Keep the required panel count; reduce panels per string to obtain equal strings.
 export function panelsFor(need: number, inv: InvPick, f: Formulas = F) {
   const raw = Math.max(1, Math.ceil((kwpOf(need, f) * 1000) / f.panelW - 1e-9));
   const strings = stringCount(raw, inv.hv ? "hv" : inv.three, inv.units, f);
-  void maxPerString;
-  return { panels: Math.ceil(raw / strings) * strings, strings };
+  return { panels: raw, strings };
 }
 // Batteries: night kWh = daily × night% ; count = ⌈(night − tolerance) ÷ (battery kWh × DoD)⌉ (HV at least hvMinBat).
 // A shortfall up to batTol kWh is accepted instead of adding a whole battery.

@@ -1,6 +1,6 @@
 // Explains, with the live values from the "المعادلات" screen, how each equation-driven line was computed.
 // Uses the same functions as applyEquations / sizing, so the shown numbers always match the quote.
-import { F, maxPerString, stringCount, dcBoxes, acBreakerAmps, hvAccessories, type Formulas, type EqItem, type Phase } from "@/lib/formulas";
+import { F, maxPerString, stringLayout, dcBoxes, acBreakerAmps, hvAccessories, type Formulas, type EqItem, type Phase } from "@/lib/formulas";
 import { kwpOf, pvUnits } from "@/lib/sizing";
 
 export type DetailLine = { key: string; name: string; qty: number };
@@ -37,7 +37,7 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     }
     if (panels) {
       const w = (Number((lines.find((_, i) => cat[i]?.category === "panels")?.name.match(/(\d{3})\s*W?/i) ?? [])[1]) || f.panelW);
-      rows.push({ title: "عدد الألواح", steps: [`الألواح = ⌈kWp × 1000 ÷ قدرة اللوح⌉ (مقرّبة لتتساوى السترنجات)`, `= ⌈${n(kwp)} × 1000 ÷ ${w}⌉`], result: `${panels} لوح` });
+      rows.push({ title: "عدد الألواح", steps: [`الألواح = ⌈kWp × 1000 ÷ قدرة اللوح⌉`, `= ⌈${n(kwp)} × 1000 ÷ ${w}⌉`], result: `${panels} لوح` });
     }
     if (opts.nightPct) {
       const night = (need * opts.nightPct) / 100;
@@ -47,8 +47,8 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
 
   if (!invQty || !panels) return rows;
   const vmax = three === "hv" ? f.vmaxHV : three ? f.vmaxThree : f.vmaxSingle;
-  const per = maxPerString(three, f), strings = stringCount(panels, three, invQty, f);
-  rows.push({ title: "السترنجات", steps: [`أقصى ألواح في السترنج = ⌊Vmax ÷ (Voc × معامل البرد)⌋`, `= ⌊${vmax} ÷ (${f.panelVoc} × ${f.coldFactor})⌋ = ${per}`, `السترنجات = max(عدد الإنفرترات، ⌈الألواح ÷ ${per}⌉) = max(${invQty}، ⌈${panels} ÷ ${per}⌉)`], result: `${strings} سترنج` });
+  const max = maxPerString(three, f), { per, strings } = stringLayout(panels, three, invQty, f);
+  rows.push({ title: "السترنجات", steps: [`أقصى ألواح في السترنج = ⌊Vmax ÷ (Voc × معامل الأمان الحراري)⌋`, `= ⌊${vmax} ÷ (${f.panelVoc} × ${f.coldFactor})⌋ = ${max}`, `ألواح السترنج = ${per} ≤ ${max} (أكبر عدد يقسم الألواح دون كسور، مع سترنج لكل إنفرتر على الأقل)`, `السترنجات = الألواح ÷ ألواح السترنج = ${panels} ÷ ${per} = ${strings}`], result: `${strings} سترنج` });
 
   lines.forEach((l, i) => {
     const r = cat[i]; if (!r) return;

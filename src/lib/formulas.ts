@@ -76,11 +76,19 @@ export const mergeFormulas = (v: unknown): Formulas => {
     comRanges: Object.fromEntries(Object.entries(o.comRanges && typeof o.comRanges === "object" ? o.comRanges : {}).filter(([, x]) => typeof x === "number" && isFinite(x) && x > 0)),
   };
 };
-// Strings (Voc): max per string = ⌊Vmax ÷ (Voc × cold)⌋; strings = ⌈panels ÷ max⌉ (at least one per inverter).
+// Strings: descend from the voltage limit to the largest exact divisor, at least one string per inverter.
 // `three` may be "hv" for high-voltage inverters (vmaxHV).
 export type Phase = boolean | "hv";
 export const maxPerString = (three: Phase, f: Formulas = F) => Math.max(1, Math.floor((three === "hv" ? f.vmaxHV : three ? f.vmaxThree : f.vmaxSingle) / (f.panelVoc * f.coldFactor)));
-export const stringCount = (panels: number, three: Phase, inverters = 1, f: Formulas = F) => Math.max(inverters, Math.ceil(panels / maxPerString(three, f)));
+export const stringLayout = (panels: number, three: Phase, inverters = 1, f: Formulas = F) => {
+  if (!Number.isInteger(panels) || panels < 1) return { per: 0, strings: 0 };
+  const minStrings = Math.max(1, Math.ceil(inverters));
+  for (let per = Math.min(maxPerString(three, f), Math.floor(panels / minStrings)); per >= 1; per--) {
+    if (panels % per === 0) return { per, strings: panels / per };
+  }
+  return { per: 1, strings: panels };
+};
+export const stringCount = (panels: number, three: Phase, inverters = 1, f: Formulas = F) => stringLayout(panels, three, inverters, f).strings;
 // HV battery accessories: at least hvMinBat batteries; BCU = ⌈n ÷ perBcu⌉ (full groups first, remainder last);
 // EBC = number of groups holding more than ebcOver batteries; DC protection = BCU.
 export const hvAccessories = (bat: number, f: Formulas = F) => {
