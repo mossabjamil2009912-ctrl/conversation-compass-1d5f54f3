@@ -28,7 +28,9 @@ export const pvUsable = (s: Pick<InvSpec, "key" | "kw">, f: Formulas = F) => {
   return (m || s.kw) * f.pvSafety;
 };
 export const ratioOf = (s: Pick<InvSpec, "key" | "kw">, f: Formulas = F) => pvUsable(s, f) / s.kw;
-export const unitsFor = (s: InvSpec, need: number, loadKw = 0, f: Formulas = F) => Math.max(1, Math.ceil(Math.max(loadKw, kwpOf(need, f) / ratioOf(s, f)) / s.kw - 1e-9));
+// Panel-side count: target pvSafety, but one fewer inverter is enough while panels stay within the real datasheet max (pvMax).
+export const pvUnits = (kwp: number, pvReal: number, safety: number) => { const n = Math.ceil(kwp / (pvReal * safety) - 1e-9); return n > 1 && kwp <= (n - 1) * pvReal + 1e-9 ? n - 1 : n; };
+export const unitsFor = (s: InvSpec, need: number, loadKw = 0, f: Formulas = F) => Math.max(1, Math.ceil(loadKw / s.kw - 1e-9), pvUnits(kwpOf(need, f), f.pvMax?.[s.key] || s.kw, f.pvSafety));
 // Low Voltage while the AC power needed stays within lvMaxKw; otherwise High Voltage. Never mixed.
 // AC power for the LV/HV switch uses the largest LV three-phase inverter's real input ratio.
 export const lvRatio = (f: Formulas = F) => { const k = Object.keys(f.pvMax).filter((x) => /_3P$/.test(x)).sort((a, b) => Number(b.match(/_(\d+)K_/)?.[1]) - Number(a.match(/_(\d+)K_/)?.[1]))[0]; const kw = Number(k?.match(/_(\d+)K_/)?.[1]); return k && kw ? (f.pvMax[k]! * f.pvSafety) / kw : f.pvSafety; };

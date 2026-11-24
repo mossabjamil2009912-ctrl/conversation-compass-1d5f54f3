@@ -19,3 +19,11 @@ describe("DC/AC ratio by brand", () => {
     expect(unitsFor(deye50, 375, 0, f)).toBe(2);
   });
 });
+
+describe("inverter count within real pvMax", () => {
+  it("Deye 30 HV: 70.36 kWp → 2 units (≤ 2×39 real), not 3", async () => {
+    const { pvUnits } = await import("@/lib/sizing");
+    expect(pvUnits(70.36, 39, 0.9)).toBe(2);
+    expect(pvUnits(79, 39, 0.9)).toBe(3);
+  });
+});

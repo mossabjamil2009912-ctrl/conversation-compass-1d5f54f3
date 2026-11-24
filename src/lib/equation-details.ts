@@ -1,7 +1,7 @@
 // Explains, with the live values from the "المعادلات" screen, how each equation-driven line was computed.
 // Uses the same functions as applyEquations / sizing, so the shown numbers always match the quote.
 import { F, maxPerString, stringCount, dcBoxes, acBreakerAmps, hvAccessories, type Formulas, type EqItem, type Phase } from "@/lib/formulas";
-import { kwpOf } from "@/lib/sizing";
+import { kwpOf, pvUnits } from "@/lib/sizing";
 
 export type DetailLine = { key: string; name: string; qty: number };
 export type DetailRow = { title: string; item?: string; steps: string[]; result: string };
@@ -26,10 +26,11 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
       const kw = Number((invLines[0].key.match(/_(\d+)K_/) ?? [])[1] ?? 0);
       const pm = f.pvMax?.[invLines[0].key], use = (pm || kw) * f.pvSafety;
       if (kw) {
-        const byPv = Math.ceil(kwp / use - 1e-9), load = opts.loadKw ?? 0, byLoad = load > 0 ? Math.ceil(load / kw - 1e-9) : 0;
+        const byPv = pvUnits(kwp, pm || kw, f.pvSafety), byPvSafe = Math.ceil(kwp / use - 1e-9), load = opts.loadKw ?? 0, byLoad = load > 0 ? Math.ceil(load / kw - 1e-9) : 0;
         rows.push({ title: "عدد الإنفرترات", item: invLines[0].name, steps: [
           `دخل الألواح المسموح = أقصى دخل PV × معامل الأمان = ${pm || kw} × ${f.pvSafety} = ${n(use)} kWp`,
-          `حسب الألواح = ⌈قدرة الألواح ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉ = ${byPv}`,
+          `حسب الألواح = ⌈قدرة الألواح ÷ دخل الألواح المسموح⌉ = ⌈${n(kwp)} ÷ ${n(use)}⌉ = ${byPvSafe}`,
+          ...(byPv < byPvSafe ? [`لا يتجاوز الحد الحقيقي: ${n(kwp)} ≤ ${byPv} × ${pm || kw} = ${n(byPv * (pm || kw))} kWp → ${byPv} يكفي`] : []),
           ...(byLoad ? [`حسب الحمل = ⌈أقصى حمل تشغيلي ÷ قدرة الإنفرتر⌉ = ⌈${n(load)} ÷ ${kw}⌉ = ${byLoad}`, `العدد = max(${byLoad}، ${byPv})`] : []),
           hv ? `القدرة > ${f.lvMaxKw} kW → جهد عالي HV` : `القدرة ≤ ${f.lvMaxKw} kW → جهد منخفض LV`], result: `${invQty} إنفرتر` });
       }
