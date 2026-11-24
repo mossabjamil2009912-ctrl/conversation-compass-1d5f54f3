@@ -68,10 +68,9 @@ export function panelsFor(need: number, inv: InvPick, f: Formulas = F) {
   const strings = stringCount(raw, inv.hv ? "hv" : inv.three, inv.units, f);
   return { panels: raw, strings };
 }
-// Batteries: night kWh = daily × night% ; count = ⌈(night − tolerance) ÷ (battery kWh × DoD)⌉ (HV at least hvMinBat).
-// A shortfall up to batTol kWh is accepted instead of adding a whole battery.
+// Batteries: night kWh = daily × night% ; count = ⌈night ÷ (battery kWh × DoD)⌉ (HV at least hvMinBat).
 export function batteriesFor(need: number, nightPct: number, hv: boolean, f: Formulas = F) {
-  const n = Math.max(1, Math.ceil(((need * nightPct) / 100 - f.batTol) / (f.dod * f.batKwh) - 1e-9));
+  const n = Math.max(1, Math.ceil(((need * nightPct) / 100) / (f.dod * f.batKwh) - 1e-9));
   return hv ? Math.max(f.hvMinBat, n) : n;
 }
 export const LV_BAT = "BAT_HITHIUM_16K_LV", HV_BAT = "BAT_HITHIUM_16K_HV", PANEL = "PV_SUNTECH_720";

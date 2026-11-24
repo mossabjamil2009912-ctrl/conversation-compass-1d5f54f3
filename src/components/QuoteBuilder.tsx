@@ -229,7 +229,7 @@ export const shiftDayNight = (rec: Preset, night: DayNight, need?: number): Pres
   }
   if (need == null || !(need > 0)) return cands[0] ?? rec;
   const nightNeed = need * F.night[night] / 100;
-  const covers = (p: Preset) => batteryOf(p) * F.dod >= nightNeed - F.batTol - E;
+  const covers = (p: Preset) => batteryOf(p) * F.dod >= nightNeed - E;
   if (more) {
     if (covers(rec)) return rec;
     const up = [...cands].sort((x, y) => batteryOf(x) - batteryOf(y));

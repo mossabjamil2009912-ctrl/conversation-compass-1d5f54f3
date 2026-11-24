@@ -39,10 +39,6 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
       const w = (Number((lines.find((_, i) => cat[i]?.category === "panels")?.name.match(/(\d{3})\s*W?/i) ?? [])[1]) || f.panelW);
       rows.push({ title: "عدد الألواح", steps: [`الألواح = ⌈kWp × 1000 ÷ قدرة اللوح⌉`, `= ⌈${n(kwp)} × 1000 ÷ ${w}⌉`], result: `${panels} لوح` });
     }
-    if (opts.nightPct) {
-      const night = (need * opts.nightPct) / 100;
-      rows.push({ title: "سعة التخزين الليلي", steps: [`الليلي = الاستهلاك اليومي × نسبة الليل`, `= ${n(need)} × ${opts.nightPct}%`, `عمق التفريغ DoD = ${f.dod}`], result: `${n(night)} kWh` });
-    }
   }
 
   // Always show the actual quote quantity, including manually edited/preset quantities.
@@ -68,12 +64,13 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
           const min = /BAT_PYLON_M1_/.test(key) ? f.m1MinBat : f.m5MinBat;
           steps.push(`العدد حسب السعة = ⌈${n(night)} ÷ ${n(kwh)}⌉ = ${Math.ceil(night / kwh - 1e-9)}`, `الحد الأدنى لهذا النوع = ${min} بطارية`);
         } else if (hithium) {
-          steps.push(`السعة المتاحة للبطارية = سعتها × معامل التفريغ = ${n(kwh)} × ${f.dod} = ${n(kwh * f.dod)} kWh`, `سماحية نقص سعة الليل = ${f.batTol} kWh`, `العدد حسب المعادلة = ⌈(استهلاك الليل − السماحية) ÷ السعة المتاحة للبطارية⌉`, `= ⌈(${n(night)} − ${f.batTol}) ÷ ${n(kwh * f.dod)}⌉ = ${Math.max(1, Math.ceil((night - f.batTol) / (kwh * f.dod) - 1e-9))}`, ...(hv ? [`الحد الأدنى لبطاريات HV = ${f.hvMinBat} بطارية`] : []));
+          const c = Math.max(1, Math.ceil(night / (kwh * f.dod) - 1e-9));
+          steps.push(`عدد البطاريات = ⌈استهلاك الليل ÷ (سعة البطارية × DoD)⌉ = ⌈${n(night)} ÷ (${n(kwh)} × ${f.dod})⌉ = ${c}`, ...(hv ? [`الحد الأدنى لبطاريات HV = ${f.hvMinBat}`] : []));
         }
       }
       steps.push(`إجمالي سعة التخزين = العدد × سعة ${cabinet ? "الكبينة" : "البطارية"} = ${line.qty} × ${n(kwh)} = ${n(line.qty * kwh)} kWh`);
     }
-    rows.push({ title: cabinet ? "عدد كبائن التخزين" : "عدد البطاريات", item: line.name, steps, result: `${line.qty} ${unit}`, storage: { qty: line.qty, ...(kwh && kwh > 0 ? { unitKwh: kwh, totalKwh: line.qty * kwh } : {}) } });
+    rows.push({ title: cabinet ? "سعة التخزين الليلي — عدد الكبائن" : "سعة التخزين الليلي — عدد البطاريات", item: line.name, steps, result: `${line.qty} ${unit}`, storage: { qty: line.qty, ...(kwh && kwh > 0 ? { unitKwh: kwh, totalKwh: line.qty * kwh } : {}) } });
   });
 
   if (!invQty || !panels) return rows;

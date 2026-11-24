@@ -199,7 +199,7 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
           <Ln l={hv ? "السعة (استهلاك الليل)" : "استهلاك الليل"}>الاستهلاك اليومي<O c="×" />نسبة الليل</Ln>
           {hv && <Nt>خيار 1 — راكات Hithium 16 HV (الافتراضي)</Nt>}
           {(() => {
-            const c = <Ceil><Fr n={<R>استهلاك الليل<O c="−" />السماحية</R>} d={<R>سعة البطارية<O c="×" />التفريغ</R>} /></Ceil>;
+            const c = <Ceil><Fr n={"استهلاك الليل"} d={<R>سعة البطارية<O c="×" />التفريغ</R>} /></Ceil>;
             return <Ln l="عدد البطاريات">{hv ? <>الأكبر من<P>أقل عدد<O c="،" />{c}</P></> : c}</Ln>;
           })()}
           {hv && <>
@@ -207,7 +207,7 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
             <Nt>خيار 3 — كبائن التخزين (Hithium 112C · Pylontech 261 · Pylontech 313)</Nt>
             <Ln l="عدد الكبائن">أقرب عدد صحيح لـ<P><Fr n="السعة" d="سعة الكبينة" /></P></Ln>
             <Ln l="الفرق"><P>السعة<O c="−" />عدد الكبائن<O c="×" />سعة الكبينة</P></Ln>
-            <Nt>تظهر الكبينة فقط إذا كان الفرق بين −السماحية و +السماحية، وإلا تختفي</Nt>
+            <Nt>تظهر الكبينة فقط إذا كان الفرق ضمن ± فرق الكبائن، وإلا تختفي</Nt>
           </>}
         </L>
         <Num label="نسبة الليل عند اختيار 30% ليل" value={fx.night[30]} onChange={(v) => up({ night: { ...fx.night, 30: v } })} />
@@ -215,7 +215,6 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
         <Num label="نسبة الليل عند اختيار 70% ليل" value={fx.night[70]} onChange={(v) => up({ night: { ...fx.night, 70: v } })} />
         <Num label="معامل تفريغ البطارية" value={fx.dod} onChange={(v) => up({ dod: Math.min(v, 1) })} />
         <Num label={hv ? "سعة بطارية Hithium 16 HV (كيلووات ساعة)" : "سعة البطارية (كيلووات ساعة)"} value={fx.batKwh} onChange={(v) => up({ batKwh: v })} />
-        <Num label="سماحية نقص الليل (كيلووات ساعة)" value={fx.batTol} onChange={(v) => up({ batTol: v })} />
         {hv && <>
           <Num label="أقل عدد بطاريات Hithium 16 HV" value={fx.hvMinBat} onChange={(v) => up({ hvMinBat: Math.round(v) })} />
           <Num label="سعة كبينة Hithium 112C (كيلووات ساعة)" value={fx.cabKwh} onChange={(v) => up({ cabKwh: v })} />
@@ -380,11 +379,10 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
                   {small.map((i) => f.resRanges[i]!.map((v, j) => <Num key={i + "-" + j} label={RES[i]!.group + " · " + RES[i]!.title} value={v} onChange={(n) => setRange(i, j, n)} />))}
                 </Eq>
                 <Eq n={3} title="معادلة البطارية (1.6 / 6.2)">
-                  <p className="text-[11px] text-muted-foreground">استهلاك الليل = الاستهلاك اليومي × نسبة الليل<br />السعة المتاحة = سعة بطارية المنظومة × معامل التفريغ<br />إذا كانت المتاحة + السماحية ≥ استهلاك الليل تبقى البطارية<br />غير ذلك تُرفع إلى البطارية الأكبر<br />السكني: خياران فقط 50/50 و 70% ليل</p>
+                  <p className="text-[11px] text-muted-foreground">استهلاك الليل = الاستهلاك اليومي × نسبة الليل<br />السعة المتاحة = سعة بطارية المنظومة × معامل التفريغ<br />إذا كانت المتاحة ≥ استهلاك الليل تبقى البطارية<br />غير ذلك تُرفع إلى البطارية الأكبر<br />السكني: خياران فقط 50/50 و 70% ليل</p>
                   <Num label="نسبة الليل عند اختيار 50/50" value={f.night[50]} onChange={(v) => up({ night: { ...f.night, 50: v } })} />
                   <Num label="نسبة الليل عند اختيار 70% ليل" value={f.night[70]} onChange={(v) => up({ night: { ...f.night, 70: v } })} />
                   <Num label="معامل تفريغ البطارية" value={f.dod} onChange={(v) => up({ dod: Math.min(v, 1) })} />
-                  <Num label="سماحية نقص الليل (كيلووات ساعة)" value={f.batTol} onChange={(v) => up({ batTol: v })} />
                 </Eq>
               </>)}
               {resSub === "big" && (<>
