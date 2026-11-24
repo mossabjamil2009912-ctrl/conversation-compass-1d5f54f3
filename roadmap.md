@@ -1,4 +1,5 @@
 # Roadmap
+- [x] Clarify BCU, EBC and battery DC protection separately with names, quantities and existing equations; 21 tests passed, isolated mobile/desktop display checked. Signed-in quote flow unavailable (user-managed auth); publication remains user-controlled.
 - [x] Show battery quantity, per-unit capacity, total capacity and existing calculation in equation details; 24 tests passed, isolated mobile/desktop display and close checked. Signed-in quote flow unavailable (user-managed auth cannot mint a session).
 - [x] Show branch breaker count/current and main breaker current in equation details; 10 tests passed and isolated desktop/mobile display checked; signed-in quote flow unavailable (no session).
 - [x] Connect GitHub API after latest workspace move (Nov 24); verified HTTP 200.

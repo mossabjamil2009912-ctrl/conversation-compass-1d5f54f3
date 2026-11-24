@@ -116,7 +116,24 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     const bat = lines.reduce((s, l, i) => s + (cat[i]?.category === "batteries" && /HV|هاي فولتج/i.test(`${l.key} ${cat[i]?.name}`) ? l.qty : 0), 0);
     if (bat) {
       const a = hvAccessories(bat, f);
-      rows.push({ title: "ملحقات بطاريات HV", steps: [`البطاريات = max(${f.hvMinBat}، ${bat}) = ${a.bat}`, `BCU = ⌈${a.bat} ÷ ${f.hvBatPerBcu}⌉ = ${a.bcu}`, `EBC = مجموعات فيها أكثر من ${f.ebcOver} بطاريات = ${a.ebc}`, `حماية DC = عدد BCU = ${a.bdc}`], result: `BCU ${a.bcu} · EBC ${a.ebc} · DC ${a.bdc}` });
+      rows.push(
+        { title: "الكنترول الرئيسي للبطاريات (BCU)", steps: [
+          "وحدة التحكم والربط الرئيسية لمجموعة بطاريات الجهد العالي HV",
+          `عدد البطاريات = max(${f.hvMinBat}، ${bat}) = ${a.bat}`,
+          `أقصى بطاريات لكل كنترول رئيسي = ${f.hvBatPerBcu} بطارية`,
+          `عدد الكنترولات الرئيسية = ⌈${a.bat} ÷ ${f.hvBatPerBcu}⌉ = ${a.bcu}`,
+        ], result: `${a.bcu} كنترول` },
+        { title: "كنترول الربط الإضافي للبطاريات (EBC)", steps: [
+          "وحدة ربط إضافية لمجموعة البطاريات التابعة للكنترول الرئيسي BCU",
+          `يُضاف كنترول ربط إضافي لكل مجموعة فيها أكثر من ${f.ebcOver} بطاريات`,
+          `عدد كنترولات الربط الإضافية = عدد المجموعات التي تتجاوز هذا الحد = ${a.ebc}`,
+        ], result: `${a.ebc} كنترول` },
+        { title: "قاطع حماية البطاريات (DC)", steps: [
+          "قاطع داخل صندوق لفصل وحماية دائرة البطاريات ذات التيار المستمر DC، وليس صندوق حماية الألواح",
+          "قاطع حماية بطاريات واحد لكل كنترول رئيسي BCU حسب المعادلة المعتمدة",
+          `عدد قواطع حماية البطاريات = عدد الكنترولات الرئيسية = ${a.bcu}`,
+        ], result: `${a.bdc} قاطع` },
+      );
     }
   }
   return rows;

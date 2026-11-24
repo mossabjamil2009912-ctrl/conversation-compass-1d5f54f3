@@ -33204,6 +33204,42 @@
   "mime": null
  },
  {
+  "id": "423e0c9c-e98c-4462-9b6d-644e549cfe7e",
+  "customer_id": "2a54f990-ec59-4204-9645-8ab1d822af41",
+  "direction": "customer",
+  "kind": "button",
+  "text": "طلب عرض سعر",
+  "created_at": "2026-11-24T19:46:29.109+00:00",
+  "file_name": null,
+  "media_id": null,
+  "media_url": null,
+  "mime": null
+ },
+ {
+  "id": "71a6e3f8-25b2-4851-9c75-1882e7721b0f",
+  "customer_id": "2a54f990-ec59-4204-9645-8ab1d822af41",
+  "direction": "customer",
+  "kind": "button",
+  "text": "التجاري",
+  "created_at": "2026-11-24T19:46:41.722+00:00",
+  "file_name": null,
+  "media_id": null,
+  "media_url": null,
+  "mime": null
+ },
+ {
+  "id": "ec415bf6-d7f5-4052-9a85-f2718a856e07",
+  "customer_id": "2a54f990-ec59-4204-9645-8ab1d822af41",
+  "direction": "bot",
+  "kind": "text",
+  "text": "أكتس لأنظمة الطاقة وحلولها\n━━━━━━━━━━━━━━━━━━━━\nالمسار التجاري\n━━━━━━━━━━━━━━━━━━━━\nحدد طريقة إدخال الاستهلاك:\n\nأرسل 00 للعودة خطوة\n🔘 فاتورة الكهرباء  🔘 الاستهلاك بالكيلووات  🔘 استهلاك الديزل",
+  "created_at": "2026-11-24T19:46:41.723+00:00",
+  "file_name": null,
+  "media_id": null,
+  "media_url": null,
+  "mime": null
+ },
+ {
   "id": "28358e1d-cb53-4332-a9c4-a10a3d4b98ff",
   "customer_id": "2a54f990-ec59-4204-9645-8ab1d822af41",
   "direction": "bot",
@@ -33426,6 +33462,18 @@
   "kind": "text",
   "text": "أكتس لأنظمة الطاقة وحلولها\n━━━━━━━━━━━━━━━━━━━━\n اختر نوع المنظومة\n━━━━━━━━━━━━━━━━━━━━\n1 - السكني\n2 - التجاري\n3 - الصناعي\n\nأرسل 00 للعودة خطوة\n🔘 السكني  🔘 التجاري  🔘 الصناعي",
   "created_at": "2026-10-17T20:56:08.529+00:00",
+  "file_name": null,
+  "media_id": null,
+  "media_url": null,
+  "mime": null
+ },
+ {
+  "id": "8ff6655e-0db5-48b9-98a8-1ffc9a39b77a",
+  "customer_id": "2a54f990-ec59-4204-9645-8ab1d822af41",
+  "direction": "bot",
+  "kind": "text",
+  "text": "أكتس لأنظمة الطاقة وحلولها\n━━━━━━━━━━━━━━━━━━━━\n اختر نوع المنظومة:\n━━━━━━━━━━━━━━━━━━━━\n\n\nأرسل 00 للعودة خطوة\n🔘 السكني  🔘 التجاري  🔘 الصناعي",
+  "created_at": "2026-11-24T19:46:29.11+00:00",
   "file_name": null,
   "media_id": null,
   "media_url": null,

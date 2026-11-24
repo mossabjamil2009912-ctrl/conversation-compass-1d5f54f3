@@ -1,5 +1,5 @@
 {
- "exported_at": "2026-11-24T19:44:51.157Z",
+ "exported_at": "2026-11-24T19:52:06.440Z",
  "rows": {
   "app_settings": 4,
   "bot_texts": 26,
@@ -10,14 +10,14 @@
   "catalog_profiles": 63,
   "preset_reports": 0,
   "customers": 75,
-  "messages": 4348,
+  "messages": 4352,
   "quotes": 3,
   "orders": 3,
   "orders_legacy": 21,
   "support_tickets": 9,
   "report_requests": 12,
   "notifications": 47,
-  "bot_button_locks": 822,
+  "bot_button_locks": 826,
   "acts_engineers": 14,
   "acts_service_requests": 1,
   "acts_reviews": 0,
