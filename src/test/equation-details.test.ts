@@ -20,3 +20,44 @@ describe("equation details", () => {
     expect(steps.some((x) => x.includes("⌈30 ÷ 12⌉ = 3"))).toBe(true);
   });
 });
+
+describe("AC breaker details", () => {
+  const inverter = { key: "INV_DEYE_30K_HV", name: "Deye 30 HV", unit: null, price: 1, category: "inverters" };
+  const panel = { key: "COMBINER", name: "لوحة تجميع", unit: null, price: 1, category: "combiner_panels" };
+  const catalog = [...items, inverter, panel];
+  const run = (qty: number) => explainEquations([
+    { ...inverter, qty }, { key: "PNL", name: "Panel 720W", qty: 98 }, { ...panel, qty: 1 },
+  ], catalog, {}, { ...DEFAULT_FORMULAS, acThreeDiv: 658, acSafety: 1.25 });
+
+  it("two 30 kW inverters have two branch breakers sized for one inverter each", () => {
+    const branches = run(2).flatMap((row) => row.breaker?.kind === "branch" ? [row.breaker] : []);
+    expect(branches).toHaveLength(1);
+    expect(branches[0]?.qty).toBe(2);
+    expect(branches[0]?.amps).toBeCloseTo(56.9909, 4);
+  });
+
+  it("two 30 kW inverters have one main breaker sized for the combined 60 kW", () => {
+    const main = run(2).find((row) => row.breaker?.kind === "main")?.breaker;
+    expect(main?.qty).toBe(1);
+    expect(main?.amps).toBeCloseTo(113.9818, 4);
+  });
+
+  it("a single inverter has one AC breaker without separate branch breakers", () => {
+    const breakers = run(1).flatMap((row) => row.breaker ? [row.breaker] : []);
+    expect(breakers).toHaveLength(1);
+    expect(breakers[0]?.qty).toBe(1);
+    expect(breakers[0]?.amps).toBeCloseTo(56.9909, 4);
+  });
+
+  it("mixed inverter capacities use each inverter's own branch current", () => {
+    const rows = explainEquations([
+      { ...inverter, qty: 2 }, { key: "INV_DEYE_12K_3P", name: "Deye 12K ثري فاز", qty: 1 },
+      { key: "PNL", name: "Panel 720W", qty: 98 }, { ...panel, qty: 1 },
+    ], catalog, {}, { ...DEFAULT_FORMULAS, acThreeDiv: 658, acSafety: 1.25 });
+    const branches = rows.flatMap((row) => row.breaker?.kind === "branch" ? [row.breaker] : []);
+    expect(branches.map((b) => b.qty)).toEqual([2, 1]);
+    expect(branches[0]?.amps).toBeCloseTo(56.9909, 4);
+    expect(branches[1]?.amps).toBeCloseTo(22.7964, 4);
+    expect(rows.find((row) => row.breaker?.kind === "main")?.breaker?.amps).toBeCloseTo(136.7781, 4);
+  });
+});

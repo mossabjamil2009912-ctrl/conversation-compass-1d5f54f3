@@ -4,7 +4,7 @@ import { F, maxPerString, stringLayout, dcBoxes, acBreakerAmps, hvAccessories, t
 import { kwpOf, pvUnits } from "@/lib/sizing";
 
 export type DetailLine = { key: string; name: string; qty: number };
-export type DetailRow = { title: string; item?: string; steps: string[]; result: string };
+export type DetailRow = { title: string; item?: string; steps: string[]; result: string; breaker?: { kind: "branch" | "main"; qty: number; amps: number } };
 const n = (x: number, d = 2) => String(Math.round(x * 10 ** d) / 10 ** d);
 
 export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { need?: number | null; nightPct?: number | null; loadKw?: number | null } = {}, f: Formulas = F): DetailRow[] {
@@ -62,7 +62,22 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     } else if (r.category === "ac_panel" || r.category === "combiner_panels") {
       const kw = invLines.reduce((s, x) => s + Number((x.key.match(/_(\d+)K_/) ?? [])[1] ?? 0) * x.qty, 0);
       const amps = kw ? acBreakerAmps(kw * 1000, three !== false, f) : 0;
-      rows.push({ title: invQty >= 2 ? "لوحة تجميع (Combiner)" : "لوحة AC", item: l.name, steps: [`عدد الإنفرترات = ${invQty} → ${invQty >= 2 ? "لوحة تجميع" : "لوحة AC عادية"}`, ...(kw ? [three !== false ? `أمبير القاطع = W ÷ ${f.acThreeDiv} × ${f.acSafety} = ${kw * 1000} ÷ ${f.acThreeDiv} × ${f.acSafety}` : `أمبير القاطع = W ÷ ${f.acSingleV} × ${f.acSafety} = ${kw * 1000} ÷ ${f.acSingleV} × ${f.acSafety}`] : [])], result: kw ? `${n(amps, 1)} A` : `${l.qty}` });
+      const divisor = three !== false ? f.acThreeDiv : f.acSingleV;
+      if (invQty >= 2) {
+        rows.push({ title: "لوحة تجميع (Combiner)", item: l.name, steps: [`عدد القواطع الفرعية = عدد الإنفرترات = ${invQty} (قاطع لكل إنفرتر)`, "عدد القواطع الرئيسية = 1"], result: `${invQty} فرعي + 1 رئيسي` });
+        invLines.forEach((inv) => {
+          const unitKw = Number((inv.key.match(/_(\d+)K_/) ?? [])[1] ?? 0);
+          const branchAmps = acBreakerAmps(unitKw * 1000, three !== false, f);
+          rows.push({ title: "القواطع الفرعية", item: inv.name, steps: [
+            `عدد القواطع = ${inv.qty} (قاطع لكل إنفرتر)`,
+            ...(unitKw ? [`قدرة الإنفرتر الواحد = ${unitKw} kW`, `أمبير كل قاطع = قدرة إنفرتر واحد بالواط ÷ ${divisor} × ${f.acSafety}`, `= ${unitKw * 1000} ÷ ${divisor} × ${f.acSafety} = ${n(branchAmps, 1)} A`] : ["قدرة الإنفرتر غير متاحة لحساب الأمبير"]),
+          ], result: unitKw ? `${inv.qty} × ${n(branchAmps, 1)} A` : `${inv.qty} قاطع`, ...(unitKw ? { breaker: { kind: "branch" as const, qty: inv.qty, amps: branchAmps } } : {}) });
+        });
+      }
+      rows.push({ title: invQty >= 2 ? "القاطع الرئيسي للوحة التجميع" : "قاطع لوحة AC", item: l.name, steps: [
+        "عدد القواطع = 1",
+        ...(kw ? [`إجمالي قدرة الإنفرترات = ${invLines.map((inv) => `${Number((inv.key.match(/_(\d+)K_/) ?? [])[1] ?? 0)} × ${inv.qty}`).join(" + ")} = ${kw} kW`, `أمبير القاطع = مجموع قدرة الإنفرترات بالواط ÷ ${divisor} × ${f.acSafety}`, `= ${kw * 1000} ÷ ${divisor} × ${f.acSafety} = ${n(amps, 1)} A`] : ["قدرة الإنفرترات غير متاحة لحساب الأمبير"]),
+      ], result: kw ? `1 × ${n(amps, 1)} A` : "1 قاطع", ...(kw ? { breaker: { kind: "main" as const, qty: 1, amps } } : {}) });
     }
   });
 
