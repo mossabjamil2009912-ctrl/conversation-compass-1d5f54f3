@@ -4,7 +4,7 @@ import { F, maxPerString, stringLayout, dcBoxes, acBreakerAmps, hvAccessories, t
 import { kwpOf, pvUnits } from "@/lib/sizing";
 
 export type DetailLine = { key: string; name: string; qty: number };
-export type DetailRow = { title: string; item?: string; steps: string[]; result: string; breaker?: { kind: "branch" | "main"; qty: number; amps: number } };
+export type DetailRow = { title: string; item?: string; steps: string[]; result: string; breaker?: { kind: "branch" | "main"; qty: number; amps: number }; storage?: { qty: number; unitKwh?: number; totalKwh?: number } };
 const n = (x: number, d = 2) => String(Math.round(x * 10 ** d) / 10 ** d);
 
 export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { need?: number | null; nightPct?: number | null; loadKw?: number | null } = {}, f: Formulas = F): DetailRow[] {
@@ -44,6 +44,37 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
       rows.push({ title: "سعة التخزين الليلي", steps: [`الليلي = الاستهلاك اليومي × نسبة الليل`, `= ${n(need)} × ${opts.nightPct}%`, `عمق التفريغ DoD = ${f.dod}`], result: `${n(night)} kWh` });
     }
   }
+
+  // Always show the actual quote quantity, including manually edited/preset quantities.
+  lines.forEach((line, i) => {
+    if (cat[i]?.category !== "batteries") return;
+    const key = line.key;
+    const cabinet = /^CAB_/.test(key);
+    const pylon = /BAT_PYLON_M[15]_/.test(key);
+    const hithium = /BAT_(HITHIUM_16K|FIDUS_16K)/.test(key);
+    const kwh = /BAT_PYLON_M1_/.test(key) ? f.m1Kwh : /BAT_PYLON_M5_/.test(key) ? f.m5Kwh
+      : key === "CAB_HITHIUM_112" ? f.cabKwh : key === "CAB_PYLON_261" ? 261 : key === "CAB_PYLON_313" ? 313
+      : hithium ? f.batKwh : /BAT_UF5000|فيدوس برو|fidus\s*pro/i.test(`${key} ${line.name}`) ? 5.12 : null;
+    const unit = cabinet ? "كبينة" : "بطارية";
+    const steps = [`العدد المعتمد في العرض = ${line.qty} ${unit}`];
+    if (kwh && kwh > 0) {
+      steps.push(`سعة ${cabinet ? "الكبينة" : "البطارية"} الواحدة = ${n(kwh)} kWh`);
+      const night = need && need > 0 && opts.nightPct != null ? need * opts.nightPct / 100 : null;
+      if (night != null) {
+        steps.push(`استهلاك الليل = ${n(need ?? 0)} × ${opts.nightPct}% = ${n(night)} kWh`);
+        if (cabinet) {
+          steps.push(`العدد حسب السعة = تقريب(${n(night)} ÷ ${n(kwh)}) = ${Math.round(night / kwh)}`, `سماحية فرق سعة الكبائن = ±${f.cabTol} kWh`);
+        } else if (pylon) {
+          const min = /BAT_PYLON_M1_/.test(key) ? f.m1MinBat : f.m5MinBat;
+          steps.push(`العدد حسب السعة = ⌈${n(night)} ÷ ${n(kwh)}⌉ = ${Math.ceil(night / kwh - 1e-9)}`, `الحد الأدنى لهذا النوع = ${min} بطارية`);
+        } else if (hithium) {
+          steps.push(`السعة المتاحة للبطارية = سعتها × معامل التفريغ = ${n(kwh)} × ${f.dod} = ${n(kwh * f.dod)} kWh`, `سماحية نقص سعة الليل = ${f.batTol} kWh`, `العدد حسب المعادلة = ⌈(استهلاك الليل − السماحية) ÷ السعة المتاحة للبطارية⌉`, `= ⌈(${n(night)} − ${f.batTol}) ÷ ${n(kwh * f.dod)}⌉ = ${Math.max(1, Math.ceil((night - f.batTol) / (kwh * f.dod) - 1e-9))}`, ...(hv ? [`الحد الأدنى لبطاريات HV = ${f.hvMinBat} بطارية`] : []));
+        }
+      }
+      steps.push(`إجمالي سعة التخزين = العدد × سعة ${cabinet ? "الكبينة" : "البطارية"} = ${line.qty} × ${n(kwh)} = ${n(line.qty * kwh)} kWh`);
+    }
+    rows.push({ title: cabinet ? "عدد كبائن التخزين" : "عدد البطاريات", item: line.name, steps, result: `${line.qty} ${unit}`, storage: { qty: line.qty, ...(kwh && kwh > 0 ? { unitKwh: kwh, totalKwh: line.qty * kwh } : {}) } });
+  });
 
   if (!invQty || !panels) return rows;
   const vmax = three === "hv" ? f.vmaxHV : three ? f.vmaxThree : f.vmaxSingle;

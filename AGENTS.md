@@ -30,6 +30,7 @@ use the editor.
 <!-- LOVABLE:END -->
 - String allocation is centralized in `stringLayout` and ported to n8n: choose the largest exact panel-count divisor below the voltage limit, retaining at least one string per inverter, so sizing, accessories and explanations agree without adding panels.
 - Equation details expose structured breaker values alongside display steps: branch current uses each inverter's capacity and main current uses the total, allowing numerical regression tests without coupling them to Arabic copy.
+- Storage details report actual quote quantities and model-specific capacities without modifying sizing, so preset and manually edited quantities remain authoritative.
 
 
 - Bot items, prices and datasheet PDFs live only in `public.catalog_items`, edited from the dashboard and served to n8n via `/api/public/bot-catalog` — one source of truth so quotes and catalogs never diverge.

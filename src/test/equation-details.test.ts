@@ -21,6 +21,31 @@ describe("equation details", () => {
   });
 });
 
+describe("battery details", () => {
+  const run = (key: string, qty: number, need: number | null = 387) => {
+    const battery = { key, name: key, category: "batteries", unit: null, price: 1 };
+    return explainEquations([{ ...battery, qty }], [battery], { need, nightPct: 50 }, DEFAULT_FORMULAS).find((row) => row.storage)?.storage;
+  };
+
+  it("exposes the actual battery count even without panels and inverters", () => {
+    expect(run("BAT_HITHIUM_16K_HV", 15)).toEqual({ qty: 15, unitKwh: 16, totalKwh: 240 });
+  });
+  it("keeps manual quote quantities rather than replacing them with a calculated count", () => {
+    expect(run("BAT_HITHIUM_16K_LV", 3)?.qty).toBe(3);
+  });
+  it("uses M1 and M5 capacities rather than the Hithium capacity", () => {
+    expect(run("BAT_PYLON_M1_4_74K", 41)?.totalKwh).toBeCloseTo(194.34);
+    expect(run("BAT_PYLON_M5_15_68K", 13)?.totalKwh).toBeCloseTo(203.84);
+  });
+  it("reports small residential batteries and cabinets using their own capacity", () => {
+    expect(run("BAT_UF5000", 2, null)).toEqual({ qty: 2, unitKwh: 5.12, totalKwh: 10.24 });
+    expect(run("CAB_PYLON_261", 2)?.totalKwh).toBe(522);
+  });
+  it("does not invent a capacity for an unknown battery", () => {
+    expect(run("CUSTOM_BATTERY", 4)).toEqual({ qty: 4 });
+  });
+});
+
 describe("AC breaker details", () => {
   const inverter = { key: "INV_DEYE_30K_HV", name: "Deye 30 HV", unit: null, price: 1, category: "inverters" };
   const panel = { key: "COMBINER", name: "لوحة تجميع", unit: null, price: 1, category: "combiner_panels" };
