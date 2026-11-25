@@ -331,6 +331,52 @@
   "auto_rules": []
  },
  {
+  "key": "CTRL_M1D",
+  "kind": "item",
+  "category": "racks",
+  "category_title": "راكات وكبائن التخزين",
+  "name": "كنترول هاي فولتج بايلونتك M1D",
+  "unit": "حبة",
+  "price": 0,
+  "label": null,
+  "pdf_url": null,
+  "specs": [
+   "موديل: SM1D200Z",
+   "فولتية التشغيل : 270~1000 فولت",
+   "أعلى تيار شحن وتفريغ : 200 امبير",
+   "القدرة على الربط لعدد : 6~15 بطارية M1D",
+   "المقاس: 750×422×230",
+   "الضمان للمنتج : 5 سنوات"
+  ],
+  "active": true,
+  "sort": 959,
+  "updated_at": "2026-11-25T15:57:41.677242+00:00",
+  "auto_rules": []
+ },
+ {
+  "key": "CTRL_REEFMAGIC",
+  "kind": "item",
+  "category": "racks",
+  "category_title": "راكات وكبائن التخزين",
+  "name": "كنترول هاي فولتج بايلونتك ReefMagic",
+  "unit": "حبة",
+  "price": 0,
+  "label": null,
+  "pdf_url": null,
+  "specs": [
+   "موديل: RMC1000",
+   "فولتية التشغيل : حتى 1000 فولت",
+   "القدرة على الربط لعدد : 2~10 بطاريات ReefMagic",
+   "الاتصالات : Modbus RTU / CAN",
+   "الحماية : IP65",
+   "الضمان للمنتج : 5 سنوات"
+  ],
+  "active": true,
+  "sort": 960,
+  "updated_at": "2026-11-25T15:57:41.677242+00:00",
+  "auto_rules": []
+ },
+ {
   "key": "bat_protect_dc1500_250a",
   "kind": "item",
   "category": "battery_controls",
