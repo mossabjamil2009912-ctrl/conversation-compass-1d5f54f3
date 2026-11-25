@@ -1,0 +1,341 @@
+{
+ "id": "5jLCxxdAzKveiVki",
+ "name": "ACTES — جلب وسائط واتساب للوحة",
+ "active": true,
+ "activeVersionId": "24baf19d-753d-420c-944c-a764f047eb4e",
+ "createdAt": "2026-10-15T18:35:58.488Z",
+ "updatedAt": "2026-10-20T13:59:32.549Z",
+ "isArchived": false,
+ "versionId": "24baf19d-753d-420c-944c-a764f047eb4e",
+ "triggerCount": 1,
+ "nodes": [
+  {
+   "id": "a1",
+   "name": "Webhook",
+   "webhookId": "actes-media-proxy",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    0
+   ],
+   "parameters": {
+    "path": "actes-media",
+    "httpMethod": "GET",
+    "responseMode": "responseNode",
+    "options": {}
+   }
+  },
+  {
+   "id": "a2",
+   "name": "Check",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    220,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const q=$input.first().json;const h=q.headers||{};if(String(h['x-bot-secret']||'')!=='@actes-%*/123')throw new Error('unauthorized');const id=String((q.query||{}).id||'').replace(/[^0-9A-Za-z_-]/g,'');if(!id)throw new Error('no id');return [{json:{id}}];"
+   }
+  },
+  {
+   "id": "a3",
+   "name": "Get URL",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    440,
+    0
+   ],
+   "parameters": {
+    "url": "=https://graph.facebook.com/v21.0/{{ $json.id }}",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "whatsAppApi",
+    "options": {}
+   },
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  },
+  {
+   "id": "a4",
+   "name": "Download",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    660,
+    0
+   ],
+   "parameters": {
+    "url": "={{ $json.url }}",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "whatsAppApi",
+    "options": {
+     "response": {
+      "response": {
+       "responseFormat": "file"
+      }
+     }
+    }
+   },
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  },
+  {
+   "id": "a5",
+   "name": "Respond",
+   "type": "n8n-nodes-base.respondToWebhook",
+   "typeVersion": 1.1,
+   "position": [
+    880,
+    0
+   ],
+   "parameters": {
+    "respondWith": "binary",
+    "options": {
+     "responseHeaders": {
+      "entries": [
+       {
+        "name": "Content-Type",
+        "value": "={{ $('Get URL').first().json.mime_type }}"
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "connections": {
+  "Webhook": {
+   "main": [
+    [
+     {
+      "node": "Check",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Check": {
+   "main": [
+    [
+     {
+      "node": "Get URL",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Get URL": {
+   "main": [
+    [
+     {
+      "node": "Download",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Download": {
+   "main": [
+    [
+     {
+      "node": "Respond",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "nodeGroups": [],
+ "settings": {
+  "executionOrder": "v1",
+  "availableInMCP": true
+ },
+ "staticData": null,
+ "meta": null,
+ "tags": [],
+ "shared": [
+  {
+   "role": "workflow:owner",
+   "workflowId": "5jLCxxdAzKveiVki",
+   "projectId": "uZMS8gc0JYLDlxNb",
+   "createdAt": "2026-10-15T18:35:58.499Z",
+   "updatedAt": "2026-10-15T18:35:58.499Z"
+  }
+ ],
+ "activeVersion": {
+  "versionId": "24baf19d-753d-420c-944c-a764f047eb4e",
+  "workflowId": "5jLCxxdAzKveiVki",
+  "nodes": [
+   {
+    "id": "a1",
+    "name": "Webhook",
+    "webhookId": "actes-media-proxy",
+    "type": "n8n-nodes-base.webhook",
+    "typeVersion": 2,
+    "position": [
+     0,
+     0
+    ],
+    "parameters": {
+     "path": "actes-media",
+     "httpMethod": "GET",
+     "responseMode": "responseNode",
+     "options": {}
+    }
+   },
+   {
+    "id": "a2",
+    "name": "Check",
+    "type": "n8n-nodes-base.code",
+    "typeVersion": 2,
+    "position": [
+     220,
+     0
+    ],
+    "parameters": {
+     "jsCode": "const q=$input.first().json;const h=q.headers||{};if(String(h['x-bot-secret']||'')!=='@actes-%*/123')throw new Error('unauthorized');const id=String((q.query||{}).id||'').replace(/[^0-9A-Za-z_-]/g,'');if(!id)throw new Error('no id');return [{json:{id}}];"
+    }
+   },
+   {
+    "id": "a3",
+    "name": "Get URL",
+    "type": "n8n-nodes-base.httpRequest",
+    "typeVersion": 4.2,
+    "position": [
+     440,
+     0
+    ],
+    "parameters": {
+     "url": "=https://graph.facebook.com/v21.0/{{ $json.id }}",
+     "authentication": "predefinedCredentialType",
+     "nodeCredentialType": "whatsAppApi",
+     "options": {}
+    },
+    "credentials": {
+     "whatsAppApi": {
+      "id": "Pugq8ZZ8IkTvaGlD",
+      "name": "WhatsApp account"
+     }
+    }
+   },
+   {
+    "id": "a4",
+    "name": "Download",
+    "type": "n8n-nodes-base.httpRequest",
+    "typeVersion": 4.2,
+    "position": [
+     660,
+     0
+    ],
+    "parameters": {
+     "url": "={{ $json.url }}",
+     "authentication": "predefinedCredentialType",
+     "nodeCredentialType": "whatsAppApi",
+     "options": {
+      "response": {
+       "response": {
+        "responseFormat": "file"
+       }
+      }
+     }
+    },
+    "credentials": {
+     "whatsAppApi": {
+      "id": "Pugq8ZZ8IkTvaGlD",
+      "name": "WhatsApp account"
+     }
+    }
+   },
+   {
+    "id": "a5",
+    "name": "Respond",
+    "type": "n8n-nodes-base.respondToWebhook",
+    "typeVersion": 1.1,
+    "position": [
+     880,
+     0
+    ],
+    "parameters": {
+     "respondWith": "binary",
+     "options": {
+      "responseHeaders": {
+       "entries": [
+        {
+         "name": "Content-Type",
+         "value": "={{ $('Get URL').first().json.mime_type }}"
+        }
+       ]
+      }
+     }
+    }
+   }
+  ],
+  "connections": {
+   "Webhook": {
+    "main": [
+     [
+      {
+       "node": "Check",
+       "type": "main",
+       "index": 0
+      }
+     ]
+    ]
+   },
+   "Check": {
+    "main": [
+     [
+      {
+       "node": "Get URL",
+       "type": "main",
+       "index": 0
+      }
+     ]
+    ]
+   },
+   "Get URL": {
+    "main": [
+     [
+      {
+       "node": "Download",
+       "type": "main",
+       "index": 0
+      }
+     ]
+    ]
+   },
+   "Download": {
+    "main": [
+     [
+      {
+       "node": "Respond",
+       "type": "main",
+       "index": 0
+      }
+     ]
+    ]
+   }
+  },
+  "nodeGroups": [],
+  "authors": "SUFYAN ALWSABI",
+  "name": "Version 24baf19d",
+  "description": "",
+  "autosaved": false,
+  "createdAt": "2026-10-15T18:35:58.506Z",
+  "updatedAt": "2026-10-17T14:59:39.000Z"
+ }
+}

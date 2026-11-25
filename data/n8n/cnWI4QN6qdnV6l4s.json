@@ -1,0 +1,110 @@
+{
+ "id": "cnWI4QN6qdnV6l4s",
+ "name": "ACTES - إشعارات التطبيق إلى واتساب الإدارة (مع أزرار)",
+ "active": false,
+ "activeVersionId": null,
+ "createdAt": "2026-09-22T19:04:43.471Z",
+ "updatedAt": "2026-09-23T22:07:56.000Z",
+ "isArchived": true,
+ "versionId": "4c090b95-38ce-493e-927d-ab66d3963bac",
+ "triggerCount": 1,
+ "nodes": [
+  {
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "actes-payment-notify",
+    "options": {}
+   },
+   "id": "b2acf4d8-73e9-4b47-800d-e951ff56a61b",
+   "name": "استقبال إشعار التطبيق",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    0
+   ],
+   "webhookId": "d37ca8b3-9591-4d38-8d56-97750030ae61"
+  },
+  {
+   "parameters": {
+    "jsCode": "const PHONE_NUMBER_ID = '1243456698857049';\n\nconst out = [];\nfor (const item of $input.all()) {\n  const b = item.json.body || item.json;\n  const to = String(b.to || '967773590979').replace(/[^0-9]/g, '');\n  const text = String(b.text || 'إشعار جديد من تطبيق ACTES');\n  const rawButtons = Array.isArray(b.buttons) && b.buttons.length\n    ? b.buttons\n    : [\n        { id: 'invoice_confirm', title: '✅ تأكيد الفاتورة' },\n        { id: 'invoice_cancel', title: '❌ إلغاء الفاتورة' },\n      ];\n  const buttons = rawButtons.slice(0, 3).map((btn) => ({\n    type: 'reply',\n    reply: {\n      id: String(btn.id).slice(0, 256),\n      title: String(btn.title).slice(0, 20),\n    },\n  }));\n\n  out.push({\n    json: {\n      phoneNumberId: PHONE_NUMBER_ID,\n      payload: {\n        messaging_product: 'whatsapp',\n        recipient_type: 'individual',\n        to,\n        type: 'interactive',\n        interactive: {\n          type: 'button',\n          body: { text: text.slice(0, 1024) },\n          action: { buttons },\n        },\n      },\n    },\n  });\n}\nreturn out;"
+   },
+   "id": "6be47367-9fd9-4003-9bec-9c2c825cfc85",
+   "name": "تجهيز رسالة الأزرار",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    240,
+    0
+   ]
+  },
+  {
+   "parameters": {
+    "method": "POST",
+    "url": "=https://graph.facebook.com/v21.0/{{ $json.phoneNumberId }}/messages",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "whatsAppApi",
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.payload) }}",
+    "options": {}
+   },
+   "id": "286df969-44a6-4dbb-9728-b4f70580c15d",
+   "name": "إرسال واتساب مع الأزرار",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    480,
+    0
+   ],
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  }
+ ],
+ "connections": {
+  "استقبال إشعار التطبيق": {
+   "main": [
+    [
+     {
+      "node": "تجهيز رسالة الأزرار",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "تجهيز رسالة الأزرار": {
+   "main": [
+    [
+     {
+      "node": "إرسال واتساب مع الأزرار",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "nodeGroups": [],
+ "settings": {
+  "executionOrder": "v1",
+  "binaryMode": "separate"
+ },
+ "staticData": null,
+ "meta": null,
+ "tags": [],
+ "shared": [
+  {
+   "role": "workflow:owner",
+   "workflowId": "cnWI4QN6qdnV6l4s",
+   "projectId": "uZMS8gc0JYLDlxNb",
+   "createdAt": "2026-09-22T19:04:43.473Z",
+   "updatedAt": "2026-09-22T19:04:43.473Z"
+  }
+ ],
+ "activeVersion": null
+}

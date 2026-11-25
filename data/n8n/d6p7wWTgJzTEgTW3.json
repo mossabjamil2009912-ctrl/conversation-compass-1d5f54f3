@@ -1,0 +1,221 @@
+{
+ "id": "d6p7wWTgJzTEgTW3",
+ "name": "ACTES - إشعارات واتساب مع أزرار التأكيد/الإلغاء (كامل)",
+ "active": false,
+ "activeVersionId": null,
+ "createdAt": "2026-09-22T22:56:47.687Z",
+ "updatedAt": "2026-09-23T22:07:35.000Z",
+ "isArchived": true,
+ "versionId": "6a5338c6-5b9f-4f7e-822b-74661ecf9af9",
+ "triggerCount": 3,
+ "nodes": [
+  {
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "actes-payment-notify",
+    "options": {}
+   },
+   "id": "21685c22-cd58-4820-9b5a-6dbc569268e0",
+   "name": "استقبال إشعار التطبيق",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    0
+   ],
+   "webhookId": "3f71126c-99d6-41e0-a8c7-e078d767d2c7"
+  },
+  {
+   "parameters": {
+    "jsCode": "const PHONE_NUMBER_ID = '1243456698857049'; // ضع هنا Phone Number ID من لوحة ميتا\n\nconst out = [];\nfor (const item of $input.all()) {\n  const b = item.json.body || item.json;\n  const to = String(b.to || '967773590979').replace(/[^0-9]/g, '');\n  const text = String(b.text || 'إشعار جديد من تطبيق ACTES');\n  const rawButtons = Array.isArray(b.buttons) && b.buttons.length\n    ? b.buttons\n    : [\n        { id: 'invoice_confirm', title: '✅ تأكيد الفاتورة' },\n        { id: 'invoice_cancel', title: '❌ إلغاء الفاتورة' },\n      ];\n  const buttons = rawButtons.slice(0, 3).map((btn) => ({\n    type: 'reply',\n    reply: {\n      id: String(btn.id).slice(0, 256),\n      title: String(btn.title).slice(0, 20),\n    },\n  }));\n\n  out.push({\n    json: {\n      phoneNumberId: PHONE_NUMBER_ID,\n      payload: {\n        messaging_product: 'whatsapp',\n        recipient_type: 'individual',\n        to,\n        type: 'interactive',\n        interactive: {\n          type: 'button',\n          body: { text: text.slice(0, 1024) },\n          action: { buttons },\n        },\n      },\n    },\n  });\n}\nreturn out;"
+   },
+   "id": "afdf5611-2ca2-494c-85ff-c0129d47ab0f",
+   "name": "تجهيز رسالة الأزرار",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    224,
+    0
+   ]
+  },
+  {
+   "parameters": {
+    "method": "POST",
+    "url": "=https://graph.facebook.com/v21.0/{{ $json.phoneNumberId }}/messages",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "whatsAppApi",
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.payload) }}",
+    "options": {}
+   },
+   "id": "87669eed-7b0c-4eb8-a0a2-c6113a55cf7d",
+   "name": "إرسال واتساب مع الأزرار",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    448,
+    0
+   ],
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  },
+  {
+   "parameters": {
+    "path": "actes-wa-reply",
+    "responseMode": "responseNode",
+    "options": {}
+   },
+   "id": "64e73350-4089-4412-9cbd-48468af2665e",
+   "name": "تحقق ميتا (GET)",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    224
+   ],
+   "webhookId": "6183f6de-9b28-469b-bc70-b29164102e08"
+  },
+  {
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "actes-wa-reply",
+    "options": {}
+   },
+   "id": "f776693c-fb5c-445c-84db-5a060e29d2dd",
+   "name": "استقبال ضغطة الزر",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    448
+   ],
+   "webhookId": "fef2c8d3-d7a9-4b7b-a00e-fa2e03e1d825"
+  },
+  {
+   "parameters": {
+    "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  const body = item.json.body || item.json;\n  const entries = body.entry || [];\n  for (const e of entries) {\n    for (const ch of (e.changes || [])) {\n      const msgs = ch.value?.messages || [];\n      for (const m of msgs) {\n        const btn = m.interactive?.button_reply || m.interactive?.list_reply;\n        if (btn && btn.id) {\n          out.push({ json: { buttonId: String(btn.id), text: String(btn.title || '') } });\n        }\n      }\n    }\n  }\n}\nreturn out;"
+   },
+   "id": "165cbf29-7601-4aea-a41c-623b9a8ac508",
+   "name": "استخراج قرار الإدارة",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    224,
+    448
+   ]
+  },
+  {
+   "parameters": {
+    "method": "POST",
+    "url": "https://pixel-perfect-display-185.lovable.app/api/public/wa-invoice",
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify({ buttonId: $json.buttonId, text: $json.text }) }}",
+    "options": {}
+   },
+   "id": "4dab3b4f-03db-482f-9aa3-db43a4e6a2fb",
+   "name": "تحديث الطلب في التطبيق",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    448,
+    448
+   ]
+  },
+  {
+   "parameters": {
+    "respondWith": "text",
+    "responseBody": "={{ $json.query['hub.challenge'] || '' }}",
+    "options": {}
+   },
+   "id": "8cfee37a-ae68-4b73-b4f0-eb922ad0582e",
+   "name": "الرد على التحقق",
+   "type": "n8n-nodes-base.respondToWebhook",
+   "typeVersion": 1,
+   "position": [
+    224,
+    224
+   ]
+  }
+ ],
+ "connections": {
+  "استقبال إشعار التطبيق": {
+   "main": [
+    [
+     {
+      "node": "تجهيز رسالة الأزرار",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "تجهيز رسالة الأزرار": {
+   "main": [
+    [
+     {
+      "node": "إرسال واتساب مع الأزرار",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "تحقق ميتا (GET)": {
+   "main": [
+    [
+     {
+      "node": "الرد على التحقق",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "استقبال ضغطة الزر": {
+   "main": [
+    [
+     {
+      "node": "استخراج قرار الإدارة",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "استخراج قرار الإدارة": {
+   "main": [
+    [
+     {
+      "node": "تحديث الطلب في التطبيق",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "nodeGroups": [],
+ "settings": {
+  "executionOrder": "v1",
+  "binaryMode": "separate"
+ },
+ "staticData": null,
+ "meta": null,
+ "tags": [],
+ "shared": [
+  {
+   "role": "workflow:owner",
+   "workflowId": "d6p7wWTgJzTEgTW3",
+   "projectId": "uZMS8gc0JYLDlxNb",
+   "createdAt": "2026-09-22T22:56:47.691Z",
+   "updatedAt": "2026-09-22T22:56:47.691Z"
+  }
+ ],
+ "activeVersion": null
+}

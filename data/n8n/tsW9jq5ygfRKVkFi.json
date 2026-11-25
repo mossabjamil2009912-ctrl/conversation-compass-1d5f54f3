@@ -1,0 +1,217 @@
+{
+ "id": "tsW9jq5ygfRKVkFi",
+ "name": "ACTES — إرسال يدوي من لوحة التحكم",
+ "active": true,
+ "activeVersionId": "afeda9ae-c069-4ae3-b534-ac81525eb839",
+ "createdAt": "2026-10-04T21:16:34.203Z",
+ "updatedAt": "2026-11-10T22:59:47.102Z",
+ "isArchived": false,
+ "versionId": "afeda9ae-c069-4ae3-b534-ac81525eb839",
+ "triggerCount": 1,
+ "nodes": [
+  {
+   "id": "d7dbbc29-3618-4563-abc9-d963031aca96",
+   "name": "Dashboard Send",
+   "webhookId": "4b127154-2f54-4e72-a796-bfdc90d80d3e",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    0
+   ],
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "actes-send",
+    "responseMode": "lastNode"
+   }
+  },
+  {
+   "id": "081eaf48-4925-44a4-99e5-6b6c7432d3a8",
+   "name": "Check Secret",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    220,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const h = $input.first().json.headers || {};\nconst b = $input.first().json.body || {};\nconst validSecrets = ['@actes-%*/123', 'cb1886a3be927512173850a13233834af7d2d5355fd09e23', 'https://n8n.srv1994780.hstgr.cloud/home/executions', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjFiMjI2My1lNjhmLTQ4YzYtOTk0OC0xM2EzYjRhZGFjODciLCJpc3MiOiJuOG4iLCJqdGkiOiIzNGYwYzE4MS0yMzI1LTRjZGMtOWM3Ny0wYWM2ODE4YThkNWQiLCJpYXQiOjE3OTM0NDg2MjEsImF1ZCI6InB1YmxpYy1hcGkifQ.uT5QfP6RBbBPZVnNp9oyMQ3AZjNt5kydxM_u-V6NNjU'];\nif (!validSecrets.includes(h['x-bot-secret'])) throw new Error('unauthorized');\nconst to = String(b.phone||\"\").replace(/\\D/g,\"\");\nconst text = String(b.text||\"\").slice(0,4000);\nconst link = String(b.media_url||\"\");\nconst mt = String(b.media_type||\"\");\nif (!to || (!text && !link)) throw new Error('bad input');\nlet payload = { messaging_product: \"whatsapp\", recipient_type: \"individual\", to };\nif (link) {\n  const cap = text ? { caption: text.slice(0,1024) } : {};\n  if (mt === 'image') payload = { ...payload, type: 'image', image: { link, ...cap } };\n  else if (mt === 'video') payload = { ...payload, type: 'video', video: { link, ...cap } };\n  else if (mt === 'audio') payload = { ...payload, type: 'audio', audio: { link } };\n  else payload = { ...payload, type: 'document', document: { link, filename: String(b.file_name||'file'), ...cap } };\n} else payload = { ...payload, type: \"text\", text: { body: text } };\nreturn [{ json: { to, text, payload } }];"
+   }
+  },
+  {
+   "id": "7b901c93-2e2c-4f58-95ed-bfa372fe9747",
+   "name": "Send WhatsApp",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    440,
+    0
+   ],
+   "parameters": {
+    "authentication": "predefinedCredentialType",
+    "headerParameters": {
+     "parameters": [
+      {
+       "name": "Content-Type",
+       "value": "application/json"
+      }
+     ]
+    },
+    "jsonBody": "={{ JSON.stringify($json.payload) }}",
+    "method": "POST",
+    "nodeCredentialType": "whatsAppApi",
+    "sendBody": true,
+    "sendHeaders": true,
+    "specifyBody": "json",
+    "url": "=https://graph.facebook.com/v21.0/1481161951736029/messages"
+   },
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  }
+ ],
+ "connections": {
+  "Check Secret": {
+   "main": [
+    [
+     {
+      "index": 0,
+      "node": "Send WhatsApp",
+      "type": "main"
+     }
+    ]
+   ]
+  },
+  "Dashboard Send": {
+   "main": [
+    [
+     {
+      "index": 0,
+      "node": "Check Secret",
+      "type": "main"
+     }
+    ]
+   ]
+  }
+ },
+ "nodeGroups": [],
+ "settings": {
+  "executionOrder": "v1",
+  "availableInMCP": true
+ },
+ "staticData": null,
+ "meta": null,
+ "tags": [],
+ "shared": [
+  {
+   "role": "workflow:owner",
+   "workflowId": "tsW9jq5ygfRKVkFi",
+   "projectId": "uZMS8gc0JYLDlxNb",
+   "createdAt": "2026-10-04T21:16:34.209Z",
+   "updatedAt": "2026-10-04T21:16:34.209Z"
+  }
+ ],
+ "activeVersion": {
+  "versionId": "afeda9ae-c069-4ae3-b534-ac81525eb839",
+  "workflowId": "tsW9jq5ygfRKVkFi",
+  "nodes": [
+   {
+    "id": "d7dbbc29-3618-4563-abc9-d963031aca96",
+    "name": "Dashboard Send",
+    "webhookId": "4b127154-2f54-4e72-a796-bfdc90d80d3e",
+    "type": "n8n-nodes-base.webhook",
+    "typeVersion": 2,
+    "position": [
+     0,
+     0
+    ],
+    "parameters": {
+     "httpMethod": "POST",
+     "path": "actes-send",
+     "responseMode": "lastNode"
+    }
+   },
+   {
+    "id": "081eaf48-4925-44a4-99e5-6b6c7432d3a8",
+    "name": "Check Secret",
+    "type": "n8n-nodes-base.code",
+    "typeVersion": 2,
+    "position": [
+     220,
+     0
+    ],
+    "parameters": {
+     "jsCode": "const h = $input.first().json.headers || {};\nconst b = $input.first().json.body || {};\nconst validSecrets = ['@actes-%*/123', 'cb1886a3be927512173850a13233834af7d2d5355fd09e23', 'https://n8n.srv1994780.hstgr.cloud/home/executions', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjFiMjI2My1lNjhmLTQ4YzYtOTk0OC0xM2EzYjRhZGFjODciLCJpc3MiOiJuOG4iLCJqdGkiOiIzNGYwYzE4MS0yMzI1LTRjZGMtOWM3Ny0wYWM2ODE4YThkNWQiLCJpYXQiOjE3OTM0NDg2MjEsImF1ZCI6InB1YmxpYy1hcGkifQ.uT5QfP6RBbBPZVnNp9oyMQ3AZjNt5kydxM_u-V6NNjU'];\nif (!validSecrets.includes(h['x-bot-secret'])) throw new Error('unauthorized');\nconst to = String(b.phone||\"\").replace(/\\D/g,\"\");\nconst text = String(b.text||\"\").slice(0,4000);\nconst link = String(b.media_url||\"\");\nconst mt = String(b.media_type||\"\");\nif (!to || (!text && !link)) throw new Error('bad input');\nlet payload = { messaging_product: \"whatsapp\", recipient_type: \"individual\", to };\nif (link) {\n  const cap = text ? { caption: text.slice(0,1024) } : {};\n  if (mt === 'image') payload = { ...payload, type: 'image', image: { link, ...cap } };\n  else if (mt === 'video') payload = { ...payload, type: 'video', video: { link, ...cap } };\n  else if (mt === 'audio') payload = { ...payload, type: 'audio', audio: { link } };\n  else payload = { ...payload, type: 'document', document: { link, filename: String(b.file_name||'file'), ...cap } };\n} else payload = { ...payload, type: \"text\", text: { body: text } };\nreturn [{ json: { to, text, payload } }];"
+    }
+   },
+   {
+    "id": "7b901c93-2e2c-4f58-95ed-bfa372fe9747",
+    "name": "Send WhatsApp",
+    "type": "n8n-nodes-base.httpRequest",
+    "typeVersion": 4.2,
+    "position": [
+     440,
+     0
+    ],
+    "parameters": {
+     "authentication": "predefinedCredentialType",
+     "headerParameters": {
+      "parameters": [
+       {
+        "name": "Content-Type",
+        "value": "application/json"
+       }
+      ]
+     },
+     "jsonBody": "={{ JSON.stringify($json.payload) }}",
+     "method": "POST",
+     "nodeCredentialType": "whatsAppApi",
+     "sendBody": true,
+     "sendHeaders": true,
+     "specifyBody": "json",
+     "url": "=https://graph.facebook.com/v21.0/1481161951736029/messages"
+    },
+    "credentials": {
+     "whatsAppApi": {
+      "id": "Pugq8ZZ8IkTvaGlD",
+      "name": "WhatsApp account"
+     }
+    }
+   }
+  ],
+  "connections": {
+   "Check Secret": {
+    "main": [
+     [
+      {
+       "index": 0,
+       "node": "Send WhatsApp",
+       "type": "main"
+      }
+     ]
+    ]
+   },
+   "Dashboard Send": {
+    "main": [
+     [
+      {
+       "index": 0,
+       "node": "Check Secret",
+       "type": "main"
+      }
+     ]
+    ]
+   }
+  },
+  "nodeGroups": [],
+  "authors": "SUFYAN ALWSABI",
+  "name": null,
+  "description": null,
+  "autosaved": false,
+  "createdAt": "2026-11-10T22:59:47.104Z",
+  "updatedAt": "2026-11-10T22:59:47.104Z"
+ }
+}

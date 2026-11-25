@@ -1,0 +1,84 @@
+{
+ "id": "M2DTg6m1LV5p5rYn",
+ "name": "ACTES - إشعارات التطبيق إلى واتساب الإدارة",
+ "active": false,
+ "activeVersionId": null,
+ "createdAt": "2026-09-22T16:58:48.893Z",
+ "updatedAt": "2026-09-22T19:04:34.000Z",
+ "isArchived": true,
+ "versionId": "38741a2a-edb3-4e53-bc10-cb8c06e092de",
+ "triggerCount": 1,
+ "nodes": [
+  {
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "actes-payment-notify",
+    "options": {}
+   },
+   "id": "d2753225-e284-4425-a806-a5408b31e5e0",
+   "name": "استقبال إشعار التطبيق",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    0
+   ],
+   "webhookId": "8d84d87c-f307-40b9-86f7-fd38d3bbc91a"
+  },
+  {
+   "parameters": {
+    "operation": "send",
+    "phoneNumberId": "1243456698857049",
+    "recipientPhoneNumber": "={{ $json.body.to || $json.to || '967773590979' }}",
+    "textBody": "={{ $json.body.text || $json.text }}",
+    "additionalFields": {}
+   },
+   "id": "c1268bb3-068c-4004-8533-1d15867096b5",
+   "name": "إرسال واتساب للإدارة",
+   "type": "n8n-nodes-base.whatsApp",
+   "typeVersion": 1.1,
+   "position": [
+    240,
+    0
+   ],
+   "webhookId": "e2a07c6d-0977-40a8-b635-3145d6f34864",
+   "credentials": {
+    "whatsAppApi": {
+     "id": "Pugq8ZZ8IkTvaGlD",
+     "name": "WhatsApp account"
+    }
+   }
+  }
+ ],
+ "connections": {
+  "استقبال إشعار التطبيق": {
+   "main": [
+    [
+     {
+      "node": "إرسال واتساب للإدارة",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "nodeGroups": [],
+ "settings": {
+  "executionOrder": "v1",
+  "binaryMode": "separate"
+ },
+ "staticData": null,
+ "meta": null,
+ "tags": [],
+ "shared": [
+  {
+   "role": "workflow:owner",
+   "workflowId": "M2DTg6m1LV5p5rYn",
+   "projectId": "uZMS8gc0JYLDlxNb",
+   "createdAt": "2026-09-22T16:58:48.897Z",
+   "updatedAt": "2026-09-22T16:58:48.897Z"
+  }
+ ],
+ "activeVersion": null
+}
