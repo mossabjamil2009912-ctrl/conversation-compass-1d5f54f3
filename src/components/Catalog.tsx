@@ -50,7 +50,7 @@ export function voltOf(r: { key: string; name: string; label?: string | null }):
   const t = (r.key + " " + r.name + " " + (r.label ?? "")).toUpperCase();
   // Inverters of 25 kW and above (Deye 30/50/80, Solis 29.9–125) all use high-voltage batteries.
   if (/INV|إنفرتر|انفرتر/.test(t) && Number((t.match(/(\d+(?:\.\d+)?)\s*(?:K_|كيلو)/) ?? [])[1] ?? 0) >= 25) return "High Voltage";
-  return /_HV\b|_HV$|\bHV\b|جهد عالي|هاي فولت|PYLON_M[15]|M1C|M5A|\bM[15]\b|112S/.test(t) ? "High Voltage" : "Low Voltage";
+  return /_HV\b|_HV$|\bHV\b|جهد عالي|هاي فولت|PYLON_M[15]|REEFMAGIC|M1C|M5A|\bM[15]\b|112S/.test(t) ? "High Voltage" : "Low Voltage";
 }
 const brandRank = (b: string) => { const i = BRAND_ORDER.indexOf(b); return i < 0 ? 99 : i; };
 
