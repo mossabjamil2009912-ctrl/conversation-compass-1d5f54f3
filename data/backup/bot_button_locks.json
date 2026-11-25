@@ -4954,5 +4954,47 @@
   "choice": "2",
   "phone": "967773590979",
   "created_at": "2026-11-24T19:46:39.78592+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzEzNTMzMjAwFQIAEhgUM0ExRTlGNzgxRUM3RDI1Rjg4QUEA",
+  "choice": "inbound",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:36:58.434761+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzEzNTMzMjAwFQIAERgSRjlEMTRGOTczRkIzMjdCM0I4AA==",
+  "choice": "aftersales_support",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:20.567928+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzEzNTMzMjAwFQIAEhgUM0FGQTQ2NUI5MDhGOTcxNEE0Q0EA",
+  "choice": "inbound",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:21.119392+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzEzNTMzMjAwFQIAERgSMDYyOEEwMjlEMTJEQjI1NTQ2AA==",
+  "choice": "quote_start",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:43.856174+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzEzNTMzMjAwFQIAEhgUM0E4MUFEMDU4NDlEMjI3NzgwMUMA",
+  "choice": "inbound",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:43.93014+00:00"
+ },
+ {
+  "context_id": "wamid.HBgMOTY3NzEzNTMzMjAwFQIAERgSMTI0NzdGNEI3QjVCRkIyQjEzAA==",
+  "choice": "3",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:51.271166+00:00"
+ },
+ {
+  "context_id": "msg:wamid.HBgMOTY3NzEzNTMzMjAwFQIAEhgUM0FEOEZFNzg3MEMyNzhERTFFNEMA",
+  "choice": "inbound",
+  "phone": "967713533200",
+  "created_at": "2026-11-25T12:37:51.288252+00:00"
  }
 ]
