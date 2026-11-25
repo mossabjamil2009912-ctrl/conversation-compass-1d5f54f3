@@ -128,7 +128,7 @@ export function applyEquations<L extends EqLine>(lines: L[], items: EqItem[], ke
   // HV batteries → BCU / EBC / DC protection from the equation (items from the catalog only).
   const hvBat = lines.reduce((s, l, i) => s + (cat[i]?.category === "batteries" && /HV|هاي فولتج/i.test(`${l.key} ${cat[i]?.name}`) ? l.qty : 0), 0);
   const acc = hv && hvBat ? hvAccessories(hvBat, f) : null;
-  const ACC: [RegExp, keyof NonNullable<typeof acc>][] = [[/ebc/i, "ebc"], [/^ctrl_/i, "bcu"], [/protect/i, "bdc"]];
+  const ACC: [RegExp, keyof NonNullable<typeof acc>][] = [[/ebc/i, "ebc"], [/^ctrl_hithium/i, "bcu"], [/protect/i, "bdc"]];
   if (acc) {
     const seen = new Set<string>();
     lines = lines.map((l, i) => {

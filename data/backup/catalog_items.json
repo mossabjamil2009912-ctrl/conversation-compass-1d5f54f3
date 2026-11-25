@@ -333,8 +333,8 @@
  {
   "key": "CTRL_M1D",
   "kind": "item",
-  "category": "racks",
-  "category_title": "راكات وكبائن التخزين",
+  "category": "battery_controls",
+  "category_title": "كنترولات وحماية البطاريات",
   "name": "كنترول هاي فولتج بايلونتك M1D",
   "unit": "حبة",
   "price": 0,
@@ -350,14 +350,14 @@
   ],
   "active": true,
   "sort": 959,
-  "updated_at": "2026-11-25T15:57:41.677242+00:00",
+  "updated_at": "2026-11-25T16:04:08.325368+00:00",
   "auto_rules": []
  },
  {
   "key": "CTRL_REEFMAGIC",
   "kind": "item",
-  "category": "racks",
-  "category_title": "راكات وكبائن التخزين",
+  "category": "battery_controls",
+  "category_title": "كنترولات وحماية البطاريات",
   "name": "كنترول هاي فولتج بايلونتك ReefMagic",
   "unit": "حبة",
   "price": 0,
@@ -373,7 +373,7 @@
   ],
   "active": true,
   "sort": 960,
-  "updated_at": "2026-11-25T15:57:41.677242+00:00",
+  "updated_at": "2026-11-25T16:04:08.325368+00:00",
   "auto_rules": []
  },
  {
@@ -1521,24 +1521,6 @@
   "auto_rules": []
  },
  {
-  "key": "CTRL_M5",
-  "kind": "item",
-  "category": "racks",
-  "category_title": "راكات وكبائن التخزين",
-  "name": "كنترول هاي فولتج بايلونتك M5",
-  "unit": "حبة",
-  "price": 1300,
-  "label": null,
-  "pdf_url": null,
-  "specs": [
-   "موديل: SC1000 Controlle"
-  ],
-  "active": true,
-  "sort": 958,
-  "updated_at": "2026-10-12T16:21:07.725377+00:00",
-  "auto_rules": []
- },
- {
   "key": "DCBOX_1000_10",
   "kind": "item",
   "category": "dc_boxes",
@@ -1837,8 +1819,8 @@
  {
   "key": "CTRL_M1C",
   "kind": "item",
-  "category": "racks",
-  "category_title": "راكات وكبائن التخزين",
+  "category": "battery_controls",
+  "category_title": "كنترولات وحماية البطاريات",
   "name": "كنترول ربط بطاريات  هاي فولتج بايلونتك M1C",
   "unit": "حبة",
   "price": 800,
@@ -1849,7 +1831,25 @@
   ],
   "active": true,
   "sort": 953,
-  "updated_at": "2026-11-25T14:45:05.494+00:00",
+  "updated_at": "2026-11-25T16:04:08.325368+00:00",
+  "auto_rules": []
+ },
+ {
+  "key": "CTRL_M5",
+  "kind": "item",
+  "category": "battery_controls",
+  "category_title": "كنترولات وحماية البطاريات",
+  "name": "كنترول هاي فولتج بايلونتك M5",
+  "unit": "حبة",
+  "price": 1300,
+  "label": null,
+  "pdf_url": null,
+  "specs": [
+   "موديل: SC1000 Controlle"
+  ],
+  "active": true,
+  "sort": 958,
+  "updated_at": "2026-11-25T16:04:08.325368+00:00",
   "auto_rules": []
  },
  {
