@@ -249,6 +249,24 @@ export function FormulasDialog({ pw, code, onClose }: { pw: string; code: string
         <Num label="سعة الراك الوسط M5 (بطارية)" value={fx.m5RackMedium} onChange={(v) => up({ m5RackMedium: Math.round(v) })} />
         <Num label="أقصى بطاريات في راك M5" value={fx.m5MaxBat} onChange={(v) => up({ m5MaxBat: Math.round(v) })} />
       </Eq>}
+      {hv && <Eq n={++n + 1} title="صنف بطاريات وكنترول بايلونتك M1D">
+        <L>
+          <Ln l={<>بطاريات <V>M1D</V></>}>الأكبر من<P><V>{fx.m1dMinBat}</V><O c="،" /><Fr n="السعة" d={<R>سعة <V>M1D</V></R>} /></P></Ln>
+          <Ln l="عدد الكنترولات"><Ceil><Fr n={<R>بطاريات <V>M1D</V></R>} d={<V>{fx.m1dMaxBat}</V>} /></Ceil></Ln>
+        </L>
+        <Num label="سعة بطارية M1D (كيلووات ساعة)" value={fx.m1dKwh} onChange={(v) => up({ m1dKwh: v })} />
+        <Num label="أقل عدد بطاريات M1D" value={fx.m1dMinBat} onChange={(v) => up({ m1dMinBat: Math.round(v) })} />
+        <Num label="أقصى بطاريات لكل كنترول M1D" value={fx.m1dMaxBat} onChange={(v) => up({ m1dMaxBat: Math.round(v) })} />
+      </Eq>}
+      {hv && <Eq n={++n + 1} title="صنف بطاريات وكنترول بايلونتك ReefMagic">
+        <L>
+          <Ln l={<>بطاريات <V>ReefMagic</V></>}>الأكبر من<P><V>{fx.reefMinBat}</V><O c="،" /><Fr n="السعة" d={<R>سعة <V>ReefMagic</V></R>} /></P></Ln>
+          <Ln l="عدد الكنترولات"><Ceil><Fr n={<R>بطاريات <V>ReefMagic</V></R>} d={<V>{fx.reefMaxBat}</V>} /></Ceil></Ln>
+        </L>
+        <Num label="سعة بطارية ReefMagic (كيلووات ساعة)" value={fx.reefKwh} onChange={(v) => up({ reefKwh: v })} />
+        <Num label="أقل عدد بطاريات ReefMagic" value={fx.reefMinBat} onChange={(v) => up({ reefMinBat: Math.round(v) })} />
+        <Num label="أقصى بطاريات لكل كنترول ReefMagic" value={fx.reefMaxBat} onChange={(v) => up({ reefMaxBat: Math.round(v) })} />
+      </Eq>}
       {hv && <Eq n={++n + 1} title="صنف كنترول الهاي فولتج BCU">
         <L>
           <Ln l={<>عدد <V>BCU</V></>}><Ceil><Fr n="عدد البطاريات" d={<R>بطاريات كل كنترول</R>} /></Ceil></Ln>

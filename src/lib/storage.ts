@@ -3,15 +3,15 @@
 // Ported 1:1 to the n8n State Machine as ACTES_STORAGE — change both together.
 import { F, type Formulas, type EqItem, type EqLine } from "@/lib/formulas";
 
-export type StorageChoice = "h112s" | "pylon" | "m1" | "m5" | "cab112" | "cab261" | "cab313";
+export type StorageChoice = "h112s" | "pylon" | "m1" | "m5" | "m1d" | "reef" | "cab112" | "cab261" | "cab313";
 export const STORAGE_LABELS: Record<StorageChoice, string> = {
-  h112s: "Hithium", pylon: "Pylontech (M1 / M5)", m1: "Pylontech M1", m5: "Pylontech M5", cab112: "Hithium 112C", cab261: "Pylontech 261", cab313: "Pylontech 313",
+  h112s: "Hithium", pylon: "Pylontech (M1 / M5)", m1: "Pylontech M1", m5: "Pylontech M5", m1d: "Pylontech M1D", reef: "Pylontech ReefMagic", cab112: "Hithium 112C", cab261: "Pylontech 261", cab313: "Pylontech 313",
 };
 // Customer picks a group first, then a model inside it.
 export type StorageGroup = "bat" | "rack" | "cab";
 export const STORAGE_GROUPS: { g: StorageGroup; label: string; opts: StorageChoice[] }[] = [
   { g: "bat", label: "Hithium 16HV", opts: ["h112s"] },
-  { g: "rack", label: "راكات", opts: ["m1", "m5"] },
+  { g: "rack", label: "راكات", opts: ["m1", "m5", "m1d", "reef"] },
   { g: "cab", label: "كبائن", opts: ["cab261", "cab313", "cab112"] },
 ];
 const up = (x: number) => Math.ceil(x - 1e-9);
@@ -30,6 +30,12 @@ export function storageParts(choice: StorageChoice, cap: number, f: Formulas = F
   if (choice === "cab112") return cabFit("CAB_HITHIUM_112", cap, f.cabKwh, f);
   if (choice === "cab261") return cabFit("CAB_PYLON_261", cap, 261, f);
   if (choice === "cab313") return cabFit("CAB_PYLON_313", cap, 313, f);
+  // M1D / ReefMagic: batteries = max(min, ⌈cap ÷ kWh⌉), one controller per rack/tower of up to max batteries.
+  if (choice === "m1d" || choice === "reef") {
+    const [key, ctrl, kwh, min, max] = choice === "m1d" ? ["BAT_PYLON_M1D_18K", "CTRL_M1D", f.m1dKwh, f.m1dMinBat, f.m1dMaxBat] as const : ["BAT_PYLON_REEFMAGIC_7_5K", "CTRL_REEFMAGIC", f.reefKwh, f.reefMinBat, f.reefMaxBat] as const;
+    const n = Math.max(min, up(cap / kwh));
+    return [[key, n], [ctrl, Math.ceil(n / max)]];
+  }
   // M1 and M5 both split into several racks; "pylon" (bot) = M1 while one big rack is enough, else M5.
   const n1 = Math.max(f.m1MinBat, up(cap / f.m1Kwh));
   if (choice === "m1" || (choice === "pylon" && n1 <= f.m1MaxBat)) {

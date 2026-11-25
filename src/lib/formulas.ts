@@ -41,6 +41,8 @@ export type Formulas = {
   m5RackSmall: number;   // M5 batteries per rack up to this → 11-rack
   m5RackMedium: number;  // up to this → 16-rack, else 20-rack
   m5MaxBat: number;      // most M5 batteries in one (big) rack
+  m1dKwh: number; m1dMinBat: number; m1dMaxBat: number;    // Pylontech M1D: kWh, fewest in series, most per rack (1 CTRL_M1D per rack)
+  reefKwh: number; reefMinBat: number; reefMaxBat: number; // Pylontech ReefMagic: kWh, fewest, most per tower (1 CTRL_REEFMAGIC per tower)
   presetItems: Record<string, [string, number][]>; // edited ready-made system items (catalog key, qty) by preset title; missing = original
   comRanges: Record<string, number>; // ranges mode: commercial system range (kWh/day) by comKey; missing = panels × W × sun
 };
@@ -52,7 +54,7 @@ export const DEFAULT_FORMULAS: Formulas = {
   dcMaxLines: 10, dcStep: 2, acSingleV: 220, acThreeDiv: 658, acSafety: 1.25, cableM: 1, mc4PerString: 1,
   panelVoc: 48.5, coldFactor: 1.1, vmaxSingle: 500, vmaxThree: 800,
   vmaxHV: 1000, hvMinBat: 4, hvBatPerBcu: 15, ebcOver: 7,
-  panelW: 720, pvSafety: 0.9, pvMax: { INV_DEYE_8K_1P: 12.8, INV_DEYE_12K_1P: 19.2, INV_DEYE_12K_3P: 15.6, INV_DEYE_16K_1P: 25.6, INV_DEYE_16K_3P: 24, INV_DEYE_20K_3P: 30, INV_DEYE_30K_3P_HV: 39, INV_DEYE_50K_3P_HV: 65, INV_DEYE_80K_3P_HV: 128, INV_DEYE_125K_3P_HV: 200, INV_SOLIS_30K_3P_HV: 60, INV_SOLIS_50K_3P_HV: 96, INV_SOLIS_80K_3P_HV: 160, INV_SOLIS_125K_3P_HV: 250 }, lvMaxKw: 25, maxInverters: 5, batKwh: 16, batTol: 0, cabKwh: 112, m1Kwh: 4.74, m5Kwh: 15.68, m1MaxKwh: 109.02, m1MinBat: 6, m1RackSmall: 13, m1MaxBat: 23, m5MinBat: 7, m5RackSmall: 11, m5RackMedium: 16, m5MaxBat: 20, cabTol: 5, mode: "eq", comRanges: {}, presetItems: {},
+  panelW: 720, pvSafety: 0.9, pvMax: { INV_DEYE_8K_1P: 12.8, INV_DEYE_12K_1P: 19.2, INV_DEYE_12K_3P: 15.6, INV_DEYE_16K_1P: 25.6, INV_DEYE_16K_3P: 24, INV_DEYE_20K_3P: 30, INV_DEYE_30K_3P_HV: 39, INV_DEYE_50K_3P_HV: 65, INV_DEYE_80K_3P_HV: 128, INV_DEYE_125K_3P_HV: 200, INV_SOLIS_30K_3P_HV: 60, INV_SOLIS_50K_3P_HV: 96, INV_SOLIS_80K_3P_HV: 160, INV_SOLIS_125K_3P_HV: 250 }, lvMaxKw: 25, maxInverters: 5, batKwh: 16, batTol: 0, cabKwh: 112, m1Kwh: 4.74, m5Kwh: 15.68, m1MaxKwh: 109.02, m1MinBat: 6, m1RackSmall: 13, m1MaxBat: 23, m5MinBat: 7, m5RackSmall: 11, m5RackMedium: 16, m5MaxBat: 20, m1dKwh: 18.09, m1dMinBat: 6, m1dMaxBat: 15, reefKwh: 7.5, reefMinBat: 2, reefMaxBat: 10, cabTol: 5, mode: "eq", comRanges: {}, presetItems: {},
 };
 export const F: Formulas = structuredClone(DEFAULT_FORMULAS);
 export const mergeFormulas = (v: unknown): Formulas => {
@@ -71,6 +73,8 @@ export const mergeFormulas = (v: unknown): Formulas => {
     cabKwh: num(o.cabKwh, D.cabKwh), m1Kwh: num(o.m1Kwh, D.m1Kwh), m5Kwh: num(o.m5Kwh, D.m5Kwh), m1MaxKwh: num(o.m1MaxBat, D.m1MaxBat) * num(o.m1Kwh, D.m1Kwh), cabTol: num(o.cabTol, D.cabTol),
     m1MinBat: num(o.m1MinBat, D.m1MinBat), m1RackSmall: num(o.m1RackSmall, D.m1RackSmall), m1MaxBat: num(o.m1MaxBat, D.m1MaxBat),
     m5MinBat: num(o.m5MinBat, D.m5MinBat), m5RackSmall: num(o.m5RackSmall, D.m5RackSmall), m5RackMedium: num(o.m5RackMedium, D.m5RackMedium), m5MaxBat: num(o.m5MaxBat, D.m5MaxBat),
+    m1dKwh: num(o.m1dKwh, D.m1dKwh), m1dMinBat: num(o.m1dMinBat, D.m1dMinBat), m1dMaxBat: num(o.m1dMaxBat, D.m1dMaxBat),
+    reefKwh: num(o.reefKwh, D.reefKwh), reefMinBat: num(o.reefMinBat, D.reefMinBat), reefMaxBat: num(o.reefMaxBat, D.reefMaxBat),
     mode: o.mode === "ranges" ? "ranges" : "eq",
     presetItems: Object.fromEntries(Object.entries(o.presetItems && typeof o.presetItems === "object" ? o.presetItems : {}).filter(([, l]) => Array.isArray(l) && l.length > 0 && l.every((x) => Array.isArray(x) && typeof x[0] === "string" && typeof x[1] === "number" && x[1] > 0))) as Record<string, [string, number][]>,
     comRanges: Object.fromEntries(Object.entries(o.comRanges && typeof o.comRanges === "object" ? o.comRanges : {}).filter(([, x]) => typeof x === "number" && isFinite(x) && x > 0)),

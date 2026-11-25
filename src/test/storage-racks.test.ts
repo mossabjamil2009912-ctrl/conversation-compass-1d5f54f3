@@ -21,3 +21,16 @@ describe("Pylontech racks", () => {
     expect(storageParts("pylon", 24 * D.m1Kwh, D)![0]?.[0]).toBe("BAT_PYLON_M5_15_68K");
   });
 });
+
+import { storageParts as sp2 } from "@/lib/storage";
+import { DEFAULT_FORMULAS as DF } from "@/lib/formulas";
+describe("M1D / ReefMagic", () => {
+  it("M1D: min 6, one controller per 15", () => {
+    expect(sp2("m1d", 50, DF)).toEqual([["BAT_PYLON_M1D_18K", 6], ["CTRL_M1D", 1]]);
+    expect(sp2("m1d", 300, DF)).toEqual([["BAT_PYLON_M1D_18K", 17], ["CTRL_M1D", 2]]);
+  });
+  it("ReefMagic: min 2, one controller per 10", () => {
+    expect(sp2("reef", 10, DF)).toEqual([["BAT_PYLON_REEFMAGIC_7_5K", 2], ["CTRL_REEFMAGIC", 1]]);
+    expect(sp2("reef", 90, DF)).toEqual([["BAT_PYLON_REEFMAGIC_7_5K", 12], ["CTRL_REEFMAGIC", 2]]);
+  });
+});

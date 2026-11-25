@@ -46,9 +46,9 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
     if (cat[i]?.category !== "batteries") return;
     const key = line.key;
     const cabinet = /^CAB_/.test(key);
-    const pylon = /BAT_PYLON_M[15]_/.test(key);
+    const pylon = /BAT_PYLON_(M1|M5|M1D|REEFMAGIC)_/.test(key);
     const hithium = /BAT_(HITHIUM_16K|FIDUS_16K)/.test(key);
-    const kwh = /BAT_PYLON_M1_/.test(key) ? f.m1Kwh : /BAT_PYLON_M5_/.test(key) ? f.m5Kwh
+    const kwh = /BAT_PYLON_M1D_/.test(key) ? f.m1dKwh : /BAT_PYLON_REEFMAGIC_/.test(key) ? f.reefKwh : /BAT_PYLON_M1_/.test(key) ? f.m1Kwh : /BAT_PYLON_M5_/.test(key) ? f.m5Kwh
       : key === "CAB_HITHIUM_112" ? f.cabKwh : key === "CAB_PYLON_261" ? 261 : key === "CAB_PYLON_313" ? 313
       : hithium ? f.batKwh : /BAT_UF5000|فيدوس برو|fidus\s*pro/i.test(`${key} ${line.name}`) ? 5.12 : null;
     const unit = cabinet ? "كبينة" : "بطارية";
@@ -61,8 +61,10 @@ export function explainEquations(lines: DetailLine[], items: EqItem[], opts: { n
         if (cabinet) {
           steps.push(`العدد حسب السعة = تقريب(${n(night)} ÷ ${n(kwh)}) = ${Math.round(night / kwh)}`, `سماحية فرق سعة الكبائن = ±${f.cabTol} kWh`);
         } else if (pylon) {
-          const min = /BAT_PYLON_M1_/.test(key) ? f.m1MinBat : f.m5MinBat;
+          const m1d = /BAT_PYLON_M1D_/.test(key), reef = /BAT_PYLON_REEFMAGIC_/.test(key);
+          const min = m1d ? f.m1dMinBat : reef ? f.reefMinBat : /BAT_PYLON_M1_/.test(key) ? f.m1MinBat : f.m5MinBat;
           steps.push(`العدد حسب السعة = ⌈${n(night)} ÷ ${n(kwh)}⌉ = ${Math.ceil(night / kwh - 1e-9)}`, `الحد الأدنى لهذا النوع = ${min} بطارية`);
+          if (m1d || reef) { const max = m1d ? f.m1dMaxBat : f.reefMaxBat; steps.push(`عدد الكنترولات = ⌈${line.qty} ÷ ${max}⌉ = ${Math.ceil(line.qty / max)} (كنترول لكل ${max} بطارية)`); }
         } else if (hithium) {
           const c = Math.max(1, Math.ceil(night / (kwh * f.dod) - 1e-9));
           steps.push(`عدد البطاريات = ⌈استهلاك الليل ÷ (سعة البطارية × DoD)⌉ = ⌈${n(night)} ÷ (${n(kwh)} × ${f.dod})⌉ = ${c}`, ...(hv ? [`الحد الأدنى لبطاريات HV = ${f.hvMinBat}`] : []));
