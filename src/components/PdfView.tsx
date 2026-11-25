@@ -26,13 +26,18 @@ export function PdfView({ url }: { url: string }) {
     const k = next / z;
     const sl = (sc.scrollLeft + px) * k - px, st = (sc.scrollTop + py) * k - py;
     zoomRef.current = next; setZoom(next);
-    requestAnimationFrame(() => { sc.scrollLeft = sl; sc.scrollTop = st; });
+    requestAnimationFrame(() => {
+      // Keep the pan inside the real bounds so the pages never stick above/left of the start.
+      sc.scrollLeft = Math.max(0, Math.min(sl, sc.scrollWidth - sc.clientWidth));
+      sc.scrollTop = Math.max(0, Math.min(st, sc.scrollHeight - sc.clientHeight));
+    });
   };
   const zoomAtRef = useRef(zoomAt); zoomAtRef.current = zoomAt;
   useEffect(() => {
     const sc = scroller.current; if (!sc) return;
-    // Mouse wheel and trackpad pinch zoom around the pointer.
+    // Plain wheel scrolls the pages; Ctrl/⌘ + wheel (and touchpad pinch) zooms around the pointer.
     const onWheel = (e: WheelEvent) => {
+      if (!e.ctrlKey && !e.metaKey) return;
       e.preventDefault();
       const dy = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 100 : 1);
       zoomAtRef.current(zoomRef.current * Math.exp(-dy * 0.002), e.clientX, e.clientY);

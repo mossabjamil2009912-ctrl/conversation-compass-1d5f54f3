@@ -176,7 +176,7 @@ function Viewer({ id, onClose }: { id: string; onClose: () => void }) {
           <p className="min-w-0 flex-1 truncate text-sm font-semibold">{c?.title}</p>
           <button onClick={onClose} aria-label="إغلاق" className="rounded-xl p-2 hover:bg-muted"><X className="h-5 w-5" /></button>
         </div>
-        <div className="min-h-0 flex-1 bg-muted">
+        <div className="flex min-h-0 flex-1 flex-col bg-muted">
           {localUrl ? <PdfView url={localUrl} />
             : !fileErr ? <div className="flex h-full items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
             : <p className="p-6 text-center text-muted-foreground">تعذر فتح الكتالوج.</p>}
