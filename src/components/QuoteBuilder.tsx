@@ -444,6 +444,9 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
   const [loadKw, setLoadKw] = useState("");
   const [brandPick, setBrandPick] = useState<InvPick[] | null>(null);
   const [brandSel, setBrandSel] = useState<string | null>(null);
+  // Commercial: the customer picks Low/High Voltage before the inverter list. Bot port: sz_volt_ask.
+  const [volt, setVolt] = useState<"lv" | "hv" | null>(null);
+  const hvPrefOf = (t: "res" | "com") => (t === "com" && volt ? volt === "hv" : undefined);
   const [loadOpts, setLoadOpts] = useState<InvPick[] | null>(null);
   const [hvBase, setHvBase] = useState<Line[] | null>(null); // HV system before the storage choice
   const [storage, setStorage] = useState<StorageChoice>("h112s");
@@ -691,7 +694,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
               <button key={v} type="button" onClick={() => setDn(v)} className={`rounded-lg border px-2 py-1.5 text-xs font-semibold ${dn === v ? "border-primary bg-primary/10 text-primary" : "bg-card"}`}>{label}</button>
             ))}
             {(path === "res" || (path === "com" && comM)) && (
-              <form onSubmit={(e) => { e.preventDefault(); const n = Number(daily); if (!(n > 0)) return; setInvKw(null); const opts = path === "res" ? optionsForResBill(n, kwhPrice) : optionsForCom(comM ?? "bill", n, kwhPrice); setEq(null); const rec0 = opts[0]; if (rec0 && F.mode === "eq" && eqEligible(rec0)) { setTiers(null); setInvs(null); setLoadKw(""); return setEq({ need: dailyNeed(path ?? "res", comM ?? "bill", n, kwhPrice), three: path === "com" || templateOf(rec0).some(([k]) => /_3P/.test(k)), template: templateOf(rec0), type: rec0.type ?? "res" }); } const ic = F.mode === "eq" ? inverterChoices(opts) : []; if (ic.length) { setTiers(null); setInvs(ic); return; } setInvs(null); const t = tiersFrom(opts); if (!t) { setTiers(null); return setMsg("لا توجد منظومة مناسبة — يُحوّل للموظف المختص"); } showTiers(t); }} className="flex items-center gap-1">
+              <form onSubmit={(e) => { e.preventDefault(); const n = Number(daily); if (!(n > 0)) return; setInvKw(null); const opts = path === "res" ? optionsForResBill(n, kwhPrice) : optionsForCom(comM ?? "bill", n, kwhPrice); setEq(null); const rec0 = opts[0]; if (rec0 && F.mode === "eq" && eqEligible(rec0)) { setTiers(null); setInvs(null); setLoadKw(""); setVolt(null); setLoadOpts(null); setBrandSel(null); setBrandPick(null); return setEq({ need: dailyNeed(path ?? "res", comM ?? "bill", n, kwhPrice), three: path === "com" || templateOf(rec0).some(([k]) => /_3P/.test(k)), template: templateOf(rec0), type: rec0.type ?? "res" }); } const ic = F.mode === "eq" ? inverterChoices(opts) : []; if (ic.length) { setTiers(null); setInvs(ic); return; } setInvs(null); const t = tiersFrom(opts); if (!t) { setTiers(null); return setMsg("لا توجد منظومة مناسبة — يُحوّل للموظف المختص"); } showTiers(t); }} className="flex items-center gap-1">
                 <input autoFocus value={daily} onChange={(e) => setDaily(e.target.value.replace(/[^\d.]/g, ""))} inputMode="decimal" placeholder={path === "res" || comM === "bill" ? "الفاتورة الشهرية (ريال)" : comM === "kwh" ? "الاستهلاك الشهري (كيلووات)" : "الديزل الشهري (لتر)"} className="w-40 rounded-lg border bg-card px-2 py-1.5 text-xs" />
                 <button type="submit" className="rounded-lg bg-primary px-2 py-1.5 text-xs font-bold text-primary-foreground">عرض</button>
               </form>
@@ -709,7 +712,18 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
         {eq && (
           <div className="space-y-2 rounded-xl border bg-muted/30 p-2">
             <div className="text-xs text-muted-foreground">الاحتياج اليومي: {eq.need.toFixed(1)} كيلووات ساعة</div>
-            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const o = inverterOptionsForLoad(items as EqItem[], eq.need, kw, eq.three).filter((x) => eq.type === "com" || RES_INV_KEY.test(x.key)); if (!o.length) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); setBrandPick(null); setBrandSel(null); setLoadOpts(o); }} className="flex flex-wrap items-center gap-1">
+            {eq.type === "com" && (
+              <div className="space-y-1">
+                <div className="text-xs font-bold">ما نوع نظام التشغيل والبطاريات المطلوب لمنظومتك؟</div>
+                <div className="flex flex-wrap gap-1">
+                  {([["lv", "🔹 1 — نظام جهد منخفض (Low Voltage - 48V)"], ["hv", "⚡ 2 — نظام جهد عالي (High Voltage - HV)"]] as const).map(([v, label]) => (
+                    <button key={v} type="button" onClick={() => { setVolt(v); setLoadOpts(null); setBrandSel(null); setBrandPick(null); }} className={`rounded-lg border px-3 py-1.5 text-right text-xs font-bold ${volt === v ? "border-primary bg-primary/10 text-primary" : "bg-card hover:bg-muted"}`}>{label}</button>
+                  ))}
+                </div>
+              </div>
+            )}
+            {(eq.type !== "com" || volt) && (<>
+            <form onSubmit={(e) => { e.preventDefault(); const kw = Number(loadKw); if (!(kw > 0)) return; const o = inverterOptionsForLoad(items as EqItem[], eq.need, kw, eq.three, F, hvPrefOf(eq.type)).filter((x) => eq.type === "com" || RES_INV_KEY.test(x.key)); if (!o.length) return setMsg("الحمل أكبر من 5 إنفرترات — يُحوّل للموظف المختص"); setBrandPick(null); setBrandSel(null); setLoadOpts(o); }} className="flex flex-wrap items-center gap-1">
               <span className="text-xs font-bold">1) أقصى حمل تشغيلي (kW):</span>
               <input value={loadKw} onChange={(e) => setLoadKw(e.target.value.replace(/[^\d.]/g, ""))} inputMode="decimal" placeholder="كيلووات (مثال 10)" className="w-32 rounded-lg border bg-card px-2 py-1.5 text-xs" />
               <button type="submit" className="rounded-lg bg-primary px-2 py-1.5 text-xs font-bold text-primary-foreground">اختر الأنسب</button>
@@ -718,7 +732,8 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
             <div className="flex flex-wrap gap-1">
               {(() => {
                 // Brand first (with unit price per size), then size + count. Bot port: sz_brand_first.
-                const all = (loadOpts ?? inverterOptions(items as EqItem[], eq.need, eq.three)).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key));
+                const all = (loadOpts ?? inverterOptions(items as EqItem[], eq.need, eq.three, F, hvPrefOf(eq.type))).filter((o) => eq.type === "com" || RES_INV_KEY.test(o.key));
+                if (!all.length) return <div className="text-xs text-muted-foreground">لا يوجد إنفرتر مناسب بهذا النوع لهذا الاستهلاك — اختر النوع الآخر أو يُحوّل للموظف المختص</div>;
                 const brands = [...new Set(all.map((o) => brandOf(o.key)))];
                 if (brands.length > 1 && !brandSel) return (<>
                   <div className="w-full text-xs font-bold">اختر ماركة الإنفرتر:</div>
@@ -748,6 +763,7 @@ export function QuoteBuilder({ pw, initialCustomerId }: { pw: string; initialCus
                 </>);
               })()}
             </div>
+            </>)}
           </div>
         )}
         {invs && !tiers && (

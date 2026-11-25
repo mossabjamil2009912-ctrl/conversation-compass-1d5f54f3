@@ -38,8 +38,9 @@ export const isHvNeed = (need: number, loadKw = 0, f: Formulas = F) => Math.max(
 
 // Option 2: the customer picks an inverter size, then the brand when that size exists in more than one brand.
 // Returns every brand per size (cheapest first); group by kw to build the two steps.
-export function inverterOptions(items: EqItem[], need: number, three: boolean, f: Formulas = F): InvPick[] {
-  const hv = isHvNeed(need, 0, f);
+// hvPref: the customer's voltage choice (true = HV, false = LV); omitted → chosen by isHvNeed. Bot port: sz_volt_ask.
+export function inverterOptions(items: EqItem[], need: number, three: boolean, f: Formulas = F, hvPref?: boolean): InvPick[] {
+  const hv = hvPref ?? isHvNeed(need, 0, f);
   const fam = inverterSpecs(items, true).filter((s) => s.hv === hv);
   const ph = fam.some((s) => s.three === three) ? fam.filter((s) => s.hv || s.three === three) : fam;
   return ph.map((s) => { const units = unitsFor(s, need, 0, f); return { ...s, units, cost: units * s.price }; }).filter((p) => p.units <= f.maxInverters);
@@ -55,8 +56,8 @@ export function inverterForLoad(items: EqItem[], need: number, loadKw: number, t
 }
 // Load given: every brand/size that covers the peak load and the panels (count included), cheapest first.
 // The customer picks a size+count, then the brand when that size exists in more than one brand. Bot port: szLoadOptions.
-export function inverterOptionsForLoad(items: EqItem[], need: number, loadKw: number, three: boolean, f: Formulas = F): InvPick[] {
-  const hv = isHvNeed(need, loadKw, f);
+export function inverterOptionsForLoad(items: EqItem[], need: number, loadKw: number, three: boolean, f: Formulas = F, hvPref?: boolean): InvPick[] {
+  const hv = hvPref ?? isHvNeed(need, loadKw, f);
   const all = inverterSpecs(items, true).filter((s) => s.hv === hv);
   const ph = all.filter((s) => s.hv || s.three === three);
   return (ph.length ? ph : all).map((s) => { const units = unitsFor(s, need, loadKw, f); return { ...s, units, cost: units * s.price }; })

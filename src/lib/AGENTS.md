@@ -3,3 +3,4 @@
 - Chat deletion is soft (`customers.deleted_at`/`blocked`/`hidden_before`); bot-message uses `chat-visibility.ts` — deleted chats stay restorable.
 - Inverter brand choice: `groupBySize`/`inverterOptions`/`inverterOptionsForLoad` in `sizing.ts` ↔ bot `ACTES_BRAND` + `ACTES_LOAD_OPTS` (szGroups, szLoad stored in pump_capacity, step `sz_brand_ask`) — peak load lists size+count options, then brand; change together.
 - Inverter panel capacity: `pvUsable` in `sizing.ts` (formulas `pvMax` per key × `pvSafety`; `pvUnits` drops one inverter while panels ≤ real pvMax) ↔ bot `szUnits`/`szF` — change together — no fixed DC/AC ratios; every inverter needs a `pvMax`.
+- Voltage choice (commercial): `hvPref` on `inverterOptions`/`inverterOptionsForLoad` + `volt` in QuoteBuilder ↔ bot step `sz_volt_ask` (`szVolt`, held on phase_type 'lv'/'hv' until szApply) — change together.

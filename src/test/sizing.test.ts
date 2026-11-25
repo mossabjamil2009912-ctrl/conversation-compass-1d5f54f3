@@ -63,3 +63,18 @@ describe("HV systems never list LV inverters", () => {
     expect(o.every((x) => x.hv)).toBe(true);
   });
 });
+
+import { inverterOptions as invOpts } from "@/lib/sizing";
+import { describe as d2, it as i2, expect as e2 } from "vitest";
+d2("voltage choice", () => {
+  const items = [
+    { key: "INV_DEYE_20K_3P", category: "inverters", name: "إنفرتر دايا 20 كيلو 3 فاز جهد منخفض", price: 2550 },
+    { key: "INV_DEYE_30K_3P_HV", category: "inverters", name: "إنفرتر دايا 30 كيلو 3 فاز جهد عالي", price: 2800 },
+  ] as never;
+  i2("HV choice lists only High Voltage inverters", () => {
+    e2(invOpts(items, 60, true, undefined, true).every((o) => o.hv)).toBe(true);
+  });
+  i2("LV choice lists only Low Voltage inverters", () => {
+    e2(invOpts(items, 60, true, undefined, false).every((o) => !o.hv)).toBe(true);
+  });
+});
